@@ -1,0 +1,28 @@
+The CONFIG command configures some of your character behavior.  With no 
+options, CONFIG shows you your current settings (identical to the AUTO 
+command).  With a plus or minus sign and an option, CONFIG turns that 
+option on or off. 
+ 
+The options are: 
+ 
+    AUTOEXIT  You automatically see exits. 
+    AUTOGOLD  You automatically get gold from corpses. 
+    AUTOSPLIT You automatically split gold with members of your group. 
+    AUTOLOOT  You automatically loot corpses. 
+    AUTOSAC   You automatically sacrifice corpses. 
+    ANSI      You have ANSI color enabled. 
+    BLINK     You see blinking text. 
+    AUTOAFK   You automatically return from AFK when you type a command. 
+    BLANK     You have a blank line before your prompt. 
+    BRIEF     You see brief descriptions only. 
+    COMBINE   You see object lists in combined format. 
+    KEEPALIVE You have a keepalive.
+    PROMPT    You have a prompt. 
+    TELNETGA  You receive a telnet GA sequence. 
+    COMBAT    You see all combat scroll, including missed attacks. 
+    FMETER    You see a "fight meter" in combat. 
+    PEEK      You automatically peek at inventories, if able. 
+ 
+You can also type AUTOEXIT, AUTOLOOT, AUTOSAC, AUTOSPLIT, BLANK, BRIEF, 
+or COMBINE directly from the prompt to toggle the status of these options. 
+See the helps for these commands.

@@ -1,0 +1,117 @@
+
+QUESTS
+7/5/2002 - REK
+
+As long as I'm documenting things here, I should mention some of the changes
+I've made to Vassago's quest system.  I'm doing this from memory and don't
+have Vassago's original snippet handy, so it's probably going to be
+incomplete.  Bear with me.
+
+First of all, the objects the questmaster sends you looking for are #defined
+at the top of quest.c (QUESTITEM1 through QUESTITEM5).  I created these
+objects the other day, vnums 30-34.  The code does not check the validity of
+the pointer returned by get_obj_index when it loads one, so they *must*
+exist (if you want to put in a check, be my guest.  I didn't bother because
+if limbo.are fails to load for some reason, we have big problems anyway).
+
+I use a different algorithm for selecting the quest target mob when a player
+asks for a quest.  I scan through char_list building a list of mobs whose
+level and location make them suitable quest targets in a 512-element array. 
+If there are less than five mobs in the array, I tell the player no quest is
+available.  Otherwise I randomly pick one from the array.  Why 512?  Dunno,
+seemed like a reasonable number.  Unless the mud gets truly huge, I doubt
+we'll ever have anywhere near that many potential quest targets for any
+single questor.
+
+Dying costs quest points!  I put that in when I noticed a fifth level
+character who seemed to be doing a lot of questing and no level advancing
+getting killed occasionally by a mob she had no chance whatsoever against. 
+I asked her about it, and as it turned out she was getting herself killed
+deliberately, because she wanted to stay at fifth level so she could get a
+LOT of quest points and get some really nifty eq for her fifth level char. 
+A few other characters were doing this, too.  Okay, cool idea, but it seems
+to me there's something wrong with the system when you have an incentive to
+get yourself killed.
+
+There is an imm-only option to the "quest" command, "quest grant".  An imm
+can use it to award 1-25 quest points to a player.  A message is sent to
+everybody in the room.  An imm can "grant" a negative number of quest
+points, thereby penalizing a player.  This does *not* get displayed to
+anybody in the room except the imm.  It is of course logged.
+
+When a player asks for a quest, there is a built in 20% chance they will be
+refused.  This is logged.  When a player is granted a quest, it is logged. 
+Basically pretty much anything to do with questiong is logged.  I've had
+players argue with me endlessly that the random number generator is broken,
+they get refused a quest way more than 20% of the time.  After they found out
+about the logging, and that I could tell them that they'd been granted 86
+quests and refused 21, the complaints pretty much stopped.  Except from the
+idiots who couldn't accept that statistically speaking, it's quite
+reasonable that they would sometimes be refused a quest three or four times
+in a row.
+
+Quest target objects are of type ITEM_QUESTITEM and when a player is sent on
+a quest to retrieve one, its v0 value is set to the player's id.  Nobody can
+pick the object up except the player or an imm.  Note to self: Need to
+change do_sacrifice() so malicious players can't sacrifice another player's
+quest target, and change save_char_obj() so questitems won't save.
+
+Objects which can be purchased with quest points are stored in quest_table[]
+in const.c.  Currently the list is empty however.  Keeping them in a table
+makes it very easy to add items to and remove items from the list.
+
+There are two functions in quest.c and declared in merc.h that are useful
+for quest logging:
+
+void log_qp( CHAR_DATA *ch, int value, int how )
+This function is for logging any change in the amount of quest points a
+player has.
+ch is the player whose quest points have changed.
+value is the amount of qp added/subtracted.
+how is the type of change, and should be one of the manifest constants
+QP_GAIN, QP_LOSS, QP_SPEND, or QP_GRANT.
+The function should be called after the char's qp's are adjusted, not
+before.
+
+void quest_log( const char *fmt, ... )
+fmt is a printf-type format string, ... is a variable args list.
+
+Both functions append to the file quest.txt in the system dir (or, to be
+pedantic, to SYSTEM_DIR QUEST_FILE).
+
+There is another function local to quest.c which is handy enough that I
+really should declare it in merc.h and move the function to act_comm.c:
+
+void sayf( CHAR_DATA *speaker, const char *fmt, ... )
+
+It basically vsnprintf's fmt and the following args to a local buffer, then
+calls do_function( speaker, do_say, buf )
+I used this to replace lots of sequences along the lines of
+    sprintf( buf, "%s, I'm awarding you %d quest points", ch->name, qp );
+    do_function( questman, do_say, buf );
+
+New fields in char_data:
+CHAR_DATA *questgiver     <-- the mob who assigned the player a quest
+int        questpoints    <-- player's current quest point total
+int        nextquest      <-- time in minutes before a player can request
+                              another quest
+int        countdown      <-- time remaining in minutes for current quest
+int        questobj       <-- vnum of object player is seeking
+int        questmob       <-- vnum of mob player must kill
+
+New act flag: PLR_QUESTOR
+
+Nextquest and countdown are saved in the player's pfile, so players can't
+"beat the system" by quitting and relogging.  The timers are converted to an
+offset from current_time when the pfile is written and converted back again
+when the pfile is read.  This way if a player quits while on a quest or
+waiting for their quest timer to lapse and doesn't return for several hours
+(or days, or weeks) they won't have to wait for the quest timers to lapse
+before requesting another quest.  Unfortunately if the mud crashes or is
+rebooted the quest info is lost but the timers aren't reset.  I'd like to
+rectify this without opening up possible exploits.
+
+There is a new spec_fun, spec_questmaster.  This is how the server
+identifies a questmaster mob.  This is straight from Vassago, I didn't
+change it; I'm mentioning it for documentation purposes.  Pretty much
+everything else I've mentioned above is my own work.

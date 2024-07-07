@@ -1,0 +1,89 @@
+#AREADATA
+Version     9
+Name        clan halls~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       700 899
+Levels      0 0
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    medium
+Created     1715906320
+Changed     1716515072 Thu May 23 21:44:32 2024
+End
+
+#MOBILES
+#700
+Phoenix clan healer firebird~
+the great `RP`rh`Yo`We`Yn`ri`Rx`X~
+The great `RP`rh`Yo`We`Yn`ri`Rx`X is here to aid you
+~
+~
+wyvern~
+ABGa DFTV T 0 0 0 0
+5 1 2d5+85 1d1+139 1d7+2 none
+4 4 4 4
+CFH L 0 S
+stand stand male 0
+0 0 huge 0 hard ''
+#701
+Guard Clan Generic~
+a clan hall guard~
+A guard of the clan patrols the halls
+~
+~
+human~
+AG DF 0 C 0 0 0
+5 5 2d4+50 1d1+129 2d4+1 slash
+7 7 7 6
+FKT 0 0 0
+stand stand male 92347
+0 0 medium 0 hard ''
+#0
+
+#OBJECTS
+#701
+clan box phoenix nest~
+The Nest~
+A nest of vibrant golden threads~
+~
+container SY 0 0
+0 ABC 0 0 100 999
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#700
+Phoenix Clan Hall~
+~
+~
+~
+~
+~
+~
+0 CDKUa 0 0
+S
+#0
+
+#RESETS
+O 0 701 -1 700
+M 0 700 1 700 1
+M 0 701 1 700 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 700 spec_cast_adept
+M 701 spec_guard
+S
+
+#$

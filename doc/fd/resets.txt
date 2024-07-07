@@ -1,0 +1,80 @@
+
+M: resets mobiles into rooms
+  arg1: vnum of mob
+  arg2: maxinworld
+  arg3: vnum of room
+  arg4: maxinroom
+
+O: resets objects into rooms
+  arg1: vnum of object
+  arg2: 
+  arg3: vnum of room
+  arg4:
+
+P: resets objects into containers
+  arg1: vnum of object
+  arg2: 
+  arg3: vnum of container
+  arg4: maxinworld
+
+E: resets object into mob wear loc
+  arg1: vnum of object
+  arg2: 
+  arg3: wear loc to equip
+  arg4:
+
+G: resets object into mob's inventory
+  arg1: vnum of object
+  arg2: 
+  arg3: 
+  arg4:
+
+R: randomizes exits
+  arg1: vnum of room
+  arg2: highest direction number to randomize
+  arg3: 
+  arg4:
+
+D: Unused; was used to set door states in diku/merc/rom
+  arg1:
+  arg2:
+  arg3:
+  arg4:
+
+
+Notes on "O" resets:
+
+Objects will not reset into rooms if there are any players in the area (not
+just in the room, in the area) unless the area is a mudschool or the reset
+was performed via "redit reset".
+
+Not more than one instance of the object will be loaded into the room,
+regardless of how many resets for the object there are in the room.
+
+The cost of objects loaded into rooms is forced to 0, ignoring any value
+set in oedit.
+
+The level will be adjusted randomly +/- 1 then reduced to 99 if above.
+
+
+Notes on "P" resets:
+
+Objects will not reset into containers if there are any players in the area
+(not just in the room, in the area) unless the area is a mudschool or the
+reset was performed via "redit reset".
+
+The "container" is NOT checked to determine if it is in fact a container
+or sheath.
+
+The container is located by checking the list of objects already loaded
+into the world.  This means that if the first container found exists in
+another room, then that container will be used.
+
+The container capacity is not checked.
+
+The object will not be reset into the container if the container already
+contains an instance of the object.
+
+The level of the object is set to the level of the container +/- 1,
+regardless of the level set in oedit.
+

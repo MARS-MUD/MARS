@@ -1,0 +1,318 @@
+#AREADATA
+Version     9
+Name        immortal~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       400 499
+Levels      111 120
+Security    0
+Recall      900
+Flags       DH
+Color       7
+ExitSize    medium
+Created     1634028838
+Changed     1719776301 Sun Jun 30 15:38:21 2024
+End
+
+#MOBILES
+#401
+Builder Test Mob 1~
+(no short description)~
+(no long description)
+~
+~
+human~
+AG 0 0 0 0 0 0
+0 0 1d4+0 0d0+0 0d0+0 none
+0 0 0 0
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+#402
+Builder Test Mob 2~
+(no short description)~
+(no long description)
+~
+~
+human~
+AG 0 0 0 0 0 0
+0 0 1d4+0 0d0+0 0d0+0 none
+0 0 0 0
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+#403
+Builder Test Mob 3~
+(no short description)~
+(no long description)
+~
+~
+human~
+AG 0 0 0 0 0 0
+0 0 1d4+0 0d0+0 0d0+0 none
+0 0 0 0
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+#404
+Builder Test Mob 4~
+(no short description)~
+(no long description)
+~
+~
+human~
+AG 0 0 0 0 0 0
+0 0 1d4+0 0d0+0 0d0+0 none
+0 0 0 0
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+#498
+Insta Test~
+Insta Tester~
+The Insta Tester stands here.
+~
+~
+human~
+ABG 0 0 0 0 0 0
+22 4 5d7+420 1d1+219 2d11+4 none
+-1 -1 -1 -1
+0 0 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+#0
+
+#OBJECTS
+#401
+Builder Test Obj 1~
+(no short description)~
+(no description)~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#402
+Builder Test Obj 2~
+(no short description)~
+(no description)~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#403
+Builder Test Obj 3~
+(no short description)~
+(no description)~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#404
+Builder Test Obj 4~
+(no short description)~
+(no description)~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#405
+test weapon dagger~
+a test dagger~
+A dagger of testing-ness~
+~
+weapon 0 0 AN
+dagger 3 9 pierce 0 2
+20 31 1540 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 2
+A
+19 2
+#406
+test armor boots~
+test armor boot~
+Some boots of testing...ness? ~
+~
+armor 0 0 AG
+11 11 11 10 0 0
+20 31 26 0 P
+0 0 0 0
+0 0 0 0 0
+#496
+throne bone and wood~
+a `zfur covered`X bone and `Owood`X throne~
+A `zfur covered`X bone and `Owood`X throne~
+~
+furniture SY 0 0
+1 0 ABEHK 300 300 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#497
+high backed wooded chair~
+a high-backed wooded chair~
+A high-backed `Owooden`X chair~
+~
+furniture SY 0 0
+1 0 ABEHK 300 300 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#498
+bone key~
+a small bone key~
+A small bone key~
+~
+permkey STY 0 AO
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#499
+large wooden desk~
+a large `Owooden`X desk~
+A large `Owooden`X desk~
+~
+container 0 0 0
+999990 ABCD 498 999990 100 99999
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#400
+Immortal Lounge~
+Welcome to the Immortal Lounge.
+ 
+This room is where new Immortals meet and greet,
+and where mortals interviewing to become Immortals 
+will start the process, as well as mortals that
+need to petition the Immortals due to a bug or other
+problems.
+~
+~
+~
+~
+~
+~
+0 CK 0 0
+S
+#401
+Builder Test Area~
+This is the first room of the builde test area.
+ 
+The first test is to finde and correct all of the errors
+in this. room description.
+ 
+The second test is in theroom east of this one.
+~
+~
+~
+~
+~
+~
+0 K 0 0
+Deast medium
+~
+~
+~
+~
+0 0 402
+S
+#402
+Builder Test 2~
+This room is the second part of the test.
+ 
+You will type .c to clear the description of
+this room and write a long room description of you own.
+ 
+It needs to be original. Extra points for adding items for flavor
+(you may used VNUMS 401-404 for both objects and mobiles)
+and mobiles, as well as extra descriptions (ed add)
+~
+~
+~
+~
+~
+~
+0 K 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 401
+S
+#498
+~
+~
+~
+~
+~
+~
+~
+0 CK 0 0
+S
+#499
+Om's Office~
+A large circular room, with a fountain in the center and
+a huge balcony looking out over the lands of MARS on the far
+side of the room.
+ 
+The walls themselves are bookshelves covered with dusty tomes
+and scrolls of all kinds, on the left side of the room is a large
+wooden desk, solidly constructed, with a high backed chair behind it
+that is adorned with intricate carvings.
+ 
+On the right side of the room is a raised dias with a throne-like
+wooden and bone chair covered in furs.
+~
+~
+~
+~
+~
+~
+0 CK 0 0
+E
+fountain~
+In the center of the large circular room is a simplistic fountain.
+Carved from sandstone with primitive marking gouged deep into the stonework,
+it appears to have been fashioned from a solid piece, possibly having been
+part of a massive tablet, monument or some other work by a primitive people who
+once inhabited the lands of MARS.
+ 
+The fountain is fill with water so clear that if it was still, it would be almost
+impossible to tell that the fountain isn't empty.
+~
+S
+#0
+
+#RESETS
+M 0 498 1 498 1
+E 1 405 -1 16
+E 1 406 -1 8
+O 0 499 -1 499
+O 0 497 -1 499
+O 0 496 -1 499
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

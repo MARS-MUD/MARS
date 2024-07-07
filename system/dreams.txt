@@ -1,0 +1,41 @@
+#1
+Type normal
+Author 'om'
+Sex either
+Title atuin~
+Aff 13 -7 10
+Aff 13 -1 10
+Seg stuff happens.
+~
+Seg more stuff happens.
+~
+Seg A'Tuin eats you.
+~
+Seg EVEN MORE STUFF HAPPENS!
+~
+End
+
+#2
+Type normal
+Author 'om'
+Sex either
+Title Good Dream~
+Aff 14 100 100
+Aff 12 20 100
+Aff 13 20 100
+Flags A
+Seg Dark clouds roll in from all directions in the sky...
+ 
+Suddenly fog completely obscures vision more than a few paces ahead
+~
+Seg A deep rumbling begins somewhere in the distance
+~
+Seg The fog clears and a bright light banishes the dark clouds.
+~
+Seg You feel calm and safe as the light washed over you
+~
+End
+
+#0
+
+#$

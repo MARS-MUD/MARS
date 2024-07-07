@@ -1,0 +1,954 @@
+#AREADATA
+Version     9
+Name        academy~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       900 999
+Levels      0 0
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    huge
+Created     1632789381
+Changed     1715908513 Thu May 16 21:15:13 2024
+End
+
+#MOBILES
+#900
+Trainer Grimmvir~
+Trainer Grimmvir~
+Trainer Grimmvir stands here raady to instruct you
+~
+~
+human~
+ABGJbc 0 0 0 0 0 100
+0 16 10d10+8400 1d1+249 7d10+0 none
+-23 -23 -23 -23
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+T 'cleric'
+T 'druid'
+T 'fighter'
+T 'mage'
+T 'rogue'
+>act_prog ~
+~
+|
+#901
+Trainer Dunnvir~
+Trainer Dunnvir~
+Trainer Dunnvir is ready to help you practice your skills
+~
+~
+human~
+ABGKc 0 0 0 0 0 100
+0 16 10d10+8400 1d1+249 7d10+0 none
+-23 -23 -23 -23
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+T 'cleric'
+T 'druid'
+T 'fighter'
+T 'mage'
+T 'rogue'
+#902
+weak goblin slave~
+a weakened goblin slave~
+A weak goblin slave is chained up and barely able to move.
+~
+~
+goblin~
+ABG J 0 D -700 0 1
+0 0 1d4+5 1d1+94 1d3+0 none
+19 20 20 20
+0 0 Q C
+stand stand neutral 20
+0 0 small 0 easy ''
+#903
+Angry Orc Blood thirsty bloodthirsty killer deadly~
+the `rB`Rlo`Ood`Rt`Ohir`Rst`ry `GO`gr`Gc`X~
+A `rB`Rlo`Ood`Rt`Ohir`Rst`ry `GO`gr`Gc`X snarls and attacks!
+~
+~
+orc~
+ABFG Ja 0 CD -1000 0 20
+0 3 4d9+360 1d1+209 4d4+6 none
+0 0 0 0
+DHI 0 Q S
+stand stand male 5000
+0 0 medium 0 hard ''
+#904
+Valkris the healer~
+`WV`wal`Yk`wri`Ws`X the Healer~
+`WV`wal`Yk`wri`Ws`X the Healer is here tending to the wounds of those striking out on their first adventure
+~
+~
+human~
+ABGa CDFG T 0 1000 0 121
+0 20 10d15+12350 1d1+249 9d9+3 none
+-31 -32 -31 -32
+0 0 0 0
+stand stand female 0
+0 0 medium 0 hard ''
+>act_prog p pokes you in the ribs.~
+poke $n
+~
+>all_greet_prog 100~
+say You should buy my healing services!
+~
+>speech_prog p healing?~
+say Yes! I offer many healing spells. Type 'heal' for a full list!
+~
+>all_greet_prog 100~
+if hitprcnt($n) < 20
+say You need to heal!
+else 
+if hitprcnt($n) > 20
+say You look rather healthy. Perhaps a cancellation or uncurse, then?
+endif
+endif
+~
+|
+#905
+snake~
+a `Gs`gn`Ga`gk`Ge`X~
+A `Gs`gn`Ga`gk`Ge`X slithers along the marble floors
+~
+~
+snake~
+ABG 0 0 0 0 0 1
+0 0 1d4+5 1d1+94 1d3+0 bite
+20 20 19 20
+0 0 L I
+stand stand male 0
+0 0 small 0 easy ''
+#906
+kobold cranky little~
+a cranky little `Yk`Oo`Yb`Oo`Yl`Od`X~
+A cranky little `Yk`Oo`Yb`Oo`Yl`Od`X shuffles about, cursing
+~
+~
+kobold~
+ABGH J 0 0 -300 0 1
+0 0 1d4+5 1d1+94 1d3+0 stab
+19 20 20 20
+0 0 L C
+stand stand male 50
+0 0 medium 0 easy ''
+#907
+rotting corpse shambling zombie~
+a `gs`Oh`Ya`Gm`Yb`Ol`gi`On`Yg `Rz`ro`wm`wb`ri`Re`X~
+A `gs`Oh`Ya`Gm`Yb`Ol`gi`On`Yg `Rz`ro`wm`wb`ri`Re`X lumbers about looking for prey
+~
+~
+zombie~
+ABGOc d 0 0 -1000 0 2
+0 0 1d4+15 1d1+104 1d5+0 none
+15 14 14 15
+OU 0 0 0
+stand stand male 20
+0 0 medium 0 medium ''
+#908
+Quest Master Todd~
+Questmaster Todd~
+The Todd is here to tell you where to go and what to do there
+~
+~
+human~
+ABGLc 0 0 0 0 0 100
+17 0 10d10+9300 1d1+249 8d9+1 none
+-25 -25 -25 -25
+0 0 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+>speech_prog p adventure?~
+if name($n) == Om
+say Om, you already know what the adventurer's guild is. Idiot.
+else
+say Adventure? Excitement? A jedi craves not these things. But you probably do. Type 'quest' for more info!
+endif
+~
+|
+#909
+Shopkeeper Dar~
+Shopkeeper Dar~
+Shopkeeper Dar is here hawking his wares
+~
+~
+human~
+ABGc 0 0 0 0 0 110
+19 0 10d10+10700 1d1+249 7d11+1 scratch
+-28 -28 -28 -28
+0 0 0 0
+stand stand male 9999999
+0 0 medium 0 hard ''
+>all_greet_prog 100~
+if isgood($n)                                   
+if rand(100)                                    
+mpechoat $n $I tips $l hat at you.         
+mpechoaround $n $I tips $l hat at $n.      
+endif                                         
+else                                             
+mutter $n                                      
+endif
+~
+>all_greet_prog 100~
+if isimmortal($n)
+say Greetings, $n! I hope you have a wonderful day!
+else
+say Perhaps you'd like to purchase some of my fine wares?
+endif
+ 
+~
+|
+#993
+horse sleipnir~
+The Eight Legged Steed, Sleipnir~
+A massive horse with eight legs grazes here
+~
+~
+horse~
+ABEGc 0 0 0 0 0 120
+21 0 10d15+12700 1d1+249 9d9+4 none
+-32 -32 -32 -32
+H 0 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+#999
+DEATH~
+`zDEATH`X himself~
+A dark cloaked figure all in `zblack`X reaches a skeletal hand toward you
+~
+~
+undead~
+AGOc 0 CDEFGHIJKLMNOPQRSTW 0 0 0 120
+20 0 30d12+12225 1d1+249 9d9+2 slash
+-31 -31 -31 -31
+O BILQR 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+>act_prog death~
+say Yes. I am death.
+~
+>act_prog GRALL~
+if ISPC $n
+say You're a player!
+else
+say Hey, you're a mob, go away.
+endif
+~
+|
+#0
+
+#OBJECTS
+#900
+mace iron~
+an iron mace~
+A mace made of iron and wood lies here~
+iron~
+weapon 0 0 AN
+mace 1 6 pound 0 2
+1 960 50 0 P
+0 0 0 0
+0 0 0 0 0
+#901
+rough iron dagger~
+an iron dagger~
+A rough iron dagger with cloth wrapped tang~
+iron~
+weapon 0 0 AN
+dagger 1 4 pierce 0 2
+1 320 20 0 P
+0 0 0 0
+0 0 0 0 0
+#902
+iron sword old long longsword~
+an old iron longsword~
+An old iron longsword, rusted and pitted~
+~
+weapon 0 0 AN
+short_sword 1 8 slash 0 2
+1 640 150 0 P
+0 0 0 0
+0 0 0 0 0
+#903
+wooden spear~
+a wooden spear~
+A simple wooden spear~
+wood~
+weapon S 0 AN
+spear 1 8 stab F 3
+1 860 20 0 P
+0 0 0 0
+0 0 0 0 0
+#904
+ancient wood length gnarled staff~
+an ancient gnarled staff~
+An old gnarled length of wood~
+wood~
+weapon 0 0 AN
+staff 1 6 pound F 2
+1 180 10 0 P
+0 0 0 0
+0 0 0 0 0
+#905
+iron bearded axe~
+an iron bearded axe~
+A bearded iron axe~
+iron~
+weapon 0 0 AN
+axe 1 6 chop 0 3
+1 640 30 0 P
+0 0 0 0
+0 0 0 0 0
+#906
+iron flail~
+an iron flail~
+An iron flail~
+iron~
+weapon 0 0 AN
+flail 1 8 whip 0 2
+1 640 20 0 P
+0 0 0 0
+0 0 0 0 0
+#907
+leather braided bullwhip~
+a leather braided bullwhip~
+A length of leather coiled like a snake~
+leather~
+weapon 0 0 AN
+whip 1 2 whip 0 2
+1 180 10 0 P
+0 0 0 0
+0 0 0 0 0
+#908
+polearm long iron~
+a long iron polearm~
+A long polearm made of iron~
+iron~
+weapon 0 0 AN
+polearm 1 10 smash F 4
+1 640 60 0 P
+0 0 0 0
+0 0 0 0 0
+#909
+hammer iron heavy~
+a heavy iron hammer~
+A heavy hammer made of iron~
+iron~
+weapon 0 0 AN
+hammer 1 8 pound 0 3
+1 420 40 0 P
+0 0 0 0
+0 0 0 0 0
+#910
+leather vest red~
+a `Rred `Oleather`X vest~
+A vest of red leather~
+leather~
+armor S 0 AK
+1 1 1 0 0 0
+1 100 10 0 P
+0 0 0 0
+0 0 0 0 0
+#911
+darkwood shield round~
+the darkwood shield~
+A round darkwood shield~
+wood~
+armor GSY 0 AJ
+11 12 12 5 0 0
+1 0 50 0 P
+0 0 0 0
+0 0 0 0 0
+#912
+banner cloth standard~
+a battle standard~
+A battle standard banner on a pole~
+cloth~
+armor S 0 AO
+1 2 1 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#913
+leather boots brown~
+`Obrown`X leather boots~
+Some old leather boots~
+leather~
+armor S 0 AG
+2 1 1 1 0 0
+1 50 4 0 P
+0 0 0 0
+0 0 0 0 0
+#914
+linen shirt blue~
+a `Bblue`w linen`X shirt~
+A blue shirt made of fine linen~
+cloth~
+armor S 0 AD
+2 1 1 1 0 0
+1 0 2 0 P
+0 0 0 0
+0 0 0 0 0
+#915
+leather pants brown~
+some `Obrown`X leather pants~
+Some leather pants lie folded here~
+leather~
+armor S 0 AF
+1 1 2 0 0 0
+1 40 5 0 P
+0 0 0 0
+0 0 0 0 0
+#916
+map of the area~
+a roughly drawn map~
+A roughly drawn map of the area~
+paper~
+map S 0 A
+1 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#917
+donation box test~
+test donation box~
+A test donation box~
+~
+container 0 0 0
+10000000 ABC 0 50000 10 10000
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#918
+leather gloves~
+plain `Oleather`X gloves~
+Some plain leather gloves~
+leather~
+armor SY 0 AH
+1 2 1 0 0 0
+1 100 10 0 P
+0 0 0 0
+0 0 0 0 0
+#919
+comfortable pile of pillows~
+a comfortable pile of pillows~
+A huge pile of fluffy comfy pillows on a circular rug~
+~
+furniture SY 0 0
+999 0 EHK 300 300 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#920
+Mace of Strife~
+`zM`wace `cof `RS`zt`rife`X~
+An ominous looking mace~
+iron~
+weapon CGSY 0 AN
+mace 30 3 wrath ABCDEGHJKLM 50
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#921
+endless decanter of mead~
+an endless decanter of mead~
+A simple decanter~
+~
+drink SY 0 A
+9999 9999 'honey' 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#922
+leather bracers~
+leather bracers~
+Some leather bracers~
+leather~
+armor SY 0 AM
+2 2 1 1 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#923
+leather sleeves~
+leather sleeves~
+Some long leather sleeves~
+~
+armor SY 0 AI
+2 2 1 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#924
+glittering gold earring~
+a `Yglittering `Ogold`X earring~
+A bit of glittering gold with a metal spike~
+~
+jewelry SY 0 AT
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 1
+A
+19 1
+A
+13 5
+#925
+leather pauldrons~
+simple `Oleather`X pauldrons~
+Some thick leather pauldrons~
+~
+armor SY 0 AW
+1 2 1 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#926
+tin helmet~
+a `ztin`X helmet~
+A dull tin helmet~
+~
+armor 0 0 AE
+2 2 2 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#927
+mask shiny tin~
+a shiny `ztin`X mask~
+A shiny tin mask~
+~
+armor SY 0 AS
+1 2 1 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#928
+leather gloves plain~
+plain `Oleather`X gloves~
+Some plain leather gloves~
+~
+armor SY 0 AH
+1 1 1 1 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#929
+silver chain anklet~
+a silver chain anklet~
+A small silver chain~
+~
+armor SY 0 AX
+1 1 2 1 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#930
+leather belt~
+a plain `Oleather`X belt~
+A strip of leather with a buckle~
+~
+armor SY 0 AL
+1 1 1 1 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#931
+tail guard armor~
+tail armor~
+It's a test item. if you see this, tell an immortal for a bounty!~
+~
+armor 0 0 AY
+13 13 13 6 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#932
+hooded lantern oil~
+a hooded oil lantern~
+A hooded lantern flickers~
+~
+light SY 0 AO
+0 0 99999 0 0 0
+0 0 5 0 P
+0 0 0 0
+0 0 0 0 0
+#933
+glasses wire rim~
+a pair of wire glasses~
+Some bits of copper wire twisted around small glass lenses~
+copper~
+armor Y 0 AR
+1 1 1 0 0 0
+1 0 10 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 5
+A
+12 5
+A
+4 2
+A
+3 2
+#934
+patch immortal~
+an IMMORTALS patch~
+......~
+~
+armor 0 0 AU
+13 14 14 6 0 0
+30 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#935
+Mjolnir necklace~
+a Mjolnir necklace~
+...~
+~
+armor G 0 AV
+12 13 13 6 0 0
+30 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+4 5
+A
+3 5
+A
+5 5
+A
+2 5
+A
+1 5
+A
+19 50
+A
+18 50
+#936
+loaf of bread~
+a loaf of bread~
+Some bread~
+~
+food 0 0 A
+1 2 0 0 300 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#937
+scroll of sanctuary~
+scroll of sanctuary~
+Scroll of sanctuary~
+~
+scroll 0 0 A
+10 'sanctuary' 'black mantle' 'reserved' 'reserved' 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#994
+test quiver~
+a test quiver~
+It's a test quiver. if you're not an IMM you shouldn't have this~
+~
+quiver 0 0 AW
+2000 6 10 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#996
+horn caps spiked~
+spiked horn caps~
+Some strange hollow spikes~
+~
+armor SY 0 AZ
+14 13 14 7 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+19 30
+A
+18 30
+A
+4 2
+A
+3 2
+A
+5 2
+A
+2 2
+A
+1 2
+#997
+1000qp quest token~
+a `R1000`Pqp`X quest token!~
+A round token with a `R1000`X on the front~
+~
+treasure DSTYe 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#998
+Quest Token 100qp~
+a `C100`Pqp`X quest token~
+A token stamped with a `C100`X on it~
+~
+treasure STYe 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#999
+deaths death scythe of~
+Death's Scythe~
+Death's own scythe~
+~
+weapon CGSY 0 AN
+exotic 30 6 cleave BCDEFKLM 30
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#900
+Temple of Blackmere~
+This temple is very simple in its design, with only a basic altar and a 
+small area for the healer, Valkris to tend to the wounds of adventurers.
+~
+~
+~
+~
+~
+~
+0 DKa 0 0
+Dsouth huge
+~
+~
+~
+~
+0 0 951
+S
+#939
+newbie morgue~
+This is where newbie corpses go
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dwest huge
+~
+~
+~
+~
+0 0 951
+S
+#940
+Adventurer's Guild~
+~
+~
+~
+~
+~
+~
+0 DKa 0 0
+Deast huge
+~
+~
+~
+~
+0 0 951
+S
+#951
+Entrance to Main City~
+This will be the entrance to the city of Blackmere... eventually.
+ 
+If you've enjoyed yourself thus far, just wait until there's actual areas
+for you to explore and level up
+~
+~
+~
+~
+~
+~
+0 DKa 0 0
+Dnorth huge
+~
+~
+~
+~
+0 0 900
+Deast huge
+~
+~
+~
+~
+0 0 939
+Dwest huge
+~
+~
+~
+~
+0 0 940
+Dup huge
+~
+~
+~
+~
+0 0 601
+S
+#994
+Drowning test~
+This is for testing drowning and swimming.
+~
+~
+~
+~
+~
+~
+0 C 0 6
+S
+#995
+`CUNDERWATER!`X~
+`CYOU'RE UNDERWATER AND DROWNING FAST!`X
+~
+~
+~
+~
+~
+~
+0 CTa 0 8
+S
+#997
+Om's Office~
+~
+~
+~
+~
+~
+~
+0 CFNT 0 9
+S
+#998
+Jail~
+A swirling void of inky blackness extends as far as the eye
+can see in every direction. One could wander here forever and never die.
+The dark energies of this frozen black void sustain those who are trapped here
+insuring that their souls never rest. Only the Immortals can release them from
+this hell.
+~
+~
+~
+~
+~
+~
+0 CDFKNT 0 24
+Dnorth titanic
+~
+~
+~
+~
+0 0 998
+Deast titanic
+~
+~
+~
+~
+0 0 998
+Dsouth titanic
+~
+~
+~
+~
+0 0 998
+Dwest titanic
+~
+~
+~
+~
+0 0 998
+Dup titanic
+~
+~
+~
+~
+0 0 998
+Ddown titanic
+~
+~
+~
+~
+0 0 998
+Dnorthwest titanic
+~
+~
+~
+~
+0 0 998
+Dnortheast titanic
+~
+~
+~
+~
+0 0 998
+Dsouthwest titanic
+~
+~
+~
+~
+0 0 998
+Dsoutheast titanic
+~
+~
+~
+~
+0 0 998
+S
+#999
+Om's Death Room~
+If you're here, you really screwed up.
+~
+~
+~
+~
+~
+~
+0 Ca 0 6
+S
+#0
+
+#RESETS
+M 0 904 1 900 1
+M 0 908 1 940 1
+G 1 211 -1
+G 1 202 -1
+M 0 999 1 999 1
+E 1 999 -1 16
+S
+
+#SHOPS
+908  0  0  0  0  0      100  75    0 23
+909  5  9 10  8  0      100  75   12 20
+0
+
+#SPECIALS
+M 903 spec_nasty
+M 904 spec_resurrect
+M 908 spec_questmaster
+S
+
+#$

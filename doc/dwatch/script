@@ -1,0 +1,4 @@
+host=`cut -f 2-9 -d . <<EOF
+$HOSTNAME
+EOF
+`

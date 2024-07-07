@@ -1,0 +1,4121 @@
+#CMD north
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD east
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD south
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD west
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD up
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD down
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD northeast
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD northwest
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD southeast
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD southwest
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD neast
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD nwest
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD seast
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD swest
+Pos stand
+Lvl 0
+Log never
+Flags AH
+Sec 0
+End
+
+#CMD road
+Pos stand
+Lvl 0
+Log never
+Flags GH
+Sec 0
+End
+
+#CMD ride
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD at
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD auction
+Pos sleep
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD buy
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD butcher
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD cast
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD channels
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD clans
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD clantalk
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD exits
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD finger
+Pos dead
+Lvl Throne
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD get
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD go
+Pos stand
+Lvl 0
+Log normal
+Flags AGH
+Sec 0
+End
+
+#CMD group
+Pos sleep
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD hit
+Pos fight
+Lvl 0
+Log normal
+Flags AGH
+Sec 0
+End
+
+#CMD inventory
+Pos dead
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD kill
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD look
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ls
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD lore
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD order
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD practice
+Pos sleep
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD quest
+Pos stand
+Lvl 3
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD rest
+Pos sleep
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD remove
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sit
+Pos sleep
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sockets
+Pos dead
+Lvl Powers
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD stand
+Pos sleep
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD steer
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD tell
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD unlock
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD wield
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD wizhelp
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wizify
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD set
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD set_coder
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD affects
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD areas
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD bug
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD cinfo
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD commands
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD compare
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD consider
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD condition
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD count
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD credits
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD equipment
+Pos dead
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD examine
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD help
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD hinfo
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD houses
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD housetalk
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD htalk
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ignore
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD info
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD kingdoms
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD map
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD matrix
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD motd
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD played
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD racelist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD read
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD report
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD rules
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD score
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD score2
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oldscore
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD scan
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD skills
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD skin
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD smell
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD socials
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD gocial
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD show
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD spells
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD story
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD time
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD triage
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD track
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD typo
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD weather
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD who
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD idlers
+Pos dead
+Lvl 0
+Log normal
+Flags D
+Sec 0
+End
+
+#CMD whois
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wizlist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD worth
+Pos sleep
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD alia
+Pos dead
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD alias
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autolist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autoassist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autodamagedealt
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autoexit
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autogold
+Pos dead
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD autocoins
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autoloot
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autometer
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autosac
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autosplit
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD autotick
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD brief
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD clear
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD combine
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD compact
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD config
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD description
+Pos dead
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD delete
+Pos stand
+Lvl 0
+Log always
+Flags CH
+Sec 0
+End
+
+#CMD nofollow
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD noloot
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD nosummon
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD noexp
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD outfit
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD password
+Pos dead
+Lvl 0
+Log never
+Flags 0
+Sec 0
+End
+
+#CMD prompt
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD scroll
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD title
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD unalias
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wimpy
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD afk
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD answer
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD boards
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD deaf
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD dream
+Pos sleep
+Lvl Avatar
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD emote
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD gossip
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ,
+Pos rest
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD gtell
+Pos dead
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD ;
+Pos dead
+Lvl 0
+Log normal
+Flags AH
+Sec 0
+End
+
+#CMD hero
+Pos rest
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD newbie
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD note
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pose
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ooc
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD .
+Pos sleep
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD osay
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pmote
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pray
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD question
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD quiet
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD remote
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD reply
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD replay
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD review
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD say
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD "'"
+Pos rest
+Lvl 0
+Log normal
+Flags AH
+Sec 0
+End
+
+#CMD '"'
+Pos rest
+Lvl 0
+Log normal
+Flags AH
+Sec 0
+End
+
+#CMD sayto
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD whisper
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD shout
+Pos rest
+Lvl 3
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD unread
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD yell
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD bid
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD brandish
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD brew
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD breathe
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD close
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD donate
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD drink
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD drop
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD dual
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD eat
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD envenom
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD empty
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD fill
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD give
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD glance
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD heal
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD hold
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD invoke
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD join
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD knock
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD list
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD lock
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD open
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD pick
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD pour
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD put
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD purify
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD quaff
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD recite
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD rename
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD rub
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sell
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sheath
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sharpen
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD take
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sacrifice
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD junk
+Pos rest
+Lvl 0
+Log normal
+Flags AGH
+Sec 0
+End
+
+#CMD search
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD separate
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD stare
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD study
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD value
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD wear
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD zap
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD listen
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD assassinate
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD backstab
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD bash
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD bs
+Pos fight
+Lvl 0
+Log normal
+Flags AGH
+Sec 0
+End
+
+#CMD berserk
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD charge
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD circle
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD dirt
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD dk
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD disarm
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD engage
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD flee
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD kick
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD blackjack
+Pos stand
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD murder
+Pos fight
+Lvl 5
+Log always
+Flags CGH
+Sec 0
+End
+
+#CMD rescue
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD trip
+Pos fight
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD deathgrip
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD whirlwind
+Pos fight
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD discharge
+Pos rest
+Lvl 0
+Log always
+Flags EGH
+Sec 0
+End
+
+#CMD induct
+Pos rest
+Lvl 0
+Log always
+Flags EGH
+Sec 0
+End
+
+#CMD outcast
+Pos rest
+Lvl 0
+Log always
+Flags EGH
+Sec 0
+End
+
+#CMD setlev
+Pos rest
+Lvl 0
+Log always
+Flags EGH
+Sec 0
+End
+
+#CMD balance
+Pos stand
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD deposit
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD dismount
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD embark
+Pos stand
+Lvl 1
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD enter
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD follow
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD gain
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD greet
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD groups
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD hide
+Pos rest
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD introduce
+Pos rest
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD leave
+Pos stand
+Lvl 1
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD mount
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD mountname
+Pos rest
+Lvl Angel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD petname
+Pos rest
+Lvl Angel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pull
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD push
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD quit
+Pos dead
+Lvl 0
+Log normal
+Flags CH
+Sec 0
+End
+
+#CMD recall
+Pos fight
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD rent
+Pos dead
+Lvl 0
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD sail
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD save
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD sleep
+Pos sleep
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD sneak
+Pos stand
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD split
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD steal
+Pos stand
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD tether
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD touch
+Pos stand
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD train
+Pos rest
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD untether
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD visible
+Pos sleep
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wake
+Pos sleep
+Lvl 0
+Log normal
+Flags H
+Sec 0
+End
+
+#CMD where
+Pos rest
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD withdraw
+Pos stand
+Lvl 0
+Log normal
+Flags GH
+Sec 0
+End
+
+#CMD admin
+Pos dead
+Lvl Throne
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD [
+Pos dead
+Lvl Throne
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD advance
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD addapply
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD aedit
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD aexits
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD afind
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ainfo
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD alist
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD allow
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD announce
+Pos dead
+Lvl Angel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD asave
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD astat
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD astrip
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD arealinks
+Pos dead
+Lvl Seraphim
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD avatar
+Pos rest
+Lvl 1
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD award
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD badname
+Pos dead
+Lvl Virtues
+Log args
+Flags 0
+Sec 0
+End
+
+#CMD bamfin
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD bamfout
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ban
+Pos dead
+Lvl Throne
+Log args
+Flags 0
+Sec 0
+End
+
+#CMD beacon
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD bedit
+Pos dead
+Lvl Seraphim
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD blist
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD bodybag
+Pos dead
+Lvl Visitor
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD cedit
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD clone
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD cmdstat
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD cmdedit
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD coder
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD \
+Pos dead
+Lvl Cherubim
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD coding
+Pos dead
+Lvl Seraphim
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD copyover
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD cset
+Pos dead
+Lvl Cherubim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD cstat
+Pos dead
+Lvl 110
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD ctimes
+Pos dead
+Lvl Cherubim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD debug
+Pos dead
+Lvl Seraphim
+Log always
+Flags A
+Sec 0
+End
+
+#CMD dedit
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD deny
+Pos dead
+Lvl Cherubim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD descount
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD detract
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD disconnect
+Pos dead
+Lvl Powers
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD dlist
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD dreamedit
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD dstat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD dump
+Pos dead
+Lvl Seraphim
+Log always
+Flags A
+Sec 0
+End
+
+#CMD echo
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD edit
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD efind
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD elist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD empower
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD eplist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD epstat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD findlock
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD flag
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD force
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD forcetick
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD freeze
+Pos dead
+Lvl Powers
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD gecho
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD gedit
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD goto
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD grant
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD guild
+Pos dead
+Lvl Powers
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD hedit
+Pos dead
+Lvl Seraphim
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD hfind
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD hlist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD holylight
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD hotboot
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD :
+Pos dead
+Lvl Visitor
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD immtalk
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD imote
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD imotd
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD implementor
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD =
+Pos dead
+Lvl Seraphim
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD incognito
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD instaroom
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD invis
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD isocial
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD iscore
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD istat
+Pos dead
+Lvl 0
+Log never
+Flags 0
+Sec 0
+End
+
+#CMD jail
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD last
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD lastmod
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD launch
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD linkdead
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD load
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD log
+Pos dead
+Lvl Cherubim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD medit
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD memory
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mfind
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mlist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mload
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD mob
+Pos dead
+Lvl 1
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD mobcount
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mpcommands
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mplist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mpstat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mreset
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mset
+Pos dead
+Lvl Avatar
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD mstat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mwhere
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mskill
+Pos dead
+Lvl Powers
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD mspell
+Pos dead
+Lvl Powers
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD newlock
+Pos dead
+Lvl Powers
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD new_change
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD nochannels
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD noemote
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD noshout
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD notell
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD nukereply
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pnuke
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oedit
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD ofind
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD olist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oload
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD olocate
+Pos dead
+Lvl Powers
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD omni
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oplist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD opstat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oreset
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD oset
+Pos dead
+Lvl Visitor
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD ostat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD owhere
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pardon
+Pos dead
+Lvl Dominion
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD pack
+Pos dead
+Lvl Visitor
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD peace
+Pos dead
+Lvl Virtues
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD pecho
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD pedit
+Pos dead
+Lvl Avatar
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD permban
+Pos dead
+Lvl Cherubim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD pkill
+Pos dead
+Lvl Throne
+Log args
+Flags 0
+Sec 0
+End
+
+#CMD pload
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD plist
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD poofin
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD poofout
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD prefix
+Pos dead
+Lvl Visitor
+Log normal
+Flags C
+Sec 0
+End
+
+#CMD project
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD protect
+Pos dead
+Lvl Cherubim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD punload
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD pipe
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD purge
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD pwhere
+Pos dead
+Lvl Avatar
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD racestat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD racedit
+Pos dead
+Lvl Cherubim
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD rdesc
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD reboot
+Pos dead
+Lvl Seraphim
+Log always
+Flags CD
+Sec 0
+End
+
+#CMD nreboot
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD rebuild
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD recent
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD redit
+Pos dead
+Lvl Archangel
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD rename_char
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD resets
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD restore
+Pos dead
+Lvl Powers
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD return
+Pos dead
+Lvl Angel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rfind
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rinfo
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rip
+Pos stand
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD rlist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rnumber
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rplist
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rpstat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD rstat
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD scatter
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD secedit
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD seclist
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD sedit
+Pos sleep
+Lvl Seraphim
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD sedshow
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD seize
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD shutdown
+Pos dead
+Lvl Seraphim
+Log always
+Flags C
+Sec 0
+End
+
+#CMD skedit
+Pos dead
+Lvl Seraphim
+Log build
+Flags 0
+Sec 0
+End
+
+#CMD skstat
+Pos dead
+Lvl Throne
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD slay
+Pos dead
+Lvl Dominion
+Log always
+Flags C
+Sec 0
+End
+
+#CMD slist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD slookup
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD smite
+Pos dead
+Lvl Dominion
+Log always
+Flags C
+Sec 0
+End
+
+#CMD smote
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD snoop
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD socstat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD sqldump
+Pos dead
+Lvl Seraphim
+Log args
+Flags 0
+Sec 0
+End
+
+#CMD sset
+Pos dead
+Lvl Avatar
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD stat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD string
+Pos dead
+Lvl Avatar
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD switch
+Pos dead
+Lvl Angel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD teleport
+Pos dead
+Lvl Virtues
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD todo
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD transfer
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD travstat
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD trust
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD ungreet
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD unlaunch
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD uptime
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD users
+Pos dead
+Lvl Powers
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD usage
+Pos dead
+Lvl Seraphim
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD violate
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD vlist
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD whoborder
+Pos dead
+Lvl Seraphim
+Log args
+Flags 0
+Sec 0
+End
+
+#CMD whotext
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wizinvis
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wizlock
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD wiznet
+Pos dead
+Lvl Visitor
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD wizpwd
+Pos dead
+Lvl Seraphim
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD wpeace
+Pos dead
+Lvl Throne
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD vfree
+Pos dead
+Lvl Avatar
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD vnum
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD vused
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD youcount
+Pos dead
+Lvl Archangel
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD zecho
+Pos dead
+Lvl Archangel
+Log always
+Flags 0
+Sec 0
+End
+
+#CMD mudbackup
+Pos dead
+Lvl Cherubim
+Log always
+Flags A
+Sec 0
+End
+
+#CMD mudstat
+Pos dead
+Lvl Cherubim
+Log always
+Flags A
+Sec 0
+End
+
+#CMD immlist
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD setcolor
+Pos dead
+Lvl 0
+Log normal
+Flags 0
+Sec 0
+End
+
+#CMD bank
+Pos stand
+Lvl 0
+Log normal
+Flags G
+Sec 0
+End
+
+#CMD mpacquaint
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpaecho
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpasound
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpat
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpcancel
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpclose
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpdamage
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpdelay
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpecho
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpechoaround
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpechoat
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpforce
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpforget
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpgive
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpgoto
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpgtransfer
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpjunk
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpkill
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mplock
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpmload
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpoload
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpopen
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mppeace
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mppurge
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpremember
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpsecho
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpsechoaround
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpsechoat
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpsecret
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpsetpos
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mptake
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpteleport
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mptransfer
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpunhide
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD mpunlock
+Pos dead
+Lvl 1
+Log normal
+Flags AB
+Sec 0
+End
+
+#CMD delevel
+Pos dead
+Lvl Avatar
+Log normal
+Flags A
+Sec 0
+End
+
+#CMD relevel
+Pos dead
+Lvl 1
+Log always
+Flags A
+Sec 0
+End
+
+#$

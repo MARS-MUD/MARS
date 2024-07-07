@@ -1,0 +1,130 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *
+*    ******  ***** *****        *****          ******  * **      *       ***  *
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *
+*      *  *    *     *           *  **           *  *    *       ***          *
+*     ** **    *     *           *  **          ** **   *       ** ***        *
+*     ** **    *     *          *    **         ** **  *         *** ***      *
+*     ** **    *     *          *    **         ** ****            *** ***    *
+*     ** **    *     *         *      **        ** **  ***           *** ***  *
+*     ** **    *     **        *********        ** **    **            ** *** *
+*     *  **    *     **       *        **       *  **    **             ** ** *
+*        *     *      **      *        **          *     **              * *  *
+*    ****      *      **     *****      **     ****      ***   ***        *   *
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *
+*  *     **                *     **      **  *    **     *   *     *****      *
+*  *                       *                 *               *                *
+*    **                      **                **              **             *
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+
+As of July 7th, 2024 all of these ideas have been scrapped and the entire game has
+been rebuilt to be in line with Dungeons and Dragons; While the campaign setting is
+original to avoid copyright issues, the basics are kept in line with items released
+under the Open Gaming License.
+
+Races: Dragonborn, Drow, Dwarf, Elf, Half-Elf, Halfling, Half-Orc, Human, Gnome and
+Tiefling.
+
+Classes: Cleric, Druid, Fighter, Mage, Rogue
+Classes still to be added: Barbarian, Bard, Monk, Paladin, Ranger, Sorcerer and Wizard
+
+New TODO for MARS
+======================
+Add "cooldown" system so that a skill or spell can only be used X amount of times per in-game
+day.
+
+Add spell memorization system; all spellcasters will have a set amount of spell slots per
+spell level that they can use for memorizing spells per in-game day. e.g. at level 20 a Wizard (Mage)
+would be able to memorize the following number of spells for each level:
+Spell Level | Number of spells per day
+1 | 4
+2 | 3
+3 | 3
+4 | 3
+5 | 3
+6 | 2 
+7 | 2
+8 | 1 
+9 | 1
+
+This means they'd be able to memorize 4x level 1 spells, though they can sacrifice spell slots to memorize
+multiples of the same spell. Like 4 castings of Magic Missile, instead of 4 different level 1 spells.
+
+Additional plans for magic will be adding a separate casting system for songs, prayers, etc.
+
+
+For skills, the plan is to assess the list of feats and determine which of them would make for good/useful
+skills in-game, and assigning a cooldown if necessary.
+
+/**************************************************************************************/
+
+TODO for MARS
+======================
+- Change Acid Geyser spell to AoE
+- Add lagged daze affect to Daze spell
+- Detect life should only work on the living
+- Dragonscales should damage the target slightly
+- Full Heal needs cooldown
+- Class skills/spells and groups need to be balanced
+- Add 2 extra finger slots, usable only by humans
+- Add Extra trains and practices at start and each level for Elves
+- Add ... something for dwarves. Maybe a Gemstone wear slot?
+- Add haggle bonus for Half Elves
+- Add summon mechanoid for Gnomes
+- Add check on 2h weapons to let Half-Orcs use 2h in each hand
+- Add Tiefling race - Done
+- Add horns gear slot for Tiefling - Done
+- Add Dragonborn race - Done
+- Add Woodland Mount for Halflings - Done ish
+- Add language code
+
+
+Todo for Fighter
+======================
+- Add Whirlwind Attack
+- Add Shield Bash
+-
+
+Todo for Mage
+======================
+
+Todo for Rogue
+======================
+
+Todo for Cleric
+======================
+
+Todo for Druid
+======================

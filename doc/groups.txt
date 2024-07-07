@@ -1,0 +1,125 @@
+/*
+ * Cleric Domains
+ */
+ 
+{
+ "divine domain"
+ { 10, -1, -1, -1, -1}.
+ { "aid", "aura of peace", "bless", "calm", "celestial lightning",
+ "holy word", "ray of truth", "remove curse", "resurrect" }
+ },
+
+{
+ "healing domain"
+ { 10, -1, -1, -1, -1}.
+ { "cure blindness", "cure critical", "cure disease", "cure drunk", 
+ "cure light", "cure poison", "cure serious", "full heal", "heal",
+ "healing hands", "mana", "mass healing", "refresh"}
+ },
+
+ 
+ {
+ "protection domain"
+ { 10, -1, -1, -1, -1}.
+ { "protection good", "protection evil", "sanctuary"}
+ },
+
+ 
+ {
+ "strength domain"
+ { 10, -1, -1, -1, -1}.
+ { "barrage", "bears endurance", "bulls strength", "cats grace", "fox cunning",
+   "frenzy", "owls wisdom", "strike true"}
+ },
+
+ 
+ {
+ "death domain"
+ { 10, -1, -1, -1, -1}.
+ { "cause critical", "cause light", "cause serious", "harm" }
+ },
+
+/*
+ * Druid Spells
+ */
+
+{
+ "nature magic"
+ { -1, 20, -1, -1, -1}.
+ { "acid geyser", "animal summoning", "astral walk", "barkskin", 
+   "bear claws", "bear fat", "call lightning", "chain lightning",
+   "control weather", "curse of nature", "dragonscales", "earthquake",
+   "faerie fire", "faerie fog", "goodberry", "hurricane", "infravision",
+   "natural armor", "summon greater wolf", "summon hawk", "summon tiger",
+   "summon wolf", "telekinetic force" }
+ },
+
+/*
+ * Mage Schools
+ */
+ 
+{
+ "abjuration"
+ { -1, -1, -1, 10, -1}.
+ {"armor", "cancellation", "dispel evil", "dispel good", "dispel magic",
+  "flame shield", "forceshield", "shield", "spellmantle", "static shield" }
+ },
+
+
+ {
+ "conjuration"
+ { -1, -1, -1, 10, -1}.
+ {"acid breath", "fire breath", "frost breath", "gas breath", "lightning breath",
+  "blade barrier", "continual light", "create food", "create rose", "create spring",
+  "create water", "dancing boots", "disruption", "floating disc", "gate", "nexus", 
+  "portal", "summon", "summon fire elemental", "summon greater golem", "teleport",
+  "word of recall" }
+ },
+
+ {
+ "divination"
+ { -1, -1, -1, 10, -1}.
+ { "detect auras", "detect evil", "detect life", "detect good", "detect hidden",
+   "detect invis", "detect magic", "detect poison", "farsight", "identify", 
+   "know alignment", "locate object", "scry", "truesight" }
+ },
+
+ 
+ {
+ "enchantment"
+ { -1, -1, -1, 10, -1}.
+ {"charm person", "enchant armor", "enchant weapon", "fireproof", "recharge", "sleep" }
+ },
+
+{
+ "evocation"
+ { -1, -1, -1, 10, -1}.
+ { "acid arrow", "acid blast", "acid rain", "burning hands", "caustic eruption", "chill touch",
+   "colour spray", "cone of cold", "corrosive burst", "electrocute", "fireball", 
+   "flamestrike", "ion blast", "lightning bolt", "magic missile", "project force", 
+   "rushing fist", "shocking grasp" }
+ },
+
+ {
+ "illusion"
+ { -1, -1, -1, 10, -1}.
+ {"blindness", "dancing lights", "daze", "deafen", "invis", "mass invis", "sleep"
+ "ventriloquate" }
+ },
+
+ {
+ "necromancy"
+ { -1, -1, -1, 10, -1}.
+ {"animate", "atrophy", "banshee blast", "black mantle", "curse", "damnation", 
+ "darkness shield", "dark ritual", "demonfire", "energy drain", "ghost shield",
+ "hellfire", "plague", "poison", "wail of the banshee" }
+ },
+
+ {
+ "transmutation"
+ { -1, -1, -1, 10, -1}.
+ {"change sex", "enlarge", "fly", "giant strength", "haste", "heat metal", "pass door",
+ "shrink", "slow", "stone skin", "weaken" }
+ },
+
+ 

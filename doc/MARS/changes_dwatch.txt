@@ -1,0 +1,864 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+05/08/2003 - REK
+Added new races and classes for Elysiums Gate
+comm.c const.c db.c globals.c merc.h save.c
+
+05/06/2003 - REK
+changed MAX_LEVEL to 210, renamed binary to egate
+merc.h startup
+
+04/22/2003 - REK
+Added whotext, rewrote do_who()
+act_info.c act_wiz2.c interp.c interp.h merc.h recycle.c save.c
+
+04/20/2003 - REK
+Tweaked do_invis()
+act_wiz.c
+
+04/20/2003 - REK
+Removed vampire stuff, for now at least.
+const.c interp.c merc.h save.c Makefile
+
+04/17/2003 - REK
+Wrote new scan command
+act_info.c const.c merc.h scan.c
+
+04/12/2003 - REK
+Revised help to only show first help item found unless prefixed by the word
+"all" (eg "help item" vs "help all item").
+act_info.c
+
+04/01/2003 - REK
+Added "not" to mobprog ifchecks, inverts sense of ifcheck
+progs.c
+
+03/31/2003 - REK
+Disallowed morts ordering charmed mobs to issue mobprog commands
+act_comm.c
+
+added isgood, isevil and isneutral ifchecks to mobprogs
+progs.c
+
+Wasn't saving obj invoke charges in pfiles; fixed.
+save.c
+
+03/30/2003 - REK
+Made pills edible even if player is full
+Fixed up some color bleeds
+act_enter.c act_info.c act_obj,c olc_obj.c act_wiz.c
+
+Changed "Cla" in pfiles from number to word
+save.c
+
+Fixed problem in act() not capitalizing first letter if text begins with a
+color code.
+comm.c
+
+03/29/2003 - REK
+Moved mob classes from act_flags to class flags in the mob index struct
+db.c db2.c fight.c handler.c lookup.h merc.h olc_mob.c olc_save.c
+tables.c tables.h
+
+03/28/2003 - REK
+Fixed bug in sedit create with no social name given
+olc_social.c
+
+03/28/2003 - REK
+Fixed up some color bleeds in mfind, ofind, rfind
+act_wiz.c act_wiz2.c
+
+03/28/2003 - REK
+Grafted in string pager from Aversions
+comm.c
+
+03/27/2003 - REK
+Added AREA_FREEZE flag, keeps non-sentinel mobs from moving around in
+prototype areas.
+merc.h tables.c update.c
+
+03/27/2003 - REK
+Added sock.sinaddr messages to wiznet.
+comm.c
+
+03/27/2003 - REK
+Fixed bug in saving 'heal" as a group instead of a skill in group skill list.
+Added functions group_find() and skill_find(), work like group_lookup()
+and skill_lookup() respectively except they require a full match.
+db2.c const.c magic.c merc.h olc_grp.c skills.c
+
+11/02/2002 - REK
+Finished up obj progs except for cast_progs and cast_sn_progs.  Started work
+on room progs.
+act_info.c act_move.c act_obj.c handler.c progs.c update.c
+
+10/31/2002 - REK
+Got obj progs and about half the objprog triggers working.
+act_move.c act_obj.c progs.c recycle.c tables.c
+
+10/20/2002 - REK
+Added "last changed" field to area_data.  Changed do_lastmod to use this
+field instead of area file timestamp.
+act_wiz2.c db2.c merc.h olc_area.c olc_save.c
+
+10/18/2002 - REK
+Changed 'You tell' to 'You reply to' in do_reply.
+act_comm.c
+
+10/18/2002 - REK
+Adjusted value of MAX_PC_RACE
+merc.h
+
+10/14/2002 - REK
+New vamp-related fields weren't loading in save.c, causing bug reports.
+Changed bug reports for unmatched keywords to report the keyword that wasn't
+matched.
+vamp.c save.c
+
+9/19/2002 - Frindok
+Made a new race called vampires with various abilities and a lot of help 
+from Nibios.
+merc.h const.c interp.h interp.h save.c vamp.c
+
+9/18/2002 - Proze
+Fixed Compile Problems in Quest table
+const.c
+
+9/7/2002 - REK
+Fixed problem in oedit getting wrong help in show_help() call (affect/apply)
+olc_obj.c
+
+9/7/2002 - REK
+Changed purge to only purge mob in room, not world
+act_wiz.c
+
+8/27/2002 - REK
+Added new PC race, dragon.
+const.c merc.h
+
+8/27/2002 - REK
+Fixed typo in oload.
+Saved last few commands issued in lcb[], debugging aid.
+OLC: added weight multiplier to containers, values to furniture.
+act_wiz.c comm.c globals.c merc.h olc_obj.c
+
+8/25/2002 - REK
+Changed startup to run ../bin/dwatch instead of ../src/dwatch.  Not sure how
+it got changed back, but it did somehow.
+startup
+
+8/22/2002 - REK
+Added max weight of one object to containers in OLC.
+act_obj.c
+
+8/3/2002 - REK
+Added automated auction.
+act_comm.c act_info.c const.c globals.c interp.c interp.h merc.h update.c
+
+8/3/2002 - REK
+Added slist command.  I made it an imm command, although it should possibly
+be a mort command.
+act_info.c interp.c interp.h
+
+8/3/2002 - REK
+Changed /d string editor command to delete multiple lines.
+merc.h string.c
+
+----------
+7/30/2002 - REK
+Added skill group OLC, gedit.
+const.c db.c db.h db2.c interp.c interp.h merc.h olc.c olc.h olc_grp.c(new)
+Makefile
+
+7/28/2002 - REK
+Changed "/s" to "/l" in string editor; added replacement "/s" (show string).
+string.c
+
+7/28/2002 - REK
+Fixed do_count.
+act_info.c
+
+7/28/2002 - REK
+Added opedit, oplist and opremove to oedit.
+olc.c olc.h olc_obj.c
+
+7/28/2002 - REK
+Rpremove wasn't adjusting progtypes properly.
+olc_room.c
+
+7/27/2002 - REK
+Added loading/saving of oprogs and eprogs.
+db.c db2.c olc_save.c
+
+7/27/2002 - Proze
+Fixed a bug in nofollow. Allowed a person to "break a charm".
+act_info.c
+
+7/27/2002 - Proze
+Fixed bug in dual wield that allowed ANYTHING to be wielded as the second obj.
+act_obj.c
+
+7/27/2002 - Proze
+Removed hack that was setting all rooms 3000 - 3400 as room_law upon loading.
+db.c
+
+----------
+7/26/2002 - REK
+Added "reset find" option to do_resets().
+olc_room.c
+
+7/25/2002 - REK
+Builder can no longer reset mobs/objs from another area if the other area is
+flagged as prototype and the builder cannot build in the other area.
+olc_room.c
+
+7/25/2002 - REK
+Logged start of bootup.  This will allow us to monitor bootup time.
+comm.c
+
+7/25/2002 - REK
+Changed aedit_age() to always return FALSE; changing the area age doesn't
+require saving the area file.
+olc_area.c
+
+7/25/2002 - REK
+Implemented the reset messages before an area resets.  Also added
+ROOM_NO_RESETMSG room flag.  Changed PULSE_AREA from 120 to 61 (seconds).
+db.c merc.h tables.c
+
+7/25/2002 - REK
+Added mobprog repop triggers.  Should probably also add room reset triggers.
+db.c merc.h recycle.c recycle.h tables.c
+
+7/25/2002 - REK
+Added AREA_MUDSCHOOL flag, using that to control mudschool fast repop
+instead of ROOM_VNUM_SCHOOL.
+db.c merc.h olc_area.c tables.c
+
+7/24/2002 - REK
+Added edit of group stat to medit.
+olc.c olc.h olc_mob.c
+
+----------
+7/24/2002 - REK
+Changed socials.txt format from an area file type to a pfile type, added
+ed_level field, added level to sedit.  Basically we can now set the level
+required to edit a social on a per-social basis.
+db2.c olc.c olc.h olc_social.c recycle.c
+
+7/23/2002 - REK
+Changed thac0_32 to thac0_99 and adjusted interpolate() accordingly.
+Added afind astat and olocate commands.
+act_wiz2.c db.c fight.c interp.c interp.h merc.h olc_area.c
+
+7/22/2002 - REK
+Changed autosave not to save area list if no areas changed.
+Changed do_areas() finally.
+Fixed up the autodamagedealt in dam_message()
+act_info.c db2.c fight.c merc.h olc_save.c
+
+7/21/2002 - REK
+Hotboot, reboot and shutdown now do an autosave of changed areas unless the
+command has an argument of "nosave".
+Increased MAX_STRING to 2000000 in db.c
+db.c act_wiz.c
+
+----------
+7/20/2002 - REK
+Finished up clan stuff but still have to do induct, outcast and cset.
+Rewrote all the channel stuff, added dream, hero and OOC channels.
+act_clan.c act_comm.c act_info.c act_move.c act_wiz.c colors.h comm.c db.c
+globals.c handler.c interp.c interp.h lookup.c merc.h music.c note.c olc.c
+olc.h olc_area.c olc_clan.c recycle.c save.c tables.c tables.h
+
+7/19/2002 - REK
+Added new clan structure, OLC and info commands (clans and cinfo).
+Next step is to rip out all the old clan stuff.
+act_clan.c(new) db.c db.h db2.c globals.c handler.c interp.c interp.h merc.h
+olc.c olc.h olc_clan.c recycle.c recycle.h update.c Makefile
+
+7/18/2002 - REK
+Added wearoff messages to rooms for spells/affects.  Added editing of all
+wearoff messages to OLC.
+act_info.c const.c db2.c magic.c merc.h olc.c olc.h olc_skill.c update.c
+
+7/18/2002 - REK
+Implemented value5 as damage bonus on weapons.
+act_info.c act_wiz.c db.c fight.c magic.c merc.h olc.c olc.h olc_obj.c
+
+7/17/2002 - Minor fix to "days" in uptime.
+act_wiz2.c
+
+7/16/2002 - REK
+Added uptime command
+Moved some global variables from comm.c to globals.c
+Changed mload to allow loading mobs by name.
+Changed oload to allow loading multiple instances of an object, and loading
+objects by name.
+Changed purge to allow purging objects by name, changed messages to char.
+Added perm memory allocation events to wiznet.
+Added save and load of room progs.
+act_info.c act_wiz.c act_wiz2.c comm.c const.c db.c db.h db2.c globals.c
+interp.c interp.h merc.h olc_room.c olc_save.c progs.c update.c
+
+7/15/2002 - REK
+Added rpedit subcommands to redit.  Room progs don't save or load yet, much
+less actually run.
+globals.c merc.h olc.c olc.h olc_room.c recycle.c recycle.h
+
+7/14/2002 - REK
+create_mobile() no longer forces NOTELL on mobs.
+Fixed up memory deallocation problems.
+Removed redundant declarations from olc.h
+db.c olc.h recycle.c
+
+----------
+7/14/2002 - REK
+Finished up act triggers.  I believe mobprogs are done now.
+act_comm.c comm.c merc.h progs.c update.c
+
+7/14/2002 - REK
+Colorized room display in do_look.
+Simplified syntax of oreset when equipping mobs' inventory.
+Stripped color codes from short descs in do_reset display.
+Added error checking on object flags.
+act_info.c merc.h olc_obj.c olc_room.c
+
+7/13/2002 - REK
+Added some error checking to do_resets.
+olc_room.c
+
+7/13/2002 - REK
+Fixed bug with 'O' resets not loading objects properly
+db.c
+
+7/13/2002 - REK
+Fixed bug in do_help assuming char is always in a room
+Did work on act_prog triggers
+act_info.c comm.c merc.h
+
+7/13/2002 - REK
+Added "edit" command, for those more accustomed to using "edit room",
+"edit mob", etc
+interp.c interp.h merc.h olc.c
+
+7/12/2002 - REK
+Revised sacrifice to allow "sacrifice all", changed some messages.
+Rewrote do_score() and do_affects(): Command functionality has been moved to
+new functions show_score() and show_affects() respectively.  The score and
+affects commands now take an optional argument, if the player is an
+immortal, and will show the score/affects of another player or mob.
+Added config command, supplements autolist etc.
+Added the rest of the mob commands for mobprogs.
+act_info.c act_obj.c act_wiz.c interp.c interp.h merc.h mob_cmds.c
+multi.c(new) quest.c Makefile
+
+7/11/2002 - REK
+Added declaration of find_location() to merc.h, removed local declarations
+from act_wiz.c and quest.c
+act_wiz.c merc.h quest.c
+
+7/10/2002 - REK
+Fixed bug in OLC, not loading object types correctly; rewrote item_lookup()
+appropriately, changed OLC calls to item_lookup() to calls to flag_value().
+Added fight meter
+Added astrip command, removes all affects from a character.
+act_info.c act_wiz.c act_wiz2.c comm.c interp.c interp.h lookup.c merc.h
+olc.h olc_mob.c olc_obj.c
+
+7/10/2002 - REK
+Pretty much finished up all the mobprog triggers except mprog_act_trigger.
+Added nukereply command, turns off replies from another char.
+Added "maxed" arg to do_advance().  This will max out a player's stats while
+being advanced, thus ensuring max hp, con, etc gains.
+act_comm.c act_obj.c act_wiz.c act_wiz2.c debug.c fight.c interp.c interp.h
+merc.h progs.c update.c
+
+7/9/2002 - Frindok
+added Autodamagedealt, shows a number amount for how much damage you deal 
+in combat.
+
+act_info.c fight.c interp.c interp.h merc.h tables.c
+
+7/9/2002 - REK
+Added recursion counter to interpret() to bail out of excessive command
+recursion.  Technically this has nothing to do with mobprogs, but I included
+it in here since mobprogs are the major source of recursion problems.
+Added entry, hitprcnt, fight and greet triggers.
+Added commands mplist and mpstat to list mobprogs.
+Added mpcommands and mob commands to list mob commands.
+Added mob commands mpasound, mpforce
+Added MOBtrigger global.
+Added CMD_MOB to interpreter's command flags, only mobiles can execute a
+command with this flag set.
+Added isimmortal, isnpc, isname, sex ifchecks.
+Sent progbug messages to build channel on wiznet.
+act_move.c comm.c globals.c interp.c interp.h mob_cmds.c(new) progs.c
+
+7/9/2002 - REK
+Added WIZBUG wiznet channel, reports bugs.
+const.c db.c merc.h
+
+7/9/2002 - REK
+Added str_lower() and str_upper(), converts strings to all lowercase or
+uppercase in a user_supplied buffer.  We do already have an all_capitalize()
+function, however it returns the uppercased string in a static buffer.  Use
+whichever is more convenient for what you're doing.
+handler.c merc.h
+
+7/9/2002 - REK
+Changed set_char_color() to return player's old color setting.
+comm.c merc.h
+
+----------
+7/8/2002 - REK
+Got mobprogs working! :)  The only thing that works right now is
+speech_progs, but ya gotta start someplace.  At least the entire mobprog
+driver is now in place.  Need to add more ifchecks, too.
+merc.h progs.c
+
+7/8/2002 - REK
+Added boolean deleted to char_data but didn't do anything with it yet; see
+comment for char_died() in handler.c
+db.c handler.c merc.h save.c
+
+7/7/2002 - REK
+Since I needed the he_she him_her stuff in the mobprog driver too, I moved
+it from comm.c to const.c.
+comm.c const.c merc.h
+
+----------
+7/6/2002 = REK
+Kinda forgot that when ch->desc->editor equals ED_ROOM, that ch->desc->pEdit
+is always NULL ;)
+olc.c olc_save.c
+
+7/6/2002 - REK
+Started mobprog driver
+merc.h progs.c
+
+7/6/2002 - REK
+Tweaked format of alist slightly at end of line
+act_wiz2.c
+
+7/5/2002 - REK
+Forgot to add this in last change:
+Added global vars for each class and race: class_mage, class_thief,
+race_human, race_dwarf, etc.  These are initialized at boot time to the
+appropriate value for the class/race, much as the gsn's are initialized. 
+The purpose of these variables is to avoid ever hard-coding a number for a
+race/class; ie, instead of something like:
+    if ( ch->race == 1 )
+you'd instead use something like:
+    if ( ch->race == race_elf )
+This makes the code a lot more readable, and in addition if we ever want to
+rearrange the race table or class table, we can do so painlessly.
+
+7/5/2002 - REK
+Finished medit, including automob.
+const.c db.c globals.c merc.h olc.c olc_area.c olc_mob.c tables.c tables.h
+
+7/5/2002 - REK
+Changed mreset and oreset to allow loading mobs/objs from any area.
+Changed do_aedit and do_oedit to allow editing areas/objects by name.
+Lowered level for hedit and aedit to 105.
+Added "color" command to aedit.
+interp.c olc.c olc.h olc_area.c olc_obj.c olc_room.c tables.c tables.h
+
+7/5/2002 - REK
+Added notification when new note is posted.
+Fixed typo when setting damage dice (used to say "Hit dice set").
+olc_mob.c
+
+7/5/2002 - REK
+Added races to OLC show_help().
+Fixed silly mistake in "fix" to copyover.
+comm.c olc.c
+
+7/5/2002 - REK
+Added "recent" command, shows last 24 logins.
+Fixed problem in copyover, if a person cannot see another person they would
+see the message "Someone materializes!" after a hotboot.  This reveals the
+presense of wizinvis imms.
+Made "pwhere" an alias for "mwhere" (I'm used to typing pwhere<g>).
+act_wiz2.c comm.c interp.c interp.h merc.h
+
+7/4/2002 - REK
+Tweaked output of emotes slightly.
+Set mob form and parts flags when new mob created.
+Added color to socials.
+act_comm.c interp.c olc_mob.c
+
+7/4/2002 - REK
+Added args to wizhelp, it can now list cmds by level or show the level of a
+command.  Type "wizhelp help" to get the syntax.
+interp.c merc.h
+
+7/4/2002 - REK
+Added new channels coder, implementor, newbie and supreme.
+Added generic channel function talk_channel().
+Added ch->deaf.  I intend to replace ch->comm with ch->deaf and ch->config,
+as well as rewrite existing do_comm().  Currently half of do_comm() and
+ch->comm deals with channel stuff, and half of it deals with configuration
+stuff unrelated to channels.  Since I intend to add more channels and more
+config flags (and I'm sure Proze has some ideas along these lines too), it
+makes sense to split it up.
+Added new function act_color(), changed act_new() to a macro which expands
+to act_color() with a color argument of C_DEFAULT.
+act_comm.c comm.c db.c interp.c interp.h merc.h save.c
+
+----------
+7/3/2002 - REK
+Added hfind and hlist commands, fixed quirk in help_greeting.
+act_wiz2.c comm.c db.c globals.c interp.c interp.h merc.h olc_help.c
+
+7/3/2002 - REK
+Added edit levels to helps.
+db.c interp.c lookup.c lookup.h merc.h olc.c olc.h olc_help.c olc_save.c
+tables.c tables.h
+
+----------
+7/3/2002 - REK
+Showed building/editing status in show_char_to_char_0() and do_who()
+act_info.c
+
+7/3/2002 - REK
+Revamped wiznet, added new wiznet channel WIZ_BUILD.
+act_wiz.c const.c interp.c merc.h update.c
+
+----------
+7/2/2002 - REK
+Added new item type lens, new wear-loc eyes, and new command "stare".
+act_info.c act_obj.c db.c db2.c interp.c interp.h magic.c merc.h olc_obj.c
+olc_room.c olc_save.c tables.c
+
+7/2/2002 - REK
+Installed modified version of Vassago's autoquest code. act_info.c const.c
+fight.c interp.c interp.h merc.h olc_room.c quest.c save.c special.c
+tables.c update.c Makefile
+
+7/2/2002 - REK
+Disallowed builder from unlinking an exit if they are unable to edit area on
+other side of door.
+olc_room.c
+
+7/2/2002 - REK
+Added new immcommand, aexits, lists links into/out of an area.
+act_wiz2.c interp.c interp.h
+
+7/2/2002 - REK
+Fixed stupid bug in do_lastmod(); under certain circumstances it could
+dereference a null pointer.
+act_wiz2.c
+
+7/2/2002 - REK
+Started on mob/obj/etc progs.
+Makefile merc.h progs.c(new)
+
+7/2/2002 - REK
+Added invokes.  Not happy with spell invokes, I'd like to be able to invoke
+spells like "gate" and "locate object" but I'm calling obj_cast_spell() to
+actually cast the spell and that function only works with chars/objects in
+the same room as the caster.
+I'm using the level of the invoked object for the level of the spell, that
+possibly should be UMAX( ch->level, obj->level ).
+act_obj.c interp.c interp.h
+
+----------
+7/1/2002 - REK
+Added do_join() and do_separate, joins and separates objects.
+act_obj.c interp.c interp.h
+
+7/1/2002 - REK
+Revised do_scatter to avoid prototype rooms, only scatter objects with the
+"take" bit set, and show results to user.
+act_wiz.c merc.h
+
+7/1/2002 - REK
+Changed hedit and do_help() to support helps local to an area.
+act_info.c olc.c olc.h olc_help.c olc_save.c
+
+7/1/2002 - REK
+Finally got areas to save AND load :)
+db.c db2.c lookup.c lookup.h merc.h olc_area.c olc_mob.c olc_obj.c
+olc_room.c olc_save.c
+
+7/1/2002 - REK
+music.c tried to close a file after fopen() failed.
+music.c
+
+----------
+6/30/2002-Frindok
+changed max_level in merc.h from 60 to 109.
+----------
+6/29/2002 - REK
+Fixed bug in hotboot
+act_comm.c
+
+----------
+6/29/2002 - REK
+Rewrote and enabled mfind and ofind, added rfind.
+act_wiz.c act_wiz2.c interp.c interp.h
+
+6/29/2002 - REK
+Added resets to redit
+interp.c interp.h olc.c olc.h olc_room.c recycle.c recycle.h
+
+6/29/2002 - REK
+Added ROM-specific stuff to medit that I'd overlooked.  Still need to do
+automob.
+olc.c olc.h olc_mob.c
+
+6/29/2002 - REK
+Added oedit
+olc.c olc.h olc_obj.c interp.c interp.h merc.h recycle.c recycle.h
+tables.c tables.h
+
+6/28/2002 - REK
+Enabled mload and oload commands
+interp.c
+
+6/28/2002 - REK
+Moved more lookup stuff from handler.c to lookup.c/tables.c
+act_wiz.c const.c handler.c lookup.c olc_mob.c tables.c tables.h
+
+6/28/2002 - REK
+Added heal and mana recovery rates to OLC
+olc.c olc.h olc_room.c recycle.c
+
+----------
+6/28/2002 - REK
+Moved reset list from area data to room data
+db.c db2.c db.h merc.h olc_save.c
+
+6/25/2002 - REK
+Finally got sick of scrolling through all the gsn's at the top of db.c ;>
+db.c globals.c gsn.c(new) Makefile
+
+6/25/2002 - REK
+Removed redundant declaration from olc.h
+olc.h
+
+Added #define for AT_NONE
+colors.h
+
+Implemented `X color code; resets color to last color set by set_char_color()
+comm.c recycle.c string.c
+
+6/24/2002 - REK
+Took old color codes out of string.c
+string.c
+
+----------
+6/24/2002 - REK
+Added flag_lookup_exact() called by flag_value(), OLC now requires exact
+match on flags.
+lookup.c
+
+Added "note write" to note commands
+note.c
+
+----------
+6/23/2002 - REK
+Added "remove all" option to do_remove()
+Changed dual code from "second" to "dual", forced removal of dualed weapon
+if primary weapon is removed.
+Removed union u1 from EXIT_DATA, split it into separate vnum and to_room
+members.
+Moved dir_name[] from act_move.c to const.c
+Changed dir_name[] in comm.c to dir_letter[], moved to const.c
+Added olc_obj.c and olc_room.c to Makefile, started on redit
+Reorganized tables.c, started moving lookup functions from handler.c to
+lookup.c
+act_info.c act_move.c act_obj.c act_wiz.c comm.c const.c db.c db.h debug.c
+fight.c flags.c globals.c handler.c interp.c interp.h lookup.c merc.h olc.c
+olc.h olc_obj.c olc_room.c olc_save.c olc_social.c recycle.c recycle.h
+scan.c tables.c tables.h update.c Makefile changes.txt
+
+----------
+6/21/2002 - REK
+Finished up medit (mostly), added mpedit
+db.c debug.c globals.c handler.c lookup.c merc.h olc.c olc.h olc_mob.c
+olc_prog.c(new) recycle.c recycle.h tables.c tables.h Makefile
+
+----------
+Added "dual wield", allows a character to wield a secondary weapon.
+merc.h  interp.h  interp.c  fight.c  act_obj.c  act_info.c
+
+6/20/2002
+Frindok
+----------
+Added "lastmod" imm command, lists last save times of area files.
+act_wiz2.c interp.c interp.h
+
+Changed do_alist() to accept "changed" argument, lists only changed areas.
+act_wiz2.c
+
+Added "last" as an imm command, lists the date/time a user was last on.
+act_wiz2.c interp.c interp.h
+
+----------
+06/19/2002 - REK
+Started on medit, still have to do most of it but have do_medit(), medit()
+and medit_show() in place.
+olc_medit.c(new), globals.c handler.c interp.c interp.h recycle.c recycle.c 
+
+Changed some calls to exit() to abort_mud() in db.c and db2.c
+
+Moved validation of resets to separate function in db.c, called after all
+area loading is done.  This enables us to reset an object or mob from an
+area that hasn't been loaded yet at the time the reset is read.  The
+downside is that the mud no longer reports the line in the area file
+containing a truly bad reset.  It will, however, give the number of the
+reset in error, relative to the first reset read (ie the #RESETS line in the
+area file).
+db.c db.h db2.c
+
+Started on asave().  Warning: asave currently saves files in ../temp/.  This
+will of course be changed.
+olc_save.c(new), 24 files changed.
+
+Added "most on today" to who list
+act_info.c comm.c db.c db.h db2.c globals.c merc.h
+
+----------
+Added fix_string() function, removes cr's and tildes from strings.
+handler.c
+
+Added vfree command, lists blocks of free vnums
+act_wiz2.c interp.h interp.c
+
+Enabled mset, oset, rset and sset
+interp.c
+
+----------
+Removed title_table and all its refrences
+const.c update.c merc.h
+----------------------
+Changed output of channels command slightly
+act_comm.c
+
+Changed pcdata->confirm_delete to bitvector confirm_flags, added CONF_DELETE
+flag.
+act_info.c merc.h save.c
+
+Added check for linkdead in show_char_to_char_0(), added PLR_SWITCHED flag.
+act_info.c act_wiz.c, merc.h
+
+----------
+Enabled mstat, ostat and rstat commands (they were already there, just not
+in the command table).
+
+Sent output of do_commands, do_wizlist and do_socials to pager via
+expandable buffers.
+
+Added mlist, olist and rlist commands
+
+Added funcs is_colcode(), strip_color(), strlen_wo_col(), and
+strncpy_wo_col().  Is_colcode() returns TRUE if arg is a color code,
+strip_color() removes color codes from a string, and strncpy_wo_col does
+essentially the same thing with a limit on max length to copy. 
+Strlen_wo_col() returns the length of a string, not counting color codes.
+
+Added beginnings of medit and most of hedit.  Need to discuss design of help
+system before it can be finished.
+
+Added get_help() function to handler.c, given a keyword it returns a
+HELP_DATA pointer if one exists, else returns NULL.
+
+Added abort_mud function, shuts down mud and startup script.  Use primarily
+for errors in boot_db() (bad data in area files).
+
+Added area field to help_data
+
+Added "imm" and "show" commands to do_prompt()
+
+Added aedit
+
+Added color code support in write_to_descriptor()
+
+Changed "show" field in cmd_type to "flags" and changed its type to bitvector.
+
+Declared new data type bitvector as unsigned int, use this for flags
+
+Added skedit command to edit skills
+
+Changed typedef for sh_int from short (16 bits) to int (32 bits).  Don't use
+sh_int any more, please.
+
+Added get_char_area(), changed get_char_world() to call get_char_area()
+instead of get_char_room().  Get_char_area() in turn starts by calling
+get_char_room().  This MAY be a performance hit since we now walk the entire
+char_list twice.
+
+Added set_char_color()
+
+Added connected state CON_GET_ANSI
+
+Installed Erwin's copyover code
+
+Added bugf() and ch_printf(), copyover came with logf()
+
+Changed social table from array to linked list
+
+Added OLC core and sedit
+
+Added alist command
+
+Enhanced slookup output
+
+Changed skill_lookup() to return NO_SKILL (defined as -1 in merc.h) instead
+of hard-coded value of -1.  Still need to change calling routines.  This was
+not strictly necessary, just good coding practice.  Did same to
+class_lookup() and race_lookup() (ie, return NO_CLASS and NO_RACE).
+
+Added OLC for skills, data is now saved in file.
+

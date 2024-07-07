@@ -1,0 +1,130 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+Changelog for MARS
+==================
+Current changes as of July 2024:
+Max playable level is now 20.
+Experience required to level up is now based on the d20 table. So current level x1000exp
+e.g. Level one to level 2 is 1,000 exp. Level 2 to 3 is 2,000 exp. 3 to 4 is 3,000, 4 to 5 is 4,000 and so on.
+so the total amount of exp to reach level 5 is 10,000 exp. 
+
+Level is no longer checked when equipping gear. Gear level is irrelevant. a dagger is a dagger is a dagger. Being
+level 1 or level 5000, the dagger should still do the same amount of damage.
+
+Spells have been changed, added, or removed to bring them in line with the Open Gaming License version
+of the d20 SRD. If it doesn't exist in D&D, it won't exist in MARS.
+
+Spells and skills have been arranged by class; so no spell casting fighters, and no mages with third-attack.
+The only exception being thieves; as they can use scrolls, wands and staves per their SRD counterpart having
+"use magic item" as part of the class benefits.
+
+If you have not spotted a theme, the entire MUD is moving in a D&D original campaign setting direction, though
+very barebones, as the idea is that anyone can pick up a copy of MARS, compile it, and then focus on building a
+world for their players, and not have to worry about coding skills and spells, or any of that. I am attempting
+to create the digital equivalent of picking up a copy of the base books for D&D and being able to create your
+own unique campaign. The system is already there, you just need to create the world.
+
+
+
+old changes, many have been removed.
+===================
+Added Spells: Acid Arrow, Acid Geyser, Astral Walk,
+Banshee Blast, Black Mantle, Caustic Eruption, 
+Celestial Lightning, Corrosive Burst, Daze, Damnation,
+Detect Life, Detect Aura,Disruption, Dragonscales, 
+Electrocute, Full Heal, Hellfire, Hurricane, Ion Blast, 
+Natural Armor, Project Force, Rushing Fist, 
+Strike True, Spellmantle, Telekinetic Force, Truesight
+
+Acid Arrow - Acid Direct Damage
+Acid Geyser - Acid Direct Damage [Will change to AoE]
+Astral Walk - Gate for Druids
+Banshee Blast - Sonic Direct Damage
+Black Mantle - Evil Sanctuary
+Caustic Eruption - Acid Direct Damage
+Celestial Lighting - Holy Lightning Direct Damage
+Corrosive Burst - Acid Direct Damage
+Daze - Negative Direct Damage [Will add lag daze effect]
+Damnation - Negative Direct Damage
+Detect Life - Detects Invisible and Hidden [Changing not to work on undead/spirits]
+Detect Aura - Detects good, evil and magical auras
+Disruption - Energy Direct Damage
+Dragonscales - Armor spell [Adding small damage from scales erupting from skin]
+Electrocute - Lightning Direct Damage
+Full Heal - Heals 100% HP [Going to add cooldown system so it's once per 24 ticks]
+Hellfire - Fire Direct Damage
+Hurricane - "Other" AoE doing less damage the larger the targets are
+Ion Blast - Energy Direct Damage
+Natural Armor - Armor Spell
+Project Force - AoE sonic that reflects back on caster if less than 2 valid targets
+Rushing Fist - Bashing Direct Damage
+Strike True - Hitroll buff
+Spellmantle - Spell Saves buff
+Telekinetic Force - Energy Direct Damage
+Truesight - Detect Magic, Hidden, Invis, Good, and Evil
+
+Replaced "Huh?!" with a table of various quirky replies when typing a command that does
+not exist.
+
+Added 'Tail' equipment slot for races with tails
+
+Changed 'consider', it now accounts for the target's current hitpoints and their damroll
+
+Added 'plist' command
+
+Added 'assassinate' skill for thieves
+
+Players are now restored on level up
+
+Revamped classes and groups
+
+Added my 'autotick' snippet, finally with working autotick command to turn the tick messages
+on or off. can use autotick or 'config +autotick/-autotick'

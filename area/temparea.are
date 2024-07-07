@@ -1,0 +1,52 @@
+#AREADATA
+Version     9
+Name        Temp Area~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       8050 8099
+Levels      1 100
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    huge
+Created     1278891991
+Changed     1715908533 Thu May 16 21:15:33 2024
+End
+
+#MOBILES
+#0
+
+#OBJECTS
+#0
+
+#ROOMS
+#8063
+The Temple Room~
+This room exists mostly because it's gotta, for various coder type
+reasons.  This is ROOM_VNUM_TEMPLE, ROOM_VNUM_MORGUE and ROOM_VNUM_ALTAR. 
+When we build the real home city (cities) we can change those definitions,
+and delete/recycle this vnum.  
+~
+~
+~
+~
+~
+~
+0 CDa 0 12
+S
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

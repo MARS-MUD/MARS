@@ -1,0 +1,81 @@
+#NOTE
+Sender  Om~
+Date    Sat Oct 23 13:18:17 2021~
+Stamp   1635009497
+To      all~
+Subject Change List coming soon.~
+Text
+Change list to come soon.
+~
+End
+
+#NOTE
+Sender  Om~
+Date    Sat Oct 30 21:15:29 2021~
+Stamp   1635642929
+To      all~
+Subject New Change: Random objects!~
+Text
+New Change: Random equipment drops.
+ 
+Now when you kill a mobile, you will likely get a piece of gear.
+Even if you don't see it equipped to them or in their inventory, every mobile
+now has a chance to drop a totally randomized piece of gear and each piece
+is unique, but not all of them are beneficial.
+ 
+Each piece is of four different rarities:
+-Mastercrafted. This is the best, and adds significant value
+-Plain. This will have no special prefix, it's just plain.
+-Heavily-used. This is lesser quality, lesser value.
+-Cursed. This is worst quality, lowest value, and often comes with a nasty drawback.
+ 
+Each piece also has a chance to have a random enchantment:
+-Various spells. These are permanent spell effects such as flight, regeneration, haste, sanctuary etc
+-Lesser bonuses. These are +1 to stats, +5 to hp, mana, move, -1 to saves, etc
+-Regular bonuses. These are +2 to stats, +10 to hp, mana, move, and -2 to saves, etc
+-Greater bonuses. These are +3 to stats, +20 to hp, mana, move, and -5 to saves, etc.
+They also come in negative versions as well, such as vulnerability to fire, cold, lighting, etc
+as well as negative stats, hp, mana, move, etc. 
+ 
+Example: Mastercrafted Ring of Greater Nimbleness - This would have an increased value, and add +3 dex as ell as other bonuses.
+Cursed Armor of Sensitivity to Light - This would have a negative effect, be worth the least money, as well as add vulnerability to light dmg.
+~
+End
+
+#NOTE
+Sender  Om~
+Date    Mon Jul  1 15:35:57 2024~
+Stamp   1719862557
+To      all~
+Subject some changes~
+Text
+Changes: Level requirements for using weapons and armor are removed.
+They will be replaced with stat requirements, though. For example
+if you have a low Strength score, you will not be able to wield a 
+heavy weapon in your off-hand.
+ 
+Additionally, the weight requirement of your off-hand weapon needing to be lighter than
+your primary has been removed. That has never made sense to me as the
+most proficient two-handed fighters often use weapons that are equal in
+weight and balance.
+ 
+Age command added. 
+This command will show your age in MARS time, actual hours played, and 
+your number of logins.
+~
+End
+
+#NOTE
+Sender  Om~
+Date    Mon Jul  1 15:38:40 2024~
+Stamp   1719862720
+To      all~
+Subject re:Age command~
+Text
+The age command has been changed to 'played', to make it more in line
+with modern MMORPG games and their similar commands for checking how
+much time you've put into an individual character.
+~
+End
+
+#$

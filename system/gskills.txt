@@ -1,0 +1,391 @@
+#GROUP 'rom basics'
+Cla Clr 0
+Cla Drd 0
+Cla Ftr 0
+Cla Mag 0
+Cla Rog 0
+Skl 'club'
+Skl 'recall'
+Skl 'swimming'
+End
+
+#GROUP 'cleric basics'
+Cla Clr 0
+Skl 'dagger'
+End
+
+#GROUP 'druid basics'
+Cla Drd 0
+Skl 'dagger'
+Skl 'sword'
+End
+
+#GROUP 'fighter basics'
+Cla Ftr 0
+Skl 'longsword'
+Skl 'club'
+Skl 'sword'
+End
+
+#GROUP 'mage basics'
+Cla Mag 0
+Skl 'mace'
+Skl 'dagger'
+End
+
+#GROUP 'rogue basics'
+Cla Rog 0
+Skl 'dagger'
+End
+
+#GROUP 'cleric default'
+Cla Clr 40
+Skl 'phase'
+Skl 'meditation'
+Skl 'scrolls'
+Skl 'staves'
+Skl 'wands'
+Grp 'divine domain'
+End
+
+#GROUP 'druid default'
+Cla Drd 40
+Skl 'hammer'
+Skl 'longsword'
+Skl 'rapier'
+Skl 'shortsword'
+Skl 'staff'
+Skl 'whip'
+Skl 'meditation'
+Skl 'scrolls'
+Skl 'staves'
+Skl 'wands'
+Skl 'triage'
+Skl 'herbal lore'
+Grp 'nature magic'
+End
+
+#GROUP 'fighter default'
+Cla Ftr 40
+Grp 'offensive fighting'
+Skl 'dagger'
+Skl 'mace'
+Skl 'hammer'
+Skl 'spear'
+Skl 'shortsword'
+Skl 'longsword'
+End
+
+#GROUP 'mage default'
+Cla Mag 40
+Skl 'wands'
+Skl 'scrolls'
+Skl 'staves'
+Grp 'evocation'
+Grp 'conjuration'
+Skl 'dagger'
+Skl 'club'
+Skl 'mace'
+Skl 'spellcraft'
+Skl 'meditation'
+End
+
+#GROUP 'rogue default'
+Cla Rog 40
+Skl 'scrolls'
+Skl 'wands'
+Skl 'staves'
+Grp 'larceny'
+End
+
+#GROUP 'weaponsmaster'
+Cla Mag 40
+Skl 'axe'
+Skl 'dagger'
+Skl 'flail'
+Skl 'hammer'
+Skl 'mace'
+Skl 'polearm'
+Skl 'spear'
+Skl 'shortsword'
+Skl 'dirk'
+Skl 'longsword'
+Skl 'sabre'
+Skl 'scimitar'
+End
+
+#GROUP 'defensive fighting'
+Cla Ftr 10
+Skl 'charge'
+Skl 'counter'
+Skl 'disarm'
+Skl 'dodge'
+Skl 'fast healing'
+Skl 'glance'
+Skl 'parry'
+Skl 'rescue'
+Skl 'shield block'
+End
+
+#GROUP 'offensive fighting'
+Cla Ftr 10
+Skl 'bash'
+Skl 'berserk'
+Skl 'dual'
+Skl 'enhanced damage'
+Skl 'kick'
+Skl 'second attack'
+Skl 'third attack'
+Skl 'fourth attack'
+Skl 'fifth attack'
+End
+
+#GROUP 'assassination'
+Cla Rog 10
+Skl 'assassinate'
+Skl 'envenom'
+Skl 'hide'
+Skl 'sneak'
+End
+
+#GROUP 'dirty fighting'
+Cla Rog 10
+Skl 'backstab'
+Skl 'dirt kicking'
+Skl 'kick'
+Skl 'trip'
+End
+
+#GROUP 'larceny'
+Cla Rog 10
+Skl 'disarm'
+Skl 'haggle'
+Skl 'peek'
+Skl 'pick lock'
+Skl 'steal'
+End
+
+#GROUP 'rogue combat'
+Cla Rog 10
+Skl 'counter'
+Skl 'dodge'
+Skl 'dual'
+Skl 'enhanced damage'
+Skl 'fast healing'
+Skl 'parry'
+Skl 'second attack'
+Skl 'third attack'
+Skl 'fourth attack'
+End
+
+#GROUP 'divine domain'
+Cla Clr 10
+Skl 'aid'
+Skl 'aura of peace'
+Skl 'bless'
+Skl 'calm'
+Skl 'celestial lightning'
+Skl 'holy word'
+Skl 'ray of truth'
+Skl 'remove curse'
+Skl 'resurrect'
+End
+
+#GROUP 'healing domain'
+Cla Clr 10
+Skl 'cure blindness'
+Skl 'cure critical'
+Skl 'cure disease'
+Skl 'cure drunk'
+Skl 'cure light'
+Skl 'cure poison'
+Skl 'cure serious'
+Skl 'full heal'
+Skl 'heal'
+Skl 'healing hands'
+Skl 'mana'
+Skl 'mass healing'
+Skl 'refresh'
+End
+
+#GROUP 'protection domain'
+Cla Clr 10
+Skl 'protection good'
+Skl 'protection evil'
+Skl 'sanctuary'
+End
+
+#GROUP 'strength domain'
+Cla Clr 10
+Skl 'barrage'
+Skl 'frenzy'
+Skl 'strike true'
+End
+
+#GROUP 'death domain'
+Cla Clr 10
+Skl 'cause critical'
+Skl 'cause light'
+Skl 'cause serious'
+Skl 'harm'
+End
+
+#GROUP 'nature magic'
+Cla Drd 20
+Skl 'acid geyser'
+Skl 'animal summoning'
+Skl 'astral walk'
+Skl 'barkskin'
+Skl 'bear claws'
+Skl 'bear fat'
+Skl 'call lightning'
+Skl 'chain lightning'
+Skl 'control weather'
+Skl 'curse of nature'
+Skl 'dragonscales'
+Skl 'earthquake'
+Skl 'faerie fire'
+Skl 'faerie fog'
+Skl 'goodberry'
+Skl 'hurricane'
+Skl 'infravision'
+Skl 'natural armor'
+Skl 'summon greater wolf'
+Skl 'summon hawk'
+Skl 'summon tiger'
+Skl 'summon wolf'
+Skl 'telekinetic force'
+End
+
+#GROUP 'abjuration'
+Cla Mag 10
+Skl 'armor'
+Skl 'cancellation'
+Skl 'dispel evil'
+Skl 'dispel good'
+Skl 'dispel magic'
+Skl 'flame shield'
+Skl 'shield'
+Skl 'spellmantle'
+Skl 'static shield'
+End
+
+#GROUP 'conjuration'
+Cla Mag 10
+Skl 'acid breath'
+Skl 'fire breath'
+Skl 'frost breath'
+Skl 'gas breath'
+Skl 'lightning breath'
+Skl 'blade barrier'
+Skl 'continual light'
+Skl 'create food'
+Skl 'create rose'
+Skl 'create spring'
+Skl 'create water'
+Skl 'dancing boots'
+Skl 'disruption'
+Skl 'floating disc'
+Skl 'gate'
+Skl 'nexus'
+Skl 'portal'
+Skl 'summon'
+Skl 'summon fire elemental'
+Skl 'summon greater golem'
+Skl 'teleport'
+Skl 'word of recall'
+End
+
+#GROUP 'divination'
+Cla Mag 10
+Skl 'detect auras'
+Skl 'detect evil'
+Skl 'detect life'
+Skl 'detect good'
+Skl 'detect hidden'
+Skl 'detect invis'
+Skl 'detect magic'
+Skl 'detect poison'
+Skl 'farsight'
+Skl 'identify'
+Skl 'know alignment'
+Skl 'locate object'
+Skl 'scry'
+Skl 'truesight'
+End
+
+#GROUP 'enchantment'
+Cla Mag 10
+Skl 'charm person'
+Skl 'enchant armor'
+Skl 'enchant weapon'
+Skl 'fireproof'
+Skl 'recharge'
+Skl 'sleep'
+End
+
+#GROUP 'evocation'
+Cla Mag 10
+Skl 'acid arrow'
+Skl 'acid blast'
+Skl 'acid rain'
+Skl 'burning hands'
+Skl 'caustic eruption'
+Skl 'chill touch'
+Skl 'colour spray'
+Skl 'cone of cold'
+Skl 'corrosive burst'
+Skl 'electrocute'
+Skl 'fireball'
+Skl 'flamestrike'
+Skl 'ion blast'
+Skl 'lightning bolt'
+Skl 'magic missile'
+Skl 'project force'
+Skl 'rushing fist'
+Skl 'shocking grasp'
+End
+
+#GROUP 'illusion'
+Cla Mag 10
+Skl 'blindness'
+Skl 'dancing lights'
+Skl 'daze'
+Skl 'deafen'
+Skl 'mass invis'
+End
+
+#GROUP 'necromancy'
+Cla Mag 10
+Skl 'atrophy'
+Skl 'banshee blast'
+Skl 'black mantle'
+Skl 'curse'
+Skl 'damnation'
+Skl 'darkness shield'
+Skl 'dark ritual'
+Skl 'demonfire'
+Skl 'energy drain'
+Skl 'ghost shield'
+Skl 'hellfire'
+Skl 'plague'
+Skl 'poison'
+Skl 'wail of the banshee'
+End
+
+#GROUP 'transmutation'
+Cla Mag 10
+Skl 'change sex'
+Skl 'enlarge'
+Skl 'fly'
+Skl 'giant strength'
+Skl 'haste'
+Skl 'heat metal'
+Skl 'pass door'
+Skl 'shrink'
+Skl 'slow'
+Skl 'stone skin'
+Skl 'weaken'
+End
+
+#$

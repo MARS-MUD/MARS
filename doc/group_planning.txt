@@ -1,0 +1,92 @@
+New Grouping idea
+==========================
+Alchemist - Alchemy
+Cavalier - Protection
+Commoner - None
+Druid - Woodland
+Elementalist - Elemental Mastery
+Mage - Sorcery
+Mystic - Mysticism
+Necromancer - Necromancy
+Soldier - None
+Thief - None
+Valkyrie - Luminous
+
+al,ca,co,el,dr,ma,my,ne,so,th,va
+Alchemy - Alchemist
+-------------
+Weapon Skills: Club, Dagger, Dirk, Staff 
+Spells: Create Food, Create Rose, Create Spring, Create Water, Dancing Boots, Enlarge, Fly, Floating Disc, Haste, Locate Object, Shrink,
+Summon Greater Golem, Word of Recall
+Other Skills: phase,second attack, meditation,scrolls, staves, wands,spellcraft
+
+Protection - Cavalier
+-------------
+Weapon Skills: Axe, Bastard Sword, Broadsword, Club, Deathgrip, Flail, Hammer, Horse Flail, Horse Mace, Lance, Longsword, Mace, Polearm, Shortsword, Spear, Sword
+Spells: Adrenaline Control, Armor, Blade Barrier, Cancellation, Force Shield, Fireproof, Healing Hands, Protection Good, Protection Evil, Shield
+, War Mount 
+Other Skills: charge, counter, disarm, dodge, parry, rescue, second attack, shield block, fast healing, riding
+
+Woodland - Druid
+-------------
+Weapon Skills: Club, Dagger, Dirk, Hammer, Longsword, Mace, Rapier, Saber, Shortsword, Staff, Whip
+Spells: Animal Summoning, Barkskin, Bear Claws, Bear Fat, Curse of Nature, Faerie Fire, Faerie Fog, Goodberry, Infravision, Summon Greater Wolf,
+Summon Hawk, Summon Wolf, Summon Tiger
+Other Skills: second attack, fast healing, hide,meditation,scrolls, staves, wands, triage, herbal lore
+
+
+Elemental Master - Elementalisty
+-------------
+Weapon Skills: Club, Dagger, Dirk, Staff
+Spells: Acid Rain, Call Lightning, Cone of Cold, Control Weather, Earthquake, Flame Shield, Flamestrike, Lightning Bolt, Shocking Grasp,
+Static Shield, Stone skin, Summon Fire Elemental,
+Other Skills: phase, second attack,meditation,scrolls, staves, wands, spellcraft
+
+
+Sorcery - Mage
+-------------
+Weapon Skills: Club, Dagger, Dirk, Staff
+Spells: Acid Blast, Barrage, Burning Hands, Chill Touch, Colour Spray, Dancing Lights, Enchant Armor, Enchant Weapon, Fireball, Gate, Identify,
+Invisibility, Magic Missile, Mana, Mass Invis, Nexus, Pass Door, Portal, Recharge, Summon, Teleport, Ventriloquate
+Other Skills: phase, second attack, lore,meditation,scrolls, staves, wands, spellcraft
+
+
+Mysticism - Mystic
+-------------
+Weapon Skills: Club, Dagger, Dirk, Staff
+Spells: Blindness, Charm Person, Change Sex, Curse, Deafen, Farsight, Frenzy, Harm, Heat Metal, Poison, Scry, Sleep, Slow, 
+Other Skills: phase, second attack,meditation,scrolls, staves, wands, herbal lore, spellcraft
+
+
+Necromancy - Necromancer
+-------------
+Weapon Skills: Club, Dagger, Dirk, Staff
+Spells: Animate Dead, Atrophy, Dark Ritual, Darkness Shield, Demonfire, Energy Drain, Ghost Shield, Plague, Wail of the Banshee, Weaken, Weariness
+Other Skills: phase, second attack,meditation,scrolls, staves, wands, spellcraft
+
+ 
+Luminous - Valkyrie
+-------------
+Weapon Skills: Axe, Broadsword, Club, Flail, Hammer, Longsword, Mace, Rapier, Sabre, Scimitar, Sword, Whip
+Spells: Aid, Aura of Peace, Bless, Calm,  Continual Light, Cure Blind, Cure Crit, Cure Disease, Cure Drunk, Cure Light, Cure Poison, Cure Serious, Heal,
+Holy Word, Know Alightment, Holy Word, Mass Healing, Ray of Truth, Refresh, Resurrect, Sanctuary,
+Other Skills: counter, disarm, dodge, parry, second attack, shield block, riding, triage
+
+
+Weaponsmaster - Soldier
+--------------
+Weapon Skills: ALL Weapon skills
+Other Skills: bash, berserk, counter, disarm, dodge, dual, enhanced damage, hand to hand, kick, parry, rescue, second attack, shield block, 3, 4, 5
+fast healing, triage
+
+Larceny - Thief
+--------------
+Weapon Skills: Club, Dagger, Dirk, Hammer, Rapier, Shortsword, Stiletto, Whip
+Other Skills: backstab, dirt kicking, disarm, dodge, dual, enhanced damage, envenom, hand to hand, kick, parry, trip, second attack, 3, 4
+hide,peek, pick lock, sneak, steal, scrolls, staves, wands,
+
+Common - Commoner
+---------------
+Weapon Skills: Axe, Club, Hammer, Staff
+Other Skills: dodge, kick
+

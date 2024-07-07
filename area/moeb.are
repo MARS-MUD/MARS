@@ -1,0 +1,821 @@
+#AREADATA
+Version     9
+Name        moebius~
+Credits     ~
+Builders    Moebius~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       500 600
+Levels      0 0
+Security    0
+Recall      906
+Flags       B
+Color       7
+ExitSize    medium
+Created     1634456647
+Changed     1634813867 Thu Oct 21 06:57:47 2021
+End
+
+#MOBILES
+#500
+krush mctavish~
+Krush McTavish~
+Krush McTavish is here looking for help.
+~
+This gentleman stands six feet tall and has nut brown colored hair.  He
+has a well kempt beard on his face.  He is wearing a brown colored robe and
+carries a long staff in one hand.  This man stand six feet tall and has pale
+white skin.  His clothes are ordinary and he wears some brown leather boots
+on his feet.  He has brown eyes and brown hair.  He is wringing his hands as
+if he is in distress.  Perhaps he needs some help.  
+~
+human~
+AGc 0 0 0 0 0 100
+0 16 10d10+8400 1d1+249 7d10+0 none
+-23 -23 -23 -23
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+>all_greet_prog 100~
+if ispc($n)
+   wave $n
+   say Welcome, $n!  I hope you enjoy your stay here.
+   say  On you travel to the main city, you will run into several
+   say people that may need help.  It would benefit you to give
+   say them help.
+endif
+~
+|
+#0
+
+#OBJECTS
+#0
+
+#ROOMS
+#500
+Confusion~
+You wake up with a splitting headache.  As you wake up, you look around
+and notice that you are in a strange place.  You do not know how you got
+here but you also don't know where you came from.  In fact you cannot
+remember anything except your name.  You see a hazy mist to your south.  
+~
+~
+~
+~
+~
+~
+0 KSa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 501
+S
+#501
+`GClearing`X~
+This is a small clearing within a small forest.  The grass grows fairly
+thick and there are patches of flowers growing in places.  There are a few
+bushes growing as well in the clearing.  The chirping sounds of birds can be
+heard from the trees in the surrounding forest.  
+~
+~
+~
+~
+~
+~
+0 CK 0 2
+Dsouth titanic
+~
+~
+~
+~
+0 0 502
+S
+>enter_prog 100~
+~
+|
+#502
+`GSmall Path`X~
+This is a small path within a forest.  Trees tower over all to the left
+and right of the path.  The area above the path is open revealing the sky
+and the sounds of animals in the forest can be heard from all around.  The
+path leads to the north and to the south.  
+~
+~
+~
+~
+~
+~
+0 CRS 0 2
+Dnorth titanic
+~
+~
+~
+~
+0 0 501
+Dsouth medium
+~
+~
+~
+~
+0 0 503
+S
+#503
+`GSmall Path`X~
+This is a small clearing within a small forest.  The grass grows fairly
+thick and there are patches of flowers growing in places.  There are a few
+bushes growing as well in the clearing.  The chirping sounds of birds can be
+heard from the trees in the surrounding forest.  
+~
+~
+~
+~
+~
+~
+0 CRS 0 2
+Dnorth medium
+~
+~
+~
+~
+0 0 502
+Dsouth medium
+~
+~
+~
+~
+0 0 504
+S
+>enter_prog 100~
+~
+|
+#504
+`GEnd of Path`X~
+This is the end of a path within a forest.  Trees tower over all to the
+left and right of the path.  The area above the path is open revealing the
+sky and the sounds of animals in the forest can be heard from all around. 
+There is a small opening in the brush to the east.  
+~
+~
+~
+~
+~
+~
+0 RS 0 2
+Dnorth medium
+~
+~
+~
+~
+0 0 503
+Deast medium
+~
+~
+~
+~
+0 0 505
+S
+#505
+Forest~
+This is a brushy section of the forest.  It is pretty thick except for
+one small trail that allows passage.  The trees are tall and are in full
+bloom.  The foliage is so thick that any light from above is blocked out by
+the canopy.  The sounds of forest animals chittering can be heard in the
+air.  
+~
+~
+~
+~
+~
+~
+0 CKRa 0 3
+Deast medium
+~
+~
+~
+~
+0 0 506
+Dwest medium
+~
+~
+~
+~
+0 0 504
+S
+#506
+Forest~
+The forest all around is pretty thick.  The trees are tall and are in
+full bloom.  The foliage is so thick that any light from above is blocked
+out by the canopy.  The sounds of forest animals chittering can be heard in
+the air.  The only exits from here are to the north and to the west.  
+~
+~
+~
+~
+~
+~
+0 CKRa 0 3
+Dnorth medium
+~
+~
+~
+~
+0 0 507
+Dwest medium
+~
+~
+~
+~
+0 0 505
+S
+#507
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 506
+S
+#508
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#509
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#510
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#511
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#512
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#513
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#514
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#515
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#516
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#517
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#518
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#519
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#520
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#521
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#522
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#523
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#524
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#525
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#526
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#527
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#528
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#529
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#530
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#531
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#532
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#533
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#534
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#535
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#536
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#537
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#538
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#539
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#540
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#541
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#542
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#543
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#544
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#545
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#546
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#547
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#548
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#549
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#550
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#551
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#552
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#553
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#554
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#555
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#556
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#557
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#558
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#559
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#560
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#561
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#562
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#563
+~
+~
+~
+~
+~
+~
+~
+0 CKSa 0 0
+S
+#0
+
+#RESETS
+M 0 500 1 501 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

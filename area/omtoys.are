@@ -1,0 +1,75 @@
+#AREADATA
+Version     9
+Name        om's toys~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       405 499
+Levels      0 0
+Security    0
+Recall      8063
+Flags       B
+Color       7
+ExitSize    medium
+Created     1280209038
+Changed     1632870734 Tue Sep 28 19:12:14 2021
+End
+
+#MOBILES
+#0
+
+#OBJECTS
+#406
+blade of searing flames~
+the blade of `rs`Ye`Oa`Wr`Oi`Yn`rg `Rf`Yl`Wa`Ym`Re`Xs~
+A blade made of crackling flames~
+crystal~
+weapon ABGSY AN
+dagger 25 4 pierce ACDEIM 2
+1 0 0 P
+0 0 0 0
+0 0 0 0 0
+#488
+scroll~
+(no short description)~
+(no description)~
+~
+scroll 0 AO
+40 'sanctuary' 'armor' 'fly' 'reserved' 0
+0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#405
+The Black Cabbage~
+Aboard the Black Cabbage, the sea salt swirls on the breeze.  The sails
+flap and catch the wind, the mainsail bearing the mark of a large black
+cabbage.  The boards of the deck are made of a deep mahogony so dark that it
+is nearly black, with a perfect shine and finish that reflects the sun
+almost blindingly.  
+~
+~
+~
+~
+~
+~
+0 Ca 0 0
+V sea
+The Black Cabbage~
+S
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

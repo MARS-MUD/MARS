@@ -1,0 +1,676 @@
+#AREADATA
+Version     9
+Name        olpquest~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       200 299
+Overland    10 10
+Levels      0 0
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    medium
+Created     1279250009
+Changed     1718658871 Mon Jun 17 17:14:31 2024
+End
+
+#MOBILES
+#0
+
+#OBJECTS
+#200
+darkblade soultaker dark blade soul taker~
+the `wDark`cblade `RSo`rul`Ot`rak`Rer`X~
+A strange looking dagger~
+obsidian~
+weapon ABCGSTYc 0 AN
+dagger 25 8 slash CM 2
+1 150 200 0 P
+0 0 0 0
+0 0 0 0 0
+#201
+bracers of dexterity~
+Bracers of `PD`Wexterity`X~
+Some plain leather bracers~
+leather~
+armor GHSTYc 0 AM
+14 13 13 7 0 0
+1 40 100 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 10
+A
+19 10
+A
+14 100
+A
+2 4
+#202
+ring of regeneration~
+`YR`Oing `Wo`wf `GRe`Ogen`ge`Gr`Oatio`gn`X~
+A small metal band~
+~
+jewelry GHSTYc 0 AB
+0 0 0 0 0 0
+1 10 200 400 P
+0 0 0 0
+0 0 0 0 0
+A
+5 2
+A
+14 100
+A
+13 100
+#203
+dread helm~
+The `rD`Rr`ze`Ra`rd `YH`Oelm`X~
+A black metal helm with glowing `Rred`X eyes~
+steel~
+armor CHSTY 0 AE
+14 13 15 6 0 0
+1 200 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+3 2
+A
+4 2
+A
+14 10
+A
+12 10
+A
+13 10
+#204
+amulet natural armor~
+Amulet of Natural Armor~
+A small river stone on a necklace chain~
+~
+armor GHSTY 0 AC
+13 13 14 7 0 0
+1 40 0 0 P
+0 0 0 0
+0 0 0 0 0
+#205
+Ioun stone of protection~
+`WI`Coun `wStone of `pP`Brotection`X~
+A strange cyan stone hovers~
+~
+armor AGHSTY 0 AQ
+13 14 13 6 0 0
+1 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+#206
+smoldering smouldering armor~
+`zsmoldering`X armor~
+A set of armor smoldering and smoking~
+leather~
+armor CHSTY 0 AD
+12 14 13 6 0 0
+1 500 0 0 P
+0 0 0 0
+0 0 0 0 0
+#207
+bag of holding~
+bag of `Oholding`X~
+A bag of holding~
+~
+container HSTY 0 AK
+999990 A 0 99990 50 99999
+0 100 0 0 P
+0 0 0 0
+0 0 0 0 0
+#208
+horn caps spiked~
+`Rsp`Yik`Red`X horn caps~
+Some spiked horn caps~
+~
+armor STY 0 AZ
+13 15 14 7 0 0
+1 40 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+12 20
+A
+4 1
+A
+3 1
+#209
+spectacles of truesight~
+spectacles of `Pt`Br`Cu`ce`Ws`ci`Cg`Bh`Pt`X~
+Spectacles with a wire rim and a faint glow~
+~
+armor AGSTY 0 AR
+14 13 13 7 0 0
+1 10 0 0 P
+5 'truesight' 9999 9999
+0 0 0 0 0
+E
+truesight~
+the spectacles are infused the power of the truesight spell
+ 
+to use this power, type 'invoke spectacles' (help invoke)
+~
+#210
+earring crystal light~
+`CC`cry`Ws`cta`Cl `XEarrings of `YL`Oi`Wg`Oh`Yt`X~
+A pair of glowing crystal earrings~
+~
+jewelry ASTY 0 AT
+0 0 0 0 0 0
+0 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -5
+A
+19 10
+A
+18 10
+A
+12 20
+A
+4 2
+A
+3 2
+#211
+onyx face plate faceplate~
+an `wO`zny`wx`X faceplate~
+A faceplate made impossibly of black stone~
+~
+armor ASTYc 0 AS
+0 0 0 0 0 0
+1 30 1000 400 P
+0 0 0 0
+0 0 0 100 0
+A
+20 -5
+A
+19 10
+A
+13 10
+A
+5 1
+#212
+spiked shoulder guards shoulderguards~
+`ws`zp`wi`zk`we`zd `Rs`rho`Rul`rd`zer`rg`Rua`rrd`Rs`X~
+Some leather shoulderguards covered in spikes and studs~
+~
+armor GSTY 0 AW
+15 14 14 7 0 0
+1 200 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+14 20
+A
+19 10
+A
+1 1
+#213
+chain sleeves~
+a pair of `wc`Wh`za`Wi`wn`X sleeves~
+A pair of chain sleeves~
+~
+armor GSTY 0 AI
+15 14 14 7 0 0
+1 100 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -5
+A
+1 1
+A
+13 10
+#214
+steel handguard hand guards gauntlets~
+a pair of `Wst`we`Wel`X gauntlets~
+A large pair of steel gauntlets~
+~
+armor STY 0 AH
+15 14 14 7 0 0
+1 120 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -10
+A
+2 2
+A
+14 20
+#215
+belt of giant strength megingjord~
+the `Obelt `Xof `Gg`gi`Oa`gn`Gt `Ost`Yre`Ong`Yth`X~
+A belt that looks very similar to the fabled megingjord~
+~
+armor GNSTYc 0 AL
+13 14 14 6 0 0
+1 50 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+14 20
+A
+1 4
+#216
+steel legguards leg guards~
+some `Wst`ze`Wel`X legguards~
+Steel legguards lie discarded here~
+~
+armor GSTY 0 AF
+14 15 15 7 0 0
+1 300 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+14 30
+A
+2 1
+#217
+golden chain anklets anklet~
+`Ygo`Ol`wd`Yen`X `Ych`Wa`Yin`X anklet~
+A small golden chain~
+~
+jewelry GSTY 0 AX
+0 0 0 0 0 0
+1 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -10
+A
+4 1
+A
+3 1
+A
+2 1
+A
+14 30
+#218
+black steel boots~
+`zblack `wst`ze`wel`X boots~
+Some black steel boots~
+~
+armor STY 0 AG
+14 14 14 7 0 0
+1 350 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+13 30
+A
+5 2
+#219
+darkwood shield~
+the `zda`wr`Okw`wo`zod`X shield~
+A shield made of very dark wood~
+~
+armor STY 0 AJ
+15 15 14 6 0 0
+1 200 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -5
+A
+3 1
+A
+4 1
+A
+12 30
+#220
+everburning torch~
+everburning `Rto`Yr`Rch`X~
+A smouldering torch~
+~
+light STY 0 AO
+0 0 99999 0 0 0
+0 30 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+4 1
+A
+3 1
+A
+12 30
+#221
+totem of power~
+a `Ct`co`Bt`ce`Cm`X of `Pp`po`Ww`pe`Pr`X~
+A carved wooded totem~
+~
+treasure STY 0 AO
+0 0 0 0 0 0
+1 30 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -10
+A
+12 100
+#222
+tail spikes~
+`Wa`wr`zm`Xo`zr`we`Wd tail `Rs`Op`Wik`Oe`Rs`X~
+Armored tail spikes lie on the ground~
+~
+armor STY 0 AY
+14 13 14 6 0 0
+1 30 0 0 P
+0 0 0 0
+0 0 0 0 0
+#223
+mace of force~
+`pm`Pace `Wo`wf `bf`Borce`X~
+A large glowing mace~
+~
+weapon GSTY 0 AN
+mace 25 6 smash GJK 2
+1 1000 0 0 P
+0 0 0 0
+0 0 0 0 0
+#224
+the vorpal sword~
+the `Cv`Bor`Cp`Bal`X sword~
+A large glowing sword~
+~
+weapon AGSTY 0 AN
+short_sword 25 6 cleave DEK 2
+1 1500 0 0 P
+0 0 0 0
+0 0 0 0 0
+#225
+bearded axe~
+a `wbe`za`Wr`zd`wed`X axe~
+A bearded axe~
+~
+weapon GSTY 0 AN
+axe 25 6 wrath BDK 2
+1 1900 0 0 P
+0 0 0 0
+0 0 0 0 0
+#226
+club studded~
+a `Bs`Ct`cudded `Xclub~
+A studded length of wood~
+~
+weapon GSTY 0 AN
+club 25 6 beating CM 2
+1 900 0 0 P
+0 0 0 0
+0 0 0 0 0
+#227
+spear gungnir replica~
+a replica of `RGu`wn`zg`wn`Rir`X~
+A perfect replica of Odin's spear, Gungnir~
+~
+weapon STY 0 AN
+spear 25 6 divine ABDEK 2
+1 2000 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 30
+#228
+replica of mjolnir~
+a replica of `BM`Cjo`Wl`Cni`Br`X~
+A replica of Thor's hammer, Mjolnir~
+~
+weapon AGSTY 0 AN
+hammer 25 6 divine EGIK 2
+1 2000 0 0 P
+0 0 0 0
+0 0 0 0 0
+#229
+restring ticket immortal~
+a `wr`Westring`X ticket~
+A strange sheet of paper~
+~
+trash STY 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#230
+rename ticket~
+a `wr`Wename`X ticket~
+A strange sheet of paper~
+~
+trash STY 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#231
+10 ten qp quest point token~
+`Ga `Y10`Cqp `Gtoken`X~
+`Ga `Y10`Cqp `Gtoken`X~
+~
+token OSTYe 0 A
+10 0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#232
+fifty 50 qp quest point token~
+`Ga `Y50`Cqp `Gtoken `X~
+`Ga `Y50`Cqp `Gtoken `X~
+~
+token OSTYe 0 A
+50 0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#233
+100 one hundred one-hundred qp quest point token~
+`Ga `R100`Cqp `Gtoken!`X~
+`B(`PRARE`B)`Ga `R100`Cqp `Gtoken!`X~
+~
+token OSTYe 0 A
+100 0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#234
+clan creation voucher~
+a clan creation voucher~
+A voucher for creating a clan~
+~
+questitem STYc 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+voucher~
+This voucher will entitle the bearer to start a clan if requirements are met:
+ 
+1) 3+ other members in your group when presenting the voucher
+2) An acceptable name for your clan.
+3) Full description for your first room of the clan hall (included with clan creation)
+4) Clan 'who' tag design selected.
+~
+#235
+clan hall room voucher~
+a clan hall room voucher~
+A voucher for extra clan hall rooms.~
+~
+questitem STYc 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+room_voucher~
+This voucher entitles you to one additional clan hall room.
+You must have the room description ready before redeeming this voucher.
+~
+#236
+clan healer voucher~
+a clan healer voucher~
+A voucher for a clan healer~
+~
+questitem STYc 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+healer_voucher~
+This voucher entitles you to a healer for your clan hall.
+You must have an acceptable name and description ready when redeeming the voucher.
+ 
+Clan Healers begin at level 5. Additional levels can be added with levelup vouchers.
+~
+#237
+clan levelup voucher~
+a levelup voucher~
+A voucher for adding a level to clan healer or guard~
+~
+questitem STYc 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+levelup_voucher~
+This voucher is good for one additional level for a clan healer or guard.
+~
+#238
+clan guard voucher~
+clan guard voucher~
+A voucher for a clan guard~
+~
+questitem STYc 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+guard_voucher~
+This voucher entitles you to a single level 5 clan guard.
+You must have an acceptable name and description for the guard before redeeming.
+Additional levels may be added with levelup vouchers.
+~
+#0
+
+#ROOMS
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#VROOMS
+0 13
+0 13
+0 13
+0 2
+0 2
+0 5
+0 5
+0 5
+0 2
+0 2
+0 13
+0 13
+0 13
+0 2
+0 2
+0 5
+0 5
+0 5
+0 2
+0 2
+0 13
+0 13
+0 13
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 10
+0 10
+0 10
+0 2
+0 2
+0 11
+0 11
+0 11
+0 2
+0 2
+0 10
+0 10
+0 10
+0 2
+0 2
+0 11
+0 11
+0 11
+0 2
+0 2
+0 10
+0 10
+0 10
+0 2
+0 2
+0 11
+0 11
+0 11
+0 2
+0 2
+0 10
+0 10
+0 10
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 10
+0 10
+0 10
+0 2
+0 2
+0 4
+0 4
+0 4
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 2
+0 4
+0 4
+0 4
+0 2
+0 2
+-1
+
+#$

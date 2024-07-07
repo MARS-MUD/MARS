@@ -1,0 +1,342 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+Clerics
+==================
+
+Divine Spells
+--------------------
+Aid
+Aura of Peace
+Bless
+Calm
+Celestial Lightning
+Holy Word
+Ray of Truth
+Remove Curse
+Resurrect
+
+Healing Spells
+--------------------
+Cure Blindness
+Cure Critical
+Cure Disease
+Cure Drunk
+Cure Light
+Cure Poison
+Cure Serious
+Full Heal
+Heal
+Healing Hands
+Mana
+Mass Healing
+Refresh
+
+Protection Spells
+--------------------
+Protection Evil
+Protection Good
+Sanctuary
+
+Strength Spells
+--------------------
+Barrage
+Bear's Endurance
+Bull's Strength
+Cat's Grace
+Fox's Cunning
+Frenzy
+Owl's Wisdom
+Strike True
+
+Death Spells
+--------------------
+Cause Critical
+Cause Light
+Cause Serious
+Harm
+
+
+
+Druids
+==================
+
+Nature Spells
+--------------------
+Acid Geyser
+Animal Summoning
+Astral Walk
+Barkskin
+Bear Claws
+Bear Fat
+Call Lightning
+Chain Lightning
+Control Weather
+Curse of Nature
+Dragonscales
+Earthquake
+Faerie Fire
+Faerie Fog
+Goodberry
+Hurricane
+Infravision
+Natural Armor
+Summon Greater Wolf
+Summon Hawk
+Summon Tiger
+Summon Wolf
+Telekinetic Force
+
+Mages
+==================
+
+Abjuration Spells
+--------------------
+Armor
+Cancellation
+Dispel Evil
+Dispel Good
+Dispel Magic
+Flame Shield
+Forceshield
+Shield
+Spellmantle
+Static Shield
+
+
+Conjuration Spells
+--------------------
+Acid Breath
+Fire Breath
+Frost Breath
+Gas Breath
+Lightning Breath
+Blade Barrier
+Continual Light
+Create Food
+Create Rose
+Create Spring
+Create Water
+Dancing Boots
+Disruption
+Floating Disc
+Gate
+Nexus
+Portal
+Summon
+Summon Fire Elemental
+Summon Golem
+Teleport
+Word of Recall
+
+Divination Spells
+--------------------
+Detect Aura
+Detect Evil
+Detect Good
+Detect Hidden
+Detect Invis
+Detect Life
+Detect Magic
+Detect Poison
+Farsight
+Identify
+Know Alignment
+Locate Object
+Scry
+Truesight
+
+
+Enchantment Spells
+--------------------
+Charm Person
+Enchant Armor
+Enchant Weapon
+Fireproof
+Recharge
+Sleep
+
+Evocation Spells
+--------------------
+Acid Arrow
+Acid Blast
+Acid Rain
+Burning Hands
+Caustic Eruption
+Chill Touch
+Colour Spray
+Cone of Cold
+Corrosive Burst
+Electrocute
+Fireball
+Flamestrike
+Ion Blast
+Lightning Bolt
+Magic Missile
+Project Force
+Rushing Fist
+Shocking Grasp
+
+
+Illusion Spells
+--------------------
+Blindness
+Dancing Lights
+Daze
+Deafen
+Invisibility
+Mass Invis
+Sleep
+Ventriloquate
+
+
+Necromancy Spells
+--------------------
+Animate
+Atrophy
+Banshee Blast
+Black Mantle
+Curse
+Damnation
+Darkness Shield
+Dark Ritual
+Demonfire
+Energy Drain
+Ghost Shield
+Hellfire
+Plague
+Poison
+Wail of the Banshee
+
+
+Transmutation Spells
+--------------------
+Change Sex
+Enlarge
+Fly
+Giant Strength
+Haste
+Heat Metal
+Pass Door
+Shrink
+Slow
+Stone Skin
+Weaken
+
+
+
+
+
+
+1Rogue Skills
+=======================
+
+Larceny
+-----------------------
+Appraise
+Disarm
+Haggle
+Peek
+Pick Lock
+Steal
+
+Dirty Fighting
+-----------------------
+Backstab
+Dirt Kicking
+Kick
+Trip
+
+Assassination
+-----------------------
+Assassinate
+Envenom
+Hide
+Sneak
+
+rogue combat
+------------------------
+Counter
+Dodge
+Dual 
+Enhanced Damage
+Fast Healing
+Parry
+Second Attack
+Third Attack
+Fourth Attack
+
+
+Fighter Skills
+=========================
+
+Tanking
+-------------------------
+Berserk
+Charge
+Counter
+Disarm
+Dodge
+Fast Healing
+Glance
+Parry
+Rescue
+Shield Block
+
+Offensive Fighthing
+---------------------------
+Bash
+Dual
+Enhanced Damage
+Kick
+Second Attack
+Third Attack
+Fourth Attack
+Fifth Attack

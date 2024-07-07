@@ -1,0 +1,469 @@
+#USER
+Name Adjtest
+Host 'aesir.fios-router.home'
+Id 1636876725
+Last 1636876725
+LogC 0
+Lvl 1
+Race 'Hforc'
+Class 'Mag'
+Plyd 1227
+End
+
+#USER
+Name Ahm
+Host 'localhost'
+Id 1634448961
+Last 1696259351
+LogC 25
+Lvl 30
+Race 'Dgnbn'
+Class 'Drd'
+Plyd 24403
+End
+
+#USER
+Name A
+Host ''
+Id 1634293764
+Last 1694536461
+LogC 33
+Lvl 0
+Race 'Dgnbn'
+Class 'Mag'
+Plyd 3911082
+End
+
+#USER
+Name Breth
+Host 'localhost'
+Id 1699413740
+Last 1699413740
+LogC 1
+Lvl 1
+Race 'Dgnbn'
+Class 'Ftr'
+Plyd 1318
+End
+
+#USER
+Name Brethest
+Host 'localhost'
+Id 1699411374
+Last 1699412014
+LogC 1
+Lvl 1
+Race 'Dgnbn'
+Class 'Ftr'
+Plyd 1722
+End
+
+#USER
+Name Castertest
+Host 'localhost'
+Id 1719784836
+Last 1719784836
+LogC 1
+Lvl 20
+Race 'Elf'
+Class 'Mag'
+Plyd 139
+End
+
+#USER
+Name Clantest
+Host 'localhost'
+Id 1715902726
+Last 1715902726
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 40
+End
+
+#USER
+Name Drowntest
+Host 'aesir.fios-router.home'
+Id 1634597437
+Last 1634600045
+LogC 1
+Lvl 3
+Race 'Dgnbn'
+Class 'Drd'
+Plyd 3324
+End
+
+#USER
+Name Eraughtcun
+Host '37.238.28.4'
+Id 1635069401
+Last 1635069401
+LogC 1
+Lvl 1
+Race 'Tflng'
+Class 'Mag'
+Plyd 242
+End
+
+#USER
+Name Ethostest
+Host 'aesir.fios-router.home'
+Id 1636883400
+Last 1636883400
+LogC 1
+Lvl 2
+Race 'Dgnbn'
+Class 'Mag'
+Plyd 514
+End
+
+#USER
+Name Eyetest
+Host 'aesir.fios-router.home'
+Id 1636873768
+Last 1636876011
+LogC 2
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 1348
+End
+
+#USER
+Name Greytest
+Host 'cpe-24-243-26-114.satx.res.rr.com'
+Id 1634707401
+Last 1634707401
+LogC 1
+Lvl 1
+Race 'Dgnbn'
+Class 'Clr'
+Plyd 1958
+End
+
+#USER
+Name Jaxl
+Host 'localhost'
+Id 1694368805
+Last 1699411814
+LogC 7
+Lvl 20
+Race 'Hflng'
+Class 'Rog'
+Plyd 4350
+End
+
+#USER
+Name Keeptest
+Host 'localhost'
+Id 1718658173
+Last 1718658173
+LogC 1
+Lvl 10
+Race 'Dwarf'
+Class 'Clr'
+Plyd 344
+End
+
+#USER
+Name Mobiletest
+Host 'ue.tmodns.net'
+Id 1634389907
+Last 1634389907
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 1165
+End
+
+#USER
+Name Moebius
+Host 'cpe-24-243-26-114.satx.res.rr.com'
+Id 1634454803
+Last 1634686666
+LogC 8
+Lvl 114
+Race 'Elf'
+Class 'Ftr'
+Plyd 163759
+End
+
+#USER
+Name Mptest
+Host 'aesir.fios-router.home'
+Id 1634631078
+Last 1634631078
+LogC 1
+Lvl 1
+Race 'Dgnbn'
+Class 'Mag'
+Plyd 2308
+End
+
+#USER
+Name Ohm
+Host 'localhost'
+Id 1719785959
+Last 1719786106
+LogC 2
+Lvl 30
+Race 'Human'
+Class 'Mag'
+Plyd 984
+End
+
+#USER
+Name Om
+Host 'localhost'
+Id 1634293764
+Last 1720372458
+LogC 10
+Lvl 30
+Race 'Human'
+Class 'Mag'
+Plyd 15130
+End
+
+#USER
+Name Practest
+Host 'aesir.fios-router.home'
+Id 1637373142
+Last 1637373142
+LogC 1
+Lvl 3
+Race 'Dwarf'
+Class 'Mag'
+Plyd 406
+End
+
+#USER
+Name Praesius
+Host 'localhost'
+Id 1635026370
+Last 1719770020
+LogC 7
+Lvl 22
+Race 'Human'
+Class 'Rog'
+Plyd 7834
+End
+
+#USER
+Name Searchtest
+Host 'localhost'
+Id 1719770862
+Last 1719770862
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 2776
+End
+
+#USER
+Name Studytest
+Host 'aesir.fios-router.home'
+Id 1636082377
+Last 1636082377
+LogC 1
+Lvl 20
+Race 'Dwarf'
+Class 'Mag'
+Plyd 260
+End
+
+#USER
+Name Testbelt
+Host 'localhost'
+Id 1718658932
+Last 1719769610
+LogC 2
+Lvl 22
+Race 'Human'
+Class 'Ftr'
+Plyd 1679
+End
+
+#USER
+Name Testcanc
+Host 'aesir.fios-router.home'
+Id 1634627745
+Last 1634627745
+LogC 1
+Lvl 5
+Race 'Dgnbn'
+Class 'Mag'
+Plyd 3080
+End
+
+#USER
+Name Testchar
+Host 'aesir.fios-router.home'
+Id 1636878087
+Last 1636878452
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 576
+End
+
+#USER
+Name Testchargen
+Host 'aesir.fios-router.home'
+Id 1636877960
+Last 1636877960
+LogC 0
+Lvl 1
+Race 'Dwarf'
+Class 'Clr'
+Plyd 121
+End
+
+#USER
+Name Testdetail
+Host 'aesir.fios-router.home'
+Id 1636219970
+Last 1636220167
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 27
+End
+
+#USER
+Name Tester
+Host 'cpe-24-243-26-114.satx.res.rr.com'
+Id 1634629462
+Last 1634707153
+LogC 4
+Lvl 1
+Race 'Dgnbn'
+Class 'Drd'
+Plyd 4799
+End
+
+#USER
+Name Testexp
+Host 'aesir.fios-router.home'
+Id 1636191997
+Last 1636217747
+LogC 2
+Lvl 3
+Race 'HlfLf'
+Class 'Rog'
+Plyd 2488
+End
+
+#USER
+Name Testlevel
+Host 'aesir.fios-router.home'
+Id 1636190570
+Last 1636190862
+LogC 2
+Lvl 19
+Race 'Elf'
+Class 'Mag'
+Plyd 449
+End
+
+#USER
+Name Testmort
+Host 'aesir.fios-router.home'
+Id 1634349072
+Last 1634596710
+LogC 3
+Lvl 21
+Race 'Human'
+Class 'Mag'
+Plyd 4887
+End
+
+#USER
+Name Testmssp
+Host 'aesir.fios-router.home'
+Id 1636186652
+Last 1636186652
+LogC 1
+Lvl 3
+Race 'Elf'
+Class 'Mag'
+Plyd 3352
+End
+
+#USER
+Name Testnewb
+Host 'aesir.fios-router.home'
+Id 1635839341
+Last 1635839341
+LogC 1
+Lvl 7
+Race 'HlfLf'
+Class 'Ftr'
+Plyd 4686
+End
+
+#USER
+Name Testnewbie
+Host 'aesir.fios-router.home'
+Id 1635839230
+Last 1635839230
+LogC 1
+Lvl 1
+Race 'Dwarf'
+Class 'Ftr'
+Plyd 52
+End
+
+#USER
+Name Testnuke
+Host 'aesir.fios-router.home'
+Id 1636221073
+Last 1636221073
+LogC 1
+Lvl 1
+Race 'Elf'
+Class 'Mag'
+Plyd 14
+End
+
+#USER
+Name Testpack
+Host 'aesir.fios-router.home'
+Id 1635836001
+Last 1635836143
+LogC 1
+Lvl 1
+Race 'Dgnbn'
+Class 'Mag'
+Plyd 69
+End
+
+#USER
+Name Testschool
+Host 'aesir.fios-router.home'
+Id 1635830501
+Last 1635830501
+LogC 1
+Lvl 4
+Race 'Tflng'
+Class 'Clr'
+Plyd 2533
+End
+
+#USER
+Name Xptest
+Host 'aesir.fios-router.home'
+Id 1634299504
+Last 1634301488
+LogC 1
+Lvl 3
+Race 'Dgnbn'
+Class 'Ftr'
+Plyd 381
+End
+
+#END

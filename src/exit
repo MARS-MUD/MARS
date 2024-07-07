@@ -1,0 +1,16 @@
+recycle.c:	strlist_free = strlist->next;
+recycle.c:    strlist->next = NULL;
+recycle.c:    strlist->str = &str_empty[0];
+recycle.c:    strlist->len = 0;
+recycle.c:    free_string( strlist->str );
+recycle.c:    strlist->next = strlist_free;
+track.c:    for (; rlist; rlist = rlist->next_track)
+track.c:        if (!rlist->exit[i] || !rlist->exit[i]->u1.to_room ||
+track.c:          PATH_IS_FLAG(bitvector, rlist->exit[i]->u1.to_room->vnum))
+track.c:        PATH_SET_FLAG(bitvector, rlist->exit[i]->u1.to_room->vnum);
+track.c:        rlist->exit[i]->u1.to_room->track_came_from = rlist;
+track.c:        if (rlist->exit[i]->u1.to_room == to)
+track.c:          while (rlist->track_came_from != from)
+track.c:            rlist = rlist->track_came_from;
+track.c:          rlist->exit[i]->u1.to_room->next_track = track_room_list;
+track.c:          track_room_list = rlist->exit[i]->u1.to_room;

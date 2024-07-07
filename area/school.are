@@ -1,0 +1,1093 @@
+#AREADATA
+Version     9
+Name        Mud School~
+Credits     MacGregor~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       1800 1899
+Levels      1 10
+Security    0
+Recall      900
+Flags       F
+Color       7
+ExitSize    medium
+Created     1278824324
+Changed     1715908513 Thu May 16 21:15:13 2024
+End
+
+#MOBILES
+#1800
+reg shoe~
+Reg Shoe~
+Reg Shoe stands here, ladling out mugs of cocoa to warm the soul.
+~
+~
+human~
+ABGa 0 0 B 0 0 100
+0 16 10d10+8400 1d1+249 7d10+0 none
+-23 -23 -23 -23
+0 0 0 0
+stand stand male 0
+0 0 medium 0 medium ''
+>greet_prog 100~
+if isspirit($n)
+  sayto $n You look like you could use help.
+  sayto $n If you wish to walk the lands alive again, say "resurrect me".
+endif
+~
+>speech_prog p resurrect me.~
+if isspirit($n) 
+  smile $n 
+  sayto $n As you wish. 
+  emote starts to wave his hands.
+  mpechoat $n `WThey start to glow glow slightly as he touches you.
+  mpechoaround $n `WThey start to glow glow slightly as he touches $n.
+  cast resurrect $n 
+else 
+  sayto $n Lets not be wasting my time. Others need my help. Move along now! 
+endif 
+~
+|
+#1801
+Sage Ancient~
+The Ancient Sage~
+An Ancient Sage is here to instruct you in all things
+~
+~
+human~
+ABGJKMb 0 0 0 0 0 100
+16 0 10d10+8400 1d1+249 7d10+0 magic
+-23 -23 -23 -23
+0 CD 0 0
+stand stand male 0
+0 0 medium 0 medium ''
+T 'mage'
+#1802
+dummy target practice~
+`OA Target Practice Dummy`X~
+A `OTarget Practice Dummy`X stands here, waiting to test the citizens in combat.
+~
+Tall, wooden, and vaguely humanoid, the Practice Dummy has 
+two sets of posts coming out of either side of the center pole,
+one set at the bottom, and one at the top.  Both sets are set
+apart slightly in height, and somehow inside the wide main pole,
+they are connected via a complex series of cords and pulleys so
+that when you strike one of the top posts, it may be one
+of the bottom posts that swings around at you in return!
+~
+human~
+ABGM 0 0 0 0 0 1
+0 0 1d4+10 1d1+99 1d4+0 none
+19 19 19 19
+CEN ABLMNPQR 0 DEFGZ
+stand stand neutral 0
+0 0 medium 0 medium ''
+#1803
+trainer~
+The Trainer~
+The Trainer stands ready to train you!
+~
+~
+human~
+ABGJKb 0 0 0 0 0 110
+19 0 10d10+10700 1d1+249 7d11+1 none
+-28 -28 -28 -28
+0 0 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+T 'mage'
+#0
+
+#OBJECTS
+#1800
+junk~
+some junk~
+Some junk clutters things up.~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1801
+map~
+a map~
+A blank map lurks here.~
+~
+map 0 0 AO
+1 0 0 0 0 0
+1 5 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1802
+shield~
+a training shield~
+A wooden shield looks back at you.~
+~
+armor U 0 AN
+1 1 1 0 0 0
+1 480 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1803
+mace~
+a mace~
+A big ol' mace can be used to bash somebody.~
+wood~
+weapon U 0 AN
+mace 1 6 pound 0 0
+1 800 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1804
+dagger~
+a dagger~
+A dagger can be used to stab somebody.~
+bronze~
+weapon U 0 AN
+dagger 1 6 pierce 0 0
+1 240 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1805
+sword~
+a sword~
+This certainly appears to be a short sword.~
+bronze~
+weapon U 0 AN
+short_sword 1 6 stab 0 0
+1 480 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1806
+spear~
+a spear~
+A school spear menaces nobody.~
+~
+weapon U 0 AN
+spear 1 6 stab 0 0
+1 800 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1807
+staff~
+a short staff~
+A staff is here.~
+wood~
+weapon U 0 AN
+staff 1 6 pound 0 0
+1 640 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1808
+axe~
+an axe~
+An axe suitable for chopping wood or limbs is here.~
+iron~
+weapon U 0 AN
+axe 1 6 chop 0 0
+1 800 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1809
+whip~
+a whip~
+A long whip is coiled here.~
+leather~
+weapon U 0 AN
+whip 1 6 whip 0 0
+1 320 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1810
+polearm~
+a polearm~
+A big ol' polearm can be used to bash somebody.~
+wood~
+weapon U 0 AN
+polearm 1 6 smash F 0
+1 2400 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1811
+flail~
+a flail~
+A big ol' flail can be used to bash somebody.~
+wood~
+weapon U 0 AN
+flail 1 6 pound 0 0
+1 800 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1812
+broadsword sword~
+a broadswrod~
+A nasty sword for girls rests here.~
+iron wood~
+weapon U 0 AN
+broadsword 1 6 slash F 0
+1 1440 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1813
+hammer~
+a hammer~
+A big ol' hammer can be used to bash somebody.~
+bronze wood~
+weapon U 0 AN
+hammer 1 6 pound 0 0
+1 640 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1814
+vest~
+a vest~
+A crumpled wrinkled vest has been dropped here.~
+leather~
+armor U 0 AD
+1 1 1 0 0 0
+1 50 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1815
+lantern~
+a lantern~
+A lantern glows brightly.~
+glass~
+light U 0 AO
+0 0 800 0 0 0
+1 320 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1816
+boots~
+a pair of boots~
+A pair of boots have been stepped out of here.~
+leather~
+armor U 0 AG
+1 1 1 0 0 0
+1 160 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1817
+shirt~
+a chirt~
+A shirt was dropped here.~
+cloth leather~
+armor U 0 AD
+1 1 1 0 0 0
+1 160 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1818
+pants~
+a pair of pants~
+Somebody lost their pants here.~
+cloth~
+armor U 0 AF
+1 1 1 0 0 0
+1 160 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1819
+portal wilds~
+a portal to the wilds~
+A Portal to the wilds swirls in the air~
+~
+portal 0 0 0
+0 0 0 500000 6 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#1800
+Pseudopolis Yard Watch House~
+The Psuedopolis Yard Watch House stands imposingly to the south.
+ 
+Hastily tacked to the wall beside the door is a small piece of paper
+with a message scrawled upon it. (look notice)
+ 
+To the Northeast and Southeast is Lower Broad Way, and to the West is
+Butts Treat, which continues on to the Northwest to Sheer Street.
+~
+~
+~
+~
+~
+~
+0 IKRa 0 12
+Dsouth medium
+~
+~
+~
+~
+0 0 1801
+E
+notice~
+Wot like we of the City Wach R gunna
+bee teechin' yous how ta difend yerselfs
+on th' order of Cap'n Sam Vimes.
+ 
+Oi, so if you want ta lern how to fite
+what with the trunchun an' crossbow,
+see Carrot.  He th' short Dwarf feller.
+~
+S
+#1801
+A room in mud school.~
+Inside the watch house, the air is filled with the sweet smell of a fresh
+cauldron of hot cocoa and armor polish.  Directly in front of the door is
+a large counter with a registry book facing whomever would be sitting behind
+it, were the post not currently vacant.
+ 
+To the south is the main bullpen where the officers of the Watch go about
+their daily business.  On the wall beside the counter is another note.
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1800
+Dsouth medium
+~
+~
+~
+~
+0 0 1802
+E
+note~
+Rite den. Seein as yous came in heer, wot with this bein
+the Watch House, yous either a criminal or yer wanting to 
+lern how to defend yerself as a fine upstandin' in-de-vijul.
+ 
+Unless yous a criminal tryin' to outsmarts us. Well, we r onto you
+an it won't work!  We r smarter'nthat.
+ 
+If yous want to train yer skills, Corporal Carrot can teach yous how,
+All yous have to do is tipe 'train', and he will help ya.
+Yous can also practice yer skills heer,  by tip'n 'practice'.
+~
+S
+#1802
+The Bullpen~
+Just past the main counter is a large room with rows of desks. Each desk
+has the normal paraphenalia expected of someone who may, or may not, have
+at least attended basic schooling.  Inkwells and quills can be seen on the
+desks, and on a few of them random articles from the Ankh-Morpork Times can
+be seen, some with words underlined or circled, and others with quite childish
+and crude defacing of the pictures that accompany articles about those in the
+higher social circles of Ankh-Morpork.
+ 
+Leading up to the offices above is a stairway, and another leading down to the cells.
+To the west, the smell of cocoa becomes much stronger as it wafts from the kitchen,
+and to the east is a small supply closet with the door left wide open. To the south
+is the door to the rear yard of the Watch House.  There is another note beside the door.
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1801
+Deast medium
+~
+~
+~
+~
+0 0 1803
+Dsouth medium
+~
+~
+~
+~
+0 0 1805
+Dwest medium
+~
+~
+~
+~
+0 0 1804
+Dup medium
+~
+~
+~
+~
+0 0 1812
+Ddown medium
+~
+~
+~
+~
+0 0 1811
+E
+note~
+Not that yous bin checked an ain't a criminal, it's time
+to git to the reel trainin'.  Outside in th' yard is a buncha
+practice dummys fer yous ta try'n lern how ta fite on.
+ 
+If yous go outside, You can find a weapon and armor rack with
+some basic stuff like a trunchen an a sheeld. Mebbe even some
+helmuts n wotnot.  
+ 
+~
+S
+#1803
+Supply Closet~
+Inside this closet, things are in a sad state of affairs...
+ 
+Boxes of shoe polish containers, empty inkwells, shackles, unengraved badges,
+and various other refuse have been tossed and stuffed on various shelves with
+absolutely not regard to organization or even the smallest degree of
+common sense.  There is something cold and unnatural about this room, as if in
+the chaos of it's non-uniformity, it has created a connection with some sort
+of otherworldly place.
+
+ ...Or, it could just be nothing.
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 1802
+S
+#1804
+Kitchen~
+The warm smell of cocoa fills this room even more strongly than the ones
+before it, as in the center of the kitchen beneath a large chimney is a
+cauldron brimming with the bubbling, brackish, delicious sludge.
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1802
+S
+#1805
+Pseudopolis Yard~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1802
+Deast medium
+~
+~
+~
+~
+0 0 1806
+Dsouth medium
+~
+~
+~
+~
+0 0 1808
+Dwest medium
+~
+~
+~
+~
+0 0 1807
+Dsouthwest medium
+~
+~
+~
+~
+0 0 1810
+Dsoutheast medium
+~
+~
+~
+~
+0 0 1809
+S
+#1806
+~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1809
+Dwest medium
+~
+~
+~
+~
+0 0 1805
+S
+#1807
+~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1805
+Dsouth medium
+~
+~
+~
+~
+0 0 1810
+S
+#1808
+~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1805
+Deast medium
+~
+~
+~
+~
+0 0 1809
+Dwest medium
+~
+~
+~
+~
+0 0 1810
+S
+#1809
+~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1806
+Dwest medium
+~
+~
+~
+~
+0 0 1808
+Dnorthwest medium
+~
+~
+~
+~
+0 0 1805
+S
+#1810
+~
+Just outside the rear door of the Watch House is Pseudopolis Yard.  In
+the yard, there are several training dummies lined up for the citizens of
+Ankh-Morpork to test their newly acquired skills on.  There are plenty of
+dummies spread out across the yard in many directions so that many people
+can practice at the same time.  
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1807
+Deast medium
+~
+~
+~
+~
+0 0 1808
+Dnortheast medium
+~
+~
+~
+~
+0 0 1805
+S
+#1811
+the Cells~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1815
+Deast medium
+~
+~
+~
+~
+0 0 1813
+Dwest medium
+~
+~
+~
+~
+0 0 1814
+Dup medium
+~
+~
+~
+~
+0 0 1802
+S
+#1812
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1819
+Deast medium
+~
+~
+~
+~
+0 0 1820
+Dwest medium
+~
+~
+~
+~
+0 0 1823
+Ddown medium
+~
+~
+~
+~
+0 0 1802
+S
+#1813
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 1811
+S
+#1814
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1811
+S
+#1815
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1818
+Deast medium
+~
+~
+~
+~
+0 0 1817
+Dsouth medium
+~
+~
+~
+~
+0 0 1811
+Dwest medium
+~
+~
+~
+~
+0 0 1816
+S
+#1816
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1815
+S
+#1817
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 1815
+S
+#1818
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1815
+S
+#1819
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1812
+S
+#1820
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1821
+Dwest medium
+~
+~
+~
+~
+0 0 1812
+S
+#1821
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1826
+Deast medium
+~
+~
+~
+~
+0 0 1822
+Dwest medium
+~
+~
+~
+~
+0 0 1820
+S
+#1822
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1827
+Dwest medium
+~
+~
+~
+~
+0 0 1821
+S
+#1823
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1825
+Deast medium
+~
+~
+~
+~
+0 0 1812
+Dwest medium
+~
+~
+~
+~
+0 0 1824
+S
+#1824
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1823
+S
+#1825
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1823
+S
+#1826
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1821
+S
+#1827
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1822
+S
+#1828
+~
+~
+~
+~
+~
+~
+~
+0 CDGIKRa 0 0
+S
+#0
+
+#RESETS
+O 0 1819 -1 1800
+M 0 1803 1 1800 1
+M 0 1801 1 1801 1
+M 0 1800 1 1804 1
+M 0 1802 10 1805 1
+M 0 1802 10 1806 1
+M 0 1802 10 1807 1
+M 0 1802 10 1808 1
+M 0 1802 10 1809 1
+M 0 1802 10 1810 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

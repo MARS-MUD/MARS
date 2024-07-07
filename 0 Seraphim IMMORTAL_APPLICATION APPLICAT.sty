@@ -1,0 +1,241 @@
+0 Seraphim  IMMORTAL_APPLICATION APPLICATION IMMAPP ~
+`c-------------------------------------------------------------------------------
+`C    IMMORTAL APPLICATION
+`c-------------------------------------------------------------------------------`X
+
+Welcome!
+
+So you want to be an Immortal, huh? Okay. That's entirely possible. But before applying
+you must meet the following requirements:
+
+* Have at least 40 hours played time on your main mortal character.
+* No penalties/nochannels/freezes/etc within the last 180 days.
+* Experience with the Immortal position you're applying for.
+ 
+Onto the application! Either write a note to Om in-game, or send an email to mars@wr3tch.org
+with the following information:
+
+Name:
+Character Name(s):
+Position being applied for:
+Experience with MUDs as a player: ____ Years  ____ Months
+MUD Immortal Experience: ____ Years  ____ Months
+Positions Held and which MUDs:
+Relevant skills/experience for position:
+Are you familiar with:
+ILAB OLC [ ]
+Ivan's OLC [ ] 
+MProgs [ ]
+C Programming Language [ ]
+LUA [ ]
+Java [ ] 
+Python [ ] 
+MySQL [ ] 
+HTML [ ]
+JavaScript [ ]
+JSON [ ] 
+
+Tell us why you feel that you'd be a good fit in the position for which you're 
+applying, and what you will bring to MARS:
+
+Finally, tell us something interesting about yourself:
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+
+
+29 Seraphim ADVANCE  ~
+`c-------------------------------------------------------------------------------
+`C    ADVANCE
+`c-------------------------------------------------------------------------------`X
+
+Syntax: advance <character> <level>
+
+ADVANCE sets a character's level to the specified value.  It is the
+only way to create new immortal characters within the game.  ADVANCE
+may also be used to demote characters.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+
+
+29 Seraphim REBOOT SHUTDOWN SHUTDOW  ~
+`c-------------------------------------------------------------------------------
+`C    REBOOT SHUTDOWN
+`c-------------------------------------------------------------------------------`X
+Syntax: reboot
+	shutdown
+
+Reboot shuts down the server.  When the normal 'startup' script is used
+to control the server, a delay of fifteen seconds will ensue (to allow
+old connections to die), followed by a reboot.
+
+Shutdown shuts down the server and prevents the normal 'startup' script
+from restarting it.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+
+
+26 WIZLOCK NEWLOCK ~
+`c-------------------------------------------------------------------------------
+`C    WIZLOCK NEWLOCK
+`c-------------------------------------------------------------------------------`X
+
+Syntax: wizlock
+	newlock
+
+Wizlock and newlock both block login attempts to MARS. Wizlock locks
+out all non-gods (i.e. level less than 21), except for link-dead players who
+are returning.  Newlock only locks out new character generation, typically
+used for preventing a spammer from returning.  Wizlocking should be avoided,
+and newlocking should be accompanied by mail or a note to the imps.
+
+A god must be at least level 28 to wizlock the game.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+29 DENY~
+`c-------------------------------------------------------------------------------
+`C    DENY
+`c-------------------------------------------------------------------------------`X
+Syntax: deny <name>
+
+Deny locks a character out of a game permanently, rendering their character
+name unusable.  It may only be removed by editing the file, for this reason
+freeze is usually preferred.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+26 DISCONNECT~
+`c-------------------------------------------------------------------------------
+`C    DISCONNECT
+`c-------------------------------------------------------------------------------`X
+Syntax: disconnect <name>
+
+Disconnect breaks a player's link to the game, dumping them back to the telnet
+prompt.  This is a non-lethal way of getting rid of spammers and annoying
+players.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+26 FREEZE~
+`c-------------------------------------------------------------------------------
+`C    FREEZE
+`c-------------------------------------------------------------------------------`X
+Syntax: freeze <name>
+
+FREEZE <character> is a toggle which prevents a character from issuing any
+commands at all. It can be removed from within the game, so freezing a 
+troublemaker is usually a better option than they deny command.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+24 FORCE~
+`c-------------------------------------------------------------------------------
+`C    FORCE
+`c-------------------------------------------------------------------------------`X
+Syntax: force <character> <command>
+Syntax: force all <command>
+
+FORCE forces one character to execute a command, except of course delete.
+
+Below level 27 (Deity) force can only be used on mobiles, and force all is
+unavailable.  You also cannot 'force orc murder hugo', for example. 
+
+FORCE 'all' forces all player characters to execute a command.
+This is typically used for 'force all save'.
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+26 SOCKETS~
+`c-------------------------------------------------------------------------------
+`C    SOCKETS
+`c-------------------------------------------------------------------------------`X
+Syntax: sockets
+	sockets <name> 
+
+SOCKETS reports all of the visible users connected to the server, including 
+users in the process of logging in.  The two numbers inside brackets are the 
+channel number and the 'connected' state.  The 'connected' states are listed in 
+merc.h: 0 is CON_PLAYING; non-zero values are various states of logging in.
+
+The optional name argument shows the site of a player, or optional can be used
+to identify switched gods (i.e. socket orc shows the name of anyone switched
+into an orc).
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+24 LOAD~
+`c-------------------------------------------------------------------------------
+`C    LOAD
+`c-------------------------------------------------------------------------------`X
+Syntax: load mob <vnum>
+	load obj <vnum> <level>
+
+The load command is used to load new objects or mobiles (use clone to 
+duplicate strung items and mobs).  The vnums can be found with the vnum
+command, or by stat'ing an existing mob or object.
+
+Load puts objects in inventory if they can be carried, otherwise they are
+put in the room.  Mobiles are always put into the same room as the god. Old
+format objects must be given a level argument to determine their power, new
+format objects have a preset level that cannot be changed without set.
+(see also clone, vnum, stat)
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+28 SET~
+`c-------------------------------------------------------------------------------
+`C    SET
+`c-------------------------------------------------------------------------------`X
+Syntax: set mob   <mobile> <field> <value>
+	set obj   <object> <field> <value>
+	set room  <number> <field> <value>
+	set skill <char>   <name>  <rating>
+	set skill <char>   all     <rating>
+
+The set command is used to change the numerical values of the various data
+structures. Type set <class> without an argument to see a listing of options.
+Set skill all (pc's only) will set all the character's skills to the value
+given.  Use string to change the strings on an object or mobile.
+(see also string, stat)
+
+`c-------------------------------------------------------------------------------
+ 
+~
+
+22 STRING~
+`c-------------------------------------------------------------------------------
+`C    STRING
+`c-------------------------------------------------------------------------------`X
+Syntax: string obj <field> <string>
+	string mob <field> <string>
+
+The string command changes the various strings associated with an object or
+mobile.  A full list of fields can be viewed by typing string obj or string
+mob.  Sorry, multi-line strings are not yet supported.
+
+`c-------------------------------------------------------------------------------
+ 
+~

@@ -1,0 +1,15 @@
+#BOARD General
+Desc General stuff~
+Read 1
+Write 1
+Expire 0
+End
+
+#BOARD Changes
+Desc New Changes to MARS~
+Read 1
+Write 28
+Expire 0
+End
+
+#$

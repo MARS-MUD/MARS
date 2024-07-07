@@ -1,0 +1,11 @@
+Handy utility functions that didn't come with Rom2.4b6:
+
+bool buf_printf( BUFFER *buf, const char *format, ... )
+void bugf( const char *format, ... )
+void ch_printf( CHAR_DATA *ch, const char *format, ... )
+void logf( const char *format, ... )
+char *strip_color( char *dest, const char *src )
+int strlen_wo_col( const char *str )
+char *strncpy_wocol( char *dest, const char *src, int count )
+
+buf_printf adds a string to a BUFFER using a printf() type format string.

@@ -1,0 +1,1 @@
+Remove mana for spell casting, replace with memorization

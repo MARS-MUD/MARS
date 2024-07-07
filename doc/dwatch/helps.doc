@@ -1,0 +1,97 @@
+
+HELPS
+7/6/2002 - REK
+
+Here's how the help system now works:
+
+struct help_data
+{
+    HELP_DATA * next;
+    AREA_DATA * area;           <--- new field
+    int         level;
+    int         ed_level;       <--- new field
+    char *      keyword;
+    char *      text;
+};
+
+area is of course the area from which the help was loaded at boot time.
+ed_level is the minimum level required to modify a help with hedit.
+
+When a #HELPS section is loaded from an area file, the area field is set to
+the area data from the last #AREA or #AREADATA section read:
+
+    pHelp->area = area_last;
+
+If no #AREA header has been read yet then last_area of course is NULL.
+
+Currently help.are is the first area file read and it has no #AREA or
+#AREADATA section; just a #HELPS section.  Consequently all the helps from
+help.are have their area pointers set to NULL.  This is the only area file
+without an #AREA header; note that stock ROM has four of them: help.are,
+social.are, rom.are and group.are.  Social.are has only a #SOCIALS section;
+it is now obsolete since socials are stored in their own file.
+
+The first area file read after the help-only file is limbo.are.  Therefore
+limbo will have an area vnum of 0.  Hedit and do_help() make use of this
+fact.
+
+All helps, regardless of which file read from, are stored in a single linked
+list pointed to by help_first.  They are added to the end of the list as
+they are read, not added to the head of the list as is normally done with
+singly linked lists.
+
+When a player issues the help command, the server scans all help entries in
+the list.  If the entry's area pointer is not NULL, and if it is not limbo,
+and if it is not the same as the area the player is currently in, it is
+skipped and the next help entry in the list is examined.  Otherwise if the
+player's level is at least equal to the help's level and one of its keywords
+matches the player's input, the help text is sent to the player.  The scan
+of the help list then continues.
+
+This means we can have helps local to a particular area.  It also means the
+player might see more than one help since all helps with keyword matches are
+displayed.  Keyword matching is done via is_name() rather than via
+is_exact_name().  This is good but it can sometimes be annoying; if you type
+"help note" you will see the help on notes, you will also see the help on
+notell.
+
+When an immortal edits a help with hedit, the ed_level is compared with the
+imm's level.  If their level is below the help's ed_level, or they are not a
+builder for the help's area, they are not permitted to make changes to the
+help.  If the help's area is NULL, then no editing is permitted by anybody
+(the help must be edited with a text editor in the shell).
+
+The "area" command within hedit can be used to move a help from one area to
+another.  The builder must be able to build in both areas for this to
+succeed.  Both areas are flagged as changed.
+
+The syntax for creating a new help is "hedit c", not the normal "create". 
+The reason for this is to avoid conflicts when editing helps on "create
+food", "create water", etc.  Currently a new help cannot be created with a
+key identical to an existing help; this should be changed.
+
+When a new help is created it is placed in limbo.are by default if the
+builder is level 107 or greater, otherwise it is placed in the builder's
+current area.
+
+The format of a help entry saved in an area file has been changed.
+It had been
+<level> <keyword-list>~ <help text>~
+
+It is now
+<level> <ed_level> <keyword-list> <help text>
+
+The entry marking the end of the help section has been changed from
+0 $~
+to
+0 0 $~
+
+The level and ed_level are stored as a number unless greater or equal to
+LEVEL_IMMORTAL (101).  If either is LEVEL_IMMORTAL or above, it is stored as
+a word corresponding to the appropriate level (eg implementor, angel, god,
+etc).  These are looked up in level_types[] in tables.c.  This way, if we
+decide in the future to change the immortal levels, we don't have to
+manually change all the levels in all the helps.
+
+If a help has an empty keyword list when its area is saved, the help is not
+saved in the area file.

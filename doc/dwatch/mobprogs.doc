@@ -1,0 +1,5 @@
+
+The mobprog driver is largely adapted from the Smaug mudprog driver.
+
+mprog_translate -- does variable substitution (expands $n to a player's
+                   name, etc.

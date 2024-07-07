@@ -1,0 +1,240 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+candolar.txt:
+
+03/24/2004
+Implemented counter skill.
+fight.c merc.h skilltable.c
+
+
+feydkin.txt:
+
+11:01 PM 6/16/2003
+Still trying to get channel to work how I want it, nothing special. No changes to files.
+-Feydkin
+
+
+kain.txt:
+
+******6-11-03*******
+Added goodberry spell
+magickain.c skilltable.c merc.h const.c limbo.are
+
+**********6-10-03******
+updated tables.c with thte aff of the new spells
+
+
+********6-10-03**********
+Added Summon Greater Golem
+magickain.c skilltable.c merc.h const.c  Limbo.are
+
+
+**********6-09-03**********
+added Acidic Rain, 
+magickain.c skilltable.c merc.h const.c
+***********6-9-03***********
+Added Aid spell
+Put in the curative spell group
+magickain.c skilltable.c merc.h const.c
+
+***********6-04-03*************
+Added Flameshield, static shield, and force shield.
+Put in the "Protective" spell group. <for now>
+Merc.h, skilltable.c, magickain.c, fight.c, const.c
+
+
+
+Added preliminary omni on 5-28-03
+added 'idle' to omni
+
+
+lefire.txt:
+
+5/27
+  Added knock command, improved message for trying to use a non-door
+act_comm.c interp.h interp.c
+
+
+nefarios.txt:
+
+Use this file to track your changes
+1.Mobs can no longer use olc.
+
+torhan.txt:
+
+May 24, 2003 -  BSN
+----------------------------
+Added Summon Wolf.
+
+
+May 25, 2003 - BSN
+------------------------
+Added Summon Fire Elemental
+
+
+
+May 26, 2003 - BSN
+----------------------------
+Added HotCoco to list of liquids
+const.c modified
+
+
+May 27, 2003 - BSN
+-----------------------------
+Changed who slightly, added some eye candy to it.
+act_info.c Modified
+
+Added the rip comand (grinz)
+
+
+
+May 30, 2003 - BSN
+----------------------------
+Changed the Colors in show_score
+act_info.c - Changed colors again
+
+June 11th 2003 - BSN
+------------------------------
+Added  check to do advance so nobody can demote me or Nibs. :P
+act_wiz.c
+
+
+
+June 16th 2003
+------------------------------
+Go ahead try to smite me :P
+
+
+
+July 22, 2003
+--------------------
+he he, no more Force.
+
+
+July 24th, 2003
+---------------------------
+Decided i dont like being ripped in half, no fun.....=P
+
+
+Rengar (ren.txt):
+2/21/07 - SMC
+If char is DEAF, will not see gossip channel. Currently no message is
+displayed, can be fixed.
+act_comm.c
+
+2/18/07 - SMC
+Added code for War Mount skill.
+merc.h gsn.c skilltable.c fight.c
+
+2/18/07 - SMC
+Made eat, rub, and quaff check for free hand.
+act_obj.c
+
+2/17/7 - SMC
+Made whisper deafness compliant.
+act_comm.c
+
+2/12/7 - SMC
+Made Speech Triggers Deafness compliant.
+progs.c
+
+2/12/7 - SMC
+Fixed error with mobprogs in sayto.
+act_comm.c
+
+2/12/7 - SMC
+Fixed do_sayto to properly block deaf people.
+act_comm.c
+
+2/10/7 - SMC
+Fixed do_restor to strip deafen spell now.
+act_wiz.c
+
+2/8/7 - SMC
+Added checks for cancel spell for deafen and wail of the bansee.
+magic.c
+
+2/8/7 - SMC
+Added 'deafen' spell. Maladict that adds AFF_DEAFEN.
+merc.h magic.h magic2.c gsn.c skilltable.c act_wiz.c
+
+2/7/7 - SMC
+Changed do_say to block says for DEAF people.
+act_comm.c
+
+2/07/07 - SMC
+Changed do_say to loop through the room, for future expansion of DEAF and
+Languages.
+act_comm.c
+
+1/22/07 - SMC
+Added spell wail of the bansee, and its affect, also it strips w/ restore.
+merc.h magic2.c act_wiz.c skilltable.c magic.h gsn.c
+
+1/21/07 - SMC
+Added data for future continenet code as a flag_type.
+tables.c merc.h
+
+1/21/07 - SMC
+Added room echo to do_smell
+act_info.c
+
+1/21/07 - SMC
+Added light time to 'spell_identify'
+magic.c
+
+1/21/07 - SMC
+Replaced get_heal_rate with math function, instead of giant else if chain
+magic.c
+
+1/20/07 - SMC
+Setup shell here with help from MAC.
+(none)

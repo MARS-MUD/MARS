@@ -1,0 +1,287 @@
+#AREADATA
+Version     9
+Name        shi~
+Credits     ~
+Builders    Shi~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       400 404
+Levels      0 0
+Security    0
+Recall      8063
+Flags       B
+Color       7
+ExitSize    medium
+Created     1279476891
+Changed     1279605684 Tue Jul 20 02:01:24 2010
+End
+
+#MOBILES
+#400
+Ci Ci maid~
+Bar Maiden Ci Ci~
+A bar maiden is here filling orders.
+~
+~
+human~
+AG 0 0 0 0 0
+5 15 5d6+10 1d1+124 2d4+1 none
+8 8 7 8
+EHIK JNQS IJ CDH
+stand stand female 15
+0 0 medium 0 medium ''
+#401
+Drunk man~
+A drunk~
+A man stumbling over, trying to find the beer maiden to fill his glass is here
+~
+~
+human~
+A Yad&AF 0 0 0 0
+6 15 10d15+30 1d3+4 2d4+1 none
+7 6 6 7
+C PRT 0 CI
+stand stand male 0
+0 0 medium 0 medium ''
+#402
+Secretary~
+The tavern secretary~
+The tavern secretary is here, filing away her husbands paperwork.
+~
+~
+human~
+AG 0 0 0 0 0
+0 15 10d15+10 0d0+0 0d0+0 none
+0 0 0 0
+F C OPQTZ D
+stand stand female 0
+0 0 medium 0 medium ''
+#403
+Boss~
+The tavern boss~
+The tavern boss is annoyed, paying bills and handing his wife the paperwork.
+~
+~
+human~
+AG 0 0 0 0 0
+0 100 30d45+100 0d0+0 0d0+0 pierce
+0 0 0 0
+P 0 D BFN
+stand stand neutral 0
+0 0 medium 0 medium ''
+#404
+Janitor~
+The janitor~
+The janitor is here, cleaning up empty beer bottles
+~
+~
+human~
+AG 0 0 0 0 0
+3 13 1d1+4 1d1+109 1d6+0 none
+9 10 10 10
+0 C 0 CDEFG
+stand stand male 0
+0 0 medium 0 medium ''
+#0
+
+#OBJECTS
+#400
+Pool stick~
+A pool stick~
+An oak pool stick is here~
+wood~
+weapon 0 AN
+polearm 2 6 none 0 1
+3 20 3 D
+0 0 0 0
+0 0 0 0 0
+#401
+beer~
+A beer~
+A cold delicious beer is here, and it's imported!~
+~
+drink 0 A
+5 5 'beer' 0 0 0
+0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#402
+Shot of Ice~
+Shot of Ice~
+A frosted shot glass is here, begging to be drank~
+~
+drink 0 A
+100 100 'absinthe' 0 0 0
+0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#403
+Onyx Scythe~
+Scythe of Onyx~
+A powerfull looking scythe is here~
+bone~
+weapon CEGJY AN
+scimitar 500 500 wrath CM 500
+114 0 0 P
+0 0 0 0
+0 0 0 0 0
+#404
+Black Robes~
+Flowing black robes~
+A pile of black cloth is here~
+~
+armor EJ AD
+10000 10000 10000 10000 10000 0
+0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#400
+Village Tavern~
+Upon entering the tavern, through the main door a large group of drunk
+people can be seen.  The drunks line the bar, as the beer maid pours their
+orders.  A few tables are empty, and a sign is posted on the wall.  
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 401
+E
+sign~
+Ci Ci is busy tending to customers. Beer is free thanks to Shi!
+~
+S
+#401
+Billiard section~
+The billiard section reveals four tables, two are being used by a younger
+crowd.  There still are two facant tables in the back.  Pool sticks are
+lined up on a rack on the wall.  Windows gaze out on to the patio, the
+outside crowd seem to also be having a good time.  
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 400
+Dwest medium
+~
+~
+~
+~
+0 0 402
+S
+#402
+Hallway~
+The hallway is kept clean by the janitor, he's always cleaning up after
+the messy crowd.  To the north, a small sign reads "Bathroom", and on the
+west side of the room is a staircase leading up to a closed door.  Pictures
+hang neatly on the wall following the staircase up, each picture is of a
+different former maiden.  
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 403
+Deast medium
+~
+~
+~
+~
+0 0 401
+Dup medium
+~
+~
+~
+~
+81923 0 404
+E
+pictures~
+Pictures of Sarah, Milenna, Juliette and Karen all hang neatly on the
+wall.  
+~
+S
+#403
+Bathrooms~
+Four clean white stalls have been crafted to hold even the largest of
+people.  These toilets see good days and bad.  The sounds of someone
+throwing up can be heard from one of the stalls.  Steel sinks allow the
+users to clean their hands.  
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 402
+S
+#404
+Office~
+Coming from up the stairs, a door blocks the path.  Opening it reveals a
+large office, the same size as the bar.  Desks, files, and even a secretary
+is busy working away at some papers.  The boss however is mad, filling out
+paperwork and handing it to his secretary.  
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Ddown medium
+~
+~
+~
+~
+3 0 402
+S
+#0
+
+#RESETS
+M 0 400 1 400 1
+O 0 401 1 400
+M 0 401 1 400 1
+O 0 400 1 401
+M 0 404 1 402 1
+M 0 402 1 404 1
+M 0 403 1 404 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

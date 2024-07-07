@@ -1,0 +1,45 @@
+#!/bin/bash
+
+me=`whoami`
+if [ $me == root ]; then
+  echo Do not run this script as root\!
+  exit
+fi
+
+AREA=../area/
+BIN_DIR=../src/
+BINARY=mars
+LOG_DIR=../log/
+SHUTDOWN_FILE=shutdown.txt
+SHUTDOWN_SAVE=shutdown.dat
+
+# DO NOT CHANGE THE PORT NUMBER!
+# Run the mud by typing "startup 4302 &" or whatever
+port=3033
+
+if [ ! -z $1 ]; then port=$1; fi
+
+# allow core dumps
+ulimit -c unlimited
+
+cd $AREA
+
+if [ -e $SHUTDOWN_FILE ]; then
+    rm -f $SHUTDOWN_FILE
+fi
+
+while [ true ]
+do
+    index=1000
+    while [ -e ${LOG_DIR}${index}.log ]
+    do
+        index=$(($index + 1))
+    done
+
+    ${BIN_DIR}${BINARY} $port > ${LOG_DIR}${index}.log 2>&1
+    if [ -e $SHUTDOWN_FILE ]; then
+        mv -f $SHUTDOWN_FILE $SHUTDOWN_SAVE
+        break
+    fi
+    sleep 10
+done

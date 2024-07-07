@@ -1,0 +1,696 @@
+act_clan.c:    buf_printf( pBuf, "Box:       [%5d] %s`X\n\r", pClan->box, pObj ? pObj->short_descr : "(none)" );
+act_move.c:	    if ( !IS_SET( pObj->wear_flags, ITEM_TAKE ) )
+act_move.c:	SET_BIT( pObj->extra_flags, ITEM_HIDDEN );
+act_obj.c:	obj_next = pObj->next_content;
+act_obj.c:	if ( !IS_SET( pObj->extra_flags, ITEM_HIDDEN ) )
+act_obj.c:	if ( pObj->level > ch->level )
+act_obj.c:	chance = 10 + ch->level - pObj->level;
+act_obj.c:	REMOVE_BIT( pObj->extra_flags, ITEM_HIDDEN );
+act_obj.c:	    SET_BIT( pObj->extra_flags, ITEM_HIDDEN );
+act_wiz2.c:	if ( pObj->item_type != ITEM_PORTAL )
+act_wiz2.c:	     ( pObj->value[3] < lvnum || pObj->value[3] > uvnum ) )
+act_wiz2.c:	     ( pObj->value[3] >= lvnum && pObj->value[3] <= uvnum ) )
+act_wiz2.c:	buf_printf( pBuf, " %5d portal to %d\n\r", obj_vnum, pObj->value[3] );
+act_wiz2.c:	    for ( paf = pObj->affected; paf != NULL; paf = paf->next )
+act_wiz2.c:	    for ( pExtra = pObj->extra_descr; pExtra != NULL; pExtra = pExtra->next )
+act_wiz2.c:	    if ( pObj->ac_type != INVOKE_NONE )
+act_wiz2.c:	    if ( pObj->join != 0 || ( pObj->sep_one != 0 && pObj->sep_two != 0 ) )
+act_wiz2.c:	    for ( pProg = pObj->oprogs; pProg != NULL; pProg = pProg->next )
+act_wiz2.c:	strcpy( buf, pObj->short_descr );
+act_wiz2.c:    if ( pObj->item_type != ITEM_KEY && pObj->item_type != ITEM_PERMKEY )
+act_wiz2.c:	buf_printf( buf, "Warning: %s`X is not a key.\n\r", pObj->short_descr );
+act_wiz2.c:		if ( room->exit[door] != NULL && room->exit[door]->key == pObj->vnum )
+act_wiz2.c:	    if ( container->item_type == ITEM_CONTAINER && container->value[2] == pObj->vnum )
+act_wiz2.c:	buf_printf( buf, "%s`X does not unlock anything.\n\r", pObj->short_descr );
+act_wiz2.c:		strip_color( buf, pObj->short_descr );
+act_wiz2.c:		buf_printf( pBuf, "`R[`W%5d`R] `W%3d - `w%-25.24s", vnum, pObj->level, buf );
+act_wiz2.c:	    if ( !( pObj->wear_flags & loc ) )
+act_wiz2.c:	    if ( pObj->level < minlevel || pObj->level > maxlevel )
+act_wiz2.c:			pObj->vnum,
+act_wiz2.c:			pObj->level,
+act_wiz2.c:			pObj->short_descr );
+act_wiz.c:        for ( pObj = obj_index_hash[hash]; pObj != NULL; pObj = pObj->next )
+act_wiz.c:            if ( fAll || is_name( argument, pObj->name ) )
+act_wiz.c:                if ( first == NULL || pObj->vnum < first->o->vnum )
+act_wiz.c:                        if ( pObj->vnum < tmp->next->o->vnum )
+act_wiz.c:    if ( pObj->join != 0 && ( pJoin = get_obj_index( pObj->join ) ) != NULL )
+act_wiz.c:                    pObj->join, pJoin->short_descr );
+act_wiz.c:    if ( pObj->sep_one != 0 && pObj->sep_two != 0 )
+act_wiz.c:                    pObj->sep_one, pObj->sep_two );
+db.c:		pObj->reset_num++;
+db.c:		pObj->reset_num++;
+db.c:		pObj->reset_num++;
+db.c:            pObj->cost = 0;
+db.c:		SET_BIT( pObj->extra_flags, ITEM_INVENTORY );  /* ROM OLC */
+db.c:        for ( pObj = obj_index_hash[i]; pObj != NULL; pObj = pObj->next )
+db.c:            for ( oreprog = pObj->oprogs; oreprog != NULL; oreprog = oreprog->next )
+db.c:            if ( pObj->item_type != ITEM_ARMOR )
+db.c:            strip_color( short_d, pObj->short_descr );
+db.c:                     vnum, pObj->level, short_d,
+db.c:                     flag_string( wear_flags, pObj->wear_flags ) );
+db.c:            switch ( pObj->item_type )
+db.c:                    spell1 = pObj->value[1] > 0 ? skill_table[pObj->value[1]].name : "(none)";
+db.c:                    spell2 = pObj->value[2] > 0 ? skill_table[pObj->value[2]].name : "(none)";
+db.c:                    spell3 = pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "(none)";
+db.c:                    spell1 = pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "(none)";
+db.c:                    spell1 = pObj->value[1] > 0 ? skill_table[pObj->value[1]].name : "(none)";
+db.c:                    spell2 = pObj->value[2] > 0 ? skill_table[pObj->value[2]].name : "(none)";
+db.c:                    spell3 = pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "(none)";
+db.c:            strip_color( short_d, pObj->short_descr );
+db.c:                     vnum, pObj->level, short_d, item_name( pObj->item_type ),
+db.c:                     pObj->cost, pObj->value[0], spell1, spell2, spell3 );
+db.c:            money.fract = pObj->cost;
+db.c:            strip_color( short_d, pObj->short_descr );
+db.c:                     pObj->level,
+db.c:                     flag_string( item_types, pObj->item_type ),
+db.c:                     pObj->cost,
+db.c:            strip_color( short_d, pObj->short_descr );
+db.c:                     pObj->level,
+db.c:                     flag_string( item_types, pObj->item_type ),
+db.c:                     pObj->value[0],
+db.c:                     pObj->value[1],
+db.c:                     pObj->value[2],
+db.c:                     pObj->value[3],
+db.c:                     pObj->value[4],
+db.c:                     pObj->value[5]
+db.c:            if ( pObj->item_type != ITEM_WEAPON )
+db.c:            strip_color( short_d, pObj->short_descr );
+db.c:                     vnum, pObj->level, short_d,
+db.c:                     flag_string( weapon_types, pObj->value[0] ) );
+handler.c:    for ( pObj = pRoom->contents; pObj != NULL; pObj = pObj->next_content )
+handler.c:        if ( pObj->pIndexData == pObjIndex )
+handler.c:        for ( pObj = pMob->carrying; pObj != NULL; pObj = pObj->next_content )
+handler.c:            if ( pObj->pIndexData == pObjIndex )
+mob_cmds.c:    if ( pObj->progtypes == 0 )
+mob_cmds.c:    buf_printf( buf, "Name: %s\n\r", pObj->name );
+mob_cmds.c:    buf_printf( buf, "Vnum: %d\n\r", pObj->vnum );
+mob_cmds.c:    buf_printf( buf, "Short description: %s`X\n\r", pObj->short_descr );
+mob_cmds.c:    buf_printf( buf, "Long description: %s`X\n\r", pObj->description );
+mob_cmds.c:    for ( prog = pObj->oprogs; prog != NULL; prog = prog->next )
+mob_cmds.c:		   pObj->short_descr );
+mob_cmds.c:    if ( pObj->progtypes == 0 )
+mob_cmds.c:    buf_printf( buf, "Name: %s\n\r", pObj->name );
+mob_cmds.c:    buf_printf( buf, "Vnum: %d\n\r", pObj->vnum );
+mob_cmds.c:    buf_printf( buf, "Short description: %s`X\n\r", pObj->short_descr );
+mob_cmds.c:    buf_printf( buf, "Long description: %s`X\n\r", pObj->description );
+mob_cmds.c:    for ( prog = pObj->oprogs; prog != NULL; prog = prog->next )
+olc.c:	sprintf( buf, "%d", pObj ? pObj->vnum : 0 );
+olc.c:	sprintf( buf, "%d", pObj ? pObj->vnum : 0 );
+olc.c:		switch( pObj->item_type )
+olc_clan.c:    buf_printf( pBuf, "Box:       [%5d] %s`X\n\r", pClan->box, pObj ? pObj->short_descr : "(none)" );
+olc_forge.c:    if ( ( ed = pObj->extra_descr ) == NULL )
+olc_forge.c:	ed->keyword = str_dup( pObj->name );
+olc_forge.c:	pObj->extra_descr = ed;
+olc_forge.c:    if ( ( p = string_change( ch, pObj->name, argument ) ) != NULL )
+olc_forge.c:	pObj->name = p;
+olc_forge.c:	if ( ( ed = pObj->extra_descr ) != NULL )
+olc_forge.c:    if ( ( p = string_change( ch, pObj->description, argument ) ) != NULL )
+olc_forge.c:	pObj->description = str_dup( buf );
+olc_forge.c:    if ( ( p = string_change( ch, pObj->short_descr, argument ) ) != NULL )
+olc_forge.c:	pObj->short_descr = str_dup( buf );
+olc_forge.c:    buf_printf( pBuf, "Keywords:          %s\n\r", pObj->name );
+olc_forge.c:    buf_printf( pBuf, "Short description: %s`X\n\r", pObj->short_descr );
+olc_forge.c:    buf_printf( pBuf, "Long description:  %s`X\n\r", pObj->description );
+olc_forge.c:    if ( pObj->extra_descr == NULL )
+olc_forge.c:	buf_printf( pBuf, "\n\r%s", pObj->extra_descr->description );
+olc_obj.c:    pArea = pObj->area;
+olc_obj.c:        pObj->item_type = value;
+olc_obj.c:        pObj->value[0] = 0;
+olc_obj.c:        pObj->value[1] = value == ITEM_WEAPON ? 1 : 0;
+olc_obj.c:        pObj->value[2] = value == ITEM_WEAPON ? 6 : 0;
+olc_obj.c:        pObj->value[3] = ( value == ITEM_FURNITURE ? 100 : 0 );
+olc_obj.c:        pObj->value[4] = ( value == ITEM_CONTAINER || value == ITEM_FURNITURE ? 100 : value == ITEM_PORTAL ? SIZE_TITANIC : 0 );
+olc_obj.c:        pObj->value[5] = 0;
+olc_obj.c:        if ( pObj->item_type == ITEM_MAP )
+olc_obj.c:            pObj->value[0] = 1;
+olc_obj.c:        TOGGLE_BIT( pObj->extra_flags, value );
+olc_obj.c:        TOGGLE_BIT( pObj->extra_flags2, value );
+olc_obj.c:        TOGGLE_BIT( pObj->wear_flags, value );
+olc_obj.c:	    SET_BIT( pObj->wear_flags, ITEM_TAKE );
+olc_obj.c:    if ( pObj->item_type == ITEM_WEAPON && value == APPLY_DAMROLL )
+olc_obj.c:    if ( pObj->item_type == ITEM_ARMOR && value == APPLY_AC )
+olc_obj.c:    pAf->next       =   pObj->affected;
+olc_obj.c:    pObj->affected  =   pAf;
+olc_obj.c:        xTOGGLE_BIT( pObj->race_flags, value );
+olc_obj.c:        xTOGGLE_BIT( pObj->class_flags, value );
+olc_obj.c:        switch( pObj->item_type )
+olc_obj.c:	pObj->condition = value;
+olc_obj.c:    free_string( pObj->name );
+olc_obj.c:    pObj->name = str_dup( pSrc->name );
+olc_obj.c:    free_string( pObj->short_descr );
+olc_obj.c:    pObj->short_descr = str_dup( pSrc->short_descr );
+olc_obj.c:    free_string( pObj->description );
+olc_obj.c:    pObj->description = str_dup( pSrc->description );
+olc_obj.c:    pObj->material	= pSrc->material;
+olc_obj.c:    pObj->item_type	= pSrc->item_type;
+olc_obj.c:    pObj->extra_flags	= pSrc->extra_flags;
+olc_obj.c:	pObj->extra_flags2	= pSrc->extra_flags2;
+olc_obj.c:    pObj->wear_flags	= pSrc->wear_flags;
+olc_obj.c:    pObj->race_flags	= pSrc->race_flags;
+olc_obj.c:    pObj->class_flags	= pSrc->class_flags;
+olc_obj.c:    pObj->level		= pSrc->level;
+olc_obj.c:    pObj->condition	= pSrc->condition;
+olc_obj.c:    pObj->weight	= pSrc->weight;
+olc_obj.c:    pObj->cost		= pSrc->cost;
+olc_obj.c:	pObj->value[i]	= pSrc->value[i];
+olc_obj.c:	pObj->ac_type	= pSrc->ac_type;
+olc_obj.c:	pObj->ac_vnum	= pSrc->ac_vnum;
+olc_obj.c:	pObj->ac_charge[0] = pSrc->ac_charge[0];
+olc_obj.c:	pObj->ac_charge[1] = pSrc->ac_charge[1];
+olc_obj.c:    for ( pEd = pObj->extra_descr; pEd; pEd = pEd_next )
+olc_obj.c:    pObj->extra_descr = NULL;
+olc_obj.c:	pEd->next		= pObj->extra_descr;
+olc_obj.c:	pObj->extra_descr	= pEd;
+olc_obj.c:    while ( pObj->page != NULL )
+olc_obj.c:        page = pObj->page;
+olc_obj.c:        pObj->page = page->next;
+olc_obj.c:                pObj->page = page;
+olc_obj.c:            while ( ( pProg = pObj->oprogs ) != NULL )
+olc_obj.c:                pObj->oprogs = pProg->next;
+olc_obj.c:                if ( pObj->oprogs == NULL )
+olc_obj.c:                    pObj->oprogs = pProg;
+olc_obj.c:            pObj->progtypes = pSrc->progtypes;
+olc_obj.c:    pObj->cost = value;
+olc_obj.c:    pObj->qcost = atoi( argument );
+olc_obj.c:    pObj->vnum			= value;
+olc_obj.c:    pObj->area			= pArea;
+olc_obj.c:    pObj->condition		= 100;
+olc_obj.c:    pObj->next			= obj_index_hash[iHash];
+olc_obj.c:    ch->pcdata->last_oedit	= pObj->vnum;
+olc_obj.c:    if ( !( pAf = pObj->affected ) )
+olc_obj.c:	pAf = pObj->affected;
+olc_obj.c:	pObj->affected = pAf->next;
+olc_obj.c:    sprintf( key, "'%s'", pObj->name );
+olc_obj.c:    for ( ed = pObj->extra_descr; ed != NULL; ed = ed->next )
+olc_obj.c:        if ( !str_cmp( pObj->name, ed->keyword ) )
+olc_obj.c:    pObj->duration = value;
+olc_obj.c:	ed->next            =   pObj->extra_descr;
+olc_obj.c:	pObj->extra_descr   =   ed;
+olc_obj.c:	for ( ed = pObj->extra_descr; ed; ed = ed->next )
+olc_obj.c:	for ( ed = pObj->extra_descr; ed; ed = ed->next )
+olc_obj.c:	    pObj->extra_descr = ed->next;
+olc_obj.c:	for ( ed = pObj->extra_descr; ed; ed = ed->next )
+olc_obj.c:	if ( !pObj->ac_type )
+olc_obj.c:	pObj->ac_charge[1] = pObj->ac_charge[0] = atoi( argument );
+olc_obj.c:	if ( pObj->ac_type != INVOKE_SPELL )
+olc_obj.c:	pObj->ac_vnum = value;
+olc_obj.c:	    ( pObj->item_type == ITEM_SCROLL
+olc_obj.c:	      || pObj->item_type == ITEM_WAND
+olc_obj.c:	      || pObj->item_type == ITEM_STAFF
+olc_obj.c:	      || pObj->item_type == ITEM_LENS
+olc_obj.c:	      || pObj->item_type == ITEM_HERB
+olc_obj.c:	      || pObj->item_type == ITEM_POTION
+olc_obj.c:	      || pObj->item_type == ITEM_PILL ) )
+olc_obj.c:	pObj->ac_type = value;
+olc_obj.c:	pObj->ac_vnum = 0;
+olc_obj.c:	if ( !pObj->ac_type )
+olc_obj.c:	if ( pObj->ac_type == INVOKE_SPELL )
+olc_obj.c:	switch( pObj->ac_type )
+olc_obj.c:		if ( value == pObj->vnum )
+olc_obj.c:		if ( value == pObj->vnum )
+olc_obj.c:        pObj->ac_vnum = value;
+olc_obj.c:    pObj->join = value; 
+olc_obj.c:    pObj->level = value;
+olc_obj.c:    if ( ( p = string_change( ch, pObj->description, argument ) ) != NULL )
+olc_obj.c:	pObj->description = p;
+olc_obj.c:	    xTOGGLE_BIT( pObj->material, value );
+olc_obj.c:    strcpy( old_name, pObj->name );
+olc_obj.c:    if ( ( p = string_change( ch, pObj->name, argument ) ) != NULL )
+olc_obj.c:	pObj->name = p;
+olc_obj.c:	for ( ed = pObj->extra_descr; ed != NULL; ed = ed->next )
+olc_obj.c:	    if ( !str_cmp( pObj->name, ed->keyword ) )
+olc_obj.c:	    for ( ed = pObj->extra_descr; ed != NULL; ed = ed->next )
+olc_obj.c:                ed->keyword = str_dup( pObj->name );
+olc_obj.c:    &&	 pObj->oprogs != NULL
+olc_obj.c:    &&	 pObj->oprogs->next == NULL )
+olc_obj.c:    for ( pProg = pObj->oprogs; pProg; pProg = pProg->next )
+olc_obj.c:    if ( !pObj->oprogs )
+olc_obj.c:    for ( pProg = pObj->oprogs; value < vnum; value++ )
+olc_obj.c:	pObj->oprogs = pObj->oprogs->next;
+olc_obj.c:    pObj->progtypes = 0;
+olc_obj.c:    for ( pProg = pObj->oprogs; pProg; pProg = pProg->next )
+olc_obj.c:	SET_BIT( pObj->progtypes, pProg->type );
+olc_obj.c:    if ( pObj->item_type != ITEM_BOOK )
+olc_obj.c:        ch_printf( ch, "OEdit:  %s`X is not a book.\n\r", pObj->short_descr );
+olc_obj.c:        if ( pObj->page == NULL )
+olc_obj.c:            pObj->page = page;
+olc_obj.c:            for ( pPrev = pObj->page; pPrev->next != NULL; pPrev = pPrev->next )
+olc_obj.c:    for ( page = pObj->page; page != NULL; page = page->next )
+olc_obj.c:            page = pObj->page;
+olc_obj.c:            pObj->page = page->next;
+olc_obj.c:            for ( pPrev = pObj->page; pPrev != NULL; pPrev = pPrev->next )
+olc_obj.c:                bugf( "Page delete: Can't find page %d on #%d", value, pObj->vnum );
+olc_obj.c:        for ( page = pObj->page; page != NULL; page = page->next )
+olc_obj.c:            bugf( "Page edit: Can't find page %d on #%d", value, pObj->vnum );
+olc_obj.c:            page->next = pObj->page;
+olc_obj.c:            pObj->page = page;
+olc_obj.c:            for ( pPrev = pObj->page; pPrev != NULL; pPrev = pPrev->next )
+olc_obj.c:                bugf( "Page insert: Can't find page %d on #%d", value, pObj->vnum );
+olc_obj.c:    pObj->sep_one = value;
+olc_obj.c:    pObj->sep_two = value;
+olc_obj.c:    if ( ( p = string_change( ch, pObj->short_descr, argument ) ) != NULL )
+olc_obj.c:	pObj->short_descr = p;
+olc_obj.c:    pObj->timer = value;
+olc_obj.c:    pObj->weight = value;
+olc_obj.c:		SET_BIT( pObj->area->area_flags, AREA_CHANGED );
+olc_obj.c:	pObj->progtypes = 0;
+olc_obj.c:	for ( pProg = pObj->oprogs; pProg; pProg = pProg->next )
+olc_obj.c:	    SET_BIT( pObj->progtypes, pProg->type );
+olc_obj.c:	SET_BIT( pObj->area->area_flags, AREA_CHANGED );
+olc_obj.c:    SET_BIT( pObj->progtypes, OBJ_PROG_DROP );
+olc_obj.c:    if ( !pObj->oprogs )
+olc_obj.c:	pObj->oprogs = pProg;
+olc_obj.c:	for ( pNext = pObj->oprogs; pNext->next; pNext = pNext->next )
+olc_obj.c:    buf_printf( pBuf, "[%5d] %s`X\n\r", pObj->vnum, pObj->short_descr );
+olc_obj.c:    for ( pProg = pObj->oprogs; pProg; pProg = pProg->next )
+olc_obj.c:        pObj_next = pObj->next;
+olc_obj.c:        if ( pObj->pIndexData == pObjIndex )
+olc_obj.c:    switch( pObj->item_type )
+olc_obj.c:	    SET_BIT( pObj->wear_flags, ITEM_TAKE );
+olc_obj.c:	    while ( index >= 0 && armor_values[index].level > pObj->level );
+olc_obj.c:	    pObj->value[0] = number_fuzzy( armor_values[index].value );
+olc_obj.c:	    pObj->value[1] = number_fuzzy( armor_values[index].value );
+olc_obj.c:	    pObj->value[2] = number_fuzzy( armor_values[index].value );
+olc_obj.c:	    pObj->value[3] = number_fuzzy( armor_values[index].value ) / 2;
+olc_obj.c:            type = pObj->value[0];	/* use current class if set */
+olc_obj.c:            pObj->value[0] = weapon_values[index].class;
+olc_obj.c:            pObj->value[1] = weapon_values[index].v1 + pObj->level / 5;
+olc_obj.c:            pObj->value[2] = weapon_values[index].v2;
+olc_obj.c:            pObj->value[3] = weapon_values[index].v3;
+olc_obj.c:            pObj->value[5] = weapon_values[index].v5;
+olc_obj.c:	    pObj->wear_flags = ITEM_TAKE | ITEM_WIELD;
+olc_obj.c:    otype = pObj->item_type;
+olc_obj.c:		    pObj->value[2] = atoi( argument );
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:	            pObj->value[1] = atoi( argument );
+olc_obj.c:	            if ( pObj->value[2] == 0 || pObj->value[2] > pObj->value[1] )
+olc_obj.c:	                pObj->value[2] = pObj->value[1];
+olc_obj.c:	            pObj->value[2] = atoi( argument );
+olc_obj.c:	            pObj->value[3] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:	            pObj->value[value_num] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[2] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[3] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[4] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:		    pObj->value[1] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[2] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[3] = skill_lookup( argument );
+olc_obj.c:	            pObj->value[5] ^= value;
+olc_obj.c:               pObj->value[0] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = atoi( argument );
+olc_obj.c:		    pObj->value[1] = atoi( argument );
+olc_obj.c:		    pObj->value[2] = atoi( argument );
+olc_obj.c:		    pObj->value[3] = atoi( argument );
+olc_obj.c:		    pObj->value[4] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = bits;
+olc_obj.c:                        pObj->value[1] = atoi( argument );
+olc_obj.c:                        pObj->value[2] = atoi( argument );
+olc_obj.c:	            pObj->value[3] = bits;
+olc_obj.c:			TOGGLE_BIT( value, pObj->value[4] );
+olc_obj.c:		    pObj->value[4] = value;
+olc_obj.c:                        pObj->value[5] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = atoi( argument );
+olc_obj.c:                        pObj->value[1] = atoi( argument );
+olc_obj.c:                        pObj->value[2] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = atoi( argument );
+olc_obj.c:		    pObj->value[1] = atoi( argument );
+olc_obj.c:	        	TOGGLE_BIT( pObj->value[1], value );
+olc_obj.c:		    pObj->value[2] = atoi( argument );
+olc_obj.c:	            if ( !weight_value( argument, &pObj->value[0] ) )
+olc_obj.c:	        	TOGGLE_BIT(pObj->value[1], value);
+olc_obj.c:		    pObj->value[2] = atoi( argument );
+olc_obj.c:	            if ( !weight_value( argument, &pObj->value[3] ) )
+olc_obj.c:		    pObj->value[4] = value;
+olc_obj.c:		    pObj->value[5] = value;
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:		    if ( pObj->value[1] == 0 )
+olc_obj.c:			pObj->value[1] = pObj->value[0];
+olc_obj.c:	            pObj->value[1] = atoi( argument );
+olc_obj.c:	            pObj->value[2] = value;
+olc_obj.c:			pObj->value[3] = atoi( argument ) == 0 ? 0 : 1;
+olc_obj.c:			pObj->value[3] = 1;
+olc_obj.c:			pObj->value[3] = 0;
+olc_obj.c:                    pObj->value[4] = atoi( argument );
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:	            pObj->value[1] = atoi( argument );
+olc_obj.c:			pObj->value[3] = atoi( argument ) == 0 ? 0 : 1;
+olc_obj.c:			pObj->value[3] = 1;
+olc_obj.c:			pObj->value[3] = 0;
+olc_obj.c:                    pObj->value[4] = atoi( argument );
+olc_obj.c:		        pObj->value[1] = atoi( argument ) == 0 ? 0 : 1;
+olc_obj.c:                        pObj->value[1] = 0;
+olc_obj.c:                        pObj->value[1] = 1;
+olc_obj.c:                    ch_printf( ch, "Fountain is %s.\n\r", pObj->value[1] == 0 ? "wet" : "dry" );
+olc_obj.c:	            pObj->value[2] = value;
+olc_obj.c:			pObj->value[3] = atoi( argument ) == 0 ? 0 : 1;
+olc_obj.c:			pObj->value[3] = 1;
+olc_obj.c:			pObj->value[3] = 0;
+olc_obj.c:			pObj->value[0] = value;
+olc_obj.c:			pObj->value[1] = value;
+olc_obj.c:		    if ( value > pObj->value[0] )
+olc_obj.c:		    pObj->value[1] = value;
+olc_obj.c:	            pObj->value[0] = atoi( argument );
+olc_obj.c:	            pObj->value[1] = atoi( argument );
+olc_obj.c:	            pObj->value[2] = atoi( argument );
+olc_obj.c:	            pObj->value[3] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = atoi( argument );
+olc_obj.c:			pObj->value[2] = 0;
+olc_obj.c:		    pObj->value[2] ^= bits;
+olc_obj.c:			pObj->value[3] = atoi( argument );
+olc_obj.c:			pObj->value[4] = atoi( argument );
+olc_obj.c:		    pObj->value[0] = atoi( argument );
+olc_obj.c:                    TOGGLE_BIT( pObj->value[1], value );
+olc_obj.c:		    pObj->value[2] = atoi( argument );
+olc_obj.c:			pObj->value[3] = 0;
+olc_obj.c:		    pObj->value[3] = value;
+olc_obj.c:                    pObj->value[4] = value;
+olc_obj.c:			TOGGLE_BIT( pObj->value[1], flags );
+olc_obj.c:		    pObj->value[2] = value;
+olc_obj.c:		    pObj->value[value_num] = value;
+olc_obj.c:		    if ( pObj->value[4] == 0 && pObj->value[5] != 0 )
+olc_obj.c:			pObj->value[4] = pObj->value[5];
+olc_obj.c:			pObj->value[5] = 0;
+olc_obj.c:		    if ( pObj->value[3] == 0 && pObj->value[4] != 0 )
+olc_obj.c:			pObj->value[3] = pObj->value[4];
+olc_obj.c:			pObj->value[4] = 0;
+olc_obj.c:		    if ( pObj->value[4] == 0 && pObj->value[5] != 0 )
+olc_obj.c:			pObj->value[4] = pObj->value[5];
+olc_obj.c:			pObj->value[5] = 0;
+olc_obj.c:		        pObj->value[0] = ( sn != 0 );
+olc_obj.c:			    pObj->value[0] = 1;
+olc_obj.c:			    pObj->value[0] = 0;
+olc_obj.c:	pObj->name,
+olc_obj.c:	!pObj->area ? -1        : pObj->area->vnum,
+olc_obj.c:	!pObj->area ? "No Area" : pObj->area->name );
+olc_obj.c:	pObj->vnum,
+olc_obj.c:	item_name( pObj->item_type ) );
+olc_obj.c:    if ( pObj->item_type == ITEM_BOOK )
+olc_obj.c:        for ( page = pObj->page; page != NULL; page = page->next )
+olc_obj.c:    buf_printf( pBuf, "Level:        [%d]\n\r", pObj->level );
+olc_obj.c:    weight = pObj->weight;
+olc_obj.c:    buf_printf( pBuf, "Condition:    [%d]\n\r", pObj->condition );
+olc_obj.c:    cost    = pObj->cost;
+olc_obj.c:    qcost  = pObj->qcost;
+olc_obj.c:	flag_string( wear_flags, pObj->wear_flags ) );
+olc_obj.c:	flag_string( extra_flags, pObj->extra_flags ) );
+olc_obj.c:	flag_string( extra_flags2, pObj->extra_flags2 ) );
+olc_obj.c:        if ( xIS_SET( pObj->race_flags, i ) )
+olc_obj.c:        if ( xIS_SET( pObj->class_flags, i ) )
+olc_obj.c:    buf_printf( pBuf, "Timer:        [%d]\n\r", pObj->timer );
+olc_obj.c:    buf_printf( pBuf, "Duration:     [%d]\n\r", pObj->duration );
+olc_obj.c:    buf_printf( pBuf, "Material:     [%s]\n\r", xbit_string( material_types, pObj->material ) );
+olc_obj.c:    for ( prog = pObj->oprogs; prog != NULL; prog = prog->next )
+olc_obj.c:    if ( pObj->join )
+olc_obj.c:	buf_printf( pBuf, "Joins to create: [%d]\n\r", pObj->join );
+olc_obj.c:    if ( pObj->sep_one )
+olc_obj.c:	buf_printf( pBuf, "First separated object:  [%d]\n\r", pObj->sep_one );
+olc_obj.c:    if ( pObj->sep_two )
+olc_obj.c:	buf_printf( pBuf, "Second separated object: [%d]\n\r", pObj->sep_two );
+olc_obj.c:		flag_string( invoke_types, pObj->ac_type ) );
+olc_obj.c:    switch ( pObj->ac_type )
+olc_obj.c:			pObj->ac_vnum,
+olc_obj.c:			get_mob_index( pObj->ac_vnum ) ?
+olc_obj.c:			    get_mob_index( pObj->ac_vnum )->short_descr :
+olc_obj.c:			pObj->ac_vnum,
+olc_obj.c:			get_obj_index( pObj->ac_vnum ) ?
+olc_obj.c:			    get_obj_index( pObj->ac_vnum )->short_descr :
+olc_obj.c:			pObj->ac_vnum,
+olc_obj.c:			get_room_index( pObj->ac_vnum ) ?
+olc_obj.c:			    get_room_index( pObj->ac_vnum )->name :
+olc_obj.c:			pObj->ac_vnum,
+olc_obj.c:			get_obj_index( pObj->ac_vnum ) ?
+olc_obj.c:			    get_obj_index( pObj->ac_vnum )->short_descr :
+olc_obj.c:			pObj->ac_vnum < 1 ? "(none)"
+olc_obj.c:			: skill_table[pObj->ac_vnum].name );
+olc_obj.c:    if ( pObj->ac_type )
+olc_obj.c:	if ( pObj->ac_charge[1] == -1 )
+olc_obj.c:	    buf_printf( pBuf, "%d", pObj->ac_charge[1] );
+olc_obj.c:    if ( pObj->extra_descr )
+olc_obj.c:	for ( ed = pObj->extra_descr; ed; ed = ed->next )
+olc_obj.c:    buf_printf( pBuf, "Short desc:  %s`X\n\r", pObj->short_descr );
+olc_obj.c:    buf_printf( pBuf, "Long desc:\n\r     %s`X\n\r", pObj->description );
+olc_obj.c:    for ( cnt = 0, paf = pObj->affected; paf; paf = paf->next )
+olc_obj.c:    switch( pObj->item_type )
+olc_obj.c:		pObj->value[0],
+olc_obj.c:		pObj->value[1],
+olc_obj.c:		pObj->value[2],
+olc_obj.c:		pObj->value[3],
+olc_obj.c:		pObj->value[4] );
+olc_obj.c:		pObj->value[0],
+olc_obj.c:		pObj->value[1] );
+olc_obj.c:		flag_string( book_flags, pObj->value[1] ),
+olc_obj.c:		get_obj_index( pObj->value[2] )
+olc_obj.c:		    ? get_obj_index( pObj->value[2] )->short_descr
+olc_obj.c:		pObj->value[2] );
+olc_obj.c:		"[v0] Weight:      [%d] (%s)\n\r", pObj->value[0],
+olc_obj.c:		weight_string( pObj->value[0] ) );
+olc_obj.c:		flag_string( container_flags, pObj->value[1] ),
+olc_obj.c:		get_obj_index( pObj->value[2] )
+olc_obj.c:		    ? get_obj_index( pObj->value[2] )->short_descr
+olc_obj.c:		pObj->value[2],
+olc_obj.c:		pObj->value[3], weight_string( pObj->value[3] ),
+olc_obj.c:		pObj->value[4], pObj->value[5] );
+olc_obj.c:	    drink_cur = pObj->value[0] / liq_table[pObj->value[2]].liq_affect[4];
+olc_obj.c:	    drink_max = pObj->value[1] / liq_table[pObj->value[2]].liq_affect[4];
+olc_obj.c:	    cur_fract = pObj->value[0] == liq_table[pObj->value[2]].liq_affect[4]* drink_cur;
+olc_obj.c:	    max_fract = pObj->value[1] == liq_table[pObj->value[2]].liq_affect[4]* drink_max;
+olc_obj.c:		pObj->value[0], drink_cur, cur_fract ? "" : "+", drink_cur == 1 ? "" : "s",
+olc_obj.c:		pObj->value[1], drink_max, max_fract ? "" : "+",  drink_max == 1 ? "" : "s",
+olc_obj.c:		liq_table[pObj->value[2]].liq_name,
+olc_obj.c:		liq_table[pObj->value[2]].liq_affect[4],
+olc_obj.c:		pObj->value[3] != 0 ? "Yes" : "No",
+olc_obj.c:                pObj->value[4] );
+olc_obj.c:		pObj->value[0], pObj->value[1],
+olc_obj.c:		pObj->value[3] != 0 ? "Yes" : "No",
+olc_obj.c:                pObj->value[4] );
+olc_obj.c:		pObj->value[1] == 0 ? "wet" : "dry",
+olc_obj.c:		liq_table[pObj->value[2]].liq_name,
+olc_obj.c:		pObj->value[3] != 0 ? "Yes" : "No" );
+olc_obj.c:		pObj->value[0], pObj->value[1] );
+olc_obj.c:	    if ( pObj->value[2] == -1 )
+olc_obj.c:		buf_printf( pBuf, "[v2] Light:  [%d]\n\r", pObj->value[2] );
+olc_obj.c:	    buf_printf( pBuf, "[v0] %-*s [%d]\n\r", len, buf, pObj->value[0] );
+olc_obj.c:	    buf_printf( pBuf, "[v1] %-*s [%d]\n\r", len, buf, pObj->value[1] );
+olc_obj.c:	    buf_printf( pBuf, "[v2] %-*s [%d]\n\r", len, buf, pObj->value[2] );
+olc_obj.c:	    buf_printf( pBuf, "[v3] %-*s [%d]\n\r", len, buf, pObj->value[3] );
+olc_obj.c:		pObj->value[0],
+olc_obj.c:		pObj->value[1] > 0 ? skill_table[pObj->value[1]].name : "none",
+olc_obj.c:		pObj->value[2] > 0 ? skill_table[pObj->value[2]].name : "none",
+olc_obj.c:		pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "none" );
+olc_obj.c:		pObj->value[0],
+olc_obj.c:		pObj->value[1] > 0 ? skill_table[pObj->value[1]].name : "none",
+olc_obj.c:		pObj->value[2] > 0 ? skill_table[pObj->value[2]].name : "none",
+olc_obj.c:		pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "none" );
+olc_obj.c:		"[v5] Poison:         [%s]\n\r", flag_string( herb_flags, pObj->value[5] ) );
+olc_obj.c:	    buf_printf( pBuf, "[v0] Charges:     [%d]\n\r", pObj->value[0] );
+olc_obj.c:	                flag_string( portal_flags, pObj->value[1] ) );
+olc_obj.c:	                pObj->value[2],
+olc_obj.c:	                get_obj_index( pObj->value[2] )
+olc_obj.c:                        ? get_obj_index( pObj->value[2] )->short_descr : "(none)" );
+olc_obj.c:	    buf_printf( pBuf, "[v3] Destination: [%d] ", pObj->value[3] );
+olc_obj.c:	    room = get_room_index( pObj->value[3] );
+olc_obj.c:                        flag_string( size_types, pObj->value[4] ) );
+olc_obj.c:		pObj->value[0],
+olc_obj.c:		pObj->value[1],
+olc_obj.c:		pObj->value[2],
+olc_obj.c:		pObj->value[3] > 0 ? skill_table[pObj->value[3]].name : "none" );
+olc_obj.c:	    if ( pObj->value[3] == 0 )
+olc_obj.c:		strcpy( value3, flag_string( weapon_types, pObj->value[3] ) );
+olc_obj.c:	    if ( pObj->value[4] == 0 )
+olc_obj.c:		strcpy( value4, flag_string( weapon_types, pObj->value[4] ) );
+olc_obj.c:	    if ( pObj->value[5] == 0 )
+olc_obj.c:		strcpy( value5, flag_string( weapon_types, pObj->value[5] ) );
+olc_obj.c:		flag_string( sheath_flags, pObj->value[1] ),
+olc_obj.c:		pObj->value[2],
+olc_obj.c:		get_obj_index( pObj->value[2] )
+olc_obj.c:		    ? get_obj_index( pObj->value[2] )->short_descr
+olc_obj.c:		     flag_string( weapon_types, pObj->value[0] ) );
+olc_obj.c:	    buf_printf( pBuf, "[v1] Number of dice: [%d]\n\r", pObj->value[1] );
+olc_obj.c:	    buf_printf( pBuf, "[v2] Type of dice:   [%d]\n\r", pObj->value[2] );
+olc_obj.c:		    flag_string( weapon_flags, pObj->value[3] ) );
+olc_obj.c:		     flag_string( weapon_type_olc,  pObj->value[4] ) );
+olc_obj.c:	    buf_printf( pBuf, "[v5] Damage bonus:   %d\n\r", pObj->value[5] );
+olc_obj.c:	    buf_printf( pBuf, "[v0] Capacity: [%d]\n\r", pObj->value[0] );
+olc_obj.c:			flag_string( furniture_flags, pObj->value[2] ) );
+olc_obj.c:	    buf_printf( pBuf, "[v3] Recovery: [%d%%]\n\r", pObj->value[3] );
+olc_obj.c:	    buf_printf( pBuf, "[v4] Mana rec: [%d%%]\n\r", pObj->value[4] );
+olc_obj.c:	    buf_printf( pBuf, "[v0] Number of arrows: [%2d]\n\r", pObj->value[0] );
+olc_obj.c:	    buf_printf( pBuf, "[v1] Number of dice:   [%2d]\n\r", pObj->value[1] );
+olc_obj.c:	    buf_printf( pBuf, "[v2] Type of dice:     [%d]\n\r",  pObj->value[2] );
+olc_obj.c:	    buf_printf( pBuf, "[v1] Number of dice:   [%2d]\n\r", pObj->value[1] );
+olc_obj.c:	    buf_printf( pBuf, "[v2] Type of dice:     [%d]\n\r",  pObj->value[3] );
+olc_obj.c:	    buf_printf( pBuf, "[v0] Saves in pfiles:  [%s]\n\r", pObj->value[0] != 0 ? "yes" : "no" );
+olc_obj.c:        buf_printf( pBuf, "[v0] Quest Point Value: [%d]\n\r", pObj->value[0]);
+olc_room.c:		pOther = pObj->area;
+olc_room.c:		pOther = pObj->area;
+olc_room.c:		pOther = pObj->area;
+olc_room.c:		pOther = pObj->area;
+olc_room.c:	    strip_color( oname, pObj->short_descr );
+olc_room.c:	    strip_color( oname, pObj->short_descr );
+olc_room.c:	    strip_color( oname, pObj->short_descr );
+olc_room.c:        for ( pObj = pMob->carrying; pObj != NULL; pObj = pObj->next_content )
+olc_room.c:	    if ( ( pOther = pObj->pIndexData->area ) != pRoom->area
+olc_room.c:			   pObj->pIndexData->vnum );
+olc_room.c:            pReset->command = pObj->wear_loc == WEAR_NONE ? 'G' : 'E';
+olc_room.c:            pReset->arg1 = pObj->pIndexData->vnum;
+olc_room.c:            pReset->arg3 = pObj->wear_loc;
+olc_room.c:            for ( inObj = pObj->contains; inObj != NULL; inObj = inObj->next_content )
+olc_room.c:                pReset->arg3 = pObj->pIndexData->vnum;
+olc_room.c:    for ( pObj = pRoom->contents; pObj != NULL; pObj = pObj->next_content )
+olc_room.c:	if ( ( pOther = pObj->pIndexData->area ) != pRoom->area
+olc_room.c:	               pObj->pIndexData->vnum );
+olc_room.c:        pReset->arg1 = pObj->pIndexData->vnum;
+olc_room.c:        for ( pObj2 = pObj->contains; pObj2 != NULL; pObj2 = pObj2->next_content )
+olc_room.c:		&&   pContainerReset->arg3 == pObj->pIndexData->vnum )
+olc_room.c:            pReset->arg2 = count_obj_list( pObj2->pIndexData, pObj->contains );
+olc_room.c:            pReset->arg3 = pObj->pIndexData->vnum;
+olc_save.c:	if ( ( pObj = get_obj_index( vnum ) ) != NULL && pObj->area == pArea )
+olc_save.c:	    fprintf( fp, "#%d\n",	fix_vnum( pArea, pObj->vnum ) );
+olc_save.c:	    fprintf( fp, "%s~\n",	pObj->name );
+olc_save.c:	    fprintf( fp, "%s~\n",	pObj->short_descr );
+olc_save.c:	    fprintf( fp, "%s~\n",	fix_string( pObj->description ) );
+olc_save.c:	    if ( !xIS_EMPTY( pObj->material ) )
+olc_save.c:		fprintf( fp, "%s", xbit_string( material_types, pObj->material ) );
+olc_save.c:	    fprintf( fp, "%s ",		item_name( pObj->item_type ) );
+olc_save.c:	    fprintf( fp, "%s ",		print_flags( pObj->extra_flags ) );
+olc_save.c:		fprintf( fp, "%s ",		print_flags( pObj->extra_flags2 ) );
+olc_save.c:	    fprintf( fp, "%s\n",	print_flags( pObj->wear_flags ) );
+olc_save.c:	    switch( pObj->item_type )
+olc_save.c:		fprintf( fp, "%s ",	weapon_name( pObj->value[0] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[2] );
+olc_save.c:		fprintf( fp, "%s ",	attack_table[pObj->value[3]].name );
+olc_save.c:		fprintf( fp, "%s ",	print_flags( pObj->value[4] ) );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%s ",	print_flags( pObj->value[1] ) );
+olc_save.c:		fprintf( fp, "%d ",	fix_vnum( pArea, pObj->value[2] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[3] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%s ",	print_flags( pObj->value[1] ) );
+olc_save.c:		fprintf( fp, "%d ",	fix_vnum( pArea, pObj->value[2] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[3] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "'%s' ",	liq_table[pObj->value[2]].liq_name );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[3] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[2] );
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[3] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[3]].name
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[1] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[1]].name
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[2] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[2]].name
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[3] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[3]].name
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[4] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[4]].name
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[1] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[1]].name
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[2] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[2]].name
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->value[3] != NO_SKILL ?
+olc_save.c:					skill_table[pObj->value[3]].name
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%s\n",	print_flags( pObj->value[5] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "%s ",	print_flags( pObj->value[2] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[3] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[2] );
+olc_save.c:		fprintf( fp, "%d ",	fix_vnum( pArea, pObj->value[3] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%s ",	print_flags( pObj->value[1] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[2] );
+olc_save.c:		fprintf( fp, "%s ",	weapon_name( pObj->value[3] ) );
+olc_save.c:		fprintf( fp, "%s ",	weapon_name( pObj->value[4] ) );
+olc_save.c:		fprintf( fp, "%s\n ",	weapon_name( pObj->value[5] ) );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[0] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[1] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[2] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[3] );
+olc_save.c:		fprintf( fp, "%d ",	pObj->value[4] );
+olc_save.c:		fprintf( fp, "%d\n",	pObj->value[5] );
+olc_save.c:	    fprintf( fp, "%d ",		pObj->level );
+olc_save.c:	    fprintf( fp, "%d ",		pObj->weight );
+olc_save.c:	    fprintf( fp, "%d ",		pObj->cost );
+olc_save.c:	    fprintf( fp, "%c\n",	pObj->condition >= 100 ? 'P' :
+olc_save.c:					pObj->condition >=  90 ? 'G' :
+olc_save.c:					pObj->condition >=  75 ? 'A' :
+olc_save.c:					pObj->condition >=  50 ? 'W' :
+olc_save.c:					pObj->condition >=  25 ? 'D' :
+olc_save.c:					pObj->condition >=  10 ? 'B' :
+olc_save.c:	    fprintf( fp, "%d ",		pObj->ac_type );
+olc_save.c:	    if ( pObj->ac_type == INVOKE_SPELL )
+olc_save.c:		fprintf( fp, "'%s' ",	pObj->ac_vnum ?
+olc_save.c:					skill_table[pObj->ac_vnum].name
+olc_save.c:		fprintf( fp, "%d ",	fix_vnum( pArea, pObj->ac_vnum ) );
+olc_save.c:	    fprintf( fp, "%d ",		pObj->ac_charge[0] );
+olc_save.c:	    fprintf( fp, "%d\n",	pObj->ac_charge[1] );
+olc_save.c:	    fprintf( fp, "%d ",		fix_vnum( pArea, pObj->join ) );
+olc_save.c:	    fprintf( fp, "%d ",		fix_vnum( pArea, pObj->sep_one ) );
+olc_save.c:	    fprintf( fp, "%d ",		fix_vnum( pArea, pObj->sep_two ) );
+olc_save.c:	    fprintf( fp, "%d ",		pObj->timer );
+olc_save.c:	    fprintf( fp, "%d\n",	pObj->duration );
+olc_save.c:	        if ( xIS_SET( pObj->race_flags, i ) )
+olc_save.c:	        if ( xIS_SET( pObj->class_flags, i ) )
+olc_save.c:	    for ( pAf = pObj->affected; pAf; pAf = pAf->next )
+olc_save.c:	    for ( pEd = pObj->extra_descr; pEd; pEd = pEd->next )
+olc_save.c:	    if ( pObj->item_type == ITEM_BOOK )
+olc_save.c:	        for ( page = pObj->page; page != NULL; page = page->next )
+olc_save.c:	    save_oreprogs( fp, pObj->oprogs, oprog_types );
+recycle.c:    pObj->next          =   NULL;
+recycle.c:    pObj->extra_descr   =   NULL;
+recycle.c:    pObj->affected      =   NULL;
+recycle.c:    pObj->area          =   NULL;
+recycle.c:    pObj->name          =   str_dup( "no name" );
+recycle.c:    pObj->short_descr   =   str_dup( "(no short description)" );
+recycle.c:    pObj->description   =   str_dup( "(no description)" );
+recycle.c:    pObj->vnum          =   0;
+recycle.c:    pObj->item_type     =   ITEM_TRASH;
+recycle.c:    pObj->extra_flags   =   0;
+recycle.c:    pObj->wear_flags    =   0;
+recycle.c:    pObj->count         =   0;
+recycle.c:    pObj->weight        =   0;
+recycle.c:    pObj->cost          =   0;
+recycle.c:        pObj->value[value]  =   0;
+recycle.c:    pObj->join		=   0;
+recycle.c:    pObj->sep_one	=   0;
+recycle.c:    pObj->sep_two	=   0;
+recycle.c:    pObj->ac_type	=   0;
+recycle.c:    pObj->ac_vnum	=   0;
+recycle.c:    pObj->ac_charge[0]	=   0;
+recycle.c:    pObj->ac_charge[1]  =   0;
+recycle.c:    free_string( pObj->name );
+recycle.c:    free_string( pObj->short_descr );
+recycle.c:    free_string( pObj->description );
+recycle.c:    for ( pAf = pObj->affected; pAf; pAf = pAf->next )
+recycle.c:    for ( pExtra = pObj->extra_descr; pExtra; pExtra = pExtra->next )
+recycle.c:    while ( pObj->page != NULL )
+recycle.c:        page = pObj->page;
+recycle.c:        pObj->page = page->next;
+recycle.c:    while ( pObj->oprogs != NULL )
+recycle.c:        pProg = pObj->oprogs;
+recycle.c:        pObj->oprogs = pProg->next;
+recycle.c:    pObj->next = obj_index_free;

@@ -1,0 +1,37 @@
+A skill can have up to three prerequisite skills.  A player's proficiency in
+a given skill can never be higher than his proficiency in any of the
+prerequisite skills.
+The prerequisite skills of course can themselves have prerequisites.
+
+A player cannot use a skill at all unless it has been practiced at least
+once.  This applies to prereq skills as well.
+
+Every time a player uses or attempts to use a skill a check should be made
+for gaining proficiency in the skill.
+
+A practice session counts as a successful usage of the skill.
+
+If a player gains proficiency through usage, and it would increase the
+proficiency above that of a prereq, then proficiency in the prereq is gained
+instead.
+Optionally, the gain could be discarded.
+Optionally, a check could be made for a gain in the prereq rather than the
+gain being automatic.
+
+The first time a player practices a skill, their player age will be noted.
+Each time the player uses the skill his age will be recorded, overwriting
+the previous "last used" age.  These ages can be used to determine how long
+a player has known a skill, and to determine when the skill was last used.
+
+A count of each time the player uses or practices the skill will be kept.
+
+Usage of a skill would also count as a usage of all applicable prereqs, ie,
+counts and times for prereqs will be adjusted.
+
+When a player attempts to use a skill, his proficiency may be adjusted
+downwards through a formula yet to be determined.  Factors in the formula
+will be times used, length of time known, time since last usage, and the
+difficulty factor for the player's class for the skill.  Each skill may have
+a class-independent "forgetfulness factor" or persistence factor, reflecting
+for instance the way it's harder to forget how to ride a bicycle than it is
+to forget how to perform calculus computations.

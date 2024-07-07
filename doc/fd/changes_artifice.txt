@@ -1,0 +1,1137 @@
+09/04/2005 - REK
+Saved exit dirs in exits as dirnames instead of numbers in area files.
+Added dir_remap[] array, for if/when I change the order of directions.
+const.c db.c merc.h olc_save.c
+
+08/31/2005 - REK
+Added medit delete and oedit delete.
+merc.h olc.c olc.h olc_mob.c olc_obj.c recycle.c
+
+08/04/2005 - REK
+Renamed timediff() to strtimediff().
+act_wiz2.c handler.c merc.h
+
+07/19/2005 - REK
+Changed alist message when no areas found.
+act_wiz2.c
+
+07/18/2005 - REK
+Fixed crashing bug in do_resets() (again, sigh).
+olc_room.c
+
+07/18/2005 - REK
+Cleaned up output formatting in do_usage().
+act_wiz2.c
+
+07/16/2005 - REK
+Afind command will now also check area filenames.
+act_wiz2.c
+
+07/16/2005 - REK
+Added timediff() function, returns difference between two times as a string.
+Changed do_uptime() to call timediff().
+act_wiz2.c handler.c merc.h
+
+07/15/2005 - REK
+Removed act_enter.c from build, moved do_enter() to act_move.c.
+Makefile act_enter.c(deleted), act_move.c
+
+07/15/2005 - REK
+Minor cleanups in act_info.c, mostly just reformatting code.
+act_info.c
+
+05/04/2005 - REK
+Made "sail stop" set helmsman for room.
+act_move.c
+
+05/01/2005 - REK
+Increased MAX_STRING_LENGTH from 4608 to 6144 and MAX_STRING to 3000000.
+db.c merc.h
+
+05/01/2005 - REK
+Fixed buffer overrun crashing bug in format_prog().
+string.c
+
+04/29/2005 - REK
+Fixed crashing bug deleting resets.
+Oversight from last change in olc_room.c
+olc_room.c
+
+04/28/2005 - REK
+Added call to eprog_scry_trigger() in spell_scry().
+magic2.c
+
+04/27/2005 - REK
+Implemented room wake prog.
+act_move.c merc.h progs.c
+
+04/26/2005 - REK
+Fixed crashing bug in exit prog triggers.
+progs.c
+
+04/25/2005 - REK
+Added checks for null IP and host in do_hotboot().
+act_wiz.c
+
+04/25/2005 - REK
+Initialized d->host and d->ip in new_descriptor().
+recycle.c
+
+04/25/2005 - REK
+Stage two of adding IP to desc.
+comm.c
+
+04/25/2005 - REK
+Stage one of adding IP address to descriptor_data.
+act_wiz.c comm.c merc.h recycle.c
+
+04/25/2005 - REK
+Dealt with issues deleting resets for equipped mobs.
+olc_room.c olc_save.c
+
+04/24/2005 - REK
+Made norecall flag affect only portals with the take flag.
+act_enter.c
+
+04/24/2005 - REK
+Added Malkuth's new syl tables to random mob names.
+Made choice of syllable table set a funtion of mob's race.
+rand_str.c
+
+04/22/2005 - REK
+Added ACT_NOQUEST flag, can't be autoquest target.
+merc.h quest.c tables.c
+
+04/22/2005 - REK
+Fixed bug using v0 vis v3 for portals in show_obj_values().
+olc_obj.c
+
+04/20/2005 - REK
+Added isaffected and hasspell ifchecks.
+progs.c
+
+04/19/2005 - REK
+Added hour ifcheck.
+progs.c
+
+04/19/2005 - REK
+Added brawling code, new room flag ROOM_BRAWL.
+fight.c merc.h special.c tables.c
+
+04/18/2005 - REK
+Fixed crash bug when attempting to oreset objects onto a PC.
+olc_room.c
+
+04/17/2005 - REK
+Added $u, $v and $w vars to mprog_translate() to handle sex of $q.
+progs.c
+
+04/17/2005 - REK
+Changed missing right bracket from a warning to an error in mprog_do_ifcheck().
+progs.c
+
+04/16/2005 - REK
+Fixed color bleed in mwhere.
+act_wiz.c
+
+04/16/2005 - REK
+Added vnum ifcheck, will eventually replace number and objvnum.
+Also fixed crashing bug in timeskilled ifcheck.
+progs.c
+
+04/14/2005 - REK
+Fixed crashing bug in number ifcheck if $x is not a mob.
+progs.c
+
+04/14/2005 - REK
+Changed bribe_trigger and goldamt ifcheck to accept money strings.
+progs.c
+
+04/14/2005 - REK
+Added call to stop_fighting() in do_sever (rip immcommand).
+act_wiz2.c
+
+04/14/2005 - REK
+Fixed confusion with get_progs in oprog_get_from_trigger().
+progs.c
+
+04/13/2005 - REK
+Used linecount variable in reset count in instead of instance count in rinfo.
+act_wiz3.c
+
+04/13/2005 - REK
+Added isvalid ifcheck.
+progs.c
+
+04/13/2005 - REK
+Added oprog_user_trigger() checks to do_drink() and do_fill().
+act_obj.c
+
+04/13/2005 - REK
+Interchanged alignments of cavalier and dragoon.
+Not sure this really matters, since we likely won't be using class alignments.
+const.c
+
+04/13/2005 - REK
+Added rinfo immcommand, shows room info/statistics.
+Added count_lines() utility function.
+act_wiz3.c handler.c interp.c interp.h merc.h
+
+04/12/2005 - REK
+Fixed colorcode typo in dam_message().
+fight.c
+
+04/11/2005 - REK
+Flat ass got the dirs wrong in dir_desc[].
+const.c
+
+04/11/2005 - REK
+Fixed up some oddments in do_switch().
+act_wiz.c
+
+04/11/2005 - REK
+Fixed crash bug by not allowing mobs to use the afk command.
+act_comm.c
+
+04/10/2005 - REK
+Removed check for no descriptor at top of do_look().
+act_info.c
+
+04/10/2005 - REK
+Added calls to oprog_use_trigger() in do_sit, do_rest and do_sleep.
+act_move.c
+
+04/10/2005 - REK
+Made score reflect get_carry_weight() instead of vch->carry_weight.
+act_info.c
+
+04/10/2005 - REK
+Made drink containers include weight of contents.
+act_obj.c handler.c
+
+04/09/2005 - REK
+Added "players" and "noplayers" as options for usage immcommand.
+act_wiz2.c
+
+04/09/2005 - REK
+Fixed bug dropping farthings (plural).
+handler.c
+
+04/09/2005 - REK
+Added TO_SHIELDS for affect.where.  Added ghostshield spell.
+Changed existing shield-type spells to shields.
+act_info.c act_wiz.c db.c db2.c fight.c handler.c magic.c magic.h magic2.c
+merc.h olc.h olc_mob.c olc_save.c save.c skilltable.c tables.c tables.h
+
+04/08/2005 - REK
+Fixed bug in mpforce misrecognizing immcommands.
+mob_cmds.c
+
+04/08/2005 - REK
+Fixed another crashing bug removing shops.
+If a shop was added, removed, re-added and removed again, it would crash.
+Reason: If the shop was the last shop on the list, shop_last wasn't getting
+updated when the shop was removed.
+olc_mob.c
+
+04/08/2005 - REK
+Forgot to make rflags show in mstat.
+tables.c
+
+04/08/2005 - REK
+Added rflags act2 flag, shows room sector and flags if on.
+act_info.c merc.h
+
+04/07/2005 - REK
+Changed dump command to list affects.
+db.c
+
+04/06/2005 - REK
+Added "classes" to sqldump.
+const.c sql.c tables.c tables.h
+
+04/05/2005 - REK
+Showed v0 and v1 in "drinks" for drink_containers in show_obj_values().
+olc_obj.c
+
+04/05/2005 - REK
+Added mysqldump immcommand, dumps command and skill tables into database.
+Next will be classes and races.
+interp.c interp.h skilltable.c sql.c tables.c tables.h
+
+04/04/2005 - REK
+Removed last of unused classes, changed warrior and thief to figher and rogue.
+db.c db2.c fight.c handler.c merc.h tables.c
+
+04/04/2005 - REK
+Allowed mpoload syntax of "mpoload <vnum> room".
+mob_cmds.c
+
+04/04/2005 - REK
+Added exit events and exit event for mpdelay.
+Also added from_room pointer to exit data.
+db.c event.c merc.h mob_cmds.c olc_room.c overland.c progs.c
+
+04/04/2005 - REK
+Reformatted classlist command slightly.
+act_info.c
+
+04/03/2005 - REK
+Renamed/rearranged some class names, improved classlist command.
+Removed unused classes.
+act_infoc. const.c fight.c globals.c handler.c merc.h skilltable.c
+
+04/03/2005 - REK
+Added nolist extra flags to objects; obj won't show in rooms.
+act_info.c handler.c merc.h tables.c
+
+04/02/2005 - REK
+Re-enabled customization, revamped skill group table.
+comm.c const.c
+
+04/02/2005 - REK
+Swapped isocial and iscore in command list, so "is" is "isocial".
+interp.c
+
+04/02/2005 - REK
+Added mpacquaint mobcommand, mob transfers qmem to another mob.
+interp.c interp.h mob_cmds.c
+
+04/01/2005 - REK
+Added act2 flags to mstat when used by implementors only.
+act_wiz.c tables.c tables.h
+
+04/01/2005 - REK
+Mstat wasn't showing act flags.
+act_wiz.c
+
+04/01/2005 - REK
+Made mobs in disposal room invis to all but coders.
+Changed ROOM_VNUM_GARBAGE_DISPOSAL to ROOM_VNUM_DISPOSAL.
+handler.c merc.h mob_cmds.c update.c
+
+04/01/2005 - REK
+Removed commented out refeences to kopeks, chits etc.
+merc.h
+
+04/01/2005 - REK
+Allow "c" in check_quick_connect() instead of full word "connect".
+comm.c
+
+04/01/2005 - REK
+Converted offensive flags from bitvectors to xbits.
+Added display of offensive flags to show_race_info().
+act_wiz.c const.c db.c db2.c debug.c fight.c fight2.c handler.c magic.c
+merc.h olc_mob.c olc_race.c olc_save.c tables.c
+
+03/31/2005 - REK
+Fixed bug in progbug reporting bad $vars.
+progs.c
+
+03/31/2005 - REK
+Fixed bug deleting last help, wasn't updating help_last.
+olc_help.c
+
+03/31/2005 - REK
+Made "hedit c" require a new keyword.
+olc_help.c
+
+03/31/2005 - REK
+Added charge skill, mostly meant for warriors.
+Makefile fight2.c(new) gsn.c handler.c interp.c interp.h merc.h skilltable.c
+
+03/30/2005 - REK
+Added hasmemory ifcheck.
+progs.c
+
+03/30/2005 - REK
+Removed obsolete old_memory and old_whois commands.
+act_info.c db.c
+
+03/29/2005 - REK
+Changed ctimes to only list commands the user has access to.
+act_wiz2.c
+
+03/29/2005 - REK
+Added mpremember/mpforget mobcommands, $q mpbprog variable.
+Currently this does not work in e/o/rprogs, need to design a clean mechanism
+for extract_char() first.
+handler.c interp.c interp.h merc.h mob_cmds.c progs.c
+
+03/28/2005 - REK
+Changed do_usage to take optional mobonly or nomob argument.
+act_wiz2.c interp.c interp.h
+
+03/27/2005 - REK
+Fixed bug updating database when renaming a character.
+act_wiz2.c merc.h sql.h
+
+03/27/2005 - REK
+Fixed crash bug removing shops from mobs.
+olc_mob.c
+
+03/27/2005 - REK
+Fixed bug removing septwo from an object.
+olc_obj.c
+
+03/26/2005 - REK
+Fixed paging problem with olocate.
+act_wiz2.c
+
+03/26/2005 - REK
+Added area vnum and name to top of descount output.
+act_wiz3.c
+
+03/26/2005 - REK
+Added descount immcommand, lists line counts for descs in area.
+act_wiz3.c interp.c interp.h
+
+03/25/2005 - REK
+Added NPC race chadirra.
+const.c globals.c merc.h
+
+03/25/2005 - REK
+Added empower/detract for immcommands.
+act_wiz2.c act_wiz3.c interp.c interp.h merc.h recycle.c save.c
+
+03/23/2005 - REK
+Added command flag CMD_BOTH, requires both security group and level.
+interp.c interp.h tables.c
+
+03/22/2005 - REK
+When first room in new area is created, it does not inherit flags and sector.
+olc_room.c
+
+03/22/2005 - REK
+Short circuited run_olc_editor() for direction commands too.
+olc.c
+
+03/22/2005 - REK
+Fixed random name generator to remove doubled i's.
+rand_str.c
+
+03/21/2005 - REK
+Adapted Locke's random mob name generator.
+Makefile db.c db.h rand_str.c(new)
+
+03/20/2005 - REK
+Added sound and smell to rooms and sound exits, listen and smell commands.
+Added exit listen_prog, room listen_prog and smell_prog.
+Added doorclosed and dooropen ifchecks.
+
+03/19/2005 - REK
+Changed wiznet bldbugs, builds and resets from 514 to 512.
+const.c
+
+03/19/2005 - REK
+Increased max allocatable memory size from 32k to 64k.
+db.c
+
+03/18/2005 - REK
+Fixed buffer overflow in string_number().
+string.c
+
+03/18/2005 - REK
+Changed min pos in imote and isocial from POS_RESTING to POS_DEAD.
+act_wiz2.c act_wiz3.c
+
+03/17/2005 - REK
+Added falling objects.
+Key function is add_obj_fall_event( obj ).
+act_move.c act_obj.c act_wiz.c act_wiz2.c effects.c fight.c handler.c
+magic.c merc.h quest.c special.c update.c
+
+03/17/2005 - REK
+Removed AFF_ENLARGE and AFF_SHRINK, since we already have APPLY_SIZE.
+merc.h
+
+03/17/2005 - REK
+Revised god list yet again in god_name, fixed typo pointed out by Mellie.
+Really should make it generate the list automatically.
+act_obj.c
+
+03/17/2005 - REK
+Revised cmdstat to show elapsed time since last usage.
+Added last_used member to struct cmd_type.
+act_wiz2.c interp.c interp.h
+
+03/16/2005 - REK
+Changed stat_obj() and spell_identify() to show values as money strings.
+act_wiz.c magic.c
+
+03/16/2005 - REK
+Imms with holylight off now need to be introed to morts.
+act_misc.c act_wiz2.c handler.c
+
+03/16/2005 - REK
+Fixed loss of capitalization in "note to".
+boards.c
+
+03/15/2005 - REK
+Changed colorization in do_finger().
+Players who have been on within the past week are now dark green, and
+players who were last on between 1 and 2 weeks ago are cyan.
+act_wiz2.c
+
+03/15/2005 - REK
+Added mob gtransfer, transfers all members of a group.
+interp.c interp.h mob_cmds.c
+
+03/15/2005 - REK
+Added isocial immcommand, socials on imm channel.
+act_wiz3.c interp.c interp.h merc.h
+
+03/15/2005 - REK
+Added %i as prompt code for invis by whatever means.
+comm.c
+
+03/15/2005 - REK
+Added announce immcommand, sends text to info channel.
+Added new file act_wiz3.c to build.
+Makefile act_wiz3.c interp.c interp.h
+
+03/15/2005 - REK
+Implemented nofloor rooms, added ROOM_NO_FLOOR flag.
+Also added ROOM_NO_FORMAT flag, for future use.
+Chars fall, will add falling objects later after I work out some kinks.
+act_enter.c act_move.c interp.c magic.c merc.h tables.c update.c
+
+03/14/2005 - REK
+Fixed silly stupid bug calculating x,y coordinates in make_minimap().
+overland.c
+
+03/14/2005 - REK
+Added minimap to overland room display/descs.
+merc.h overland.c
+
+03/13/2005 - rEK
+Removed "set room" from help message in do_set().
+
+03/13/2005 - REK
+Updated mstat and ostat, removed rset.
+act_wiz.c db.c handler.c
+
+03/12/2005 - REK
+Fixed up some confusion between v0 and v3 in portals.
+olc_obj.c
+
+03/11/2005 - REK
+Made mpstat and opstat default to mob/obj being edited if not specified.
+mob_cmds.c
+
+03/11/2005 - REK
+Added prog counts to show_mob_info(), show_obj_info() and show_room_info().
+merc.h olc_mob.c olc_obj.c olc_room.c
+
+03/11/2005 - REK
+Fixed bug in replace code in string_add().
+string.c
+
+03/08/2005 - REK
+Added "noset" state to automob to mark mob so it will be bypassed by setmob.
+State is now saved in area files.  Incremented area file version to 5.
+We'll probably need a means of listing "noset" mobs.
+db2.c merc.h olc.h olc_area.c olc_mob.c olc_save.c recycle.c tables.c
+tables.h
+
+03/08/2005 - REK
+Added weights to race_table, mob_index_data and char_data.
+Right now this is just to give reasonable weights to corpses.
+const.c db2.c fight.c merc.h olc.c olc.h olc_race.c olc_save.c
+
+03/07/2005 - REK
+Moved do_save() form act_comm.c to act_misc.c and changed message.
+act_comm.c act_misc.c
+
+03/07/2005 - REK
+Finished up eprogs.  Hopefully.
+act_info.c act_move.c act_wiz2.c interp.c interp.h merc.h mob_cmds.c olc.c
+olc.h olc_room.c progs.c tables.c
+
+03/07/2005 - REK
+Fixed crash bug in exit prog triggers in overlands.
+progs.c
+
+03/04/2005 - REK
+Fixed bugs with room exit and enter progs.
+act_move.c progs.c
+
+03/04/2005 - REK
+Added overland info to ainfo.
+act_wiz2.c
+
+03/03/2005 - REK
+Added OLC to room descs in the overlands.
+Need to work with Malkuth to come up with better road descs.
+db.c db.hdb2.c merc.h olc_area.c olc_save.c overland.c recycle.c tables.c
+tables.h
+
+03/02/2005 - REK
+Changed sayto to display ask, exclaim or say depending on final punct.
+act_comm.c
+
+03/02/2005 - REK
+Changed mpjunk and mppurge to send stuff to the trash room.
+mob_cmds.c
+
+03/02/2005 - REK
+Fixed color bleeds in do_exits(), do_mplist() and do_mpstat().
+act_info.c mob_cmds.c
+
+03/01/2005 - REK
+Fixed warning in Ashni's oprog.
+act_obj.c
+
+03/01/2005 - REK
+Extended AREA_FREEZE flag to disable scavengers too.
+update.c
+
+03/01/2005 - REK
+Cleaned up calls to progbug, added __attribute__ stuff to declaration.
+merc.h mob_cmds.c progs.c
+
+03/01/2005 - REK
+Added mpsecret command, manipulates exit secret flag.
+interp.c interp.h mob_cmds.c
+
+02/28/2005 - REK
+Disallowed switches while editing.
+act_wiz.c
+
+02/28/2005 - REK
+Added mpsetpos command.
+interp.c interp.h mob_cmds.c
+
+02/28/2005 - REK
+Changed do_afk() and do_coding() to allow a coder to toggle both at once :).
+act_comm.c act_wiz2.c
+
+02/28/2005 - REK
+Added race ifcheck.
+progs.c
+
+02/28/2005 - REK
+Added garbage disposal room (#3), periodically purges itself.
+merc.h update.c
+
+02/28/2005 - REK
+Weights can now be set/displayed using lbs and ounces.
+act_ifo.c act_wiz.c handler.c magic.c merc.h olc_obj.c
+
+02/26/2005 - REK
+Fixed color bleed in show_obj_values().
+olc_obj.c
+
+02/26/2005 - REK
+Added imms to godnames in do_sacrifice and colorized output a bit.
+act_obj.c
+
+02/25/2005 - REK
+Added hasobj, iscarrying and iswearing ifchecks.
+progs.c
+
+02/25/2005 - REK
+Spiffied up bank deposit/withdrawal/transfer messages.
+Fixed a kopek/chit thing in do_give to a money changer.
+act_misc.c act_obj.c
+
+02/25/2005 - REK
+Added incog level to wholist, similar to wizinv level.
+act_info.c
+
+02/24/2005 - REK
+Fixed quirk with ordering of speech and act triggers.
+comm.c progs.c
+
+02/24/2005 - REK
+Added mpactlists to do_memory(); added has_same_word() function.
+db.c globals.c handler.c merc.h progs.c recycle.c recycle.h update.c
+
+02/23/2005 - REK
+Added "progs" option to medit, oedit and redit.
+olc_mob.c olc_obj.c olc_room.c
+
+02/22/2005 - REK
+Added AFK warning in do_tell, removed duplication in "tell self" in review.
+act_comm.c
+
+02/22/2005 - REK
+Added redit delete.
+merc.h olc.c olc.h olc_room.c recycle.c
+
+02/21/2005 - REK
+Added bodybag immcommand.
+act_wiz2.c fight.c interp.c interp.h
+
+02/21/2005 - REK
+Added avatar semi-immcommand.
+Will probably have to iron out some wrinkles after people play with it.
+act_wiz.c act_wiz2.c comm.c db.c globals.c interp.c interp.h merc.h
+recycle.c recycle.h save.c sql.c
+
+02/21/2005 - REK
+Changed "tell" to "reply to" in do_reply() when adding to tell buffer.
+act_comm.c
+
+02/21/2005 - REK
+Added check for "you" at end of sentence in you_count().
+act_wiz2.c
+
+02/21/2005 - REK
+Added "review" command, stores and replays tells/replies.
+act_comm.c interp.c interp.h merc.h recycle.c
+
+02/20/2005 - REK
+Added aedit purge command.
+handler.c merc.h olc_area.c
+
+02/20/2005 - REK
+Changed move_char() so secret closed exits appear not to exist at all.
+act_move.c
+
+02/20/2005 - REK
+Swapped calls to oprog_get_from_trigger() and obj_from_obj() in get_obj().
+Fixed formatting on mort race in do_omni().
+Gaah, two changes in one.
+act_obj.c act_wiz2.c
+
+02/20/2005 - REK
+Fixed up some leftover references to kopeks etc in "list" command.
+act_obj.c
+
+02/20/2005 - REK
+Fixed crash bug in asave area while in rpedit.
+olc_room.c olc_save.c
+
+02/19/2005 - REK
+Hid supermob in do_put().
+act_obj.c
+
+02/19/2005 - REK
+Added youcount immcommand.
+act_wiz2.c interp.c interp.h
+
+02/18/2005 - REK
+Added eset_supermob() function, finally starting on the eprogs.
+progs.c
+
+02/18/2005 - REK
+Added ignore command.
+act_comm.c act_info.c act_wiz2.c db.c globals.c handler.c interp.c interp.h
+merc.h recycle.c recycle.h save.c
+
+02/16/2005 - REK
+Moved various colorcode lists to single list in const.c
+const.c handler.c merc.h
+
+02/15/2005 - REK
+Added objvnum ifcheck.
+progs.c
+
+02/15/2005 - REK
+Added bamfin/bamfout commands, and changed bamf to poof in score,
+Changed display of bamfin/bamfout in the commands to "unset", if unset.
+act_info.c act_wiz.c interp.c
+
+02/15/2005 - REK
+Added oedit subcommand -- description.
+olc.c olc.h olc_obj.c
+
+02/15/2005 - REK
+Added AFK status to omni.
+act_wiz2.c
+
+02/15/2005 - REK
+Short-circuited run_olc_cmd() to check if cmd might be "look".
+olc.c
+
+02/14/2005 - REK
+Revised color code for compatibility with non-VT100 clients.
+comm.c
+
+02/14/2005 - REK
+Changed webwho output to match current who output.
+act_info.c
+
+02/14/2005 - REK
+Removed "visiting imm" info from immlist command.
+act_info.c
+
+02/14/2005 - REK
+Enabled webwho port.
+comm.c merc.h
+
+02/14/2005 - REK
+Removed automatic reduction in damage().
+fight.c
+
+02/13/2005 - REK
+Changed show_help() to just show applicable helps for current editor.
+olc.c
+
+02/13/2005 - REK
+Used first_arg() instead of one_argument() when setting $n in mobprogs.
+progs.c
+
+02/13/2005 - REK
+Added immlist command.
+I rather suspect Mellie will be suggesting tweaks :).
+act_info.c interp.c interp.h
+
+02/11/2005 - REK
+Added mysql support; rewrote whois to display offline users.
+Makefile act_info.c act_misc.c act_wiz.c comm.c db.c db.h db2.c globals.c
+merc.h save.c sql.c(new) update.c
+
+02/07/2005 - REK
+Fixed typo in show_obj_values() for ITEM_MONEY.
+olc_obj.c
+
+02/07/2005 - REK
+Finished up changes to currency names.
+act_comm.c act_info.c act_obj.c act_wiz.c act_wiz2.c handler.c healer.c
+interp.c merc.h olc_obj.c save.c
+
+02/06/2005 - REK
+Disabled customization again, until we set up skills.
+comm.c
+
+02/05/2005 - REK
+Made set_fighting() return immediately if ch == MOB_VNUM_SUPERMOB.
+fight.c
+
+02/05/2005 - REK
+Fixed more color bleeds and minor grammatical errors.
+act_info.c comm.c handler.c merc.h olc_mob.c
+
+02/05/2005 - REK
+Disallowed 0 or less mob HP.
+db.c act_wiz.c olc_mob.c
+
+02/05/2005 - REK
+Changed startup script to allow core dumps.
+startup
+
+02/04/2005 - REK
+Added mob damage (mpdamage) mobcommand.
+interp.c interp.h mob_cmds.c
+
+02/02/2005 - REK
+Added AFF_ENLARGE and AFF_SHRINK, but didn't do anything with them yet.
+merc.h
+
+02/02/2005 - REK
+Made blood puddles dry up rather than crumble into dust.
+update.c
+
+02/02/2005 - REK
+Disallowed corpses of corpses.
+fight.c
+
+02/02/2005 - REK
+Added undead race type.
+const.c globals.h merc.h
+
+02/02/2005 - REK
+Added dammsg to skedit.
+db2.c fight.c olc.c olc.h olc_save.c olc_skill.c
+
+02/01/2005 - REK
+Added unread command.
+boards.c interp.c interp.h
+
+01/31/2005 - REK
+Removed "full" restriction for drinking water.
+act_obj.c const.c
+
+01/30/2005 - REK
+Changed ban to allow bans on exact hostname matches.
+ban.c
+
+01/30/2005 - REK
+Added blank line before summary line in wholist.
+act_info.c
+
+01/29/2005 - REK
+Added counts of alt descs to ainfo.
+act_wiz2.c
+
+01/29/2005 - REK
+Added display of alt descs in redit/rstat.
+olc_room.c
+
+01/29/2005 - REK
+Added rdesc immcommand, shows alternate room descs.
+act_wiz2.c interp.c interp.h
+
+01/28/2005 - REK
+Fixed same bleed in socstat/sedshow.
+act_wiz2.c
+
+01/28/2005 - REK
+Added allset aedit subcommand, does an instaroom in each room in area.
+olc.c olc.h olc_area.c
+
+01/28/2005 - REK
+Fixed color bleed in sedit_show().
+olc_social.c
+
+01/28/2005 - REK
+Changed string editor so @ by itself exits editor, not any line beginning
+with @.
+string.c
+
+01/28/2005 - REK
+Disallowed use of "/" for gemote while editing.
+act_comm.c
+
+01/28/2005 - REK
+Mstat <vnum> or ostat <vnum> now shows same info as medit/oedit.
+act_wiz.c merc.h olc_mob.c olc_obj.c
+
+01/28/2005 - REK
+Fixed color bleed in lastmod.
+act_wiz2.c
+
+01/28/2005 - REK
+Changed redit directions to call normal move commands if no arg given.
+olc.c olc_room.c
+
+01/27/2005 - REK
+Made some tweaks to whoborder command.
+act_wiz2.c interp.c
+
+01/27/2005 - REK
+Added whoborder immcommand.
+act_info.c act_wiz2.c db.c globals.c interp.c interp.h merc.h
+
+01/27/2005 - REK
+Fixed some color bleeds in roomnames.
+act_wiz.c act_wiz2.c olc_room.c
+
+01/26/2005 - REK
+Added todo immcommand.
+act_wiz2.c interp.c interp.h merc.h
+
+01/25/2005 - REK
+Added note reply.
+boards.c
+
+01/25/2005 - REK
+Made "bank", "bank help" and "bank list" work outside of a bank.
+act_misc.c
+
+01/25/2005 - REK
+Converted orens/silberns etc to gold, silver, etc internally.  Added
+#defines for names of denminations.
+act_comm.c act_info.c act_misc.c act_obj.c act_wiz.c act_wiz2.c comm.c db.c
+fight.c handler.c healer.c merc.h olc_mob.c olc_obj.c progs.c quest.c save.c
+special.c update.c
+
+11/20/2004 - REK
+Removed legacy mob races.
+fight.c merc.h tables.c
+
+11/17/2004 - REK
+Added creation of blood puddles when something dies.
+fight.c
+
+11/14/2004 - REK
+Changed login sequence to allow "connect name password" at ANSI prompt.
+comm.c
+
+11/12/2004 - REK
+Wounded mobs/players now leave blood trails.
+act_move.c merc.h
+
+11/12/2004 - REK
+Changed armor_values, hitdice_table, and weapon_values tables to their
+(hopefully) final form.
+const.c
+
+08/24/2004 - REK
+Added intro/greet system.
+Added commands greet and introduce, and immcommand ungreet.
+act_misc.c act_wiz2.c db.c db.h db2.c globals.c handler.c interp.c interp.h
+merc.h olc_save.c save.c
+
+08/21/2004 - REK
+Implemented first part of greet code.
+As a temporary measure, mortals know each other if they are the same race or
+class.  Still to be done is design of the mechanism which stores who knows
+whom, and the actual greet command itself.
+act_info.c act_wiz.c comm.c const.c handler.c merc.h
+
+08/21/2004 - REK
+Allowed selection of darkgrey as a color in OLC.
+Need to get cracking on colormap now I guess.
+tables.c
+
+08/21/2004 - REK
+Fixed bad alignment entry in race table for demons.
+const.c
+
+08/19/2004 - REK
+Changed MAX_LEVEL to 520.
+Hopefully I didn't overlook anything :)
+db.c interp.c merc.h tables.c
+
+08/18/2004 - REK
+Player levels now saved in pfiles as level name if immortal.
+This is in preparation for changing MAX_LEVEL and the imm level setup.
+db.c db2.c lookup.c olc_save.c tables.c tables.h
+
+08/16/2004 - REK
+Finished room rand progs (finally :P).
+progs.c
+
+08/15/2004 - REK
+Added mplock and mpunlock comands, so mobs can silently lock/unlock doors.
+act_move.c interp.c interp.h merc.h mob_cmds.c
+
+08/15/2004 - REK
+Changed default world for new areas from "none" to "all".
+This way we can pretty much forget about the whole issue of worlds until we
+decide what to do with it.
+db2.c recycle.c
+
+08/13/2004 - REK
+Finished room prog sit, rest and sleep triggers.
+act_move.c tables.c
+
+08/13/2004 - REK
+Set timezone to EST5EDT.
+comm.c merc.h
+
+08/12/2004 - REK
+Changed weather_update midnight message to display month and weeknames.
+Also added possible random phrase if no other message is to be displayed.
+Moved calendar constants from act_info.c to const.c.
+act_info.c const.c merc.h update.c
+
+08/12/2004 - REK
+Added norecall messages to area data.
+act_move.c db2.c merc.h olc.c olc.h olc_area.c olc_save.c recycle.c
+
+08/12/2004 - REK
+Added petname and mountname from Gary McNickle's snippet.
+act_misc.c interp.c interp.h
+
+08/12/2004 - REK
+Grr -- forgot to add Mystique's weather changes.
+update.c
+
+08/12/2004 - REK
+Added room prog look trigger
+act_info.c merc.h progs.c tables.c
+
+08/12/2004 - REK
+Revised time/weather messages.
+merc.h update.c
+
+08/12/2004 - REK
+Changed act() to act_color() when char leaves room.
+act_move.c
+
+08/12/2004 - REK
+Removed line forcing all PC races to human.
+save.c
+
+08/10/2004 - REK
+Removed sysedit.
+Makefile interp.c interp.h merc.h olc.c olc.h olc_system.c(removed)
+
+08/10/2004 - REK
+Added instaroom command, creates resets for room based on current contents.
+interp.c interp.h olc.h olc_room.c
+
+08/09/2004 - REK
+Added rotating greetings.
+Help keywords are GREETING, GREETING1, GREETING2, etc.
+If GREETINGn is not found, it recycles to GREETING.
+comm.c
+
+08/08/2004 - REK
+Added classlist command, lists info on classes.
+act_info.c handler.c interp.c interp.h merc.h
+
+08/08/2004 - REK
+Added imcommand "racestat", shows stats on a race.
+act_wiz2.c interp.c interp.h merc.h olc_race.c
+
+08/08/2004 - REK
+Changed max settable stat from 21 to 22 on race OLC.
+olc_race.c
+
+08/07/2004 - REK
+Re-colorized question channel.
+act_comm.c
+
+08/07/2004 - REK
+Finished up changes to nanny() for aligns, added aligns to race OLC.
+act_wiz.c comm.c const.c db2.c merc.h olc.c olc.h olc_race.c olc_save.c
+
+08/06/2004 - REK
+Added alignments to race table, also added drows.
+const.c globals.h merc.h
+
+08/05/2004 - REK
+Added new fields to the class table: tier, min_align, max_align, base_class.
+Changed nanny() to only allow selection of tier 1 classes.
+comm.c const.c merc.h
+
+08/04/2004 - REK
+Allowed color codes in bamfs.
+act_wiz.c
+
+08/04/2004 - REK
+Changed color of gossip channel.
+Need to talk to Mystyqye before I change question and answer channels.
+act_comm.c
+
+08/04/2004 - REK
+Changed layout of wholist.
+act_info.c
+
+08/04/2004 - REK
+Finished up adding all the races and classes.
+Removed kitnas, molnar, etc from races.
+Still need to set up the skill groups on classes.
+act_wiz.c const.c globals.c merc.c olc_race.c
+
+08/03/2004 - REK
+Added the two base classes we didn't already have.
+const.c globals.c merc.h
+
+08/03/2004 - REK
+Finished removal of egate mods to do_disconnect().
+act_wiz.c
+
+08/03/2004 - REK
+Added new races for Artifice.
+const.c globals.c merc.h
+
+08/03/2004 - REK
+Re-enabled race selection in nanny().
+Still have to clean up the formatting.
+comm.c
+
+08/03/2004 - REK
+Changed dir for web-related stuff from /tmp/ to ../html/
+merc.h olc_area.c
+
+08/03/2004 - REK
+Changed do_say() to say "says", "asks" or "exclaims" depending on last char
+of what's said.
+act_comm.c
+
+08/02/2004 - REK
+Lots of changes, all wrapped into one entry here :)
+Changed elysium's gate stuff to artifice.
+Took out judgement stuff.
+Took out MySQL stuff (we might want to add it back later).
+Changed appropriate OBJ_VNUM_XXX, ROOM_VNUM_XXX etc #defines back to stock
+ROM's vnums.
+act_info.c act_misc.c act_obj.c act_wiz.c act_wiz2.c comm.c debug.c db.c
+db.h db2.c globals.c interp.c interp.h magic2.c Makefile merc.h save.c
+startup tables.c update.c

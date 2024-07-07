@@ -1,0 +1,73 @@
+2/21/07 - SMC
+If char is DEAF, will not see gossip channel. Currently no message is
+displayed, can be fixed.
+act_comm.c
+
+2/18/07 - SMC
+Added code for War Mount skill.
+merc.h gsn.c skilltable.c fight.c
+
+2/18/07 - SMC
+Made eat, rub, and quaff check for free hand.
+act_obj.c
+
+2/17/7 - SMC
+Made whisper deafness compliant.
+act_comm.c
+
+2/12/7 - SMC
+Made Speech Triggers Deafness compliant.
+progs.c
+
+2/12/7 - SMC
+Fixed error with mobprogs in sayto.
+act_comm.c
+
+2/12/7 - SMC
+Fixed do_sayto to properly block deaf people.
+act_comm.c
+
+2/10/7 - SMC
+Fixed do_restor to strip deafen spell now.
+act_wiz.c
+
+2/8/7 - SMC
+Added checks for cancel spell for deafen and wail of the bansee.
+magic.c
+
+2/8/7 - SMC
+Added 'deafen' spell. Maladict that adds AFF_DEAFEN.
+merc.h magic.h magic2.c gsn.c skilltable.c act_wiz.c
+
+2/7/7 - SMC
+Changed do_say to block says for DEAF people.
+act_comm.c
+
+2/07/07 - SMC
+Changed do_say to loop through the room, for future expansion of DEAF and
+Languages.
+act_comm.c
+
+1/22/07 - SMC
+Added spell wail of the bansee, and its affect, also it strips w/ restore.
+merc.h magic2.c act_wiz.c skilltable.c magic.h gsn.c
+
+1/21/07 - SMC
+Added data for future continenet code as a flag_type.
+tables.c merc.h
+
+1/21/07 - SMC
+Added room echo to do_smell
+act_info.c
+
+1/21/07 - SMC
+Added light time to 'spell_identify'
+magic.c
+
+1/21/07 - SMC
+Replaced get_heal_rate with math function, instead of giant else if chain
+magic.c
+
+1/20/07 - SMC
+Setup shell here with help from MAC.
+(none)

@@ -1,0 +1,54 @@
+#AREADATA
+Version     9
+Name        alkhali~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       1100 1199
+Levels      0 0
+Security    0
+Recall      8063
+Flags       B
+Color       7
+ExitSize    medium
+Created     1279247373
+Changed     1279298679 Fri Jul 16 12:44:39 2010
+End
+
+#MOBILES
+#0
+
+#OBJECTS
+#0
+
+#ROOMS
+#1100
+~
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 23050
+S
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

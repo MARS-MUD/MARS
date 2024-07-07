@@ -1,0 +1,47 @@
+Coded and documented:
+
+cansee
+class -- returns string not number
+goldamt
+hasdelay
+*inroom
+ischarmed
+*isclan -- returns TRUE/FALSE
+isevil
+*isfight
+*isfollow
+isgood
+*ishere
+isimmortal
+isnpc
+ispc
+level
+name
+*number
+*objtype
+*objval0
+*objval1
+*objval2
+*objval3
+*position
+rand
+sex
+
+
+Coded but not documented:
+
+*clan
+*fighting
+isneutral
+mobinarea
+mobinroom
+mobinworld
+*objval4
+*objval5
+timeskilled
+
+
+Documented but not coded:
+
+isaffected
+notfollow

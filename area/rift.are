@@ -1,0 +1,175 @@
+#AREADATA
+Version     9
+Name        The Rift~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       13000 13099
+Levels      1 100
+Security    0
+Recall      900
+Flags       C
+Color       7
+ExitSize    medium
+Created     1278882543
+Changed     1715908533 Thu May 16 21:15:33 2024
+End
+
+#MOBILES
+#0
+
+#OBJECTS
+#0
+
+#ROOMS
+#13000
+Rift Starting Room~
+Dead people come here, or into this area at least.
+From here they try to find their life bearer mob.
+~
+~
+~
+~
+~
+~
+0 CFGHIKNZa 0 0
+S
+#13001
+A Room In the Rift~
+This is a room in the rift.  Dead people wander around in here trying to
+find the dude carrying their life crystal.  That shouldn't be terribly hard
+right now, since there are only a few rooms and they're all in a line.  
+~
+~
+~
+~
+~
+~
+0 CDFGHIKNZa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 13002
+Dsouth medium
+~
+~
+~
+~
+0 0 13005
+S
+#13002
+A Room In the Rift~
+This is a room in the rift.  Dead people wander around in here trying to
+find the dude carrying their life crystal.  That shouldn't be terribly hard
+right now, since there are only a few rooms and they're all in a line.  
+~
+~
+~
+~
+~
+~
+0 CDFGHIKNZa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 13003
+Dsouth medium
+~
+~
+~
+~
+0 0 13001
+S
+#13003
+A Room In the Rift~
+This is a room in the rift.  Dead people wander around in here trying to
+find the dude carrying their life crystal.  That shouldn't be terribly hard
+right now, since there are only a few rooms and they're all in a line.  
+~
+~
+~
+~
+~
+~
+0 CDFGHIKNZa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 13004
+Dsouth medium
+~
+~
+~
+~
+0 0 13002
+S
+#13004
+A Room In the Rift~
+This is a room in the rift.  Dead people wander around in here trying to
+find the dude carrying their life crystal.  That shouldn't be terribly hard
+right now, since there are only a few rooms and they're all in a line.  
+~
+~
+~
+~
+~
+~
+0 CDFGHIKNZa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 13005
+Dsouth medium
+~
+~
+~
+~
+0 0 13003
+S
+#13005
+A Room In the Rift~
+This is a room in the rift.  Dead people wander around in here trying to
+find the dude carrying their life crystal.  That shouldn't be terribly hard
+right now, since there are only a few rooms and they're all in a line.  
+~
+~
+~
+~
+~
+~
+0 CDFGHIKNZa 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 13001
+Dsouth medium
+~
+~
+~
+~
+0 0 13004
+S
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

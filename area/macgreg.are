@@ -1,0 +1,1575 @@
+#AREADATA
+Version     9
+Name        MacGregor's Estate~
+Credits     ~
+Builders    Macgregor~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       1000 1099
+Levels      509 520
+Security    9
+Recall      900
+Flags       BE
+Color       7
+ExitSize    medium
+Created     1023311979
+Changed     1715908513 Thu May 16 21:15:13 2024
+End
+
+#MOBILES
+#1000
+test mob~
+Test Mob~
+A test mob stands here silently.
+~
+~
+human~
+ABGLd 0 0 C 0 0 100
+0 16 10d10+8400 1d1+249 7d10+0 none
+-23 -23 -23 -23
+0 0 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+>speech_prog p hello there~
+if ispc($n)
+  say Hello, $N!
+  say My name is $I
+else
+  say Hmm.
+endif
+bow $n
+~
+>speech_prog sex~
+if sex($i) == neutral
+  say I am neutral
+else
+  if sex($i) == male
+    say I am male
+  else
+    if sex($i) == female
+      say I am female.
+    endif
+  endif
+endif
+~
+>speech_prog yes~
+say no
+~
+>speech_prog no~
+say yes
+~
+>greet_prog 100~
+say Welcome, $n
+~
+>act_prog p slaps you stingingly.~
+cry
+sniff $n
+~
+>act_prog p comforts you.~
+thank $n
+~
+>act_prog sighs.~
+comfort $n
+~
+>act_prog p tossed you a bottle of beer...~
+bcatch
+beer self
+~
+>repop_prog 100~
+say I'm BAAACCCKKK!
+~
+>speech_prog money~
+if goldamt($n) == 100
+   say 100 gold pieces.
+endif
+if goldamt($n) > 100
+   say Rich!
+endif
+if goldamt($n) < 100
+   say Poor.
+endif
+if not goldamt($n) == 100
+  say Definitely not 100
+endif
+~
+>all_greet_prog 100~
+if cansee($n)
+say I see you, $n
+else
+say I sense a presence!"
+endif
+bounce $n
+~
+>speech_prog countdown~
+mpcancel
+say 10
+mpdelay 1 say 9
+mpdelay 2 say 8
+mpdelay 3 say 7
+mpdelay 4 say 6
+mpdelay 5 say 5
+mpdelay 6 say 4
+mpdelay 7 say 3
+mpdelay 8 say 2
+mpdelay 9 say 1
+mpdelay 10 bonk $n
+~
+>speech_prog count2~
+if hasdelay($i)
+  say Not now, I'm busy
+  break
+endif
+say 10
+mpdelay 1 say 9
+mpdelay 2 say 8
+mpdelay 3 say 7
+mpdelay 4 say 6
+mpdelay 5 say 5
+mpdelay 6 say 4
+mpdelay 7 say 3
+mpdelay 8 say 2
+mpdelay 9 say 1
+mpdelay 10 bonk $n 
+~
+>act_prog p pats you on your head.~
+smile $n
+~
+>speech_prog rapid~
+mob delay 1 mob echoat $n $n is battered against the riverbank,  as the rapids pushes onward.
+~
+>tell_prog p spank her~
+if name($n) != MacGregor
+  break
+endif
+mpat moreta mpforce moreta emote bends over and flips up the hem of her dress.
+mpdelay 1 mpat macgregor mpforce macgregor emote soundly spanks Moreta's bare bottom.
+mpdelay 2 mpat moreta mpforce moreta emote stands up.
+mpdelay 2 mpat moreta mpforce moreta thank macgregor
+~
+>tell_prog p talk to me~
+reply As you wish.
+~
+>fight_prog 100~
+say Don't hit me!
+mpgoto 3
+mpgoto $n
+~
+|
+#0
+
+#OBJECTS
+#1000
+rock lobster~
+a succulent rock lobster~
+A succulent red steamed lobster sits here.~
+~
+food 0 0 A
+8 8 0 0 0 0
+1 320 0 0 P
+0 0 0 0
+0 1001 1002 0 0
+#1001
+lobster tail~
+a juicy steamed lobster tail~
+A juicy steamed lobster tail is lying here.~
+food~
+food 0 0 AO
+4 4 0 0 0 0
+1 160 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1002
+lobster claw~
+a lobster claw~
+A plump lobster claw is here.~
+food~
+food 0 0 AO
+4 4 0 0 0 0
+1 80 32 0 P
+0 0 0 0
+0 0 0 0 0
+#1005
+flower rose~
+a red rose~
+A red rose lies here.~
+~
+herb 0 0 AO
+0 'reserved' 'reserved' 'reserved' 0
+0
+1 10 0 0 P
+4 1006 -1 -1
+0 0 0 0 0
+#1006
+flower tulip~
+a yellow tulip~
+A yellow tulip lies here.~
+~
+herb 0 0 AO
+0 'reserved' 'reserved' 'reserved' 0
+0
+1 0 0 0 P
+4 1005 -1 -1
+0 0 0 0 0
+#1007
+lens~
+a lens~
+A lens gleams in the dust.~
+~
+lens 0 0 AR
+0 -1 0 'identify' 0 0
+1 1 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1009
+table chairs~
+a chair beside the table~
+A large polished table surrounded by chairs nearly fills the room.~
+wood~
+furniture 0 0 0
+6 0 EH 100 100 0
+120 80000 0 0 P
+4 1010 10 10
+0 0 0 0 0
+#1010
+satin red bed~
+a red bed with satin sheets and drapes~
+A cherry red bed with satin sheets and drapes rests here invitingly.~
+~
+furniture 0 0 0
+4 0 EHK 300 300 0
+120 32000 0 0 P
+4 1009 2 2
+0 0 0 0 0
+#1011
+pandoras box~
+Pandora's box~
+A lovely Pandora's box lies here.~
+~
+container 0 0 A
+100000 A 0 100000 100 0
+1 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+>buy_prog 100~
+say Ok. Now that you've bought me, I expect you to treat me kindly.
+~
+>open_prog 100~
+say Hey! Easy on the hinges, babe.
+~
+>close_prog 100~
+say Geez, about time. How would YOU feel with yer lid always open?
+~
+>drop_prog 100~
+say Hey! Don't leave me like this! After all we've been through!
+sniff
+~
+>sell_prog 100~
+say Well, finally. Maybe I can get a decent owner next time around.
+grumble
+~
+>look_in_prog 100~
+say Ya sure are nosey, bub.
+~
+>look_prog 100~
+say Well! Finally, someone who appreciates my beauty.
+beam $n
+~
+>give_prog 100~
+say Awww, come on, don't give me to this wierdo, $n... Do they look sane to you?
+eye $n
+~
+>get_prog 100~
+say Geez, I thought you were really gonna leave me that time.
+emote breathes a sigh of relief.
+~
+|
+#1012
+overstuffed easy chair~
+an overstuffed easy chair~
+A comfortable-looking overstuffed easy chair sits near the corner.~
+~
+furniture 0 0 0
+2 0 FI 100 100 0
+1 8000 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1013
+leather hassock~
+a hassock~
+A hassock covered with brown leather sits in front of the chair.~
+leather~
+furniture 0 0 0
+1 0 E 100 100 0
+1 1600 0 0 P
+0 0 0 0
+0 0 0 0 0
+#1014
+planter~
+a corn planter~
+A corn planter has been discarded here.~
+~
+trash 0 0 A
+0 0 0 0 0 0
+0 0 0 0 P
+2 1015 5 5
+0 0 0 0 0
+#1015
+kernel corn~
+a corn kernel~
+A kernel of corn is embedded in the ground here.~
+~
+trash 0 0 0
+0 0 0 0 0 0
+0 0 0 0 P
+4 568 2 2
+0 0 0 0 0
+#1016
+boots flying~
+Boots of Flying~
+A pair of Boots of Flying have been left here.~
+leather~
+clothing 0 0 AG
+0 0 0 0 0 0
+0 320 0 0 P
+5 'fly' 5 5
+0 0 0 0 0
+#1017
+book poems poetry~
+a book~
+A book of poetry lies here.~
+leather paper~
+book 0 0 AO
+0 0 0 0 0 0
+120 160 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+book poems poetry~
+The book is bound with red leather and the lettering on the cover is done
+in gold leaf.  
+ 
+The book is entitled, "A Book of Poems".
+~
+P
+For my love, my Moreta
+ 
+ 
+~
+P
+Come to me in my dreams, and then 
+By day I shall be well again. 
+For then the night will more than pay 
+The hopeless longing of the day. 
+ 
+Come, as thou cam'st a thousand times, 
+A messenger from radiant climes, 
+And smile on thy new world, and be 
+As kind to others as to me. 
+ 
+Or, as thou never cam'st in sooth, 
+Come now, and let me dream it truth. 
+And part my hair, and kiss my brow, 
+And say My love! why sufferest thou? 
+ 
+Come to me in my dreams, and then 
+By day I shall be well again. 
+For then the night will more than pay 
+The hopeless longing of the day. 
+ 
+-Matthew Arnold
+~
+P
+I know a sweet suburban girl,  
+She's witty, bright and brief;  
+With dimples in her cheeks; and pearl  
+In rubies set, for teeth.  
+ 
+Beneath her glossy raven hair  
+There beams her bright brown eye,  
+Bright as the star of evening there  
+Where the yellow sunbeams die.  
+ 
+Her breath is like a flower blown,  
+In fragrance and perfume;  
+Her voice seems from the blissful throne  
+Where their harps the angels tune.  
+ 
+And when she turns her dimpled cheek  
+Toward me for a kiss,  
+I lose expression?cannot speak? 
+And take all there is of bliss.  
+ 
+-Samuel Alfred Beadle
+~
+P
+Soul, heart, and body, we thus singly name, 
+Are not in love divisible and distinct, 
+But each with each inseparably link'd. 
+One is not honour, and the other shame, 
+But burn as closely fused as fuel, heat, and flame. 
+ 
+They do not love who give the body and keep 
+The heart ungiven; nor they who yield the soul, 
+And guard the body. Love doth give the whole; 
+Its range being high as heaven, as ocean deep, 
+Wide as the realms of air or planet's curving sweep. 
+ 
+-Alfred Austin 
+~
+P
+If questioning would make us wise 
+No eyes would ever gaze in eyes; 
+If all our tale were told in speech 
+No mouths would wander each to each. 
+ 
+Were spirits free from mortal mesh 
+And love not bound in hearts of flesh 
+No aching breasts would yearn to meet 
+And find their ecstasy complete. 
+ 
+For who is there that lives and knows 
+The secret powers by which he grows? 
+Were knowledge all, what were our need 
+To thrill and faint and sweetly bleed? 
+ 
+Then seek not, sweet, the "If" and "Why" 
+I love you now until I die. 
+For I must love because I live 
+And life in me is what you give. 
+ 
+- Christopher Brennan
+~
+P
+Wild nights--wild nights! 
+Were I with thee 
+Wild nights should be 
+our luxury! 
+ 
+Futile the winds 
+To heart in port-- 
+Done with the compass, 
+Done with the chart! 
+ 
+Rowing in Eden-- 
+As the sea! 
+Might I moor, tonight, 
+In thee! 
+ 
+- Emily Dickinson 
+~
+P
+The fountains mingle with the river,  
+And the rivers with the ocean;  
+The winds of heaven mix forever,  
+With a sweet emotion;  
+Nothing in the world is single;  
+All things by a law divine  
+In one another's being mingle;--  
+Why not I with thine?  
+ 
+See! the mountains kiss high heaven,  
+And the waves clasp one another;  
+No sister flower would be forgiven,  
+If it disdained it's brother;  
+And the sunlight clasps the earth,  
+And the moonbeams kiss the sea;--  
+What are all these kissings worth,  
+If thou kiss not me? 
+ 
+- Percy Bysshe Shelley 
+~
+#1022
+red rose~
+a delicate red rose~
+A delicate red rose has been discarded here.~
+~
+treasure 0 0 AO
+0 0 0 0 0 0
+112 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+tag~
+For Karen
+from Bob
+~
+E
+red rose~
+A long woody stem ends with a beautiful rose.  The delicate petals curve
+gracefully from the stem overlapping in many layers.  A few small green
+leaves are still attached to the stem.  The stem appears to have been
+freshly cut, and tiny drops of dew still cling to leaves.  
+
+`R           @`G>--,--'--``-`X
+ 
+A tiny tag seems to be almost hidden by one of the small leaves.
+~
+>wear_prog 100~
+mpechoat $n `WA warm feeling fills you as you hold the rose.
+~
+|
+#1024
+bed~
+an elegant four poster bed~
+Ivory silk bedcurtains have been elegantly draped on the canopy of a four poster bed.~
+wood~
+furniture 0 0 0
+4 0 EHK 100 100 0
+112 50000 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+bed~
+An oversized mahogany bed is covered with an assortment of ivory and
+mauve pillows and handmade quilts.  The ornately carved headboard is adorned
+with images of cupids and lovebirds.  Four spiralling posts support a
+rectangular canopy over which ivory silk has been draped to create an
+inviting atmosphere.  
+~
+#1098
+guide book newbie~
+the Newbie Guide~
+A newbie guide lies here.~
+~
+trash 0 0 A
+0 0 0 0 0 0
+1 80 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+9~
+`z--------------------------------------------------------------------------------
+`BWIZLIST & GETTING HELP:
+`cTyping `z'`wwizlist`z'`c will show you a "reasonably current" list of the MUD's
+immortal staff.  Generally when you wish to seek help on something you should
+begin at the bottom of that list and work upward, since those at the top
+positions are often busy with things and will generally take the longest to
+answer your question.  Also know that most immortals are busy doing something
+even if it may not be immediately appearant so if they don't answer right away
+give them time.  And if you ask for their attention and get it, don't tell them
+"just a sec" if it's something you could have taken care of before calling their
+attention.  These are just general notes of "etiquette" in dealing with 
+immortals.  They're happy to help you out if you give them the chance and don't 
+disrespect them.
+`z--------------------------------------------------------------------------------
+~
+E
+8~
+`z--------------------------------------------------------------------------------
+`BTHE MUD'S RULES:
+`BThese are the rules of `CAversions`B.  For other matters, use commom sense.
+`B
+`W* Cheating will not be tolerated.  This includes accepting favors
+`W  from gods and exploiting bugs. If you find a bug, report it, then
+`W  do not use it. You risk deletion should you be caught.
+ 
+`w* Foul language is allowed *ONLY* on the mutter and pkill channel.
+`w  Do not use this language anywhere else, period.
+ 
+`W* The Immortals' judgement on a matter is FINAL
+`W  Do not whine about their judgement, accept it.
+ 
+`w* Sexual harrassment is not allowed in ANY form.
+ 
+`W* No kill stealing.  This means do not attack a mob that is
+`W  already being attacked by another player.
+ 
+`w* Multiplaying is legal.  This means you can have multiple characters
+`w  on at the same time.  If any of your characters are in a pkilling 
+`w  clan, this rule does NOT apply.  Multiplaying with pkill characters is
+`w  allowed, and you cannot multiplay with more than two characters
+`w  at the same time.
+ 
+`W* Do *NOT* summon -ANY- mobs into Bethaven, Ravenwood or Mudschool.
+ 
+`w* Stealing from other chars is legal -ONLY- in the pkill range
+`w  That's +/- 8 levels.
+ 
+`W* Adverstising antother mud is *NOT* allowed. This includes the name
+`W  or addy. If caught, punishment will be -VERY- severe.
+ 
+`w* Bot's are NOT welcome here. nuf said!
+~
+E
+7~
+`z--------------------------------------------------------------------------------
+`BLIST OF EQUIPMENT SLOTS:
+`B
+`CLight                           `CShield `w(`z*`w)
+`CFinger `w(`B2`w)                      `COrbit `w(`B2`w)
+`CNeck `w(`B2`w)                        `CWaist
+`CHead                            `CAbout Body
+`CFace                            `CWrists `w(`B2`w)
+`CEyes                            `CEarring
+`CBody                            `CAnkles `w(`B2`w)
+`CArms                            `CWield
+`CHands                           `CDual Wield `w(`z**`w)
+`CLegs                            `CHeld `w(`z*`w)
+`CFeet
+`z*  `w-`c Only usable if you're not dual wielding.  `C(Mainly for spellcasters)
+`z** `w-`c Only usable if you have the "dual" skill.  `C(Fighter classes)
+`B
+INVOKES ON ITEMS:
+`cYou won't find many low level items with invokable spells on them, but just so
+you're aware of their existance there are many items in the game that can be
+"invoked" to produce a certain effect or spell.  An item may contain the spell
+'fireshield' and if you invoke the item it casts that spell upon you or the
+target you select.  These are primarily handy to the non-magical fighting
+classes.
+`z--------------------------------------------------------------------------------
+~
+E
+6~
+`z--------------------------------------------------------------------------------
+`BFIGHTING PLAYERS VS MOBS:
+`c  For attacking normal mobs simply type `w'`Rkill <mob name>`w'`c to start a fight with
+them or if you are a thief type 'bs <mob name>' once you have the backstab
+skill.  If you want to attack an animated corpse (you'll know when you come
+across one) or a player (when you `R_BOTH_ `care in PK clans) you type `w'`Rmurder
+<player>`w'`c to attack.
+  If a fight isn't going well for you and you're likely to die if you don't find
+a quick escape you simply need to type `B'`wflee`B'`c until you escape.  You will lose
+a little bit of experience in the process, but it's better to lose 10xp than
+lose half of what xp you've gained towards leveling.  Btw..it's 1000xp per
+level.  In some areas flee doesn't work though, such as Dragon Valley though.
+  Also, there are numerous "aggressive" mobs in the game that will automatically
+attack you the moment you enter the room regardless of wether you wished to
+fight or not.  So be wary of exploring high level areas or new areas without
+shielding yourself against possible attack.
+`B
+ALIASES - Use and Creation`w:
+`WSyntax`w:`r alias [shortcut] [task]  `C(Creates or modifies an alias)
+`WSyntax`w:`r alias [shortcut]         `C(Deletes that alias)
+`c  Aliases are common to many muds, but aren't found in all.  Basically these
+are exactly what they sound like.  They're shortcut commands to preform larger
+tasks.  `C(`BEx`w:`c having a shortcut command of 'fire' for performing the task, "cast
+'fireball'"`C)`c.  This mainly just saves you on time and typing.  How it works:
+`CExample`w:`c
+<prompt> alias clb cast 'lightning breath'
+Alias 'clb' added.
+<prompt> clb
+Cast spell on whom?
+<prompt> clb dragon
+Your blast of lightning MUTILATES the dragon.
+`z--------------------------------------------------------------------------------
+~
+E
+5~
+`z--------------------------------------------------------------------------------
+`BCOMMON ABBREIVATIONS:
+`cThis is just for those who are truely new to mudding since there are certain
+terms mudders use all the time.
+`BAFK    `w:`c Away From the Keyboard (Could also just be not paying attention)
+`BPK     `w:`c Player Killing
+`BMob    `w:`c Short for Mobile..meaning "creatures" in the MUD.
+`BNewbie `w:`c You :)
+`BRP     `w:`c Roleplay or Roleplaying
+`BCR     `w:`c Corpse retrieval (Asking someone to help you get your corpse back)
+`B
+`BDESCRIPTION OF COMMUNICATION CHANNELS:
+`cMany new players aren't sure how to communicate with others so I hope this helps
+`POOC`w:`c      The general discussion channel..everyone sees it. Shortcut = ]
+`RMutter:`c   A form of OOC channel that isn't language censored.   All see it.
+`CChat`w:`c     Role-playing channel..everyone sees it.  Shortcut = .
+`RClantalk`w:`c ONLY those in your clan can see it.  Shortcut = cl
+`CShout`w:`c    Everyone sees it, but it's an emergency channel, not a discussion one.
+`CYell`w:`c     Everyone within the same AREA as you sees it.
+`CSay`w:`c      Everyone in the same ROOM as you sees it.  Shortcut = '
+`PEmote`w:`c    Everyone in the same ROOM sees it.  It's for actions not speaking.
+`WTell`w:`c     ONLY the person you send it to sees it.  Tell <player> <message>
+`c`rClass`c`w:`c    ONLY those of the same class as you see it.  Ie all thieves etc..
+`GAuction`w:`c  Everyone sees it.  This is to sell items, not talk.
+`PHero`c`w:`c     ONLY level 100+ characters see this, Champs & Imms.  Shortcut = -
+`c`gMusic`c`w:`c    Everyone sees this.  It's for..whatever :)
+`GQuestion`w:`c Everyone sees this.  Ask questions here or on OOC.
+
+`BWhine:`c    Everyone sees this.  Place to whine about things.
+`YGratz:`c    Everyone sees this.  Channel for gratzing someone when they level.
+`CBoast:`c    Everyone sees this.  Channel to boast about yourself.
+`wDream:`c    ONLY the people sleeping will see. Can talk on it when sleeping.
+`RPkill:`c    ONLY pkillers see this channel. Were pkiller can chat and dispute.
+`BAvatar:`c   ONLY level 106 can see this channel. 
+`pAnswer:`c   Everyone sees this.  Answer questions here or on OOC
+
+Btw..OOC stands for "out of character" and with emotes it is only for actions.
+If you type "emote grins sheepishly" and your name is Arch others in the room
+will see, "Arch grins sheepishly".
+`z--------------------------------------------------------------------------------
+~
+E
+4~
+`z--------------------------------------------------------------------------------
+`BHELPFUL STARTING HINTS:
+`cHere's a couple setting hints to get you started.  If you type "config" and
+press enter you will see a list of "toggle" settings for your character.  A few
+of these are as follows and as to how you might want them:
+`w+`Rautoloot`w:`c Automatically take all equipment within a monster\player you have
+           killed.  Handy at starting levels, but I'd suggest removing it after
+           about level 10.
+`w+`Rautoexit`w:`c Automatically lists available exits from rooms, except "door" exits.
+`w+`Rautogold`w:`c Automatically take the money a creature had from it's corpse.
+`w-`Ransi`w:`c     IF you don't have the ability to see color you want this off,
+           otherwise leave it on and enjoy.
+`w-`Rcombat`w:`c   This will take away seeing "you dodge.." "<mob> dodges...".  Reduces
+           the spam a great deal.
+`w+`Rkeep`w:`c     This keeps the MUD from autoputting in a new title for you each level
+           so you can keep your own customized one.
+`w-`Rfullname`w:`c This enables 'name completion' which allows you to be lazy and type
+           only partial words.  To look at a salamander you might 'look sal' and
+           it will take the first item\mob\player that begins with those letters
+           it can find.
+These are just to help you get started, but you're welcome to set them up as you
+choose.  To set a "setting" like this you type: "config <+/-><setting>" so to
+say set autoloot ON..you'd type "config +autoloot".
+Another helpful feature of the mud is the PROMPT command.  Using it you can
+customize your info prompt in color or appearance.  "help prompt" will show all
+of the settings you can use, but here's a sample one that you can copy\paste in
+the game for show:
+`Cprompt [``z%h``c/``z%H``Bhp ``z%m``c/``z%M``Bm ``w[%a][``C%x``wxp]:``z
+`cAssuming your a new character at level 1 this would look like:
+`w[`z20`c/`z20`Bhp `z100`c/`z100`Bm `w[0][`C1000`wxp]:`z <whatever you type in game>
+`C(The [0] is your alignment, which generally starts out at 0.)
+`z--------------------------------------------------------------------------------
+~
+E
+3~
+`z--------------------------------------------------------------------------------
+`BHP, BLOOD, MANA & MOVEMENT:
+`cAside from Str and it's like-statistics there is `CHP `c(Hit points), `CBlood `c(A
+vampire's form of mana), `CMana `c(Amount of magical energy available) & `CMovement
+`c(one's exhaution rating.).  These are fairly simple really:
+`BHP`w:`c       It's in your prompt like 20/20hp.  This is lowered with each hit you
+          take from a player or monster.  If it reaches below 1hp you die and
+          you must get your stuff back from your corpse.
+`BBlood`w:`c    If you're not a vampire don't worry about this.  Vampires use "blood"
+          instead of "mana" that they can't regain via potions, but "feed" off
+          victims to replenish it.
+`BMana`w:`c     The amount of magical energy available to you.  So when a spell costs
+          say..50ma (ma = mana) then if you have 1500/1500ma you go to
+          1450/1500ma.  Potions will revitalize this somewhat though.
+`BMovement`w:`c This of course is the MV stat and lowers as you move between rooms,
+          but it's rare that you ever run out of movement.  Usually people just
+          ignore it completely.
+`cI'd suggest you `w-`Calways`w-`c train HP.  You'll have enough mana with potions,
+movement wears down slowly and blood can't be trained.
+`z--------------------------------------------------------------------------------
+~
+E
+2~
+`z--------------------------------------------------------------------------------
+`BSTATISTICS:
+`cThe statistics I'm referring to here are `CStr`c (Strength), `CInt`c (Intelligence),
+`CWis`c (Wisdom), `CDex`c (Dexterity) & `CCon`c (Consitution).  What they do is:
+`BSTR`w:`c Increases the amount of weight your character is able to carry, allows you
+     to wield heavier weapons & increases your damage in battle.
+`BINT`w:`c Allows you to practice skills\spells faster.  25 Int that only Mages and
+     Necromancers are able to acheive allows you to become "adept" in a skill or
+     spell in one practice.
+`BWIS`w:`c Determines the amount of practices you receive per level.  Normally you
+     can't pass 22 WIS unless you're a cleric, druid or psionisist which can
+     reach 25 WIS.  22 WIS = 7 Practices per level.  25 WIS = 8 practices.
+`BDEX`w:`c Dexterity determines how well you dodge out of the way or how quickly you
+     are able to parry an attack so it doesn't reach you.  Most classes can only
+     reach 22 DEX, except thieves, bards & vampires, which are able to reach
+     25 DEX.
+`BCON`w:`c The "life" statistic.  Constitution adjusts how much HP per level you gain.
+     The higher your CON stat is the more you receive each level depending on
+     your class.  Each class earns a different range of HP per level.  Only
+     rangers and monks can pass the 22 CON limit with their 25 CON.
+`BI very strongly encourage you to train your stats in this order`w:
+`CWIS`c,`C CON`c,`C INT`c,`C STR`c,`C DEX  (Dex & Str can be switched though)
+`cThis way you max your practices gained per level quicker so you can train other
+things faster and after that you get your con up so you gain as much hp per
+level as possible.
+Generally you can't get a statistic past 22, except the one statistic that is
+your class' "main" statistic.  These main statistics are as follows:
+`z                _______________`z______________________________`z_
+`z                | Statistic    `z| Classes that have it        `z|
+`z                |--------------`z|-----------------------------`z|
+`z                | `BStrength     `z|`C Warrior, Paladin & Werewolf `z|
+`z                | `BIntelligence `z|`C Mage & Necromancer          `z|
+`z                | `BWisdom       `z|`C Cleric, Druid & Psionisist  `z|
+`z                | `BDexterity    `z|`C Thief, Vampire & Bard       `z|
+`z                | `BConstitution `z|`C Ranger & Monk               `z|
+`z                |______________`z|_____________________________`z|
+`z--------------------------------------------------------------------------------
+~
+E
+1~
+`BPRACTICING & TRAINING`c
+On this mud, unlike some other forms of MUDs, you must train your primary
+statistics (STR, INT, WIS, DEX, CON), plus you may also train your Hp's,
+mana and movements.  To do training you use "practices" that you receive
+each level based on your Wisdom.  The higher you wisdom the more prac's your
+able to get per level.  To train a stat, like Str, it cost's 5 practices per
+train, but to train Hp's, mana or movement it costs only 1 practice.  Note:
+You can't train a statistic like Str past 18 regardless of class.  To train
+a stat you simply type: train `z<item>`R #`C (`R#`Cis for how many practices
+to use.  Ie: train hp 50)`c.  Practicing is a bit more indepth where
+training deals with statistics, practicing is how you aquire new skills and
+spells.  It only takes one practice to improve a skill or spell, but how
+muchit is improved depends upon your Int statistic.  Plus different classes
+can practice to different amounts such as a Mage's 95%, and a Theif's 85%. 
+To practice a skill/spell you type: `zpractice <skill name>`C (dont put the
+""s around the name if it's 2+ words).  `c 
+~
+E
+guide book newbie~
+`z--------------------------------------------------------------------------------
+NEWBIE BOOK:
+--------------------------------------------------------------------------------
+`BINTRO:
+`cThis book is for the benefit of those who either are just learning to MUD or
+aren't well versed in it already, so those of you who are comfortable with how
+to play you may wish to skip to number 7.  To look at any "chapter" in this
+book you type: `B"`wlook `R#`B" `C(Minus the quotes.  # refers to the chapter)
+`z--------- `WBeginners `z----------
+`z1`w...`BPracticing & Training
+`z2`w...`BStatistics -> STR, INT, WIS, DEX & CON
+`z3`w...`BHP, Blood, Mana & Movement
+`z4`w...`BHelpful starting hints
+`z5`w...`BCommon Abbreivations & MUD communication channels
+`z6`w...`BFighting players vs mobs & Aliases - Use and Creation
+`z-------- `WGeneral Info `z--------
+`z7`w...`BList of Equipment slots & Invokes on items
+`z8`w...`BThe MUD's Rules
+`z9`w...`BWizlist and Getting help
+`z--------------------------------------------------------------------------------
+~
+#1099
+barlow book prgramming mobprogramming~
+Barlow's Book of Mobprogramming~
+A large leatherbound volume with gold lettering lies here gathering dust.~
+~
+trash 0 0 A
+0 0 0 0 0 0
+1 1600 0 0 P
+0 0 0 0
+0 0 0 0 0
+E
+seven~
+***Variables
+   To make things come alive, variables are needed. These are represented in
+the Mobprogram by using the dollar sign convention as in the socials. When 
+the Mud command is proccessed, these variables are expanded into othe values
+shown below. Usually it is best to use the short desc of mobs and the names
+of players when speaking them, but if you are performing an action to someone
+almost always you want to use the name. The title field for player is an extra
+that probably won't often be used.
+Without further hestitation... the variables:
+$i <> the first of the names of the mob itself
+$I <> the short desc of the mob istelf
+$n <> the name of whomever caused the trigger to happen
+$N <> name and title of whomever caused the trigger
+$t <> name of secondary char target (i.e. A smiles at B)
+$T <> short desc or name and title of target (NPC vs PC)
+$r <> name of random char in room with mob (never=$i)
+$R <> short desc or name and title of random char
+$j <> he, she, it based on sex of $i
+$e <> '         ' based on sex of $n
+$E <> '         ' based on sex of $t
+$J <> '         ' based on sex of $r
+$k <> him, her, it based on sex of $i
+$m <> '          ' based on sex of $n
+$M <> '          ' based on sex of $t
+$K <> '          ' based on sex of $r
+$l <> his, hers, its based on sex of $i
+$s <> '            ' based on sex of $n
+$S <> '            ' based on sex of $t
+$L <> '            ' based on sex of $r
+$o <> first of the names of the primary object (i.e. A drops
+$O <>               of the primary object
+$p <> fist of the names of the secondary object (i.e. A puts B in C)
+$P <>               of the secondary object
+$a <> a, an based on first character of $o
+$A <> a, an based on first character of $p
+   Also, in if_checks, the accepted variables are the basic ones (i,n,t,r,o,p)
+If a variable is referenced that doesn't exist, then the value is simply left
+blank. (i.e. referring to $o when the trigger is A kissed B)
+   The only problem with the variables is that the secondary object and the
+secondary target are passed by actO in the same location. This means that if
+you reference %t in an A puts B in C situation, the results will probably be 
+a happy mud crash or some weird side effect, especially if $t is used in an
+if_check (i.e. if isnpc($t) in the above situation) The basic fix for this is
+to change everyone who calls the actO procedure to specify a secondary object
+and a secondary character. But that is a fairly comprehensive trivial twiddle,
+so we left it the way it is so that , you aren't forced to make all those
+twiddles to use the Mobprograms.
+~
+E
+six~
+Syntax: entry_prog
+   The opposite of a greet_prog. Whenever the mob itself enters a new room,
+this can be triggered. Useful for looking around, or waving or other things
+that real PC's do when they arrive at a crowded room. Only the first
+successful one of these is done so the mob doesn't look stupid by repeating
+commands resulting from multiple Mobprograms.
+Syntax: give_prog
+   The argument is either the complete name of an object, or the word 'all'.
+A complete name is like: "sword shiny magic" vs "sword". It is whatever is
+on the line of the object section following the vnum.
+NOTE: This is triggered whenever something is given to the mob. Best used
+for quests. Since the first successful trigger is the only one of this type
+which is processed, having an "all" argument give_prog at the end of the
+Mobprogram list is esentially a default response.
+Syntax: bribe_prog
+   The argument is any positive integer number.
+NOTE: This trigger is activated whenever money is given to the mob. If the
+amount given exceeds the number, then process the commands. Note again, 
+that an argument of '1' would act as a default response. If money is given
+to a mob with this trigger type, instead of cash being added to the mob>gold
+the mob is instead given a pile of coins in the proper amount. In this way,
+the mob can drop the coins or refer to the object by "amount"(short desc:
+%d gold coins) It surely has some drawbacks, but it lets the mob do something
+with the bribe(NOTE:dropping it and getting it turns it into cash) This can
+be done sneakily if a NPC-only 'at' command exists.
+Syntax: death_prog
+  The argument is a percentage once again.
+NOTE: When the mob dies, if the random percentage is less than the argument
+the mob performs the Mobprogram commands rather than the usual death_cry
+sequence. This is done before the corpse is made, so the commands can be 
+considered the mobs last gasp. It could perhaps destroy the items it was
+holding, or create some, or cast a spell on the killer and the room, or even
+goto a new location and die there(with a text message, the corpse would seem
+to vanish). The position of the mob is set to standing, and so it can do all
+the normal commands without worrying about being DEAD. However, even if the
+mob restores istelf to full hp, it will still die. This is not a way to 
+immortal mobs. However, the last thing this mob does could be to goto some
+vacant room, load a fresh version of itself, drop all it's eq, force the new
+version to pick it all up and wear them, send the new mob back to the char
+who killed it and force it to attack that PC. Along with a text message
+which said the mob restored itself, this might be a convinving effect.
+(Note that your kitten could turn into a dragon this way too). Of course
+this assumes some NPC commands have been implemented.
+***NOTE: The first successful bribe, give, hitprcnt, death, fight, rand and
+entry_prog is the only one which is executed. All the successful greet(all),
+speech, and act_progs will be done. This is the best arrangmentwe found for
+handling situations where you imported several Mobprograms files for a mob.
+If you are going to write lots of little files and piece them together to 
+create the effect you want, it is advisable to not mix things together all
+that much, otherwise you have to pay close attention to the order in which
+the programs are added to the blank list.
+Also, no Mobprograms will be successful when the mob is charmed(since itself
+it has no violition, it should act like it has none) to protect mobs which
+are given special powers from being implemented by a player.
+One bug we had in early testing was a player who charmed a mob and then
+used it's aggressive greet_prog to attack other players.
+~
+E
+five~
+***Trigger Types
+   Triggers are fairly easy to add, but this basic list should hold for most
+needs. Their names, argument list syntaxes, and translation into more
+available articulate english are given below:
+Syntax: in_file_prog
+   The argument is a single word which is the location of the stored file as
+referenced from the running directory(MopProgs).
+NOTE: Dummy trigger. Not valid in any file, only for use in loading files from
+the first method described two chapters above.
+Syntax: act_prog[p]
+   The argument is a list of keywords seperated by spaces. If the first word
+is the character 'p' by itself then the rest of the word list is considered to
+be a phrase. The trigger is activated whenever a keyword(or phrase) is 
+is contained in the actO message. Both the phrase and keywords are case
+insensitive.
+NOTE: Most general trigger. Applies to almost every event which happens in
+the mud. Anytime the function actO is called with a message to be delivered
+TO_CHAR, TO_VICT, TO_ROOM, etc. the act can be triggered. Basically this will
+trigger on almost everything you'll ever want(and some things you won't as
+well). For example: Mobprogram: >act_prog p pokes you in the ribs.- is a 
+trigger will only be activated if a mobile receives a message in which the
+above five words are found in the exact order and spacing given. Note that
+the period is needed because the words must be found on their own. This
+eliminates confusion when the keyword 'hi' and a message with the word 'this'
+is being checked.
+Syntax: speech_prog[p]
+   The same as for an act_prog
+NOTE: This is only triggered when the keyword or phrase is contained in a
+message which has been said by the PC in the same room as the mob. The PC 
+restriction is not necessary, but makes infinite loops between two talking
+mobs impossible. It also makes it impossible for two NPC's to stand and 
+discuss the weather however.
+Syntax: rand_prog
+   The argument is a number between 1 and 100 inclusive.
+NOTE: This trigger is checked at each PULSE_MOBILE and if the argument is
+greater than a percentage roll the trigger is activated. This will happen
+even if there is no PC in the room with the mob, but there must be players
+in the same area. It is useful to give mobs a bit of personality. For 
+instance a janitor who stops to spit tobacco, or complain about the hours.
+or wonder why there are no woman janitors on muds, or a fido which barks or
+growls or pees on the curb is much more alive than one which just sits there
+scavenging.
+Syntax: fight_prog
+   Argument is a percentage like in rand_prog.
+NOTE: Useful for giving mobiles combat attitude. It is checked every PULSE_
+VIOLENCE when the mobile is fighting. Can be used to cast spells, curse at
+the opponent, or whatever. Only the first successful one will be processed
+at the opponent, to save time. Also this means that the mob won't get lucky
+and 1.curse, cast a fireball and 2.spit on the player, cast another fireball
+in the same pulse.
+Syntax: hitprcnt_prog
+   The argument is a percentage.
+NOTE: Is activated at each PULSE_VIOLENCE when the mob is fighting. It checks
+to see if the hitpoints of the mob are below a given percentage. Multiple
+hitprcnt_progs should be listed in increasing order of percent since 40% will
+always be activated before a 20% and, only the first successful hitprcnt 
+trigger is performed.
+Syntax: greet_prog
+   Again a percentage argument.
+NOTE: Whenever someone enters the room with the mob, and the mob saw the
+person enter, this is checked. Good for shopkeepers who want to welcome
+customers, or for pseudo-aggressive mobs which need to discriminate on who
+they attack.
+Syntax: all_greet_prog
+   Again a percentage argument.
+NOTE: Like greet_prog, but it can be triggered even if the mob didn't see the 
+arrival(i.e. sneak, invisible, etc). Most useful for faking teleport rooms(if
+your mob can transfer) or for impassible guardians.
+**NOTE: Neither greet_prog is activated if the mob is fighting**
+~
+E
+four~
+***Mobprogram Files
+   Since it is often useful to have the same Mobprograms affecting several
+different mobs, referencingMobprograms stored in an external file is needed.
+As described above, if the second method is used, such a file is already
+being referenced. Using the first method, in place of a true Mobprogram
+block, one can place the dummy line in the #MOBILE section of the *.are file
+in place of the Mobprogram block(s).
+    ">""in_file_prog"{Mobprogram_filename}"-"NL
+Note there is no list of program_commands as well as no second dash-.
+   IN a file, the suntax is exactly the same as it is for a in_file approach.
+A list of Mobprogram(NOT including any dummy in_file_proglines, sorry but
+recursion was outlawed for simplicity)blocks followed by a line starting with
+one '|'(pipe).
+Example provided: Beggar.prg
+   More that one mob can use the same file and one mob can call more than one
+file. Files are referenced using the dumming in_file_progline are placed in
+the Mobprogram list at the point where the dummy line exists. Files 
+referenced using the #MOBPROG section are added to the end of the mobs
+Mobprogram list. This is important because the only first successful Mob-
+program of some trigger-types is checked. These are described below.
+~
+E
+three~
+***Associating Mobprograms With A Mob
+   There are two ways for the mud to associate the program with the mob. In
+either case, the result is a link list of mob_programs which are attached to
+the mob_prototype. This is done at boot time, and so only one copy is kept
+, regardless of how many instances of the mob are running about. This also
+means that there is no dynamic way to edit or modify the Mobprograms.
+Back to ways to associate....
+   The first involves a simple in-file approach. In the mob section of your
+area files, at the end of the mob's block(i.e. on the line following the
+typical position/default position/sex line), append any number of Mob-
+programs blocks(using the syntax above)followed by a line starting with one
+'|'(pipe). Example provided: Example.are
+   The second method is to add a #MOBPROGS section to the area files. 
+Logically this section should follow the #MOBILE section since otherwise the
+mobs probably won't have space allocated for them. In the #MOBPROGS section
+, list as many lines as you desire of:
+        "M"{Vnum}{Mobprogram_filename}NL
+followed by a line starting with a 'S'(case insensitive)
+--Explainations
+The VNUM is whatever number mob to which you are associating the Mobprogram.
+The MOBPROGRAM_FILENAME is the name of the external file of Mobprograms. It
+is not case INsensitive and may include directory hierarchies (foo/bar/xx)
+NOTE: MERC 2.2 provides for a seperate directory called MobProgs. Any
+directory heirarchies branch from the Merc2/area/MobProgs directory.
+~
+E
+book~
+***Mobprograms
+   Mobprograms are a way to make your mobs more interesting. This basic
+version has enough to get things going, and should be quite readable and
+understandable and more to the point, extendable. the remainder of this book
+describes Mobprograms and gives a couple trivial examples.
+ 
+TABLE OF CONTENTS
+*To see the chapters type 'look {chapter}', i.e. 'look one' will show you
+chapter one.
+ 
+ 1:The Basic Idea
+ 2:Mobprogram Syntax
+ 3:Associating Mobprograms With A Mob
+ 4:Mobprogram Files
+ 5:Trigger Types
+ 6:More Trigger Types
+ 7:Variables
+ 8:Control Flow Syntax
+ 9:Operators and If_Checks In Control Flow
+10:MobCommands Of Interest
+11:Regarding CPU Slowdown
+12:Miscellaneous Information
+13:Credits
+ 
+This book was written by Barlow, and I have left it untouched.
+~
+E
+one~
+***The Basic Idea
+   Ever wonder why most muds either seem dead or overcrowded? The answer is
+probably partially due to the fact that the mobs never do anything but wait
+to be slaughtered. Unless someone has gone to great lengths and added many
+ special procedures, most mobs have no idea you are in the room with them and
+rarely listen to what you say. The typical Midgaard mayor wanders happily 
+along even when the populace pokes him, waves his City Key about, unlocks his
+gates, or frenches his secretary, etc. So a way to give the mobs a bit more
+spirit would be neat. Enter Mobprograms.
+   The backbone of Mobprograms shall be called triggers from this point on.
+Essentially, they are procedure calls place in sneaky places in the mud code
+which provide the context for what is going on around the mob. So, if some-
+thing happens in the mob's room and a trigger is activated, then a list of
+commands is sent to the interpreter in the mob's name, thus making him/her/
+it do an appropriate something.
+   Since knowing the appropriate response for every possible mob trigger is
+not easy, this command list shouldn't be a rigid script, but needs to some-
+how be unique for the mobile and the situation. However, in order to know
+the situation, a mob needs to know more about the trigger than that is just
+happened. So, we have to include some sort of variables as well to set up 
+the context appropriately.
+   As most implementors know, most area creators are not versed in coding
+but usually have great ideas. Therefore whatever system is used needs to be
+quite simple. This is not to demean the creators in anyway. Simply it is
+useless to have a powerful system, if the only person able to write anything
+is someone who finds C coding in general to be exciting and non-frustrating.
+If that is going to be the case, then stick to the special procedures, since
+There is no bound to what a complex special procedure can accomplish. Yet,
+from experience working on several muds, most admins and implementors prefer
+not to be writing one shot spec_procs to satisfy the needs of their creators.
+   Thus the basic idea: Let mobs react to a myraid of mud events/situations
+by having them perform a list of commands which can be tailored to the moment
+through a simple and unintimidating scheme usable by any creator.
+~
+E
+two~
+The simplest way to describe any syntax is by example, so here goes. First,
+define the notation: anything contained in bracers {} is required, anything
+in brackets [] is optional, anything in quotes "" is a case insensitive 
+literal, NL refers to a required new-line. The meanings of the lables used
+will be described following the syntax diagram.
+">"{trigger_type}""{argument_type}"-"NL
+{program_command_1}NL
+{program_command_2}NL
+{program_command_3}NL
+ . . .
+{program_command_N}NL
+"-"NL
+--Explainations
+A TRIGGER_TYPE is one of the available triggers.
+A PROGRAM_COMMAND can be any legal mud command, or a control flow command.
+The ARGUMENT_LIST depends on the trigger, but it is always parsed into the
+system as a character string.
+This is an example of ONE Mobprogram block for a mob.
+~
+E
+eight~
+***Control Flow Syntax
+   In place of any legal mud command in a Mobprogram, one can substitute a 
+flow of control command. Here is the syntax for a flow of control command.
+"if" "{if_check_1}"("{argument}")}[{operator}{value}]NL
+["or"""{if_check_2}"("{argument}")"[{operator}{value}]NL]
+["or"""{if_check_N}"("{argument"}")"[{operator}{value}]NL]
+   [{program_command_1}NL]
+   [{program_command_2}NL]
+      .  .  .
+   ["break"NL]
+      .  .  .
+   [{program_command_N}NL]
+["else"NL]
+   [{program_command_1}NL]
+   [{program_command_2}NL]
+      .  .  .
+   ["break"NL]
+      .  .  .
+   [{program_command_N}NL]
+"endif"NL
+   Basically, it is: an "if" line followed by zero or more "or" lines, 
+followed by zero or more legal mud commands, which may contain a "break" line
+, possibly followed by an "else" line, followed by zero or more legal mud
+commands, which may contain a "break" line, followed by an "endif" line. The
+only new syntax labels are all in the IF line:
+---Explainations
+   An IF_CHECK is a string which describes under what context to compare 
+things.
+   The ARGUMENT is the reference point from which the LHS of an extension
+comes.
+   The OPERATOR indicates how the LHS and RHS are going to be compared.
+   The VALUE is the RHS of the expression to be compared to the operator.
+   The BREAK command bails out of the entire Mobprogram regardless of the
+level if nesting.
+   If that looks confusing, skip to the end of the book and review the example
+Hopefully that should clear things, otherwise you'll probably have to give
+us a mail since the examples are the best way we know to explain syntax.
+~
+E
+nine~
+***Operators
+   Most of the basic operators are legal and perform the same function as in C
+The string operators are a bit more confusing. There are negative versions of
+some of the operators. These are not strictly needed, since the if/else 
+construct of the Control Flow commands can handle either case.
+*Numeric Opertators: If_checks in control flow
+   The provided list of if_checks and their arguments are below. They should
+all be fairly obvious in what they do, but some of the more obtuse deserve a
+slight explanation. Any '==' operator can be replaced with any of the 
+available ones described above. The argument ($*) refers to any of the 
+variables which make sense for that if_check(i.e. for an if_check which is
+referencing a person the only valid variables would be $i, $n, $t or $r). A
+value type of string is a sequence of characters. It doesn not need to be 
+included in quotes or anything like that (i.e. name($n)== orc large brown).
+ 
+rand(num) <> Is random percentage less than or equal to num
+isnpc($*) <> Is $* an NPC
+ispc($*) <> IS $* a PC
+isgood($*) <> Does the $* have a good alignment
+isfight($*) <> Is $* fighting
+isimmort($*) <> Is the level of $* greater than max_mortal
+ischarmed($*) <> Is $* affected by charm
+isfollow($*) <> Is $* a follower with their master in the room
+isaffected($*)&integer <> Is ($*->affected by & integer) true {person only}
+hitprcnt($*)==percent <> IS the hit/max_hit of $* equal to percent
+inroom($*)==integer <> Is the room of $* equal to the integer
+sex($*)==integer <> Is the sex of $* equal to integer
+position($*)==integer <> Is the position of $* equal to integer
+level($*)==integer <> Is the level of $* equal to integer
+class($*)==integer <> Is the class of $* equal to integer
+goldamt($*)==integer <> Does $* have a gold total equal to integer
+objtype($*)==integer <> Is the type of $* equal to integer (armor, boat, etc.)
+objval#($*)==integer <> $*->value[#]equal to integer (# from 0-3)
+number==integer <> The vnum of $* equal to integer
+name==string <> The name of $* equal to string
+~
+E
+ten~
+***MobCommands of Interest
+Syntax: MPSTAT
+   Shows the Mobprograms which are set on the mon of the given name or
+   vnum and some basic stats for the mob.
+Syntax:MPASOUND
+   Prints the text string to the rooms around the mob in the same manner as
+   a death cry. This is really useful for powerful aggressives and is also
+   nice for wandering minstrels or mobs like that in concept.
+Syntax:MPJUNK
+   Destroys the object refered to in the mobs inventory. It prints no message
+   to the world and you can do things like junk all.bread or junk all. This
+   is nice for having janitor mobs clean out their inventory if they are
+   carrying too much(have a Mobprogram trigger on the 'full inventory')
+Syntax:MPECHO, MPECHOAT, MPECHOAROUND
+   Prints the text message to to room of the mob. The three options let you
+   tailor the message to goto victims or to do things sneaky like having
+   a merchant do: mpat guard mpechoat guard rescue_please. This coupled with
+   a guard act_prog trigger on rescue_please to pgoto $n and mpecho $I has
+   arrived. It is an effective way of quickly bringing guards to the scene of
+   an attack.
+Syntax:MPMLOAD, MPOLOAD
+   Loads the obj/mob into the inven/room of the mob. Even if the item is non-
+   takable, the mob will receive it in iventory. This lets the mob distribute
+   a quest item or load a key or something.
+Syntax:MPPURGE[argument]
+   Destroys the argument from the room of the mob. Without the argument the
+   result is the cleansing of the NPC's and items from the room with the
+   exception of the mob itself. However, mppurge $i will indeed purge the mob,
+   but it MUST be the last command the mob tried to do, otherwise the mud
+   can't reference the acting mob trying to do the commands and bad things can
+   happen.
+Syntax:MPGOTO
+   Moves the mob to the room or mob or object requested. It makes no message
+   of its departure or entrance, so these must be supplied with mpecho command
+   if they are desired.
+Syntax:MPAT
+   Performs the command at the designated location. Very useful for doing
+   magic slight of hand tricks that leave the players dumbfounded, such as
+   metamorphing mobs, or guards summoning, or corpses vanishing.
+Syntax:MPTRANSFER[dest]
+   Sends the victim to the destination or to the room of the mob as a default
+   If the victim is 'all' them all the chars in the room of the mob are 
+   transfered to the destination. Good for starting quests or things like that
+   There is no message given to the player that it has been transfered and the
+   player doesn't do a look at the room unless the mob forces them to. Imms
+   cannot be transfered.
+Syntax:MPFORCE
+   Forces the victim to do the designated command. The victim is not told that
+   they are forced, they just do the command so usually some mpecho message is
+   nice. You can force players to remove belongings and give them to you, etc.
+   The player sees the normal command messages (such as removing the items and
+   giving it away in the above example). Again, if the victim is 'all' then
+   everyone in the mob's room does the command. This cannot be used on imms.
+~
+E
+eleven~
+***Regarding CPU Slowdown
+   We hav no real idea how slow this makes a mud. However, you will find that
+if you are judicious with your use of Mobprograms, you can either do little
+damage, or even reduce the effort on your server! This means that mob
+polling (including the rand_progs) need only be checked when players are
+around. This reduced the computation of random_stuff a little, but it is
+still a polling method, and subject to a basic inneficiency there. However,
+aside from the rand_progs, the only additional slowdowns will be when the
+mob is responding to the situation, and you would get that from a special
+procedure as well (although Mobprograms are surely not as efficient as
+compiled C code). For those who are afraid that Mobprograms will drown their
+CPU, here is a brazen suggestion which could put you a bit more at ease.
+Instead of having aggressive mobs, try the following Mobprogram block on all
+would be aggressives.
+   >greet_prog 100-
+   if ispc($n)
+    if isimmort($n)
+     bow $n
+    else
+     mkill $n
+    endif
+   endif
+ -
+   This has the effect of making the mob attack the FIRST visable mortal
+player who walks into the room. [Merc 2.0 has a random char be the victim,
+so we allow our fighting mobs a high chance to switch their target to any
+random player in the opposing group at each pulse_violence.]
+   What this has allowed us to do, is to comment out the aggr_update
+section of the code and thus reduce our computation by a bunch. There is no
+continuous polling through all the mobs in occupied zones and checking to see
+if there is an NPC aggressor and a PC victim. We also don't have to worry 
+about players skipping though aggressives, since the trigger catches folk as
+soon as they enter the room.
+   Note that the price we paid for this, was that if a second player walked in
+during the combat, and the first player flees, the mob didn't realize there 
+is a new target. So, we compromised by adding a rand_prog which had the mob
+appear to peer around the room and then do an mkill $r. Aha! You say, we are
+back to polling. well true, but since mobile_update is called anyway (at 1/16
+the frequency of aggr_update in default Merc 2.0) and we only add an if check,
+a walk of a short link_list and the Mobprogram execution itself, we have still
+reduced the aggr_update stuff by major amounts.
+   Of course the act_prog updates are currently done in the aggr_update s
+section but if you decrease the mobile_update time a bit and move the act_p
+rogs over to there, the result is act_progs which have a brief delay (
+like a PC who has to type thinkg over a modem does)
+~
+E
+twelve~
+***Miscellaneous Information
+   There is really no limit to the number of Mobprograms a given mob can have.
+However, the length of a single command block is limited by the value of
+MAX_STRING_LENGTH. In one version if was around 4k, so that is about 100 
+lines. The indentation spaces shown in the examples are NOT required, but do
+make it easier to read and debug.
+   The Mobprogram stuff runs totally without anything in the mob-commands.c
+file, but letting the mobs be a bit more godlike has allowed some wonderful
+things. The replicant and polymorphing mobs described earlier as well as some
+nifty mob helping mob intoeractions are an example.
+   It IS possible to accidentally make mobs which can trigger in loops. As
+mentioned in the example at the end of this document, the result is usually
+a mud crash or major CPU dent. We don't know any way to prevent this from
+happening, other than careful coding and a restriction of mob travel from
+zone of one creator to another(another good reason to not have charmed mobs
+do anything). Tracking down the culprit mob is not always easy. The only
+thing we have found which always works, is to add a log statement int
+the Mobprogram driver and fill some disk space until it becomes apparent what
+commands are repetitively issued. Also, most infinite loops are flukes where
+the situation just happens to be right and usually never happens again.
+   The list of variables and triggers and if_checks will grow continuosly as
+creators demand the ability to do certain things.
+~
+E
+thirteen~
+***Credits
+   The list of credits on the document was long and had lots of names of 
+people and Muds that meant nothing at all to me. Seeing as I am starting to
+get a little tired of typing this all in I've decided to shorten it up a
+little.
+Many thanks to:
+ Davian, for putting this whole thing into book form and creating it.
+ Barlow, for finding the file and making it accessible.
+Thats it. :D
+~
+#0
+
+#ROOMS
+#1000
+Test Room~
+Here is a test room.
+ 
+There is a lever on the wall.
+ 
+~
+~
+~
+~
+~
+~
+0 CDI 0 0
+E
+lever~
+There is a lever here.  Perhaps you should pull it?
+~
+S
+>pull_prog lever~
+mpecho `GA huge BOOM reverberates through the room.
+mpechoaround $n `g$n disappears in a cloud of smoke.
+mpechoat $n `gYou disappear in a cloud of smoke.
+mpechoat $n `gYou reappear elsewhere.
+mptransfer $n 8063
+mpat $n mpforce $n look
+~
+>push_prog lever~
+mpecho `GThe lever doesn't budge.`X
+~
+|
+#1001
+MacGregor's Office~
+This is the office of MacGregor.  The most noticeable feature of the room
+is the incredible clutter.  Printouts, listings, and handwritten notes are
+everywhere.  There is a desk against the wall, with two large boxy objects
+with a glass surface on each one.  On the glass face of one are arcane runes
+and weird symbols such as #define, for{;;}, DECLARE_DO_FUN, and so forth. 
+Although the room in clearly utilitarian in nature, it does have some
+amenities such as a comfortable couch against the far wall.  
+~
+~
+~
+~
+~
+~
+0 CDI 0 1
+E
+couch~
+A comfy looking but well worn leather couch sits here with a depression
+in the middle.  
+~
+S
+#1002
+The Dining Room~
+Walls of the highest quality comprise this grand dining room. From the floor to
+about half way up are panels of carved cherry wood. Every five feet is a small,
+stained, rosewood carvings. The carvings themselves are the images of the gods,
+each one of them showing their full glory. The floor of this grand hall is made
+of highly polished marble that is a soft gray in color.  A lit chandelier hangs
+down from the stained glass ceiling.  Despite the lighting from the chandelier,
+it is mostly dark and hardly any light comes in from the outside.  Wall hangings
+showing pictures of the helps the gods chose to help rebuild the world after the
+years of never being entered.
+~
+~
+~
+~
+~
+~
+0 CDIa 0 0
+S
+#1003
+The Conference Room~
+Here is where the weightiest matters of all are discussed.  Decisions
+reached here have far-reaching effects.  The fates of mortals in far-off
+Zandofen and the lives of the denizens of Arcavo are touched by the merest
+word spoken here.  The dark, rich paneling of the walls contrasts with the
+almost white marble floor.  A large table dominates the center of the room,
+polished to a gleaming mirror-like finish.  Plush chairs surround the table.
+Although lanterns are strategically ensconced along the walls, the gods who
+transact their business here have no need of such.  
+~
+~
+~
+~
+~
+~
+0 CDIa 0 0
+E
+lanterns~
+The gleaming brass lanterns shed enough light that even mortals could
+read the tiniest script written on any parchments on the table.  
+~
+S
+#1004
+The Bedroom~
+Pure white tapers, secured in golden sconces, illuminate a walnut paneled
+chamber.  Tapestries woven in earth tone shades of brown, tan, and green
+detail the life stories of the room's inhabitants.  Bouquets of freshly cut
+mauve roses are held in white alabaster vases on either side of leaded glass
+French doors.  A white bear skin rug lies in front of an elaborately
+engraved marble fireplace.  A life like portrait of a snuggling couple rests
+in a place of honor above the carved mantle piece.  
+~
+~
+~
+~
+~
+The scent of lemon oil, soft perfume, and roses fills the quiet chamber.  
+~
+0 CDIJa 0 1
+E
+tapestries~
+A woven picture of a small cabin in the woods, built near a flowing
+creek, seems rather life life and inviting.  Near the open door, a maple
+tree has been carved with block initials.  A sense of happiness and
+contentment emanates from a nearby cloth picture in which a young girl
+dances gracefully.  
+~
+E
+initials~
+RK + KH
+ 
+~
+E
+rug~
+The huge rug has been fashioned from the furry skin of a polar bear.  Its
+head is still attached to the rug, the ivory fangs demonstrating what a
+battle it had been to bring down this creature.  The fur is very soft, warm,
+and an excellent place to rest while reading a spell book.  
+~
+E
+roses~
+Purplish pink blossoms, edged with a darker pink color, have been freshly
+cut from the rose garden outside the French doors.  
+~
+E
+fireplace~
+Images of dragons, knights, wizards, and healers have been carved into
+the marble supports of the fireplace.  Conducting an eternal battle, the
+mineral figures are frozen in the time of the conflict.  Highly stylized
+intertwining letters appear at various places within the structure.  
+~
+E
+letters~
+The letters M and S have been interwined with leafy vines.  
+~
+E
+portrait~
+The figures in the formal portrait are surrounded by a pure white nimbus
+of happiness and understanding.  The ruggedly handsome MacGregor, dressed in
+full armor, has his arms around the waist of Starfyre who stands in front of
+him.  Her graceful right hand rests on his arm as she leans back against his
+chest.  
+~
+S
+#1099
+ship hephaestus~
+The Hephaestus is an old ship that bears her age well.  Although the deck
+planking is well worn it is immaculate.  The masts and spars gleam under a
+fresh coat of varnish.  Some of her sails sport patches but look like they
+can withstand most anything the weather sends their way.  
+~
+~
+~
+~
+~
+~
+0 CIa 0 0
+V sea
+The Hephaestus~
+S
+#0
+
+#RESETS
+M 0 1000 1 1000 1
+O 0 1009 -1 1003
+O 0 1024 -1 1004
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 1000 spec_questmaster
+S
+
+#$

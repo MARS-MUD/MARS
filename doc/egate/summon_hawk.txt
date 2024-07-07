@@ -1,0 +1,283 @@
+Here's everything I did to graft the summon hawk spell from dsmud to egate:
+
+In magic.h, between the declarations for spell_summon and spell_teleport:
+
+DECLARE_SPELL_FUN( 	spell_summon_hawk	);
+
+
+I copied the entry for the spell in skill_table and updated it.
+Here's the original entry in dsmud const2.c:
+
+  {
+    "summon hawk", { },
+    spell_summon_hawk,		TAR_CHAR_SELF,		POS_FIGHTING,
+    NULL,			65,	12,
+    "",			"!Hawk!",	"",	0, SLOT(315)
+  },
+
+Here's what I changed it to in egate const.c:
+    {
+	"summon hawk",		{ },	{ },
+	spell_summon_hawk,	TAR_CHAR_SELF,		POS_FIGHTING,
+	NULL,			SLOT(0),	65,	12,
+	"",			"!Hawk!",		""
+    },
+
+Note the formatting differences and the rearrangement, addition and deletion
+of some fields. Here's what needed rearranging, and why.  To explain the
+"why" I'll show you the declarations in the merc.h files for the skill table
+since they're different.
+
+From dsmud merc.h:
+/*
+ * Skills include spells as a particular case.
+ */
+struct	skill_type
+{
+    char *	name;			   /* Name of skill		 */
+    int 	skill_level [ MAX_CLASS ]; /* Level needed by class	 */
+    SPELL_FUN *	spell_fun;		   /* Spell pointer (for spells) */
+    int 	target;			   /* Legal targets		 */
+    int 	minimum_position;	   /* Position for caster / user */
+    int *	pgsn;			   /* Pointer to associated gsn	 */
+    int 	min_mana;		   /* Minimum mana used		 */
+    int 	beats;			   /* Waiting time after use	 */
+    char *	noun_damage;		   /* Damage message		 */
+    char *	msg_off;		   /* Wear off message		 */
+    char *	room_off;		   /* wear off msg shown to room */
+    int		flags;			   /* skill/spell flags		 */
+    int         slot;                      /* For object loading         */
+};
+
+From egate merc.h:
+/*
+ * Skills include spells as a particular case.
+ */
+struct	skill_type
+{
+    char *	name;			/* Name of skill		*/
+    sh_int	skill_level[MAX_CLASS];	/* Level needed by class	*/
+    sh_int	rating[MAX_CLASS];	/* How hard it is to learn	*/	
+    SPELL_FUN *	spell_fun;		/* Spell pointer (for spells)	*/
+    sh_int	target;			/* Legal targets		*/
+    sh_int	minimum_position;	/* Position for caster / user	*/
+    sh_int *	pgsn;			/* Pointer to associated gsn	*/
+    sh_int	slot;			/* Slot for #OBJECT loading	*/
+    sh_int	min_mana;		/* Minimum mana used		*/
+    sh_int	beats;			/* Waiting time after use	*/
+    char *	noun_damage;		/* Damage message		*/
+    char *	msg_off;		/* Wear off message		*/
+    char *	msg_obj;		/* Wear off message for obects	*/
+    char *	msg_room;		/* Wear off msg shown to room	*/
+};
+
+
+Egate has a "rating" array between the skill_level and spell_fun fields,
+that's the second { } in line 20 of this file.  We don't need to plug any
+values into it because we set them up with SkEdit.  Most if not all of the
+ROM skills/spells do have numbers for the first four classes, however these
+get overwritten when the skills file is loaded in boot_db().  We could and
+probably should remove them.
+
+The slot field is in a different place, and its value is set to 0.  The slot
+numbers are essentially obsolete, they were used in Merc (the codebase, not
+the header file; ROM is a Merc derivative) to designate the spells on
+scrolls, potions, and things like that in the area files.  We put the spell
+name in the area files instead.  The only reasons to keep the slots are: too
+much trouble to remove them, and if we ever add the capability of using area
+files created with MZF or other such offline building tool, we'll probably
+need them.  But I digress :)
+
+Dsmud has a "flags" field which egate doesn't but very likely will someday.
+
+
+Now, for the actual spell function itself, here's the dsmud version:
+
+void spell_summon_hawk(int sn, int level, CHAR_DATA *ch, void *vo)
+{
+  CHAR_DATA *mob;
+  CHAR_DATA *fch;
+  AFFECT_DATA af;
+
+  if(ch->summon_timer > 0)
+  {
+    send_to_char(AT_WHITE,
+     "You casted the spell, but nothing appears.\n\r", ch);
+    return;
+  }
+
+  mob = create_mobile(get_mob_index(MOB_VNUM_HAWK));
+  mob->level = URANGE(31, level, 60) - 10;
+  mob->max_hit = mob->level * 30 + dice(20,mob->level);
+  mob->hit = mob->max_hit;
+  mob->summon_timer = level/10;
+  ch->summon_timer = 16;
+  char_to_room(mob, ch->in_room);
+  act(AT_ORANGE, "You summon $N from the plane of nature.", ch, NULL, mob, TO_CHAR);
+  if(ch->mana < level * 2 )
+  {
+    act(AT_WHITE,
+     "You don't have enough mana to bind $N!", ch, NULL, mob, TO_CHAR);
+    extract_char(mob, TRUE);
+    return;
+  }
+  ch->mana -= level * 2;
+  act(AT_ORANGE, "$n calls forth $N from the plane of nature.", ch, NULL, mob, TO_ROOM);
+
+  mob->master = ch;
+  mob->leader = ch;
+  af.type      = skill_lookup("charm person");
+  af.level     = level;
+  af.duration  = -1;
+  af.location  = 0;
+  af.modifier  = 0;
+  af.bitvector = AFF_CHARM;
+  affect_to_char(mob, &af);
+
+  if(ch->position == POS_FIGHTING)
+  {
+    act(AT_WHITE, "$n rescues you!", mob, NULL, ch, TO_VICT    );
+    act(AT_WHITE, "$n rescues $N!",  mob, NULL, ch, TO_NOTVICT );
+
+    fch = ch->fighting;
+    stop_fighting(fch, FALSE );
+    stop_fighting( ch, FALSE );
+    set_fighting(mob, fch);
+    set_fighting(fch, mob);
+  }
+  return;
+}
+
+Here's the egate version:
+
+void
+spell_summon_hawk( int sn, int level, CHAR_DATA *ch, void *vo, int target )
+{
+    CHAR_DATA *	mob;
+    CHAR_DATA *	fch;
+    AFFECT_DATA	af;
+
+    if ( ch->summon_timer > 0 )
+    {
+	send_to_char( "You cast the spell, but nothing appears.\n\r", ch );
+	return;
+    }
+
+    mob = create_mobile( get_mob_index( MOB_VNUM_HAWK ) );
+    mob->level = URANGE( 31, level, 60 ) - 10;
+    set_mob_stats( mob, DICE_MEDIUM );
+    mob->summon_timer = level/10;
+    ch->summon_timer = 16;
+    char_to_room( mob, ch->in_room );
+    act_color( AT_MAGIC,
+	       "You summon $N from the plane of nature.",
+	       ch, NULL, mob, TO_CHAR, POS_RESTING );
+    if( ch->mana < level * 2 )
+    {
+	act_color( AT_MAGIC,
+		   "You don't have enough mana to bind $N!",
+		   ch, NULL, mob, TO_CHAR, POS_RESTING );
+	extract_char( mob, TRUE );
+	return;
+    }
+
+    ch->mana -= level * 2;
+    act_color( AT_MAGIC, "$n calls forth $N from the plane of nature.",
+	       ch, NULL, mob, TO_ROOM, POS_RESTING );
+
+    mob->master = ch;
+    mob->leader = ch;
+    af.where	 = TO_AFFECTS;
+    af.type      = skill_lookup( "charm person" );
+    af.level     = level;
+    af.duration  = -1;
+    af.location  = 0;
+    af.modifier  = 0;
+    af.bitvector = AFF_CHARM;
+    affect_to_char( mob, &af );
+
+    if ( ch->position == POS_FIGHTING )
+    {
+	act_color( AT_WHITE, "$n rescues you!",
+		   mob, NULL, ch, TO_VICT, POS_RESTING );
+	act_color( AT_WHITE, "$n rescues $N!",
+		   mob, NULL, ch, TO_NOTVICT, POS_RESTING );
+
+	fch = ch->fighting;
+	stop_fighting( fch, FALSE );
+	stop_fighting( ch, FALSE );
+	set_fighting( mob, fch );
+	set_fighting( fch, mob );
+    }
+
+    return;
+}
+
+There are obvious differences in the formatting and the correction of a
+grammatical error; I won't detail them here because they'll be in a
+forthcoming coding standards document.
+
+The act() calls were changed to act_color().  Act_color() is a bit different
+from dsmud's act() in that it has an additional argument; min_position. 
+That's the POS_RESTING arg.  Instead of using explicit colors (eg AT_ORANGE)
+I used AT_MAGIC because we're going to establish some consistency in the
+colors of spells.  I did leave it at AT_WHITE where it does the rescue
+stuff, but on reflection I will change it to AT_ACTION (standardization
+again).  Set it to AT_ACTION in the other summon spells please.
+
+Dsmud's send_to_char() takes a color argument, ours doesn't.
+
+Okay, now for the detail differences:
+
+changed this:
+void spell_summon_hawk(int sn, int level, CHAR_DATA *ch, void *vo)
+to this:
+void
+spell_summon_hawk( int sn, int level, CHAR_DATA *ch, void *vo, int target )
+								    ^
+								    |
+						added this argument-|
+				It's not used in this particular spell.
+
+changed this:
+  mob->level = URANGE(31, level, 60) - 10;
+- mob->max_hit = mob->level * 30 + dice(20,mob->level);
+- mob->hit = mob->max_hit;
+  mob->summon_timer = level/10;
+to this:
+    mob->level = URANGE( 31, level, 60 ) - 10;
++   set_mob_stats( mob, DICE_MEDIUM );
+    mob->summon_timer = level/10;
+
+Set_mob_stats() is a new function that sets the mob's HP/dam/mana from a
+table in const.c (the function itself is in db.c if you want to look at it). 
+Its purpose is to set up a mob's stats if the level of the mob is different
+from the level in the area file used to create the mob (eg mobs created by
+spells).  There are detail differences in how envy and rom handle these
+stats, so I wrote that function to make this kind of thing easier and also
+make it easier to change if there's a play balance issue.  Note that the
+dsmud version doesn't set the damage or mana at all.
+
+Changed this:
+  mob->leader = ch;
+  af.type      = skill_lookup("charm person");
+to this:
+    mob->leader = ch;
++   af.where	 = TO_AFFECTS;
+    af.type      = skill_lookup( "charm person" );
+
+Rom has an additional field, "where", in its affect structure.  Envy (or
+dsmud at least) tries to figure it out from the bitvector and modifier with
+some rather messy code.  I like Rom's method better.
+
+
+Last of all I had to create the hawk in limbo.are.  I used vnum #10, let's
+use #11 for the next summoned mob, etc.  If you don't create the mob the mud
+will crash when you use the spell.  Create the mob on the actual mud, asave
+it, then copy limbo.are to your working copy of the mud.  Please do not do
+it the other way around!
+
+
+Hmm, that's about it I think.  Using this as a guide you shouldn't have a
+problem importing the other summon spells.  If you do, or have any questions
+or comments, don't hesitate to talk to me.

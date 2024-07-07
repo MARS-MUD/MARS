@@ -1,0 +1,68 @@
+#CLAN
+Clan phoenix
+Name Phoenix~
+Recall 700
+Morgue 700
+Members 2
+Box 701
+Honor 1010
+Pkill 1
+Induct 10
+Outcast 10
+Mtitle 0 Hatchling~
+Ftitle 0 Hatchling~
+Mtitle 1 Chick~
+Ftitle 1 Chick~
+Mtitle 2 First Flight~
+Ftitle 2 First Flight~
+Mtitle 3 First Molt~
+Ftitle 3 First Molt~
+Mtitle 4 Second Molt~
+Ftitle 4 Second Molt~
+Mtitle 5 Third Molt~
+Ftitle 5 Third Molt~
+Mtitle 6 Parliament Member~
+Ftitle 6 Parliament Member~
+Mtitle 7 Nest Tender~
+Ftitle 7 Nest Tender~
+Mtitle 8 Nest Builder~
+Ftitle 8 Nest Builder~
+Mtitle 9 Reborn~
+Ftitle 9 Reborn~
+End
+
+#CLAN
+Clan staff
+Name Staff~
+Desc
+Staff
+~
+Leader Om
+Recall 906
+Members 2
+Pkill 1
+Induct 1
+Outcast 0
+Mtitle 0 Trainee~
+Ftitle 0 Trainee~
+Mtitle 1 Builder~
+Ftitle 1 Builder~
+Mtitle 2 Questor~
+Ftitle 2 Questor~
+Mtitle 3 Sr.Builder~
+Ftitle 3 Sr.Builder~
+Mtitle 4 Sr.Questor~
+Ftitle 4 Sr.Questor~
+Mtitle 5 Head Builder~
+Ftitle 5 Head Builder~
+Mtitle 6 Head Questor~
+Ftitle 6 Head Questor~
+Mtitle 7 Coder~
+Ftitle 7 Coder~
+Mtitle 8 Assistant Coder~
+Ftitle 8 Assistant Coder~
+Mtitle 9 Head Coder~
+Ftitle 9 Head Coder~
+End
+
+#$

@@ -1,0 +1,98 @@
+#AREADATA
+Version     9
+Name        dunman~
+Credits     ~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       300 399
+Levels      0 0
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    medium
+Created     1279378449
+Changed     1715908513 Thu May 16 21:15:13 2024
+End
+
+#MOBILES
+#300
+no name~
+(no short description)~
+(no long description)
+~
+~
+human~
+AG 0 0 0 0 0 0
+0 0 1d4+0 0d0+0 0d0+0 none
+0 0 0 0
+0 I 0 0
+stand stand neutral 0
+0 0 medium 0 medium ''
+#0
+
+#OBJECTS
+#0
+
+#ROOMS
+#300
+Om's Sanctuary~
+A place to escape all the hustle and bustle of willing the world into
+existence is necessary for the gods, otherwise they'd all be quite cranky
+and you'd likely see a lot more lighting bolts, plagues, and famine in the
+world.  This place is vast in it's size...  Impossibly vast.  For being
+inside a mountain, it seems a bit illogical for the inside of something to
+be infinitely larger than the outside, but that's precisely what's going on
+here in this cave.  This place is entirely too comfortable.  The rocks too
+soft, the air too crisp and cool, the water dripping from the stalactites
+above, somehow not ever landing on people, papers, candles, or anything else
+that would be inconvenient for water to drip on.  This place is entirely too
+well-lit, but not blindingly so.  This place is completely, totally, and
+irrevocably illogical.  
+ 
+ 
+This place... is Om's Sanctuary.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 301
+S
+#301
+~
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 300
+S
+#0
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

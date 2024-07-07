@@ -1,0 +1,222 @@
+act_clan.c:    buf_printf( pBuf, "%s %s`X:\n\r", pClan->fHouse ? "House" : "Clan",
+act_clan.c:                pClan->who_name );
+act_clan.c:    if ( str_cmp( pClan->ctitle[0][0], pClan->ctitle[0][1] ) )
+act_clan.c:		    pClan->ctitle[0][0], pClan->ctitle[0][1], pClan->leader );
+act_clan.c:	buf_printf( pBuf, "%s: %s\n\r", pClan->ctitle[0][0], pClan->leader );
+act_clan.c:    buf_printf( pBuf, "\n\r%d member%s\n\r", pClan->members,
+act_clan.c:		pClan->members != 1 ? "s" : "" );
+act_clan.c:    add_buf( pBuf, pClan->description );
+act_clan.c:    for ( pClan = clan_first; pClan; pClan = pClan->next )
+act_clan.c:	add_buf( pBuf, pClan->fHouse ? "House " : "Clan  " );
+act_clan.c:	len = 25 + strlen( pClan->who_name ) - strlen_wo_col( pClan->who_name );
+act_clan.c:		    len, len, pClan->who_name,
+act_clan.c:		    pClan->leader );
+act_clan.c:                   pClan->fHouse ? "house" : "clan" );
+act_clan.c:    pClan->members++;
+act_clan.c:         pClan->fHouse ? "house" : "clan", pClan->who_name, TO_CHAR );
+act_clan.c:    add_buf( pBuf, pClan->fHouse ? "House:" : "Clan: " );
+act_clan.c:    buf_printf( pBuf, "     [%s]\n\r", pClan->name );
+act_clan.c:    buf_printf( pBuf, "Name:      [%s`X]\n\r", pClan->who_name );
+act_clan.c:    buf_printf( pBuf, "Type:      [%s]\n\r", pClan->fHouse ? "house" : "clan" );
+act_clan.c:    buf_printf( pBuf, "Leader:    [%s]\n\r", pClan->leader[0] != '\0' ? pClan->leader : "(none)" );
+act_clan.c:    if ( str_cmp( pClan->ctitle[0][0], pClan->ctitle[0][1] ) )
+act_clan.c:    buf_printf( pBuf, "%s", pClan->ctitle[0][0] );
+act_clan.c:    if ( str_cmp( pClan->ctitle[0][0], pClan->ctitle[0][1] ) )
+act_clan.c:	buf_printf( pBuf, "]/[%s]", pClan->ctitle[0][1] );
+act_clan.c:	if ( IS_NULLSTR( pClan->ctitle[i][0] ) && IS_NULLSTR( pClan->ctitle[i][1] ) )
+act_clan.c:	            str_cmp( pClan->ctitle[i][0], pClan->ctitle[i][1] ) ? '[' : ' ',
+act_clan.c:	            pClan->ctitle[i][0] );
+act_clan.c:	if ( str_cmp( pClan->ctitle[i][0], pClan->ctitle[i][1] ) )
+act_clan.c:	    buf_printf( pBuf, "]/[%s]", pClan->ctitle[i][1] );
+act_clan.c:    buf_printf( pBuf, "Induct:    [%d]\n\r", pClan->induct_level );
+act_clan.c:    buf_printf( pBuf, "Outcast:   [%d]\n\r", pClan->outcast_level );
+act_clan.c:    pRoom = get_room_index( pClan->recall );
+act_clan.c:    buf_printf( pBuf, "Recall:    [%5d] %s`X\n\r", pClan->recall, pRoom ? pRoom->name : "(none)" );
+act_clan.c:    pRoom = get_room_index( pClan->morgue );
+act_clan.c:    buf_printf( pBuf, "Morgue:    [%5d] %s`X\n\r", pClan->morgue, pRoom ? pRoom->name : "(none)" );
+act_clan.c:    pObj = get_obj_index( pClan->box );
+act_clan.c:    buf_printf( pBuf, "Box:       [%5d] %s`X\n\r", pClan->box, pObj ? pObj->short_descr : "(none)" );
+act_clan.c:    money.fract  = pClan->bank;
+act_clan.c:    buf_printf( pBuf, "Honor pts: [%d]\n\r", pClan->honor );
+act_clan.c:    buf_printf( pBuf, "Members:   [%d]\n\r", pClan->members );
+act_clan.c:    buf_printf( pBuf, "Description:\n\r%s`X", pClan->description );
+act_clan.c:		    pClan->bank = fread_number( fp );
+act_clan.c:		    pClan->box = fread_number( fp );
+act_clan.c:		    pClan->name = str_dup( fread_word( fp ) );
+act_clan.c:		    pClan->fHouse = FALSE;
+act_clan.c:		    pClan->description = fread_string( fp );
+act_clan.c:		    pClan->leader = str_dup( fread_word( fp ) );
+act_clan.c:		    pClan->ctitle[val][1] = fread_string( fp );
+act_clan.c:		    pClan->honor = fread_number( fp );
+act_clan.c:		    pClan->name = str_dup( fread_word( fp ) );
+act_clan.c:		    pClan->fHouse = TRUE;
+act_clan.c:		    pClan->induct_level = fread_number( fp );
+act_clan.c:		    pClan->leader = str_dup( fread_word( fp ) );
+act_clan.c:		    pClan->plosses = fread_number( fp );
+act_clan.c:		    pClan->members = fread_number( fp );
+act_clan.c:		    pClan->morgue = fread_number( fp );
+act_clan.c:		    pClan->ctitle[val][0] = fread_string( fp );
+act_clan.c:		    pClan->who_name = str_dup( fread_string( fp ) );
+act_clan.c:		    pClan->outcast_level = fread_number( fp );
+act_clan.c:		    pClan->pkill = fread_number( fp );
+act_clan.c:		    pClan->pkill = TRUE; /* All clans are pkill now */
+act_clan.c:		    pClan->recall = fread_number( fp );
+act_clan.c:		    pClan->ctitle[val][0] = fread_string( fp );
+act_clan.c:		    pClan->ctitle[val][1] = str_dup( pClan->ctitle[val][0] );
+act_clan.c:		    pClan->pkills = fread_number( fp );
+act_clan.c:		    pClan->withdraw = fread_number( fp );
+act_clan.c:    if ( *pClan->name == '\0' )
+act_clan.c:    pClan->next = clan_first;
+act_clan.c:    for ( pClan = clan_first; pClan; pClan = pClan->next )
+act_clan.c:	if ( pClan->fHouse )
+act_clan.c:	    fprintf( fp, "House %s\n", pClan->name );
+act_clan.c:	    fprintf( fp, "Clan %s\n", pClan->name );
+act_clan.c:	fprintf( fp, "Name %s~\n", pClan->who_name );
+act_clan.c:	if ( *pClan->description != '\0' )
+act_clan.c:	    fprintf( fp, "Desc\n%s~\n", fix_string( pClan->description ) );
+act_clan.c:	if ( pClan->leader && *pClan->leader != '\0' )
+act_clan.c:	    fprintf( fp, "Leader %s\n", pClan->leader );
+act_clan.c:	if ( pClan->recall )
+act_clan.c:	    fprintf( fp, "Recall %d\n", pClan->recall );
+act_clan.c:	if ( pClan->morgue )
+act_clan.c:	    fprintf( fp, "Morgue %d\n", pClan->morgue );
+act_clan.c:	if ( pClan->members )
+act_clan.c:	    fprintf( fp, "Members %d\n", pClan->members );
+act_clan.c:	if ( pClan->box != 0 )
+act_clan.c:	    fprintf( fp, "Box %d\n", pClan->box );
+act_clan.c:	if ( pClan->bank != 0 )
+act_clan.c:	    fprintf( fp, "Bank %d\n", pClan->bank );
+act_clan.c:	if ( pClan->honor != 0 )
+act_clan.c:	    fprintf( fp, "Honor %d\n", pClan->honor );
+act_clan.c:	if ( pClan->withdraw != 0 )
+act_clan.c:	    fprintf( fp, "Withdraw %d\n", pClan->withdraw );
+act_clan.c:	if ( pClan->pkills )
+act_clan.c:	    fprintf( fp, "Wins %d\n", pClan->pkills );
+act_clan.c:	if ( pClan->plosses )
+act_clan.c:	    fprintf( fp, "Loss %d\n", pClan->plosses );
+act_clan.c:	fprintf( fp, "Pkill %d\n", pClan->pkill );
+act_clan.c:	fprintf( fp, "Induct %d\n", pClan->induct_level );
+act_clan.c:	fprintf( fp, "Outcast %d\n", pClan->outcast_level );
+act_clan.c:	    if ( !IS_NULLSTR( pClan->ctitle[i][0] ) )
+act_clan.c:		fprintf( fp, "Mtitle %d %s~\n", i, pClan->ctitle[i][0] );
+act_clan.c:	    if ( !IS_NULLSTR( pClan->ctitle[i][1] ) )
+act_clan.c:		fprintf( fp, "Ftitle %d %s~\n", i, pClan->ctitle[i][1] );
+act_clan.c:	clan_next = pClan->next;
+act_wiz2.c:	    award = UMAX( award, -pClan->honor );
+act_wiz2.c:	pClan->honor += award;
+act_wiz2.c:	    act_color( AT_IMM, "You award $t to $T.", ch, buf, pClan->who_name, TO_CHAR, POS_DEAD );
+act_wiz2.c:	    act_color( AT_IMM, "$n awards $t to $T.", ch, buf, pClan->who_name, TO_ROOM, POS_DEAD );
+act_wiz2.c:	    act_color( AT_IMM, "You dock $T for $t.", ch, buf, pClan->who_name,
+act_wiz.c:    ch_printf( ch, "They are now a member of clan %s.\n\r", pClan->name );
+act_wiz.c:    ch_printf( victim, "You are now a member of clan %s.\n\r", pClan->name );
+act_wiz.c:    pClan->members++;
+act_wiz.c:    if ( pClan != NULL && pClan->fHouse )
+act_wiz.c:    buf_printf( pBuf, " %s", pClan != NULL ? pClan->name : "(none)" );
+handler.c:    for ( pClan = clan_first; pClan; pClan = pClan->next )
+handler.c:	if ( !str_prefix( argument, pClan->name ) )
+handler.c:    for ( pClan = clan_first; pClan; pClan = pClan->next )
+handler.c:	if ( pClan->vnum == vnum )
+lookup.c:    for ( pClan = clan_first; pClan; pClan = pClan->next )
+lookup.c:	if ( LOWER(name[0] ) == LOWER( pClan->name[0] )
+lookup.c:	&&  !str_prefix( name, pClan->name ) )
+lookup.c:	    return pClan->vnum;
+olc.c:	sprintf( buf, "%s", pClan ? pClan->name : "(none)" );
+olc_clan.c:        pClan->box = 0;
+olc_clan.c:    pClan->box = vnum;
+olc_clan.c:    free_string( pClan->name );
+olc_clan.c:    pClan->name = str_dup( arg );
+olc_clan.c:    pClan->fHouse = TRUE;
+olc_clan.c:    pClan->name = str_dup( name );
+olc_clan.c:    pClan->next = NULL;
+olc_clan.c:    pClan->who_name = str_dup( "New clan" );
+olc_clan.c:    pClan->ctitle[MAX_CLAN_LEVELS - 1][0] = str_dup( "Leader" );
+olc_clan.c:    pClan->ctitle[MAX_CLAN_LEVELS - 1][1] = str_dup( "Leader" );
+olc_clan.c:    pClan->pkill = TRUE;
+olc_clan.c:	string_append( ch, &pClan->description );
+olc_clan.c:	free_string( pClan->ctitle[value][1] );
+olc_clan.c:	pClan->ctitle[value][1] = &str_empty[0];
+olc_clan.c:    if ( ( p = string_change( ch, pClan->ctitle[value][1], argument ) ) != NULL )
+olc_clan.c:	pClan->ctitle[value][1] = p;
+olc_clan.c:    pClan->induct_level = value;
+olc_clan.c:    free_string( pClan->leader );
+olc_clan.c:	pClan->leader = &str_empty[0];
+olc_clan.c:	pClan->leader = str_dup( buf );
+olc_clan.c:    if ( !pClan->pkill )
+olc_clan.c:    pClan->plosses = atoi( argument );
+olc_clan.c:    pClan->members = atoi( argument );
+olc_clan.c:	pClan->morgue = 0;
+olc_clan.c:    pClan->morgue = value;
+olc_clan.c:	free_string( pClan->ctitle[value][0] );
+olc_clan.c:	pClan->ctitle[value][0] = &str_empty[0];
+olc_clan.c:    if ( ( p = string_change( ch, pClan->ctitle[value][0], argument ) ) != NULL )
+olc_clan.c:	pClan->ctitle[value][0] = p;
+olc_clan.c:    if ( ( p = string_change( ch, pClan->who_name, argument ) ) != NULL )
+olc_clan.c:	pClan->who_name = p;
+olc_clan.c:    pClan->outcast_level = value;
+olc_clan.c:    pClan->pkill = FALSE;
+olc_clan.c:	pClan->recall = 0;
+olc_clan.c:    pClan->recall = value;
+olc_clan.c:    buf_printf( pBuf, "Clan:      [%s]\n\r", pClan->name );
+olc_clan.c:    buf_printf( pBuf, "Name:      [%s`X]\n\r", pClan->who_name );
+olc_clan.c:    buf_printf( pBuf, "Description:\n\r%s`X", pClan->description );
+olc_clan.c:    buf_printf( pBuf, "Type:      [%s]\n\r", pClan->fHouse ? "house" : "clan" );
+olc_clan.c:    buf_printf( pBuf, "Leader:    [%s]\n\r", pClan->leader[0] != '\0' ? pClan->leader : "(none)" );
+olc_clan.c:    if ( str_cmp( pClan->ctitle[0][0], pClan->ctitle[0][1] ) )
+olc_clan.c:    buf_printf( pBuf, "%s", pClan->ctitle[0][0] );
+olc_clan.c:    if ( str_cmp( pClan->ctitle[0][0], pClan->ctitle[0][1] ) )
+olc_clan.c:	buf_printf( pBuf, "]/[%s]", pClan->ctitle[0][1] );
+olc_clan.c:	            str_cmp( pClan->ctitle[i][0], pClan->ctitle[i][1] ) ? '[' : ' ',
+olc_clan.c:	            pClan->ctitle[i][0] );
+olc_clan.c://	buf_printf( pBuf, "           [%2d][%s]", i + 1, pClan->ctitle[i][0] );
+olc_clan.c:	if ( str_cmp( pClan->ctitle[i][0], pClan->ctitle[i][1] ) )
+olc_clan.c:	    buf_printf( pBuf, "]/[%s]", pClan->ctitle[i][1] );
+olc_clan.c:    buf_printf( pBuf, "Induct:    [%d]\n\r", pClan->induct_level );
+olc_clan.c:    buf_printf( pBuf, "Outcast:   [%d]\n\r", pClan->outcast_level );
+olc_clan.c:    pRoom = get_room_index( pClan->recall );
+olc_clan.c:    buf_printf( pBuf, "Recall:    [%5d] %s`X\n\r", pClan->recall, pRoom ? pRoom->name : "(none)" );
+olc_clan.c:    pRoom = get_room_index( pClan->morgue );
+olc_clan.c:    buf_printf( pBuf, "Morgue:    [%5d] %s`X\n\r", pClan->morgue, pRoom ? pRoom->name : "(none)" );
+olc_clan.c:    pObj = get_obj_index( pClan->box );
+olc_clan.c:    buf_printf( pBuf, "Box:       [%5d] %s`X\n\r", pClan->box, pObj ? pObj->short_descr : "(none)" );
+olc_clan.c:    buf_printf( pBuf, "Type:      [%s`X]\n\r", pClan->pkill ? "`RDeadly" : "`CPeaceful" );
+olc_clan.c:    buf_printf( pBuf, "Members:   [%d]\n\r", pClan->members );
+olc_clan.c:    if ( pClan->pkill )
+olc_clan.c:	buf_printf( pBuf, "Wins:      [%d]\n\r", pClan->pkills );
+olc_clan.c:	buf_printf( pBuf, "Losses:    [%d]\n\r", pClan->plosses );
+olc_clan.c:	free_string( pClan->ctitle[value][0] );
+olc_clan.c:	pClan->ctitle[value][0] = &str_empty[0];
+olc_clan.c:	free_string( pClan->ctitle[value][1] );
+olc_clan.c:	pClan->ctitle[value][1] = &str_empty[0];
+olc_clan.c:    if ( ( p = string_change( ch, pClan->ctitle[value][0], argument ) ) != NULL )
+olc_clan.c:	pClan->ctitle[value][0] = p;
+olc_clan.c:	free_string( pClan->ctitle[value][1] );
+olc_clan.c:	pClan->ctitle[value][1] = str_dup( pClan->ctitle[value][0] );
+olc_clan.c:            pClan->fHouse = FALSE;
+olc_clan.c:            pClan->fHouse = TRUE;
+olc_clan.c:    if ( !pClan->pkill )
+olc_clan.c:    pClan->pkills = atoi( argument );
+olc_clan.c:    pClan->withdraw = value;
+olc_mob.c:    pMob->clan = str_dup( pClan->name );
+recycle.c:    pClan->name		= &str_empty[0];
+recycle.c:    pClan->who_name	= &str_empty[0];
+recycle.c:    pClan->description	= &str_empty[0];
+recycle.c:    pClan->leader	= &str_empty[0];
+recycle.c:	pClan->ctitle[i][0]=&str_empty[0];
+recycle.c:	pClan->ctitle[i][1]=&str_empty[0];
+recycle.c:    pClan->members	= 0;
+recycle.c:    pClan->pkills	= 0;
+recycle.c:    pClan->plosses	= 0;
+recycle.c:    pClan->pkill	= TRUE;
+recycle.c:    pClan->fHouse	= FALSE;
+recycle.c:    pClan->recall	= 0;
+recycle.c:    pClan->bank		= 0;
+recycle.c:    pClan->honor	= 0;
+recycle.c:    pClan->vnum		= ++top_clan;
+recycle.c:    pClan->next		= NULL;
+recycle.c:    free_string( pClan->name );
+recycle.c:    free_string( pClan->who_name );
+recycle.c:    free_string( pClan->description );
+recycle.c:    free_string( pClan->leader );
+recycle.c:	free_string( pClan->ctitle[i][0] );
+recycle.c:	free_string( pClan->ctitle[i][1] );
+recycle.c:    pClan->next = clan_free;

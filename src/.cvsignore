@@ -1,0 +1,7 @@
+thud
+.cvsignore
+o
+errs.txt
+debug.c
+tags
+nohup.out

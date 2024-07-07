@@ -1,0 +1,403 @@
+#AREADATA
+Version     9
+Name        Starting~
+Credits     Praesius~
+Builders    None~
+Kingdom     'Outlying'
+Continent   None
+World       'All'
+VNUMs       1200 1250
+Levels      1 10
+Security    9
+Recall      8063
+Flags       B
+Color       7
+ExitSize    medium
+Created     1605817509
+Changed     1605839580 Thu Nov 19 21:33:00 2020
+Resetmsg    Time shudders and rewinnds, leaving everything as it once was~
+End
+
+#MOBILES
+#1202
+goblin peon~
+A goblin peon~
+A goblin peon mills about with his spear
+~
+~
+goblin~
+ABG J 0 0 0 0
+2 0 1d4+15 1d1+104 1d5+0 none
+14 15 15 15
+0 0 Q C
+stand stand male 0
+0 0 medium 0 medium ''
+#1203
+goblin boss~
+The Goblin Boss~
+The Goblin Boss is here, shouting things at the peons!
+~
+~
+goblin~
+ABG J 0 0 -1000 0
+2 0 1d4+15 1d1+104 1d5+0 none
+14 15 15 15
+0 0 Q C
+stand stand male 0
+0 0 medium 0 medium ''
+#0
+
+#OBJECTS
+#1200
+padded gambeson~
+Thick Padded Gambeson Armor~
+A bit of padded cloth armor resembling a tunic lies here~
+wool~
+armor 0 AK
+1 2 1 1 0 0
+1 1000 10 P
+0 0 0 0
+0 0 0 0 0
+#1201
+brigandine armor chest~
+Brigandine Armor~
+Studded Cloth Armor lies in a pile~
+cloth steel~
+armor 0 AD
+5 6 5 2 0 0
+1 4000 50 P
+0 0 0 0
+0 0 0 0 0
+#1202
+pauldron steel polished~
+Polished Steel Pauldrons~
+Some polished steel pauldrons, gleaming and shiny~
+leather steel~
+armor 0 AW
+3 2 3 1 0 0
+1 800 200 P
+0 0 0 0
+0 0 0 0 0
+#1203
+gorget steel~
+A Steel Gorget~
+A round piece of shiny steel~
+steel~
+armor 0 AC
+1 1 1 0 0 0
+1 200 40 P
+0 0 0 0
+0 0 0 0 0
+#1204
+helmet~
+A Steel Helmet~
+A steel helmet lies here~
+steel~
+armor 0 AE
+1 1 1 0 0 0
+1 150 45 P
+0 0 0 0
+0 0 0 0 0
+#1205
+no name~
+Brigandine Sleeves~
+Some studded cloth sleeves~
+cloth steel~
+armor 0 AI
+1 1 2 0 0 0
+1 240 45 P
+0 0 0 0
+0 0 0 0 0
+#1206
+brigandine legplates leg~
+Brigandine Legplates~
+Some studded cloth legplates~
+cloth steel~
+armor 0 AF
+1 1 1 0 0 0
+1 300 55 P
+0 0 0 0
+0 0 0 0 0
+#1207
+steel shin plate shinplate shinguard shin guard~
+Steel Shinplate~
+A steel shin plate~
+steel~
+armor 0 AX
+2 1 2 1 0 0
+1 400 55 P
+0 0 0 0
+0 0 0 0 0
+#1208
+steel bracer~
+Steel Bracer~
+A steel bracer lies here~
+steel~
+armor 0 AM
+1 2 1 1 0 0
+1 120 25 P
+0 0 0 0
+0 0 0 0 0
+#1209
+steel helmet visor~
+Steel Visor~
+A steel visor lies here~
+steel~
+armor 0 AS
+1 2 1 0 0 0
+1 80 12 P
+0 0 0 0
+0 0 0 0 0
+#1210
+leather belt~
+A Leather Belt~
+A leather belt with sword frog and pouches~
+leather~
+armor 0 AL
+1 1 1 0 0 0
+1 60 5 P
+0 0 0 0
+0 0 0 0 0
+#1211
+fighting mittens leather~
+Leather Fighting Mittens~
+Some studded leather half gloves lie here~
+leather~
+armor 0 AH
+1 2 1 0 0 0
+1 30 2 P
+0 0 0 0
+0 0 0 0 0
+#1212
+turn shoe turnshoe ~
+Leather Turnshoes~
+Some leather shoes~
+leather~
+armor 0 AG
+1 2 1 0 0 0
+1 50 5 P
+0 0 0 0
+0 0 0 0 0
+#1213
+wooden shield~
+A Painted Wooden Shield~
+A wooden shield with a steel boss in the center~
+steel wood~
+armor 0 AJ
+1 1 1 1 0 0
+1 360 25 P
+0 0 0 0
+0 0 0 0 0
+#1214
+dagger iron~
+An Iron Dagger~
+A very simple iron dagger lies here~
+iron~
+weapon 0 AN
+dagger 1 4 pierce 0 2
+1 180 40 P
+0 0 0 0
+0 0 0 0 0
+#1215
+iron sword simple~
+An Iron Sword~
+A simple iron sword~
+iron~
+weapon 0 AN
+longsword 1 8 slash 0 2
+1 360 32 P
+0 0 0 0
+0 0 0 0 0
+#1216
+Armor_Rack Armor Rack~
+An Armor Rack~
+An Armor Rack is here covered in armor pieces~
+steel~
+container 0 0
+99990 0 0 9990 100 999
+60 999990 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#1200
+Entering MARS~
+This is the entrance to the Multi-Adventurer Roleplaying System (MARS)
+ 
+You can modify this room in any way that you wish. To the south will begin
+a basic 'MUD School' that you can either 'reskin' to your liking, add to,
+or do away with entirely! Just make sure that if you delete the area that
+you, or your coder, changes the VNUM of the starting room.
+~
+~
+~
+~
+~
+~
+0 Ka 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 1201
+S
+#1201
+MUD School Room 1~
+This is the first room. Here this will acquaint the players with 'look' 
+and the 'auto' commands (autoexit, autoloot, etc) and to the east will
+be a trainer, to the west a sage for practicing, and south the school continues.
+~
+~
+~
+~
+~
+~
+0 Ka 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1200
+Deast medium
+~
+~
+~
+~
+0 0 1202
+Dsouth medium
+~
+~
+~
+~
+0 0 1204
+Dwest medium
+~
+~
+~
+~
+0 0 1203
+S
+#1202
+Training Room~
+This is the room where there's training to be done. OoooOOoooOOoh.
+~
+~
+~
+~
+~
+~
+0 Ka 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 1201
+S
+#1203
+Practice Room~
+This is the room where you practice your skills with an Ancient Sage!
+~
+~
+~
+~
+~
+~
+0 Ka 0 0
+Deast medium
+~
+~
+~
+~
+0 0 1201
+S
+#1204
+Armory~
+In this room is a chest where you will find the rest of your armor for
+your adventures to come! Enjoy it while it lasts.
+~
+~
+~
+~
+~
+~
+0 Ka 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 1201
+Dsouth medium
+~
+~
+~
+~
+0 0 1205
+S
+#1205
+~
+Now you're in the forest! There's goblins all over! Kill them all!
+~
+~
+~
+~
+~
+~
+0 a 0 3
+Dnorth medium
+~
+~
+~
+~
+0 0 1204
+S
+#0
+
+#RESETS
+O 0 1216 1 1204
+P 0 1202 1 1216 99
+P 0 1203 1 1216 99
+P 0 1204 1 1216 99
+P 0 1205 1 1216 99
+P 0 1206 1 1216 99
+P 0 1207 1 1216 99
+P 0 1208 1 1216 99
+P 0 1209 1 1216 99
+P 0 1210 1 1216 99
+P 0 1211 1 1216 99
+P 0 1208 1 1216 99
+P 0 1207 1 1216 99
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1202 20 1205 20
+M 0 1203 20 1205 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

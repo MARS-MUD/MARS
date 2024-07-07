@@ -1,0 +1,2152 @@
+#AREADATA
+Version     9
+Name        Newbie School~
+Credits     ~
+Builders    None~
+Kingdom     'Blackmere'
+Continent   None
+World       'All'
+VNUMs       601 699
+Levels      1 5
+Security    0
+Recall      900
+Flags       B
+Color       7
+ExitSize    medium
+Created     1635696280
+Changed     1719861752 Mon Jul  1 15:22:32 2024
+End
+
+#MOBILES
+#601
+bjorn trainer newbie~
+Bjorn, the Academy Trainer~
+A tall, muscular human with a thick red beard and long red hair stands here
+~
+~
+human~
+ABGJKMbc 0 0 0 1000 0 0
+30 5 5d7+750 1d1+249 3d9+8 none
+-2 -3 -3 -3
+0 ABCD 0 0
+stand stand male 0
+0 0 medium 0 medium ''
+T 'cleric'
+T 'druid'
+T 'fighter'
+T 'mage'
+T 'rogue'
+#602
+clockwork training mechanical dummy dummies~
+Clockwork Mechanical Training Dummy~
+A Clockwork Mechanical Training Dummy lumbers about waiting to test students
+~
+This large mechanical contraption, known as the CMTD or Clockwork Mechanical Training Dummy
+has been created by the gnomes to help test students on their combat abilities.
+It has four massive arms, three of which end in weapons and the fourth a large plate
+that acts as a shield. One of the arms ends in a sword, the next an axe, and the last
+ends in a forked swordbreaker.
+ 
+Its body is heavily armored and steam pours from a mouth full of jagged metal teeth.
+Its eyes glow red from the coal fires inside the body that power this monstrosity.
+~
+school monster~
+ABGU DFJZ 0 0 0 0 0
+2 10 1d4+10 1d1+99 1d4+0 none
+17 17 17 17
+0 AB 0 C
+stand stand neutral 0
+0 0 medium 0 easy ''
+#603
+healer academy~
+An Academy Healer~
+An Academy Healer in long white robes waits here to heal students
+~
+~
+human~
+ABGMa 0 0 0 1000 0 0
+30 5 3d12+850 1d1+249 4d9+0 none
+-3 -3 -3 -3
+0 0 0 0
+stand stand female 0
+0 0 medium 0 hard ''
+#604
+headmaster academy~
+The Academy Headmaster~
+The Academy Headmaster is here waiting for you to attack and prove your abilities
+~
+~
+school monster~
+ABGU 0 0 0 500 0 0
+2 0 1d4+20 1d1+109 1d6+0 wrath
+9 10 10 10
+FGHIK AB 0 C
+stand stand male 30
+0 0 medium 0 hard ''
+#605
+Arena Combatant~
+An Arena Combatant~
+An Arena Combatant looks for someone to battle
+~
+~
+dragonborn~
+ACG 0 0 C 500 -100 602
+3 0 1d4+25 1d1+114 1d5+1 flbite
+8 9 9 9
+M 0 HIJKL 0
+stand stand male 215
+0 0 medium 0 hard ''
+#606
+Arena Combatant~
+An Arena Combatant~
+An Arena Combatant looks for someone to battle
+~
+~
+tiefling~
+ACG Z 0 A -200 -1000 602
+4 0 1d4+30 1d1+124 2d4+1 claw
+8 8 8 8
+0 0 H 0
+stand stand male 0
+0 0 medium 0 hard ''
+#607
+Arena Combatant~
+An Arena Combatant~
+An Arena Combatant looks for someone to battle
+~
+~
+dwarf~
+ACG JZ 0 B -10 500 602
+3 0 1d4+25 1d1+114 1d5+1 none
+9 8 9 9
+0 0 LQ 0
+stand stand female 0
+0 0 medium 0 hard ''
+#608
+deformed beast leper arena~
+A deformed leper beast~
+A deformed beast lurks in the shadows
+~
+~
+felis~
+AG 0 0 0 -700 0 0
+5 1 2d4+50 1d1+129 2d4+1 wrath
+7 7 7 7
+FR B I H
+stand stand male 0
+0 0 medium 0 hard ''
+#609
+lion arena~
+An Arena `YLion`X~
+A massive `Ylion`X prowls around the beast pits
+~
+~
+cat~
+AG PZ 0 0 0 0 0
+2 0 2d4+1 1d1+124 2d0+1 claw
+0 0 0 0
+FH 0 0 0
+stand stand female 20
+0 0 large 0 hard ''
+#656
+Rental Manager Mosley~
+Mosley, the Rental Manager~
+The Rental Manager stands here waiting to rent you a storage box
+~
+~
+human~
+ABGM 0 0 0 0 0 0
+40 7 7d11+1750 1d1+249 6d7+0 none
+-6 -6 -7 -6
+0 0 0 0
+stand stand male 0
+0 0 medium 0 hard ''
+#0
+
+#OBJECTS
+#601
+small tarnished bronze ring~
+a small `Otarnished `Ybronze `Xring~
+A small `Obronze`X ring~
+bronze~
+jewelry SY 0 AB
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+19 2
+A
+18 2
+A
+17 -10
+#602
+leather bracelet small thin~
+a thin `Yleather`X bracelet~
+A thin `Yleather`X bracelet~
+leather~
+armor SY 0 AM
+2 2 2 0 0 0
+1 20 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+13 2
+#603
+black wool gloves~
+`zblack `wwool`X gloves~
+`zblack `wwool`X gloves~
+wool~
+armor SY 0 AH
+1 1 1 0 0 0
+1 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -2
+A
+12 2
+#604
+pot metal helmet~
+a `zpot metal`X helmet~
+A `zpot metal`X helmet~
+tin~
+armor SY 0 AE
+2 1 1 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+4 1
+A
+14 2
+#605
+old tarnished chain~
+an `zold `Ytarnished`X chain~
+An `zold `Ytarnished`X chain~
+bronze~
+jewelry SY 0 AC
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+3 1
+A
+12 2
+#606
+dull grey ioun stone~
+a `zdull grey`X ioun stone~
+A `zdull grey`X ioun stone~
+~
+armor SY 0 AQ
+2 2 1 0 0 0
+1 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+20 -2
+A
+1 1
+#607
+a small brown linen satchel~
+a small `Obrown`X linen satchel~
+A small `Obrown`X linen satchel~
+~
+container SY 0 A
+10000 A 0 10000 100 9999
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#608
+sandals plain leather~
+plain `Yleather`X sandals~
+Plain `Yleather`X sandals~
+leather~
+armor SY 0 AG
+1 2 1 1 0 0
+1 10 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+2 1
+A
+14 10
+#609
+waterskin plain leather simple~
+a simple `Owaterskin`X~
+A simple `Owaterskin`X~
+leather~
+drink SY 0 A
+1000 100 'water' 0 0 0
+1 20 0 0 P
+0 0 0 0
+0 0 0 0 0
+#610
+loaf of elvenbread~
+a loaf of `Oelvenbread`X~
+A loaf of `Oelvenbread`X~
+~
+food S 0 A
+2 10 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#611
+hooded lamp brass~
+a `zhooded`O brass`X lamp~
+A `zhooded`O brass`X lamp~
+brass~
+light ASY 0 AO
+0 0 9999 0 0 0
+0 20 0 0 P
+0 0 0 0
+0 0 0 0 0
+A
+18 2
+A
+5 1
+#612
+throwing knife test~
+a throwing knife~
+A throwing knife~
+~
+trash 0 0 AO
+0 0 0 0 0 0
+0 0 0 0 P
+0 0 0 0
+0 0 0 0 0
+#0
+
+#ROOMS
+#601
+Entrance to the Newbie Academy~
+This is the entrance to the Newbie Academy. Go north to contiue your education.
+If you have been here before and want to go directly to the arena, go south.
+ 
+A sign warns 'You may not pass these doors once you have reached your third level.'
+ 
+A second sign hangs below the first with some useful information. (type 'look sign')
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 646
+Dsouth medium
+~
+~
+~
+~
+3 0 602
+Ddown huge
+~
+~
+~
+~
+0 0 951
+E
+sign~
+There are many useful commands that you should utilize.
+ 
+'config' is one of them! Typing 'config' by itself will show you
+all of the options, then you can type 'config +option' to turn on
+an option, and 'config -option' to turn off an option.
+Examples
+______________________________
+ 
+'config +detail' will enable extra details in your inventory screen
+'config -detail' will disable that extra information.
+'config +autoexit' will show available exits after room descriptions.
+'config -autoexit' will disable them.
+ 
+And so on!
+ 
+Also check out 'help newbie' for a ton of useful information!
+~
+S
+#602
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+3 0 601
+Deast medium
+~
+~
+~
+~
+0 0 634
+Dsouth medium
+~
+~
+~
+~
+0 0 603
+Dwest medium
+~
+~
+~
+~
+0 0 631
+S
+#603
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 602
+Deast medium
+~
+~
+~
+~
+0 0 625
+Dsouth medium
+~
+~
+~
+~
+0 0 604
+Dwest medium
+~
+~
+~
+~
+0 0 628
+S
+#604
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 603
+Deast medium
+~
+~
+~
+~
+0 0 622
+Dsouth medium
+~
+~
+~
+~
+0 0 605
+Dwest medium
+~
+~
+~
+~
+0 0 619
+Ddown medium
+~
+~
+~
+~
+3 0 637
+S
+#605
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 604
+Deast medium
+~
+~
+~
+~
+0 0 613
+Dsouth medium
+~
+~
+~
+~
+0 0 606
+Dwest medium
+~
+~
+~
+~
+0 0 616
+S
+#606
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 605
+Deast medium
+~
+~
+~
+~
+0 0 607
+Dwest medium
+~
+~
+~
+~
+0 0 610
+S
+#607
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 613
+Deast medium
+~
+~
+~
+~
+0 0 608
+Dwest medium
+~
+~
+~
+~
+0 0 606
+S
+#608
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 614
+Deast medium
+~
+~
+~
+~
+0 0 609
+Dwest medium
+~
+~
+~
+~
+0 0 607
+S
+#609
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 615
+Dwest medium
+~
+~
+~
+~
+0 0 608
+S
+#610
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 616
+Deast medium
+~
+~
+~
+~
+0 0 606
+Dwest medium
+~
+~
+~
+~
+0 0 611
+S
+#611
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 617
+Deast medium
+~
+~
+~
+~
+0 0 610
+Dwest medium
+~
+~
+~
+~
+0 0 612
+S
+#612
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 618
+Deast medium
+~
+~
+~
+~
+0 0 611
+S
+#613
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 622
+Deast medium
+~
+~
+~
+~
+0 0 614
+Dsouth medium
+~
+~
+~
+~
+0 0 607
+Dwest medium
+~
+~
+~
+~
+0 0 605
+S
+#614
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 623
+Deast medium
+~
+~
+~
+~
+0 0 615
+Dsouth medium
+~
+~
+~
+~
+0 0 608
+Dwest medium
+~
+~
+~
+~
+0 0 613
+S
+#615
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 624
+Dsouth medium
+~
+~
+~
+~
+0 0 609
+Dwest medium
+~
+~
+~
+~
+0 0 614
+S
+#616
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 619
+Deast medium
+~
+~
+~
+~
+0 0 605
+Dsouth medium
+~
+~
+~
+~
+0 0 610
+Dwest medium
+~
+~
+~
+~
+0 0 617
+S
+#617
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+*CLANK*
+*THWUCK*
+*WONK*
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 620
+Deast medium
+~
+~
+~
+~
+0 0 616
+Dsouth medium
+~
+~
+~
+~
+0 0 611
+Dwest medium
+~
+~
+~
+~
+0 0 618
+S
+#618
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 621
+Deast medium
+~
+~
+~
+~
+0 0 617
+Dsouth medium
+~
+~
+~
+~
+0 0 612
+S
+#619
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 628
+Deast medium
+~
+~
+~
+~
+0 0 604
+Dsouth medium
+~
+~
+~
+~
+0 0 616
+Dwest medium
+~
+~
+~
+~
+0 0 620
+S
+#620
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 629
+Deast medium
+~
+~
+~
+~
+0 0 619
+Dsouth medium
+~
+~
+~
+~
+0 0 617
+Dwest medium
+~
+~
+~
+~
+0 0 621
+S
+#621
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 630
+Deast medium
+~
+~
+~
+~
+0 0 620
+Dsouth medium
+~
+~
+~
+~
+0 0 618
+S
+#622
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 625
+Deast medium
+~
+~
+~
+~
+0 0 623
+Dsouth medium
+~
+~
+~
+~
+0 0 613
+Dwest medium
+~
+~
+~
+~
+0 0 604
+S
+#623
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 626
+Deast medium
+~
+~
+~
+~
+0 0 624
+Dsouth medium
+~
+~
+~
+~
+0 0 614
+Dwest medium
+~
+~
+~
+~
+0 0 622
+S
+#624
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 627
+Dsouth medium
+~
+~
+~
+~
+0 0 615
+Dwest medium
+~
+~
+~
+~
+0 0 623
+S
+#625
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 634
+Deast medium
+~
+~
+~
+~
+0 0 626
+Dsouth medium
+~
+~
+~
+~
+0 0 622
+Dwest medium
+~
+~
+~
+~
+0 0 603
+S
+#626
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 635
+Deast medium
+~
+~
+~
+~
+0 0 627
+Dsouth medium
+~
+~
+~
+~
+0 0 623
+Dwest medium
+~
+~
+~
+~
+0 0 625
+S
+#627
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 636
+Dsouth medium
+~
+~
+~
+~
+0 0 624
+Dwest medium
+~
+~
+~
+~
+0 0 626
+S
+#628
+Arena ~
+Sand covers the ground here in the arena as the spectators scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 631
+Deast medium
+~
+~
+~
+~
+0 0 603
+Dsouth medium
+~
+~
+~
+~
+0 0 619
+Dwest medium
+~
+~
+~
+~
+0 0 629
+S
+#629
+Arena~
+Sand covers the ground here in the arena as the spectarors scream
+for blood in the stands. The sound of weapons clashing fills the air.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 632
+Deast medium
+~
+~
+~
+~
+0 0 628
+Dsouth medium
+~
+~
+~
+~
+0 0 620
+Dwest medium
+~
+~
+~
+~
+0 0 630
+S
+#630
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 633
+Deast medium
+~
+~
+~
+~
+0 0 629
+Dsouth medium
+~
+~
+~
+~
+0 0 621
+S
+#631
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 602
+Dsouth medium
+~
+~
+~
+~
+0 0 628
+Dwest medium
+~
+~
+~
+~
+0 0 632
+S
+#632
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 631
+Dsouth medium
+~
+~
+~
+~
+0 0 629
+Dwest medium
+~
+~
+~
+~
+0 0 633
+S
+#633
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 632
+Dsouth medium
+~
+~
+~
+~
+0 0 630
+S
+#634
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 635
+Dsouth medium
+~
+~
+~
+~
+0 0 625
+Dwest medium
+~
+~
+~
+~
+0 0 602
+S
+#635
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 636
+Dsouth medium
+~
+~
+~
+~
+0 0 626
+Dwest medium
+~
+~
+~
+~
+0 0 634
+S
+#636
+Arena Wall~
+Massive marble walls block your passage from the arena,
+behind the walls rise benches full of shouting spectators.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 627
+Dwest medium
+~
+~
+~
+~
+0 0 635
+S
+#637
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 638
+Deast medium
+~
+~
+~
+~
+0 0 640
+Dsouth medium
+~
+~
+~
+~
+0 0 639
+Dwest medium
+~
+~
+~
+~
+0 0 641
+Dup medium
+~
+~
+~
+~
+3 0 604
+S
+#638
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 644
+Dsouth medium
+~
+~
+~
+~
+0 0 637
+Dwest medium
+~
+~
+~
+~
+0 0 645
+S
+#639
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 637
+Deast medium
+~
+~
+~
+~
+0 0 642
+Dwest medium
+~
+~
+~
+~
+0 0 643
+S
+#640
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 644
+Dsouth medium
+~
+~
+~
+~
+0 0 642
+Dwest medium
+~
+~
+~
+~
+0 0 637
+S
+#641
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 645
+Deast medium
+~
+~
+~
+~
+0 0 637
+Dsouth medium
+~
+~
+~
+~
+0 0 643
+S
+#642
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 640
+Dwest medium
+~
+~
+~
+~
+0 0 639
+S
+#643
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 641
+Deast medium
+~
+~
+~
+~
+0 0 639
+S
+#644
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 640
+Dwest medium
+~
+~
+~
+~
+0 0 638
+S
+#645
+The Beast Pits~
+You can hear the sounds of combat above but that's the least
+of your worries down here in the beast pits below the arena
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 638
+Dsouth medium
+~
+~
+~
+~
+0 0 641
+S
+#646
+A room in the Newbie Academy~
+You are in a room in the Newbie Academy. Paintings of heroic graduates of
+the academy adorn the walls. To the west is a training room, north is the
+next station of the Academy.
+ 
+There is a sign on the wall. (type 'look sign' to read it.)
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 648
+Dsouth medium
+~
+~
+~
+~
+0 0 601
+Dwest medium
+~
+~
+~
+~
+0 0 647
+E
+sign~
+To find out your attributes, type 'score'. You can improve your attributes to the west.
+You may practice your skills and spells (type 'skills' or 'spells') there as well.
+To the north you will learn about channels and note writing.
+ 
+If you are a new player, you should go WEST from here, train and practice, then return
+to this room and head NORTH.
+~
+S
+#647
+Newbie Academy Training Room~
+In this room you will `YTRAIN`X and `YPRACTICE`X to advance your attributes and skills.
+For training, your attributes are useful for the following:
+Strength - this will impact your carry weight, melee damage, and efficacy with certain skills.
+Dexterity - this will impact how many times you attack, whether you hit or miss, and the efficacy of certain skills.
+Constitution - this will impact how many hit points you gain per level, as well as the efficacy of certain skills.
+Intelligence - this will impact how fast you learn your skills/spells, your mana gained per level, and efficacy of your spells.
+Wisdom - this will impact how many practice sessions you gain per level.
+ 
+There is a sign on the wall here. (type 'look sign' to read it.)
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 646
+E
+sign~
+It is recommended that you type 'help train' and 'help practice' to understand how both commands work.
+Most players will also recommend that you focus on CON and WIS as your first attributes to increase to
+their maximum (the maximum you can train an attribute is determined by your race.)
+The reason for this being that CON will make you gain more HP per level, and once you've maxed out CON
+your WIS will increase the number of practice sessions you gain with each level. This is a wise strategy as
+it will save you many quest points later on (the only way to gain more practice and training sessions once you
+reach the maximum level of 20)
+~
+S
+#648
+Note System~
+This room is for the note system. You can write private notes to other players,
+to specific immortals, to all immortals, or to the entire MUD.
+ 
+To start a note, type 'note to imm'
+Then type 'note subject Hello Friends!'
+Then type 'note + I am a new player! Keep an eye out for me!'
+And finally, type 'note post'.
+This will send a note to the Immortals letting us know that you're new here 
+so that we can keep an eye out for you and welcome you to the MUD properly!
+ 
+You can also remove lines if you want. To see the note so far, type 'note show'
+and to remove the most recent line, type 'note -'. You may also enter an editor mode
+by typing 'note write' which will allow you to do advanced editing such as replacing
+words and strings, or whole lines. 
+ 
+Give it a try!
+ 
+You can also type 'boards' to see what other boards there are (by default you'll be on
+the 'general' board, but you can type 'board 2' to switch to the announcements board
+and then type 'note list' to see all of the notes on that board, and 'note read <number>'
+to read a specific note!)
+ 
+There is a sign here. (type 'look sign'.)
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 649
+Dsouth medium
+~
+~
+~
+~
+0 0 646
+E
+sign~
+To the north is the combat station!
+~
+S
+#649
+Academy Combat Training~
+To the east and west you will find rooms with mechanical training dummies.
+They will fight back, so be sure to set a wimpy mode (type 'help wimpy') so
+that you can flee (type 'help flee') automatically if you get hurt too badly.
+ 
+There is a sign here. (Type 'look sign'.)
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dnorth medium
+~
+~
+~
+~
+0 0 655
+Deast medium
+~
+~
+~
+~
+0 0 650
+Dsouth medium
+~
+~
+~
+~
+0 0 648
+Dwest medium
+~
+~
+~
+~
+0 0 651
+E
+sign~
+North will be your final test, taking on the Academy combat headmaster!
+~
+S
+#650
+Combat Training Room~
+Here Academy students test their mettle against clockwork training dummies.
+Many students are injured badly from not knowing when to run away and must
+escape up the ladder to the healers on the catwalk above.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 649
+Dup medium
+~
+~
+~
+~
+0 0 652
+S
+#651
+Combat Training Room~
+Here Academy students test their mettle against clockwork training dummies.
+Many students are injured badly from not knowing when to run away and must
+escape up the ladder to the healers on the catwalk above.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 649
+Dup medium
+~
+~
+~
+~
+0 0 653
+S
+#652
+Catwalk Above Combat Training~
+This catwalk overlooks the combat training areas below where instructors
+evaluate the students, and healers prepare to revive and heal them
+when they fail in their training.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dwest medium
+~
+~
+~
+~
+0 0 654
+Ddown medium
+~
+~
+~
+~
+0 0 650
+S
+#653
+Catwalk Above Combat Training~
+This catwalk overlooks the combat training areas below where instructors
+evaluate the students, and healers prepare to revive and heal them
+when they fail in their training.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 654
+Ddown medium
+~
+~
+~
+~
+0 0 651
+S
+#654
+Catwalk Above Combat Training~
+This catwalk overlooks the combat training areas below where instructors
+evaluate the students, and healers prepare to revive and heal them
+when they fail in their training.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Deast medium
+~
+~
+~
+~
+0 0 652
+Dwest medium
+~
+~
+~
+~
+0 0 653
+S
+#655
+Final Training Room~
+This is the final room where students must confront the Academy
+headmaster and prove themselves worthy of venturing into the combat
+arena and into the world at large.
+~
+~
+~
+~
+~
+~
+0 a 0 0
+Dsouth medium
+~
+~
+~
+~
+0 0 649
+Dup medium
+~
+~
+~
+~
+0 0 602
+S
+#656
+Rental Office~
+~
+~
+~
+~
+~
+~
+0 Ca 0 0
+S
+#0
+
+#RESETS
+M 0 605 30 604 30
+M 0 607 30 605 30
+M 0 607 30 606 30
+M 0 607 30 606 30
+M 0 607 30 611 30
+M 0 607 30 612 30
+M 0 607 30 616 30
+M 0 606 30 616 30
+M 0 607 30 617 30
+M 0 605 30 617 30
+M 0 606 30 618 30
+M 0 605 30 618 30
+M 0 606 30 619 30
+M 0 606 30 619 30
+M 0 606 30 619 30
+M 0 606 30 622 30
+M 0 605 30 623 30
+M 0 605 30 624 30
+M 0 605 30 625 3
+M 0 605 30 628 30
+M 0 605 30 628 30
+M 0 606 30 631 3
+M 0 606 30 632 3
+M 0 607 30 633 3
+M 0 607 30 633 3
+M 0 607 30 633 3
+M 0 606 30 634 3
+M 0 605 30 634 3
+M 0 609 3 637 1
+M 0 609 3 642 1
+M 0 609 3 643 1
+M 0 608 2 644 1
+M 0 608 2 645 1
+M 0 601 1 647 1
+M 0 602 10 650 5
+M 0 602 10 650 5
+M 0 602 10 650 5
+M 0 602 10 650 5
+M 0 602 10 650 5
+M 0 602 10 651 5
+M 0 602 10 651 5
+M 0 602 10 651 5
+M 0 602 10 651 5
+M 0 602 10 651 5
+M 0 603 2 652 1
+M 0 603 2 653 1
+M 0 604 1 655 1
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 605 spec_breath_any
+S
+
+#$

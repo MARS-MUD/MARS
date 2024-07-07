@@ -1,0 +1,15 @@
+ARMOR
+	V0 - armor vs pierce
+	V1 - armor vs bash
+	V2 - armor vs slash
+	V3 - armor vs exotic
+	V4 - documented as bulk, not used
+	V5 - unused
+WEAPON
+	V0 - type
+	V1 - number of dam dice
+	V2 - # sides of dam dice
+	V3 - dam msg (cleave, pierce, etc)
+	V4 - weapon flags
+	V5 - damroll
+

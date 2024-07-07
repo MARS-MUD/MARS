@@ -1,0 +1,20 @@
+#PROJECT
+Name World Map~
+Vnum 1
+Pri High
+From Om~
+To Om~
+Date 1696259944
+Due 1704036001
+Comp 0
+Status New~
+Desc
+Create the world map of the entire world.
+Include all of the continents and points of interest.
+~
+Progress
+Not started.
+~
+End
+
+#$

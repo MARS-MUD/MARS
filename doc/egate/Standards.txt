@@ -1,0 +1,205 @@
+Coding standards
+
+Study after study has shown that programmers spend far more of their time
+maintaining and modifying existing code than they do writing original code.
+The easier the code is to read and understand the easier and less
+error-prone the modification process is.  We are a team of programmers
+working on a common project.  Therefore it is important that we can easily
+read and modify each others' code.  Coding standards allow us to use a
+common style when writing code.  This promotes legibility and comprehension
+when working with code written by someone else, or even yourself when
+modifying something you wrote six months ago.
+
+The important thing about a coding standard is not so much what the actual
+standard is, as the consistency of its use.  Different organizations have
+different codig standards.  Within each organization however the standards
+are (or should be) rigidly enforced.
+
+
+Whenever there is a conflict between ease of writing and ease of reading
+always favor ease of reading.
+
+
+Curley braces should be on a line by themselves, or followed by a comment.
+This is good:
+    for ( i = 0; i < lim, i++ )
+    {
+
+This is bad:
+    for ( i = 0; i < lim; i++ ) {
+
+The curley braces should be in the same column as the first non-whitespace
+character of their associated construct.
+
+
+The standard indent is four columns.  A single statement after a conditional
+or looping construct should be indented four spaces.  All statements within
+a compound statement should be indented four columns from the curley braces.
+
+This is good:
+    if ( IS_NPC( ch ) )
+        return;
+
+This is good:
+    if ( IS_NPC( ch ) )
+    {
+        statement;
+        statement;
+    }
+
+This is bad:
+    if ( IS_NPC( ch ) )
+      return;
+
+This is bad:
+    if ( IS_NPC( ch ) )
+    {
+      statement;
+      statement;
+    }
+
+This is bad:
+    if ( IS_NPC( ch ) )
+      {
+        statement;
+        statement;
+      }
+
+
+A left parenthesis should always be followed by a space, and a right
+parenthesis should always be preceded by a space.  The only exceptions to
+this are a typecast or a function call through a function pointer.
+
+This is good:
+    send_to_char( "You gain a level!\n\r", ch );
+
+This is bad:
+    send_to_char("You gain a level!\n\r", ch);
+
+This is good:
+    pHelp = (HELP_DATA *)alloc_mem( sizeof( *pHelp ) );
+
+This is bad:
+    pHelp = (HELP_DATA *)alloc_mem(sizeof(*pHelp));
+
+
+
+Commas in argument lists should always be followed by a space.
+
+This is good:
+    act( "You follow $N.", fch, NULL, ch, TO_CHAR );
+
+This is bad:
+    act( "You follow $N.",fch,NULL,ch,TO_CHAR );
+
+
+The return type of a function should be on a separate line from the
+function name.  The main purpose of this is to make it easier to find a
+function with grep:
+grep -n ^send_to_char *.c
+will tell you in which file and on what line send_to_char() is defined.
+If you just type
+grep -n send_to_char *.c
+you are going to get a whole lot of output.
+
+This is good:
+void
+foo( int bar )
+{
+}
+
+This is bad:
+void foo( int bar )
+{
+}
+
+Keywords such as for, if, switch and while should have a space between the
+word and the required left parenthesis.  Function declarations, definitions
+and calls should not.
+
+This is good:
+    for ( i = 0; i < MAX_COUNT; i++ )
+
+This is bad:
+    for( i = 0; i < MAX_COUNT; i++ )
+
+This is good:
+    foo( bar );
+
+This is bad:
+    foo ( bar );
+
+
+There should be exactly two blank lines between the closing curley brace at
+the end of a function and the return type of the following function.
+
+This is good:
+int
+foo( int arg )
+{
+    /* body of foo */
+}
+
+
+int
+bar( int arg )
+
+This is bad:
+int
+foo( int arg )
+    /* body of foo */
+}
+
+int
+bar( int arg )
+
+
+Each variable declaration should be on a separate line.
+
+This is good:
+    int i;
+    int j;
+
+This is bad:
+    int i, j;
+
+
+Assignment statements should also be on separate lines.
+
+This is good:
+    i = 0;
+    j = 0;
+
+This is bad:
+    i = j = 0;
+
+
+Variable initializations should be as close as possible to the point where
+they are first used.  In particular they should not be initialized in their
+declarations.
+
+This is good:
+    bool  found;
+
+    /* lots of code */
+    found = FALSE;
+    while ( !found )
+    ...
+
+This is bad:
+    bool found = FALSE;
+
+    /* lots of code */
+    while ( !found )
+    ...
+
+This is worse:
+    bool found;
+
+    /* lots of code */
+    found = FALSE;
+    /* lots more code */
+    while ( !found )
+    ...
+
+

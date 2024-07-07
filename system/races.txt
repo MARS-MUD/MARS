@@ -1,0 +1,1601 @@
+#RACE 'bat'
+Act 0
+Aff TZ
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFHJKP
+Pc FALSE
+Points 0
+Res 0
+Size tiny
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln S
+WtMin 5
+WtMax 120
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'bear'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off DEO
+Parts ABCDEFHJKUV
+Pc FALSE
+Points 0
+Res EI
+Size large
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 80000
+WtMax 2400000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'cat'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFHJKQUV
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 800
+WtMax 3200
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'centaur'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGO
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACK
+Pc FALSE
+Points 0
+Res ER
+Size tiny
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln E
+WtMin 1
+WtMax 10
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'centipede'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGO
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACK
+Pc FALSE
+Points 0
+Res FI
+Size tiny
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln E
+WtMin 1
+WtMax 10
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'chimera'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 40000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'demon'
+Act 0
+Aff 0
+AlMax -350
+AlMin -1000
+AlMax -350
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 40000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'dog'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off H
+Parts ACDEFHJKUV
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 800
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'doll'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form EJMc
+Imm ILMNPQR
+Max 18 18 18 18 18
+Off 0
+Parts ABCGHK
+Pc FALSE
+Points 0
+Res ES
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln GHJKO
+WtMin 800
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'dragonborn'
+Act 0
+Aff 0
+AlMax -350
+AlMin -1000
+AlMax -350
+AlMin -1000
+Form AHMV
+Imm 0
+Max 20 18 18 18 18
+Off 0
+Parts ABCDEFGHIJKQUW
+Pc TRUE
+Points 0
+Res HIJKL
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 15 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 40000
+'cleric' 100
+'druid' 0
+'fighter' 100
+'mage' 0
+'rogue' 100
+End
+
+#RACE 'drow'
+Act 0
+Aff J
+AlMax -350
+AlMin -1000
+AlMax -350
+AlMin -1000
+Form AHMV
+Imm 0
+Max 16 20 18 21 15
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 5
+Res B
+Size medium
+Skill 'sneak'
+Skill 'hide'
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 12 14 13 15 11
+Vuln Z
+WtMin 16000
+WtMax 24000
+'cleric' 100
+'druid' 100
+'fighter' 100
+'mage' 0
+'rogue' 100
+End
+
+#RACE 'dwarf'
+Act 0
+Aff JZ
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 20
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 8
+Res LQ
+Size medium
+Skill 'berserk'
+Skill 'axe'
+Skill 'great axe'
+Skill 'hammer'
+Skill NULL
+Stat 13 13 13 13 15
+Vuln 0
+WtMin 16000
+WtMax 32000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'elf'
+Act 0
+Aff JZ
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 20 18
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 5
+Res B
+Size medium
+Skill 'meditation'
+Skill 'dual'
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 15 13
+Vuln 0
+WtMin 16000
+WtMax 24000
+'cleric' 100
+'druid' 100
+'fighter' 100
+'mage' 0
+'rogue' 100
+End
+
+#RACE 'felis'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGV
+Imm B
+Max 18 18 18 18 18
+Off FR
+Parts ACDEFHJKQV
+Pc FALSE
+Points 0
+Res I
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln H
+WtMin 800
+WtMax 8000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'fido'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGV
+Imm 0
+Max 18 18 18 18 18
+Off FR
+Parts ACDEFHJKQV
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln C
+WtMin 800
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'fish'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGV
+Imm R
+Max 18 18 18 18 18
+Off 0
+Parts ACDEFHJKQV
+Pc FALSE
+Points 0
+Res H
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln J
+WtMin 800
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'fox'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFHJKQV
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 800
+WtMax 2400
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'giant'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res HI
+Size huge
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln JP
+WtMin 48000
+WtMax 160000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'gnome'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 20 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 15 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 24000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'goblin'
+Act 0
+Aff J
+AlMax 349
+AlMin -1000
+AlMax 349
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res Q
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln C
+WtMin 16000
+WtMax 24000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'halfelf'
+Act 0
+Aff JZ
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 19 19 19 18
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 0
+Res B
+Size medium
+Skill 'haggle'
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 14 14 14 13
+Vuln 0
+WtMin 16000
+WtMax 32000
+'cleric' 100
+'druid' 100
+'fighter' 100
+'mage' 0
+'rogue' 100
+End
+
+#RACE 'halfling'
+Act 0
+Aff J
+AlMax 1000
+AlMin -349
+AlMax 1000
+AlMin -349
+Form AHMV
+Imm 0
+Max 18 18 18 20 18
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 15 13
+Vuln 0
+WtMin 4000
+WtMax 12000
+'cleric' 100
+'druid' 100
+'fighter' 100
+'mage' 0
+'rogue' 100
+End
+
+#RACE 'halforc'
+Act 0
+Aff JZ
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 20 18 18 18 19
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 15 13 13 13 14
+Vuln 0
+WtMin 16000
+WtMax 32000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'highelf'
+Act 0
+Aff J
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 16 20 18 21 15
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 5
+Res B
+Size medium
+Skill 'sneak'
+Skill 'hide'
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 12 14 13 15 11
+Vuln Z
+WtMin 16000
+WtMax 24000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'hobgoblin'
+Act 0
+Aff J
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJKY
+Pc FALSE
+Points 0
+Res LQ
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 24000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'horse'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off H
+Parts ACDEFHJKUV
+Pc FALSE
+Points 0
+Res 0
+Size large
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 160000
+WtMax 320000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'human'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 19 19 19 19 19
+Off 0
+Parts ABCDEFGHIJK
+Pc TRUE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 14 14 14 14 14
+Vuln 0
+WtMin 16000
+WtMax 40000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'insect'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGO
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACDEFHMPQUV
+Pc FALSE
+Points 0
+Res 0
+Size tiny
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 1
+WtMax 160
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'kobold'
+Act 0
+Aff J
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJKQ
+Pc FALSE
+Points 0
+Res L
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln C
+WtMin 8000
+WtMax 12000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'lizard'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGXc
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACDEFHKQV
+Pc FALSE
+Points 0
+Res L
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln I
+WtMin 80
+WtMax 1600
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'minotaur'
+Act 0
+Aff 0
+AlMax 349
+AlMin -1000
+AlMax 349
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size large
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 48000
+WtMax 160000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'ogre'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 22 15 18 15 20
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 6
+Res HI
+Size huge
+Skill 'bash'
+Skill 'fast healing'
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 16 11 13 11 14
+Vuln JP
+WtMin 80000
+WtMax 160000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'orc'
+Act 0
+Aff J
+AlMax -350
+AlMin -1000
+AlMax -350
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res Q
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln S
+WtMin 16000
+WtMax 24000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'pig'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACDEFHJK
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 4000
+WtMax 16000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'pictsie'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 800
+WtMax 1600
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'rabbit'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFHJK
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 800
+WtMax 1600
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'satyr'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm H
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJKQ
+Pc FALSE
+Points 0
+Res M
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln EI
+WtMin 16000
+WtMax 40000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'school monster'
+Act U
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AMV
+Imm AB
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFHJKQU
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln C
+WtMin 1600
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'shadow'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm M
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res P
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln NS
+WtMin 16000
+WtMax 40000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'snake'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGXYc
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ADEFKLQVX
+Pc FALSE
+Points 0
+Res L
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln I
+WtMin 160
+WtMax 1600
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'song bird'
+Act 0
+Aff T
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGW
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFHKP
+Pc FALSE
+Points 0
+Res 0
+Size tiny
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 40
+WtMax 320
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'sprite'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -349
+AlMax 1000
+AlMin -349
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 3200
+WtMax 8000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'tiefling'
+Act 0
+Aff Z
+AlMax -350
+AlMin -1000
+AlMax -350
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 19 20 18 18
+Off 0
+Parts ABCDEFGHIJKQW
+Pc TRUE
+Points 0
+Res H
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 14 15 13 13
+Vuln 0
+WtMin 16000
+WtMax 40000
+'cleric' 100
+'druid' 100
+'fighter' 100
+'mage' 100
+'rogue' 100
+End
+
+#RACE 'titan'
+Act 0
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm B
+Max 18 18 18 18 18
+Off 0
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res HI
+Size huge
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln J
+WtMin 48000
+WtMax 160000
+'cleric' 0
+'druid' 100
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'troll'
+Act 0
+Aff FJc
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABHMV
+Imm 0
+Max 18 18 18 18 18
+Off D
+Parts ABCDEFGHIJKUV
+Pc FALSE
+Points 0
+Res BE
+Size large
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln HK
+WtMin 40000
+WtMax 80000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'undead'
+Act O
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off O
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 32000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'water fowl'
+Act 0
+Aff Tb
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGW
+Imm 0
+Max 18 18 18 18 18
+Off 0
+Parts ACDEFHKP
+Pc FALSE
+Points 0
+Res R
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 320
+WtMax 800
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 0
+'rogue' 0
+End
+
+#RACE 'wolf'
+Act 0
+Aff Z
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AGV
+Imm 0
+Max 18 18 18 18 18
+Off FH
+Parts ACDEFJKQV
+Pc FALSE
+Points 0
+Res 0
+Size small
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 4000
+WtMax 12000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'wyvern'
+Act 0
+Aff DFT
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form ABGZ
+Imm L
+Max 18 18 18 18 18
+Off CFH
+Parts ACDEFHJKQVX
+Pc FALSE
+Points 0
+Res 0
+Size huge
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln S
+WtMin 80000
+WtMax 320000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#RACE 'zombie'
+Act O
+Aff 0
+AlMax 1000
+AlMin -1000
+AlMax 1000
+AlMin -1000
+Form AHMV
+Imm 0
+Max 18 18 18 18 18
+Off O
+Parts ABCDEFGHIJK
+Pc FALSE
+Points 0
+Res 0
+Size medium
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Skill NULL
+Stat 13 13 13 13 13
+Vuln 0
+WtMin 16000
+WtMax 32000
+'cleric' 0
+'druid' 0
+'fighter' 0
+'mage' 100
+'rogue' 0
+End
+
+#$

@@ -1,0 +1,198 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+2010/08/22 - REK
+Added osay, say OOC command.
+act_comm.c interp.c interp.h
+
+2010/08/02 - REK
+Changed "scribes" to "imps" in do_save.
+act_info.c
+
+2010/08/01 - REK
+Added keepalive, hopefully will keep idling telnet connections open.
+Will have to test by committing to server since local connects don't go
+through my router.
+act_info.c comm.c merc.h save.c
+
+2010/07/29 - REK
+Removed wizhelp2, since wizhelp now does the exact same thing.
+interp.c interp.h
+
+2010/07/28 - REK
+Suppressed wiznet connect messages from 127.0.1.1 (webwho).
+comm.c
+
+2010/07/28 - REK
+Implemented alternate webwho, through game port.
+We now have two webwho mechanisms.  One is to connect on the game port plus
+whatever WEBWHO_OFFSET is #defined as in merc.h.  The other is to connect on
+the game port itself, and enter WEBWHO (in uppercase) at the "do you want
+color" prompt.  The output uses the mud's color codes and should be parsed
+by a PHP script to convert the color codes to FONT tags.
+act_info.c comm.c merc.h nanny.c
+
+2010/07/25 - REK
+Removed FD header from webwho.
+act_info.c
+
+2010/07/23 - REK
+Rewrote wizhelp to work like wizhelp2, if no args given.
+To be more pedantic, "wizhelp all" now works like wizhelp2 did; without the
+"all" argument, it skips commands with the CMD_NOLIST flag.
+interp.c
+
+2010/07/22 - REK
+Changed mset to allow use of "gold", "silver" etc.
+act_wiz.c
+
+2010/07/22 - REK
+Changed initial letters for dollars and tenpence to "d" and "t" respectively.
+merc.h
+
+2010/07/21 - REK
+Cleaned up the wizhelp2 command.
+This command should probably be merged into the wizhelp command (which
+itself could use some revision).
+interp.c
+
+2010/07/18 - REK
+Added commoner basic & commoner default skill groups.
+const.c
+
+2010/07/17 - REK
+Fixed code to remove warnings from a more anal version of GCC.
+comm.c db.c db2.c mob_cmds.c olc.c save.c
+
+2010/07/17 - REK
+Removed plist command, per discussion with Om.
+act_wiz.c interp.c interp.h
+
+2010/07/16 - REK
+Removed flamewall and "Abbadon bypass".
+act_wiz3.c globals.h interp.c interp.h merc.h overlands.c
+
+2010/07/16 - REK
+Added AREA_NOWRAP flag.  Maps of overland areas with this flag will not wrap
+east-west.  Still need to implement its effects in overland.c.
+merc.h tables.c
+
+2010/07/16 - REK
+Tweaked messages in quit command.
+act_comm.c
+
+2010/07/16 - REK
+Reformatted text in nanny to fit better on 80-column screen.
+nanny.c
+
+2010/07/16 - REK
+Revamped and streamlined new character creation.
+nanny.c
+
+2010/07/15 - REK
+Added filenames to Om's changelog.
+om.thud.txt
+
+2010/07/15 - REK
+Added race and class to userlist data and finger command.
+act_wiz.c act_wiz2.c comm.c db2.c merc.h recycle.c
+
+2010/07/14 - REK
+Changed website in MSSP handler.
+db.c merc.h
+
+2010/07/14 - REK
+Did some cleanup on the race table and race_xxx indices.
+Really should have done this along with previous change below.
+const.c globals.c merc.h
+
+2010/07/14 - REK
+Removed FD races, enabled zombie as PC race.
+const.c
+
+2010/07/14 - REK
+Commented out static function show_classes() since it's not used right now.
+Didn't remove it permanently since we might want it back later when we
+implement deferred class/guild selection.
+nanny.c
+
+2010/07/14 - REK
+Added commoner class and forced that class in nanny().
+const.c globals.c merc.h nanny.h skills.c
+
+2010/07/12 - RLE
+Changed the Khaotica death stuff with... Death.
+
+2010/07/12 - REK
+Changed E'dhora to 'the world' and such in the hotboot messages.
+act_wiz.c comm.c
+
+2010/07/12 - REK
+Removed the FD window dressing on the wholist.
+Reverted it back to the Artifice version, basically.
+Also updated the copyright line at the top.  I'll be doing that to each file
+as part of my next edit on each file, and won't be mentioning it further in
+this log.
+act_info.c
+
+2010/07/12 - REK
+Initial checkin of all files.
+Makefile Standards.txt act_clan.c act_comm.c act_info.c act_misc.c
+act_move.c act_obj.c act_skills.c act_wiz.c act_wiz2.c act_wiz3.c alias.c
+ban.c boards.c changes_artifice.txt changes_dwatch.txt changes_egate.txt
+changes_fd.txt comm.c const.c db.c db.h db2.c effects.c event.c fight.c
+fight2.c flags.c globals.c gsn.c handler.c healer.c interp.c interp.h
+lookup.c lookup.h magic.c magic.h magic2.c merc.h mob_cmds.c multi.c nanny.c
+olc.c olc.h olc_area.c olc_board.c olc_clan.c olc_cmd.c olc_dream.c
+olc_forge.c olc_grp.c olc_help.c olc_mob.c olc_obj.c olc_prog.c olc_proj.c
+olc_race.c olc_room.c olc_save.c olc_skill.c olc_social.c others.txt
+overland.c progs.c quest.c rand_str.c recycle.c recycle.h save.c scan.c
+skills.c skilltable.c special.c sql.c startup string.c tables.c tables.h
+update.c

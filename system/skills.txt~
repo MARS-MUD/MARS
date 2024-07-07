@@ -1,0 +1,2546 @@
+#SKILL 'acid blast'
+20 12 0
+Dammsg acid blast~
+Offmsg !Acid Blast!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'acid geyser'
+20 12 0
+Dammsg acid geyser~
+Offmsg !Acid Geyser!~
+  Clr -1 0
+  Drd 18 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'acid rain'
+350 12 0
+Dammsg acid rain~
+Offmsg !acid rain!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 9 1
+  Rog -1 0
+End
+
+#SKILL 'acid arrow'
+350 12 0
+Dammsg acid arrow~
+Offmsg !acid arrow!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 1
+  Rog -1 0
+End
+
+#SKILL 'adrenaline control'
+30 24 0
+Offmsg Your rage ebbs.~
+Roommsg $n's rage ebbs.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'aid'
+15 12 0
+Offmsg Your divine aid dissipates.~
+Roommsg $n's divine aid dissipates.~
+  Clr 3 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'animate dead'
+100 24 0
+Offmsg !Animate Dead!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'animal summoning'
+50 24 0
+Offmsg !Animal Control!~
+  Clr -1 0
+  Drd 3 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'astral walk'
+50 24 0
+Offmsg !Astral Walk!~
+  Clr 18 0
+  Drd 17 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'armor'
+5 12 0
+Offmsg You feel less armored.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 0
+  Rog -1 0
+End
+
+#SKILL 'atrophy'
+25 12 0
+Offmsg The wasting away stops.~
+Roommsg $n stops wasting away.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 18 0
+  Rog -1 0
+End
+
+#SKILL 'aura of peace'
+100 12 0
+Offmsg The peace aura around your body fades away.~
+Roommsg The peace aura around $n fades away.~
+  Clr 16 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'barkskin'
+15 12 0
+Offmsg Your skin is no longer woody.~
+Roommsg $n's skin is no longer woody.~
+  Clr -1 0
+  Drd 9 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'barrage'
+30 8 0
+Dammsg burst of light~
+Offmsg !Barrage!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 40 1
+  Rog -1 0
+End
+
+#SKILL 'banshee blast'
+15 12 0
+Dammsg banshee blast~
+Offmsg !Banshee Blast!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 17 1
+  Rog -1 0
+End
+
+#SKILL 'bear claws'
+60 15 0
+Offmsg !Bear Claw!~
+  Clr -1 0
+  Drd 12 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'bear fat'
+10 11 0
+Offmsg The winter warmth of the bear is gone.~
+Roommsg The winter warmth of the bear leaves $n.~
+  Clr -1 0
+  Drd 11 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'bears endurance'
+15 12 0
+Offmsg You feel less resilient.~
+Roommsg $n seems less resilient.~
+  Clr 4 0
+  Drd 4 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'black mantle'
+75 12 0
+Offmsg The dark aura around your body fades.~
+Roommsg The dark aura around $n's body fades.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'blade barrier'
+40 12 0
+Dammsg whirling blades~
+Offmsg The whirling blades surrounding you vanish.~
+Roommsg The whirling blades surrounding $n vanish.~
+  Clr 11 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 13 0
+  Rog -1 0
+End
+
+#SKILL 'bless'
+5 12 0
+Offmsg You feel less righteous.~
+Objmsg $p's holy aura fades.~
+Roommsg $n's holy aura fades.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'blindness'
+5 12 0
+Offmsg You can see again.~
+  Clr 5 1
+  Drd -1 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'bulls strength'
+15 12 0
+Offmsg You no longer feel the strength of the bear.~
+Roommsg $n looks weaker as the strength of the bear fades.~
+  Clr 4 0
+  Drd 4 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'burning hands'
+15 12 0
+Dammsg burning hands~
+Offmsg !Burning Hands!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 1
+  Rog -1 0
+End
+
+#SKILL 'call lightning'
+15 12 0
+Dammsg lightning bolt~
+Offmsg !Call Lightning!~
+  Clr -1 0
+  Drd 5 0
+  Ftr -1 0
+  Mag 14 0
+  Rog -1 0
+End
+
+#SKILL 'calm'
+30 12 0
+Offmsg You have lost your peace of mind.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cancellation'
+20 12 0
+Dammsg !cancellation!~
+  Clr 9 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'cats grace'
+15 12 0
+Offmsg You feel less graceful.~
+Roommsg $n looks less graceful.~
+  Clr 4 0
+  Drd 4 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'cause critical'
+20 12 0
+Dammsg spell~
+Offmsg !Cause Critical!~
+  Clr 8 0
+End
+
+#SKILL 'cause light'
+15 12 0
+Dammsg spell~
+Offmsg !Cause Light!~
+  Clr 2 0
+End
+
+#SKILL 'cause serious'
+17 12 0
+Dammsg spell~
+Offmsg !Cause Serious!~
+  Clr 6 0
+End
+
+#SKILL 'caustic eruption'
+17 12 0
+Dammsg spell~
+Offmsg !Caustic Eruption!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'celestial lightning'
+25 12 0
+Dammsg lightning~
+Offmsg !Celestial Lightning!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'chain lightning'
+25 12 0
+Dammsg lightning~
+Offmsg !Chain Lightning!~
+  Clr -1 0
+  Drd 13 0
+  Ftr -1 0
+  Mag 16 0
+  Rog -1 0
+End
+
+#SKILL 'change sex'
+15 12 0
+Offmsg Your body feels familiar again.~
+  Clr 10 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'charm person'
+5 12 0
+Offmsg You feel more self-confident.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'chill touch'
+15 12 0
+Dammsg chilling touch~
+Offmsg You feel less cold.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 1
+  Rog -1 0
+End
+
+#SKILL 'colour spray'
+15 12 0
+Dammsg colour spray~
+Offmsg !Colour Spray!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 1
+  Rog -1 0
+End
+
+#SKILL 'cone of cold'
+40 6 0
+Dammsg cone of cold~
+Offmsg !Cone of Cold!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 0
+  Rog -1 0
+End
+
+#SKILL 'continual light'
+7 12 0
+Offmsg !Continual Light!~
+  Clr 2 0
+  Drd 2 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'control weather'
+25 12 0
+Offmsg !Control Weather!~
+  Clr 13 0
+  Drd 3 0
+  Ftr -1 0
+  Mag 13 0
+  Rog -1 0
+End
+
+#SKILL 'corrosive burst'
+25 12 0
+Dammsg corrosive burst~
+Offmsg !Corrosive Burst!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 0
+  Rog -1 0
+End
+
+#SKILL 'create food'
+5 12 0
+Offmsg !Create Food!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'create rose'
+30 12 0
+Offmsg !Create Rose!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'create spring'
+20 12 0
+Offmsg !Create Spring!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'create water'
+5 12 0
+Offmsg !Create Water!~
+  Clr 1 0
+  Drd 1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'cure blindness'
+5 12 0
+Offmsg !Cure Blindness!~
+  Clr 6 0
+  Drd 7 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure critical'
+20 12 0
+Offmsg !Cure Critical!~
+  Clr 8 0
+  Drd 9 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure disease'
+20 12 0
+Offmsg !Cure Disease!~
+  Clr 5 0
+  Drd 6 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure drunk'
+20 12 0
+Offmsg !Cure Drunk!~
+  Clr 1 0
+  Drd 1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure light'
+10 12 0
+Offmsg !Cure Light!~
+  Clr 2 0
+  Drd 3 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure poison'
+5 12 0
+Offmsg !Cure Poison!~
+  Clr 7 0
+  Drd 7 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'cure serious'
+15 12 0
+Offmsg !Cure Serious!~
+  Clr 6 0
+  Drd 7 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'curse'
+20 12 0
+Dammsg curse~
+Offmsg The curse wears off.~
+Objmsg $p is no longer impure.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'curse of nature'
+100 12 0
+Dammsg curse of nature~
+Offmsg The curse of Nature lifts from your soul.~
+Roommsg The Curse of Nature lifts from $n.~
+  Clr -1 0
+  Drd 14 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'damnation'
+20 12 0
+Dammsg damnation~
+Offmsg !Damnation!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 19 0
+  Rog -1 0
+End
+
+#SKILL 'dancing boots'
+40 15 0
+Forget 4
+Offmsg !Dancing boots!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 19 0
+  Rog -1 0
+End
+
+#SKILL 'dancing lights'
+50 12 0
+Dammsg dancing lights~
+Forget 4
+Offmsg The dancing lights about your body fade away.~
+Roommsg The dancing lights around $n fade away.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 1
+  Rog -1 0
+End
+
+#SKILL 'dark ritual'
+5 12 0
+Forget 2
+Offmsg !dark ritual!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 17 0
+  Rog -1 0
+End
+
+#SKILL 'darkness shield'
+40 15 0
+Forget 4
+Offmsg !Darkness shield!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'daze'
+20 12 0
+Dammsg daze~
+Offmsg !Daze!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 0
+  Rog -1 0
+End
+
+#SKILL 'deafen'
+20 12 0
+Offmsg Your hearing returns!~
+Objmsg $n can hear again.~
+  Clr 5 1
+  Drd -1 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'demonfire'
+20 12 0
+Dammsg torments~
+Offmsg !Demonfire!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 18 0
+  Rog -1 0
+End
+
+#SKILL 'detect auras'
+5 12 0
+Offmsg You can no longer detect auras.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'detect evil'
+5 12 0
+Offmsg The red in your vision disappears.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'detect good'
+5 12 0
+Offmsg The gold in your vision disappears.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'detect hidden'
+5 12 0
+Offmsg You feel less aware of your surroundings.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'detect life'
+5 12 0
+Offmsg You can no longer sense the living.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'detect invis'
+5 12 0
+Offmsg You no longer see invisible objects.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'detect magic'
+5 12 0
+Offmsg The detect magic wears off.~
+  Clr 2 0
+  Drd 2 0
+  Ftr -1 0
+  Mag 2 0
+  Rog -1 0
+End
+
+#SKILL 'detect poison'
+5 12 0
+Offmsg !Detect Poison!~
+  Clr 1 0
+  Drd 1 0
+  Ftr -1 0
+  Mag 1 0
+  Rog -1 0
+End
+
+#SKILL 'dispel evil'
+15 12 0
+Dammsg dispel evil~
+Offmsg !Dispel Evil!~
+  Clr 10 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'dispel good'
+15 12 0
+Dammsg dispel good~
+Offmsg !Dispel Good!~
+  Clr 10 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'dispel magic'
+15 12 0
+Offmsg !Dispel Magic!~
+  Clr 11 0
+  Drd 8 0
+  Ftr -1 0
+  Mag 11 0
+  Rog -1 0
+End
+
+#SKILL 'disruption'
+15 12 0
+Dammsg disruption~
+Offmsg !Disruption!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 13 1
+  Rog -1 0
+End
+
+#SKILL 'dragonscales'
+12 18 0
+Offmsg The dragon scales crack and turn to dust, leaving your skin smooth again.~
+Roommsg $n's dragon scales turn to dust.~
+  Clr -1 0
+  Drd 19 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'earthquake'
+15 12 0
+Dammsg earthquake~
+Offmsg !Earthquake!~
+  Clr 15 0
+  Drd 16 0
+  Ftr -1 0
+  Mag 17 0
+  Rog -1 0
+End
+
+#SKILL 'electrocute'
+15 12 0
+Dammsg electrocute~
+Offmsg !Electrocute!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 9 0
+  Rog -1 0
+End
+
+#SKILL 'enchant armor'
+100 24 0
+Offmsg !Enchant Armor!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 1
+  Rog -1 0
+End
+
+#SKILL 'enchant weapon'
+100 24 0
+Offmsg !Enchant Weapon!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'energy drain'
+35 12 0
+Dammsg energy drain~
+Offmsg !Energy Drain!~
+  Clr 20 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'enlarge'
+200 24 0
+Offmsg You return to your normal size.~
+Roommsg $n returns to $s normal size.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 9 0
+  Rog -1 0
+End
+
+#SKILL 'faerie fire'
+5 12 0
+Dammsg faerie fire~
+Offmsg The pink aura around you fades away.~
+  Clr -1 0
+  Drd 2 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'faerie fog'
+12 12 0
+Dammsg faerie fog~
+Offmsg !Faerie Fog!~
+  Clr -1 0
+  Drd 12 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'farsight'
+36 20 0
+Dammsg farsight~
+Offmsg !Farsight!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'fireball'
+15 12 0
+Dammsg fireball~
+Offmsg !Fireball!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 1
+  Rog -1 0
+End
+
+#SKILL 'fireproof'
+10 12 0
+Objmsg $p's protective aura fades.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 15 0
+  Rog -1 0
+End
+
+#SKILL 'flame shield'
+40 12 0
+Dammsg flame shield~
+Offmsg The flames surrounding you die away.~
+Roommsg The flames surrounding $n die away.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 9 0
+  Rog -1 0
+End
+
+#SKILL 'force shield'
+30 12 0
+Dammsg force shield~
+Offmsg The shield about you fades away.~
+Roommsg $n's force shield fades away.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'flamestrike'
+20 12 0
+Dammsg flamestrike~
+Offmsg !Flamestrike!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 0
+  Rog -1 0
+End
+
+#SKILL 'fly'
+10 18 0
+Offmsg You slowly float to the ground.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'floating disc'
+40 24 0
+Offmsg !Floating disc!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'foxs cunning'
+15 12 0
+Offmsg You feel less cunning.~
+Roommsg $n seems less cunning.~
+  Clr 4 0
+  Drd 4 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'frenzy'
+30 24 0
+Offmsg Your rage ebbs.~
+  Clr 8 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'full heal'
+20 12 0
+Offmsg !Full Heal!~
+  Clr 17 0
+  Drd 19 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'deathgrip'
+0 12 0
+Offmsg The dark shroud leaves your hands.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'gate'
+80 12 0
+Offmsg !Gate!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 15 1
+  Rog -1 0
+End
+
+#SKILL 'ghost shield'
+50 12 0
+Offmsg The ghosts surrounding you dissipate.~
+Roommsg The ghosts surrounding $n dissipate.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 16 0
+  Rog -1 0
+End
+
+#SKILL 'giant strength'
+20 12 0
+Offmsg You feel weaker.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 11 0
+  Rog -1 0
+End
+
+#SKILL 'goodberry'
+25 8 0
+Offmsg !GOODBERRY!~
+  Clr -1 0
+  Drd 2 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'harm'
+35 12 0
+Dammsg harm spell~
+Offmsg !Harm!,~
+  Clr 12 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'haste'
+30 12 0
+Offmsg You feel yourself slow down.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'heal'
+50 12 0
+Offmsg !Heal!~
+  Clr 12 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'healing hands'
+40 12 0
+Offmsg !Healing Hands!~
+  Clr 9 0
+  Drd 11 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'heat metal'
+25 18 0
+Dammsg spell~
+Offmsg !Heat Metal!~
+  Clr 4 1
+  Drd 3 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'hellfire'
+35 12 0
+Dammsg hellfire~
+Offmsg !Hellfire!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 0
+  Rog -1 0
+End
+
+#SKILL 'holy word'
+200 24 0
+Dammsg divine wrath~
+Offmsg !Holy Word!~
+  Clr 14 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'hurricane'
+15 12 0
+Dammsg hurricane~
+Offmsg !Hurricane!~
+  Clr -1 0
+  Drd 15 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'identify'
+12 24 0
+Offmsg !Identify!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'infravision'
+5 18 0
+Offmsg You no longer see in the dark.~
+  Clr -1 0
+  Drd 17 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'invisibility'
+5 12 0
+Offmsg You are no longer invisible.~
+Objmsg $p fades into view.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 6 1
+  Rog -1 0
+End
+
+#SKILL 'ion blast'
+15 12 0
+Dammsg ion blast~
+Offmsg !Ion Blast!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 13 0
+  Rog -1 0
+End
+
+#SKILL 'know alignment'
+9 12 0
+Offmsg !Know Alignment!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 6 0
+  Rog -1 0
+End
+
+#SKILL 'lightning bolt'
+15 12 0
+Dammsg lightning bolt~
+Offmsg !Lightning Bolt!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'locate object'
+20 18 0
+Offmsg !Locate Object!~
+  Clr 6 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'magic missile'
+4 12 0
+Dammsg magic missile~
+Offmsg !Magic Missile!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 1
+  Rog -1 0
+End
+
+#SKILL 'mana'
+0 0 0
+Offmsg !mana!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 35 1
+  Rog -1 0
+End
+
+#SKILL 'mass healing'
+100 36 0
+Offmsg !Mass Healing!~
+  Clr 9 0
+  Drd 14 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'mass invis'
+20 24 0
+Offmsg You are no longer invisible.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 14 1
+  Rog -1 0
+End
+
+#SKILL 'natural armor'
+12 18 0
+Offmsg You are no longer naturally armored.~
+Roommsg $n's natural armor subsides.~
+  Clr -1 0
+  Drd 13 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'nexus'
+150 36 0
+Offmsg !Nexus!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 20 1
+  Rog -1 0
+End
+
+#SKILL 'owls wisdom'
+15 12 0
+Offmsg Your wisdom fades.~
+Roommsg $n's eyes look duller.~
+  Clr 4 0
+  Drd 4 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'pass door'
+20 12 0
+Offmsg You feel solid again.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 11 1
+  Rog -1 0
+End
+
+#SKILL 'plague'
+20 12 0
+Dammsg sickness~
+Offmsg Your sores vanish.~
+  Clr 6 0
+  Drd 5 0
+  Ftr -1 0
+  Mag 9 0
+  Rog -1 0
+End
+
+#SKILL 'poison'
+10 12 0
+Dammsg poison~
+Offmsg You feel less sick.~
+Objmsg The poison on $p dries up.~
+  Clr 7 1
+  Drd 6 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'portal'
+100 24 0
+Offmsg !Portal!~
+  Clr 19 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 14 1
+  Rog -1 0
+End
+
+#SKILL 'project force'
+20 12 0
+Dammsg project force~
+Offmsg !Project Force!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 15 0
+  Rog -1 0
+End
+
+#SKILL 'protection evil'
+5 12 0
+Offmsg You feel less protected.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'protection good'
+5 12 0
+Offmsg You feel less protected.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'ray of truth'
+20 12 0
+Dammsg ray of truth~
+Offmsg !Ray of Truth!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'recharge'
+60 24 0
+Offmsg !Recharge!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 18 1
+  Rog -1 0
+End
+
+#SKILL 'refresh'
+12 18 0
+Dammsg refresh~
+Offmsg !Refresh!~
+  Clr 7 0
+  Drd 7 0
+  Ftr -1 0
+  Mag 10 0
+  Rog -1 0
+End
+
+#SKILL 'remove curse'
+5 12 0
+Offmsg !Remove Curse!~
+  Clr 30 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'resurrect'
+75 12 0
+Offmsg !Resurrect!~
+  Clr 10 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'rushing fist'
+15 12 0
+Dammsg rushing fist~
+Offmsg !Rushing Fist!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 13 1
+  Rog -1 0
+End
+
+#SKILL 'sanctuary'
+75 12 0
+Offmsg The white aura around your body fades.~
+Roommsg The white aura around $n's body fades.~
+  Clr 2 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'scry'
+15 8 0
+Roommsg 0~
+  Clr 9 1
+  Drd 8 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'shield'
+12 18 0
+Offmsg Your force shield shimmers then fades away.~
+Roommsg $n's force field shimmers and fades.~
+  Clr 3 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 8 0
+  Rog -1 0
+End
+
+#SKILL 'shocking grasp'
+15 12 0
+Dammsg shocking grasp~
+Offmsg !Shocking Grasp!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 2 1
+  Rog -1 0
+End
+
+#SKILL 'shrink'
+200 24 0
+Offmsg You return to your normal size.~
+Roommsg $n returns to $s normal size.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 9 0
+  Rog -1 0
+End
+
+#SKILL 'sleep'
+15 12 0
+Offmsg You feel less tired.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 4 0
+  Rog -1 0
+End
+
+#SKILL 'slow'
+30 12 0
+Offmsg You feel yourself speed up.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'spellmantle'
+12 18 0
+Offmsg Your spellmantle fades away, leaving you vulnerable to magic.~
+Roommsg $n's is more vulnerable to magic as their spellmantle fadss.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 16 0
+  Rog -1 0
+End
+
+#SKILL 'static shield'
+35 12 0
+Dammsg static shield~
+Offmsg The static around you grounds out.~
+Roommsg The static around $n grounds out.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 11 0
+  Rog -1 0
+End
+
+#SKILL 'stone skin'
+12 18 0
+Offmsg Your skin feels soft again.~
+Roommsg $n's skin looks softer.~
+  Clr -1 0
+  Drd 15 0
+  Ftr -1 0
+  Mag 14 0
+  Rog -1 0
+End
+
+#SKILL 'strike true'
+30 24 0
+Offmsg You feel less accurate.~
+  Clr 20 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'summon'
+50 12 0
+Offmsg !Summon!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 11 1
+  Rog -1 0
+End
+
+#SKILL 'summon greater golem'
+250 32 0
+Offmsg You gained enough mana to summon more golems now.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 16 0
+  Rog -1 0
+End
+
+#SKILL 'summon fire elemental'
+50 12 0
+Offmsg !Fire Elemental!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 7 0
+  Rog -1 0
+End
+
+#SKILL 'summon greater wolf'
+50 12 0
+Offmsg !Greater Wolf!~
+  Clr -1 0
+  Drd 16 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'summon hawk'
+65 12 0
+Offmsg !Hawk!~
+  Clr -1 0
+  Drd 6 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'summon wolf'
+50 12 0
+Offmsg !Wolf!~
+  Clr -1 0
+  Drd 10 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'summon tiger'
+85 12 0
+Offmsg !Tiger!~
+  Clr -1 0
+  Drd 20 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'teleport'
+35 12 0
+Offmsg !Teleport!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 1
+  Rog -1 0
+End
+
+#SKILL 'telekinetic force'
+15 12 0
+Dammsg telekinetic force~
+Offmsg !Telekinetic Force!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 1
+  Rog -1 0
+End
+
+#SKILL 'truesight'
+5 12 0
+Offmsg You feel momentarily disoriented as your truesight fades.~
+  Clr 9 0
+  Drd 9 0
+  Ftr -1 0
+  Mag 13 0
+  Rog -1 0
+End
+
+#SKILL 'ventriloquate'
+5 12 0
+Offmsg !Ventriloquate!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog -1 0
+End
+
+#SKILL 'wail of the banshee'
+20 12 0
+Dammsg spell~
+Offmsg Your hearing returns.~
+Objmsg $n can hear again.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 18 0
+  Rog -1 0
+End
+
+#SKILL 'war mount'
+0 0 0
+Offmsg !War Mount!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'weaken'
+20 12 0
+Dammsg spell~
+Offmsg You feel stronger.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 12 0
+  Rog -1 0
+End
+
+#SKILL 'weariness'
+20 12 0
+Dammsg spell~
+Offmsg You don't feel nearly so weary.~
+Objmsg $n perks up.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'word of recall'
+5 12 0
+Offmsg !Word of Recall!~
+  Clr 12 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 19 0
+  Rog -1 0
+End
+
+#SKILL 'acid breath'
+100 24 0
+Dammsg blast of acid~
+Offmsg !Acid Breath!~
+  Mag 19 0
+End
+
+#SKILL 'fire breath'
+200 24 0
+Dammsg blast of flame~
+Offmsg The smoke leaves your eyes.~
+  Mag 19 0
+End
+
+#SKILL 'frost breath'
+125 24 0
+Dammsg blast of frost~
+Offmsg !Frost Breath!~
+  Mag 19 0
+End
+
+#SKILL 'gas breath'
+175 24 0
+Dammsg blast of gas~
+Offmsg !Gas Breath!~
+  Mag 20 0
+End
+
+#SKILL 'lightning breath'
+150 24 0
+Dammsg blast of lightning~
+Offmsg !Lightning Breath!~
+  Mag 20 0
+End
+
+#SKILL 'channel'
+5 12 0
+Offmsg You loose grip on the magic.~
+End
+
+#SKILL 'general purpose'
+0 12 0
+Dammsg general purpose ammo~
+Offmsg !General Purpose Ammo!~
+End
+
+#SKILL 'high explosive'
+0 12 0
+Dammsg high explosive ammo~
+Offmsg !High Explosive Ammo!~
+End
+
+#SKILL 'axe'
+0 0 0
+Offmsg !Axe!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 1 1
+  Mag -1 0
+  Rog 13 0
+End
+
+#SKILL 'bastard sword'
+0 0 0
+Offmsg !Bastardsword!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 9 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'bow'
+0 0 0
+Offmsg !Bow!~
+  Clr -1 0
+  Drd 10 0
+  Ftr 10 0
+  Mag -1 0
+  Rog 18 0
+End
+
+#SKILL 'broadsword'
+0 0 0
+Offmsg !Broadsword!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 4 1
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'club'
+0 0 0
+Offmsg !Club!~
+  Clr 1 1
+  Drd 1 1
+  Ftr 1 1
+  Mag 1 2
+  Rog 1 1
+End
+
+#SKILL 'crossbow'
+0 0 0
+Offmsg !Crossbow!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 16 0
+  Mag -1 0
+  Rog 19 0
+End
+
+#SKILL 'dagger'
+0 0 0
+Offmsg !Dagger!~
+  Clr -1 0
+  Drd 1 1
+  Ftr 6 1
+  Mag 1 1
+  Rog 1 1
+End
+
+#SKILL 'dirk'
+0 0 0
+Offmsg !Dirk!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 7 1
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'flail'
+0 0 0
+Offmsg !Flail!~
+  Clr 3 0
+  Drd -1 0
+  Ftr 3 0
+  Mag -1 0
+  Rog 13 0
+End
+
+#SKILL 'great axe'
+0 0 0
+Offmsg !Greataxe!~
+Prereq 'axe'
+  Clr -1 0
+  Drd -1 0
+  Ftr 11 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'great mace'
+0 0 0
+Offmsg !Greatmace!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 17 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'hammer'
+0 0 0
+Offmsg !Hammer!~
+  Clr 1 0
+  Drd 1 1
+  Ftr 1 1
+  Mag -1 0
+  Rog 7 1
+End
+
+#SKILL 'horse flail'
+0 0 0
+Offmsg !Horseflail!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 19 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'horse mace'
+0 0 0
+Offmsg !Horsemace!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 18 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'lance'
+0 0 0
+Offmsg !Lance!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 9 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'longsword'
+0 0 0
+Offmsg !Longsword!~
+  Clr 5 0
+  Drd 8 1
+  Ftr 1 1
+  Mag -1 0
+  Rog 16 1
+End
+
+#SKILL 'mace'
+0 0 0
+Offmsg !Mace!~
+  Clr 2 1
+  Drd 2 1
+  Ftr 2 1
+  Mag 1 1
+  Rog 12 1
+End
+
+#SKILL 'polearm'
+0 0 0
+Offmsg !Polearm!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 12 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'rapier'
+0 0 0
+Offmsg !Rapier!~
+  Clr -1 0
+  Drd 10 1
+  Ftr 7 0
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'sabre'
+0 0 0
+Offmsg !Sabre!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 4 0
+  Mag -1 0
+  Rog 16 1
+End
+
+#SKILL 'scimitar'
+0 0 0
+Offmsg !Scimitar!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 6 0
+  Mag -1 0
+  Rog 14 1
+End
+
+#SKILL 'shortsword'
+0 0 0
+Offmsg !Shortsword!~
+  Clr 5 0
+  Drd 5 1
+  Ftr 1 1
+  Mag -1 0
+  Rog 14 1
+End
+
+#SKILL 'spear'
+0 0 0
+Offmsg !Spear!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 1 2
+  Mag -1 0
+  Rog 17 0
+End
+
+#SKILL 'staff'
+0 0 0
+Offmsg !Staff!~
+  Clr 1 1
+  Drd 1 1
+  Ftr 4 1
+  Mag 1 1
+  Rog 5 1
+End
+
+#SKILL 'stiletto'
+0 0 0
+Offmsg !Stiletto!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 8 0
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'sword'
+0 0 0
+Offmsg !sword!~
+  Clr 5 0
+  Drd 5 1
+  Ftr 1 1
+  Mag -1 0
+  Rog 11 1
+End
+
+#SKILL 'two-handed sword'
+0 0 0
+Offmsg !Twohandsword!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 8 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'whip'
+0 0 0
+Offmsg !Whip!~
+  Clr -1 0
+  Drd 9 1
+  Ftr 13 0
+  Mag -1 0
+  Rog 17 1
+End
+
+#SKILL 'assassinate'
+0 24 0
+Dammsg assassinate~
+Offmsg !Assassinate!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 20 1
+End
+
+#SKILL 'backstab'
+0 24 0
+Dammsg backstab~
+Offmsg !Backstab!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 1 1
+End
+
+#SKILL 'bash'
+0 24 0
+Dammsg bash~
+Offmsg !Bash!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 1 2
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'blackjack'
+0 24 0
+Dammsg blackjack~
+Offmsg !Blackjack!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 5 0
+End
+
+#SKILL 'whirlwind'
+0 24 0
+Dammsg whirlwind~
+Offmsg !Whirlwind!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 15 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'berserk'
+0 24 0
+Offmsg You feel your pulse slow down.~
+  Clr -1 0
+  Drd 19 0
+  Ftr 11 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'charge'
+0 24 0
+Dammsg charge~
+Offmsg !Charge!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 2 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'circle'
+0 24 0
+Dammsg circle~
+Offmsg !Circle!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 12 0
+End
+
+#SKILL 'counter'
+0 0 0
+Dammsg counterattack~
+Offmsg !Counter!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 12 0
+  Mag -1 0
+  Rog 9 1
+End
+
+#SKILL 'dirt kicking'
+0 24 0
+Dammsg kicked dirt~
+Offmsg You rub the dirt out of your eyes.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 3 1
+End
+
+#SKILL 'disarm'
+0 24 0
+Offmsg !Disarm!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 6 0
+  Mag -1 0
+  Rog 11 1
+End
+
+#SKILL 'dodge'
+0 0 0
+Offmsg !Dodge!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 4 1
+  Mag -1 0
+  Rog 6 1
+End
+
+#SKILL 'dream'
+0 3 0
+Offmsg The effects of the dream fade.~
+  Clr 30 1
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'dual'
+0 3 0
+Offmsg !dual~
+  Clr -1 0
+  Drd -1 0
+  Ftr 10 0
+  Mag -1 0
+  Rog 10 1
+End
+
+#SKILL 'enhanced damage'
+0 0 0
+Offmsg !Enhanced Damage!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 13 0
+  Mag -1 0
+  Rog 8 1
+End
+
+#SKILL 'envenom'
+0 36 0
+Offmsg !Envenom!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 6 1
+End
+
+#SKILL 'hand to hand'
+0 0 0
+Offmsg !Hand to Hand!~
+  Clr -1 0
+  Drd 1 2
+  Ftr 1 0
+  Mag -1 0
+  Rog 8 1
+End
+
+#SKILL 'kick'
+0 12 0
+Dammsg kick~
+Offmsg !Kick!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 3 1
+  Mag -1 0
+  Rog 1 1
+End
+
+#SKILL 'parry'
+0 0 0
+Offmsg !Parry!~
+  Clr 10 0
+  Drd -1 0
+  Ftr 5 0
+  Mag -1 0
+  Rog 7 1
+End
+
+#SKILL 'phase'
+0 0 0
+Offmsg !Phase!~
+  Clr 10 1
+  Drd 10 0
+  Ftr -1 0
+  Mag 5 1
+  Rog -1 0
+End
+
+#SKILL 'rescue'
+0 12 0
+Offmsg !Rescue!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 8 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'trip'
+0 24 0
+Dammsg trip~
+Offmsg !Trip!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 2 1
+End
+
+#SKILL 'second attack'
+0 0 0
+Offmsg !Second Attack!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 5 2
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'shield block'
+0 0 0
+Offmsg !Shield!~
+  Clr 10 0
+  Drd 10 0
+  Ftr 7 0
+  Mag -1 0
+  Rog 18 0
+End
+
+#SKILL 'third attack'
+0 0 0
+Offmsg !Third Attack!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 10 0
+  Mag -1 0
+  Rog 10 1
+End
+
+#SKILL 'fourth attack'
+0 0 0
+Offmsg !Fourth Attack!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 15 0
+  Mag -1 0
+  Rog 15 1
+End
+
+#SKILL 'fifth attack'
+0 0 0
+Offmsg !Fifth Attack!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 20 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'fast healing'
+0 0 0
+Offmsg !Fast Healing!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 3 0
+  Mag -1 0
+  Rog 9 0
+End
+
+#SKILL 'glance'
+0 0 0
+Offmsg !Glance!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 9 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'haggle'
+0 0 0
+Offmsg !Haggle!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 2 1
+End
+
+#SKILL 'hide'
+0 12 0
+Offmsg !Hide!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 3 1
+End
+
+#SKILL 'lore'
+0 36 0
+Offmsg !Lore!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 12 0
+End
+
+#SKILL 'meditation'
+0 0 0
+Offmsg Meditation~
+  Clr 25 1
+  Drd 10 1
+  Ftr -1 0
+  Mag 5 1
+  Rog -1 0
+End
+
+#SKILL 'peek'
+0 0 0
+Offmsg !Peek!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'pick lock'
+0 12 0
+Offmsg !Pick!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 5 1
+End
+
+#SKILL 'riding'
+0 4 0
+Offmsg !Riding!~
+  Clr 10 0
+  Drd 10 0
+  Ftr 5 0
+  Mag 10 0
+  Rog 10 0
+End
+
+#SKILL 'butcher'
+0 4 0
+Offmsg !Butcher!~
+  Clr -1 0
+  Drd 5 0
+  Ftr 2 0
+  Mag -1 0
+  Rog 5 0
+End
+
+#SKILL 'skin'
+0 4 0
+Offmsg !Skin!~
+  Clr -1 0
+  Drd 5 0
+  Ftr 2 0
+  Mag -1 0
+  Rog 5 0
+End
+
+#SKILL 'sharpen'
+0 4 0
+Offmsg !Sharpen!~
+  Clr -1 0
+  Drd -1 0
+  Ftr 1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'sneak'
+0 12 0
+Offmsg You no longer feel stealthy.~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 2 1
+End
+
+#SKILL 'steal'
+0 24 0
+Offmsg !Steal!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog 4 1
+End
+
+#SKILL 'scrolls'
+0 24 0
+Offmsg !Scrolls!~
+  Clr 1 1
+  Drd 1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog 10 2
+End
+
+#SKILL 'spellcraft'
+0 12 0
+Offmsg !Spellcraft!~
+  Clr -1 0
+  Drd -1 0
+  Ftr -1 0
+  Mag 5 0
+  Rog -1 0
+End
+
+#SKILL 'staves'
+0 12 0
+Offmsg !Staves!~
+  Clr 1 1
+  Drd 1 1
+  Ftr -1 0
+  Mag 1 1
+  Rog 10 2
+End
+
+#SKILL 'swimming'
+0 0 0
+Forget 12
+Offmsg !Swimming!~
+  Clr 1 1
+  Drd 1 1
+  Ftr 1 1
+  Mag 1 1
+  Rog 1 1
+End
+
+#SKILL 'track'
+0 0 0
+Forget 10
+Offmsg !Track!~
+End
+
+#SKILL 'triage'
+0 0 0
+Offmsg !Triage!~
+  Clr -1 0
+  Drd 40 1
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'wands'
+0 12 0
+Offmsg !Wands!~
+  Clr 1 1
+  Drd 1 0
+  Ftr -1 0
+  Mag 1 1
+  Rog 10 2
+End
+
+#SKILL 'herbal lore'
+0 12 0
+  Clr 1 0
+  Drd 1 0
+  Ftr -1 0
+  Mag -1 0
+  Rog -1 0
+End
+
+#SKILL 'recall'
+0 12 0
+Offmsg !Recall!~
+  Clr 1 1
+  Drd 1 1
+  Ftr 1 1
+  Mag 1 1
+  Rog 1 1
+End
+
+#$

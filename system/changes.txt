@@ -1,0 +1,10 @@
+made underwater/drowining way better.
+added this changelog command, lol
+added blackjack skill
+added whirlwind skill.
+added studying books to learn spells
+added deadly hunger and thirst
+added random log off quotes.
+reduced player levels to 20 levels.
+added scaling exp using d&d 3.5e formula (current level * 1000 exp = TNL. e.g. level 1 to 2 is 1000exp ... level 19 to 20 is 19,000 exp)
+Added 'breathe' command for Dragonkin, sorted by scale color

@@ -1,0 +1,3209 @@
+#SOCIAL
+Name aargh
+Level Seraphim
+Cnoarg AAAAAARRRRRRGGGGGGHHHHHH!!!!!!~
+Onoarg $n throws back $s head and howls in profound frustration!~
+Cfound You scream your frustration and grab for $S throat with both hands!~
+Ofound $n howls in frustration, and leaps for $N, trying to throttle $M!~
+Vfound $n grabs for your throat with two hands, howling in frustration!~
+Nfound You get even MORE frustrated when you can't find anyone to throttle!~
+Cself You scream in frustration at your own stupidity!~
+Oself $n screams in frustration at $s own stupidity!~
+End
+
+#SOCIAL
+Name accept
+Level Seraphim
+Cnoarg You accept the proferred apology graciously. ~
+Onoarg $n graciously accepts the proferred apology. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name accuse
+Level Seraphim
+Cnoarg Accuse who??~
+Onoarg $n is in an accusing mood.~
+Cfound You look accusingly at $M.~
+Ofound $n looks accusingly at $N.~
+Vfound $n looks accusingly at you.~
+Nfound Accuse somebody who's not even there ??~
+Cself You accuse yourself.~
+Oself $n seems to have a bad conscience.~
+End
+
+#SOCIAL
+Name adjust
+Level Seraphim
+Cnoarg You look around, make sure nobody is watching, and you adjust your "Tool."~
+Onoarg $n looks around slyly, smiles, then reaches down and "adjusts" $mself...~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name agree
+Level Seraphim
+Cnoarg You agree absolutely.~
+Onoarg $n agrees absolutely.~
+Cfound You nod in enthusiastic agreement with $N.~
+Ofound $n nods in enthusiastic agreement with $N.~
+Vfound $n nods in enthusiastic agreement with you.~
+Nfound Sorry, your target is absent.~
+Cself You find yourself most agreeable.~
+Oself $n finds $mself the most agreeable being alive.~
+End
+
+#SOCIAL
+Name air
+Level Seraphim
+Cnoarg You grab your air guitar and play for all you're worth.~
+Onoarg $n air-guitars like a mad man ... EXCELLENT!!!~
+Cfound You hope $E appreciates your (total lack of) talent.~
+Ofound $n is surrounded by air groupies. ~
+Vfound $n plays a most excellent tune for you on $s most excellent air guitar.~
+Nfound Awww... you have no audience!~
+Cself You play softly to yourself.~
+End
+
+#SOCIAL
+Name anticipate
+Level Seraphim
+Cnoarg You murmur 'Sssssoonnn, my presssssciousssss...' ~
+Onoarg $n murmurs 'Ssssssooonnnn, my pressssscioussss...' ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name apologize
+Level Seraphim
+Cnoarg You apologize until you are blue in the face.~
+Onoarg $n apologizes profusely.~
+Cfound You might as well apologize because $E sure as hell won't.~
+Ofound $n apologizes to $N with a very sincere look on $s face.~
+Vfound $n apologizes to you and begs for forgiveness.~
+Nfound Who's that?~
+End
+
+#SOCIAL
+Name applaud
+Level Seraphim
+Cnoarg Clap, clap, clap.~
+Onoarg $n gives a round of applause.~
+Cfound You clap at $N's actions.~
+Ofound $n claps at $N's actions.~
+Vfound $n gives you a round of applause.  You MUST'VE done something good!~
+Nfound You give your imaginary round of applause to your imaginary friend.~
+Cself You applaud at yourself.  Boy, are we conceited!~
+Oself $n applauds at $mself.  Boy, are we conceited!~
+End
+
+#SOCIAL
+Name babble
+Level Seraphim
+Cnoarg You babble endlessly.~
+Onoarg $n babbles endlessly, won't $e EVER shut up?~
+Cfound You babble to $N for hours on end.~
+Ofound $n babbles to $N for what seems an eternity, how can $N stand it?~
+Vfound $n babbles at you. You nod mechanically, hoping $e will shut up soon.~
+Nfound Whom do you wish to annoy with your babble?~
+Cself You babble on and on to yourself, FINALLY! someone who LISTENS!!~
+Oself $n babbles quietly to $mself.~
+End
+
+#SOCIAL
+Name bark
+Level Seraphim
+Cnoarg You bark loudly.~
+Onoarg $n barks like a dog. GO DAWGS SIC 'EM!!! WOOF! WOOF! WOOF! WOOF!~
+Cfound You bark at $N scaring $M silly -- SHAME ON YOU!!~
+Ofound $n barks at $N scaring $M senseless.~
+Vfound $n barks loudly at you, you back away, because $e might bite too!!~
+Nfound Bark at whom?~
+Cself You bark at yourself and jump back in fear.~
+Oself $n barks at $mself and cowers in fear.~
+End
+
+#SOCIAL
+Name bat
+Level Seraphim
+Cnoarg You bat your long, dark lashes and smile innocently. ~
+Onoarg $n bats $s long, dark lashes and smiles innocently. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name bcatch
+Level Seraphim
+Cnoarg You reach out and rescue the bottle from its flight.~
+Onoarg $n reaches out and grabs the bottle of beer tossed to $m.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name beam
+Level Seraphim
+Cnoarg You beam delightedly at nothing in particular.~
+Onoarg $n beams broadly at nothing in particular.~
+Cfound You dazzle $N with your smile.~
+Ofound $n must like $N a great deal to beam at $M so broadly!~
+Vfound $n must like you a great deal to beam at you so broadly!~
+Nfound You look pretty silly beaming at imaginary friends...~
+Cself Well, aren't you special?~
+Oself $n beams at $mself, obviously pleased.~
+End
+
+#SOCIAL
+Name bearhug
+Level Seraphim
+Cnoarg Whom do you wish to bearhug?~
+Cfound You overwhelm $N with a great, big, hulking bearhug.~
+Ofound $n encompasses $N in an ENORMOUS bearhug!~
+Vfound $n clutches you tightly in an overwhelming bearhug!~
+Nfound Perhaps you should shower your affections on someone who is here?~
+Cself You vainly clutch yourself in a bearhug for consolation.~
+Oself $n hugs $mself as tightly as possible.  Looks like $e could use a hand.~
+End
+
+#SOCIAL
+Name beckon
+Level Seraphim
+Cnoarg You beckon for everyone to follow.~
+Onoarg $n beckons for everyone to follow.~
+Cfound You beckon for $N to follow -- sure hope they do!~
+Ofound $n beckons $N to follow...hmmm what's going on?~
+Vfound $n beckons for you to follow.~
+Nfound So sorry, that person has already left.~
+Cself You beckon to your shadow to follow.~
+Oself $n beckons to $s shadow to follow.~
+End
+
+#SOCIAL
+Name beer
+Level Seraphim
+Cnoarg You pull out a six-pack.~
+Onoarg $n starts to juggle a six-pack of beer.~
+Cfound You toss a bottle of beer at $N.~
+Ofound $n tosses a bottle of beer at $N ... let's just hope $E'll catch it!~
+Vfound $n tossed you a bottle of beer... I think $e wants something...~
+Nfound The bottle crashes to the floor and shatters.~
+Cself You pop off the top and down a beer.~
+Oself $n pops the top off a bottle of beer and downs it in one gulp.~
+End
+
+#SOCIAL
+Name beg
+Level Seraphim
+Cnoarg You beg the gods for mercy.~
+Onoarg The gods fall down laughing at $n's request for mercy.~
+Cfound You desperately try to squeeze a few coins from $M.~
+Ofound $n begs you for money. You graciously let $m peep at your fortune.~
+Vfound $n begs $N for a dime or two - or twenty !~
+Nfound Your money-lender seems to be out for the moment.~
+Cself Begging yourself for money doesn't help.~
+End
+
+#SOCIAL
+Name bird
+Level Seraphim
+Cnoarg You flick a bird...How obscene!~
+Onoarg $n flicks a bird at no one in particular.~
+Cfound You shoot a bird at $N.~
+Ofound $n gives $N the bird.~
+Vfound $n gives you the bird...What an ass!~
+Nfound Don't you hate to waste a good obscene gesture like that?~
+End
+
+#SOCIAL
+Name bite
+Level Seraphim
+Cnoarg You glare around, muttering "Bite me..." under your breath.~
+Onoarg $n glares around, muttering "Bite me..." under $s breath.~
+Cfound You bite $N on the neck.~
+Ofound $n bites $N on the neck!~
+Vfound $n bites you on the neck.~
+Nfound Hungry?  No such luck.~
+Cself You bite your knuckle in anguish.~
+Oself $n bites $s knuckle in anguish...the tragedy!~
+End
+
+#SOCIAL
+Name bkiss
+Level Seraphim
+Cnoarg You blow kisses to the air.~
+Onoarg $n blows kisses at no one in particular.~
+Cfound You blow a kiss at $N and wonder if $E will catch it.~
+Ofound $n blows a kiss at $N ... isn't $e so CUTE?~
+Vfound $n blows a kiss at you and hopes you'll blow one back at $m.~
+Nfound You kiss falls to the ground with no one to go to.~
+Cself You blow a kiss to yourself... isn't the world beautiful?~
+Oself $n blows a kiss to $mself, obviously very in love.~
+End
+
+#SOCIAL
+Name blah
+Level Seraphim
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name bleed
+Level Seraphim
+Cnoarg You bleed profusely -- making a horrible mess!~
+Onoarg $n weakly bleeds all over the floor.~
+Cfound You bleed on $N -- ewww!~
+Ofound $n bleeds on $N.  Watch out, YOU might be next!~
+Vfound $n bleeds on you -- ewww!  Get away!!~
+Nfound Bleed on whom?~
+Cself You bleed all over yourself.~
+Oself $n bleeds profusely all over $mself.~
+End
+
+#SOCIAL
+Name blink
+Level Seraphim
+Cnoarg You bat your eyelashes.~
+Onoarg $n blinks innocently.~
+Cfound You blink innocently at $N.~
+Ofound $n blinks innocently at $N.~
+Vfound $n blinks innocently at you.~
+Nfound Feign innocence for whom?~
+Cself You try to convince yourself of your innocence.~
+End
+
+#SOCIAL
+Name blush
+Level Seraphim
+Cnoarg Your cheeks are burning.~
+Onoarg $n blushes.~
+Cfound You get all flustered up seeing $M.~
+Ofound $n blushes as $e sees $N here.~
+Vfound $n blushes as $e sees you here.  Such an effect on people!~
+Nfound You blush as you notice that person isn't here.~
+Cself You blush at your own folly.~
+Oself $n blushes as $e notices $s boo-boo.~
+End
+
+#SOCIAL
+Name boast
+Level Seraphim
+Cnoarg You boast loudly of all your amazing accomplishments.~
+Onoarg $n boasts loudly in a pigheaded fashion.~
+Cfound You boast to $N of all your great deeds.~
+Ofound $n boasts to $N.~
+Vfound Once again, $n boasts to you, what a bloated ego!~
+Nfound Your ego takes a blow.  They've already left.~
+Cself You boast to yourself of all your great feats!  Your own biggest fan.~
+Oself $n boasts to $mself -- what an ego!~
+End
+
+#SOCIAL
+Name boggle
+Level Seraphim
+Cnoarg You boggle at the concept.~
+Onoarg $n boggles at the concept.~
+Cfound You boggle at $N.~
+Ofound $n boggles at $N.~
+Vfound $n boggles at you.~
+Nfound Boggle away.  They've left.~
+Cself You boggle at yourself.  Hmmm...intriguing.~
+Oself $n boggles quietly to $mself.~
+End
+
+#SOCIAL
+Name bonk
+Level Seraphim
+Cnoarg ***BONK!!!***~
+Cfound You bonk $N on the head for being such a moron.~
+Ofound $n bonks $N on the head for being such an UTTER moron.~
+Vfound $n bonks you on the head for being so foolish.~
+Nfound ***BONK*** they left...~
+Cself You bonk yourself, fool that you are.~
+Oself $n bonks $mself and grimaces in pain.~
+End
+
+#SOCIAL
+Name boogie
+Level Seraphim
+Cnoarg You get down and boogie!!~
+Onoarg $n gets down and boogies!!~
+Cfound You grab $M and boogie down!~
+Ofound $n grabs $N and they boogie down!~
+Vfound $n grabs you and boogies with you!~
+Nfound Boogie away but you'll have to do it alone, they've left.~
+Cself You boogie with yourself.  What a great dancer you are!~
+Oself $n boogies with $mself.  Guess no one will dance with $m.~
+End
+
+#SOCIAL
+Name bounce
+Level Seraphim
+Cnoarg BOIINNNNNNGG!~
+Onoarg $n bounces around with a happy smile.~
+Cfound You bounce onto $S lap and wiggle about.~
+Ofound $n bounces onto $N's lap and wiggles about.~
+Vfound $n bounces onto your lap and wiggles about.~
+Nfound You don't see your plaything.~
+Cself You bounce your head like a basketball.~
+Oself $n plays basketball with $s head.~
+End
+
+#SOCIAL
+Name bow
+Level Seraphim
+Cnoarg You bow deeply.~
+Onoarg $n bows deeply.~
+Cfound You bow before $M.~
+Ofound $n bows before $N.~
+Vfound $n bows before you.~
+Nfound Who's that?~
+Cself You kiss your toes.~
+Oself $n folds up like a jacknife and kisses $s own toes.~
+End
+
+#SOCIAL
+Name brb
+Level Seraphim
+Cnoarg Hope to see you soon!~
+Onoarg $n will be right back!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name brush
+Level Seraphim
+Cnoarg Brush what? Who? Where?~
+Cfound You brush out $S hair for $M.  Very thoughtful.~
+Ofound $n brushes $N's hair for $M.  Looks better now.~
+Vfound $n brushes out your hair.  How nice of $m.~
+Nfound Try brushing somebody who IS here?~
+Cself You brush out your hair.  There - much better.~
+Oself $n brushes out $s hair.  Looks much better now.~
+End
+
+#SOCIAL
+Name buff
+Level Seraphim
+Cnoarg You buff your nails on your cloak. ~
+Onoarg $n buffs $s nails on $s cloak. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name burp
+Level Seraphim
+Cnoarg You burp loudly.~
+Onoarg $n burps loudly.~
+Cfound You burp loudly to $M in response.~
+Ofound $n burps loudly in response to $N's remark.~
+Vfound $n burps loudly in response to your remark.~
+Nfound You can't find your victim.~
+Cself You burp at yourself.~
+Oself $n burps at $mself.  What a sick sight.~
+End
+
+#SOCIAL
+Name cackle
+Level Seraphim
+Cnoarg You cackle gleefully.~
+Onoarg $n throws back $s head and cackles with insane glee!~
+Cfound You cackle gleefully at $N~
+Ofound $n cackles gleefully at $N.~
+Vfound $n cackles gleefully at you.  Better keep your distance from $m.~
+Nfound You can't find a friend to cackle with.~
+Cself You cackle at yourself.  Now, THAT'S strange!~
+Oself $n is really crazy now!  $e cackles at $mself.~
+End
+
+#SOCIAL
+Name cak
+Level Seraphim
+Cnoarg You hack up a furball.~
+Onoarg You hear...hookah hookah hookah... CAK! as $n coughs up a furball.~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name camel
+Level Seraphim
+Cnoarg You pretend you are a camel.~
+Onoarg $n pretends to be a camel.~
+Cfound You light a Camel cigarette for $M.~
+Ofound $n lights a Camel cigarette for $N.~
+Vfound $n lights a Camel cigarette for you.~
+Nfound You don't see that personhere.~
+Cself You light a Camel cigarette and inhale sharply.~
+Oself $n lights a Camel cigarette and inhales sharply.~
+End
+
+#SOCIAL
+Name caress
+Level Seraphim
+Cnoarg Who do you wish to caress?~
+Onoarg $n looks for someone to caress.~
+Cfound You tenderly caress $M.~
+Ofound $n tenderly caresses $N.~
+Vfound $n tenderly caresses your body.~
+Nfound You're S.O.L., buddy.~
+Cself You lightly caress yourself- wouldn't you rather do that in private?~
+Oself $n caresses $mself all over- and in public, no less!~
+End
+
+#SOCIAL
+Name charge
+Level Seraphim
+Cnoarg You charge into the fray!~
+Onoarg $n charges into the fray!  All guts, no brains.~
+Cfound With surprising dexterity, you head-butt $N!~
+Ofound $n ducks down low, charges forward, and head-butts $N!~
+Vfound OOF!  $n rammed $s head into your stomach!  That HURT.~
+Nfound Nobody 'round with that name, Mister!~
+Cself You run your head into a brick wall.  OUCH!~
+End
+
+#SOCIAL
+Name cheer
+Level Seraphim
+Cnoarg You cheer and dance as the joy within you bursts forth!~
+Onoarg $n cheers and sings... $e is just BURSTING with joy!~
+Cfound You cheer $N on and wish $M good luck!~
+Ofound *Yay!*  Go $N!!!  $n cheers $M on.~
+Vfound You are cheered on by $n... you feel so loved!~
+Nfound Who? Huh? Where? They're not here, that's for sure.~
+Cself You cheer silently for yourself since nobody else will.~
+Oself $n resorts to cheering for $mself... how sad.~
+End
+
+#SOCIAL
+Name chin
+Level Seraphim
+Cnoarg You stroke your chin contemplatively.~
+Onoarg $n strokes $s chin contemplatively.~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name chortle
+Level Seraphim
+Cnoarg Heh.~
+Onoarg $n chortles mischievously.~
+Cfound You chortle mischievously at $N.~
+Ofound $n chortles mischievously at $N.~
+Vfound $n chortles mischievously at you.~
+Nfound Took you a while to get that....they aren't here.~
+Cself You chortle at your own joke.~
+Oself $n chortles at $s own joke.  Don't bother.~
+End
+
+#SOCIAL
+Name chuckle
+Level Seraphim
+Cnoarg You chuckle politely.~
+Onoarg $n chuckles politely.~
+Cfound You chuckle at $S joke.~
+Ofound $n chuckles at $N's joke.~
+Vfound $n chuckles at your joke.~
+Nfound You can't find a friend to chuckle with.~
+Cself You chuckle at your own joke, since no one else would.~
+Oself $n chuckles at $s own joke, since none of you would.~
+End
+
+#SOCIAL
+Name clap
+Level Seraphim
+Cnoarg You clap your hands together.~
+Onoarg $n shows $s approval by clapping $s hands together.~
+Cfound You clap at $S performance.~
+Ofound $n claps at $N's performance.~
+Vfound $n claps at your performance.~
+Nfound You clap for nothing.~
+Cself You clap at your own performance.~
+Oself $n claps at $s own performance.~
+End
+
+#SOCIAL
+Name claw
+Level Seraphim
+Cnoarg You tighten your hands into a fist.~
+Onoarg $n clenches $s fists until blood drips from them...~
+Cfound You claw $S eyes out... GROSS!~
+Ofound $n buries $s nails in $N's eyes ... OH GOD, THE BLOOD!~
+Vfound $n buries $s nails in your eyes and you are blinded by your own blood!~
+Nfound They aren't here to claw.~
+Cself You claw yourself to shreds!~
+Oself $n rips $mself to shreds with $s fingernails!~
+End
+
+#SOCIAL
+Name collapse
+Level Seraphim
+Cnoarg You collapse on the floor from exhaustion.~
+Onoarg $n dramatically collapses to the floor from exhaustion.   ~
+Cfound You collapse right into $N's arms.~
+Ofound $n collapses right into $N's arms.~
+Vfound Suddenly, $n collapses into your arms from exhaustion.  ~
+Nfound They've already left, just collapse on the floor.~
+End
+
+#SOCIAL
+Name comb
+Level Seraphim
+Cnoarg You comb your hair - perfect.~
+Onoarg $n combs $s hair, what a dashing specimen !~
+Cfound You patiently untangle $N's hair - what a mess !~
+Ofound $n tries patiently to untangle $N's hair.~
+Vfound $n pulls your hair in an attempt to comb it.~
+Nfound That person is not here.~
+Cself You pull your hair, but it will not be combed.~
+Oself $n tries to comb $s tangled hair.~
+End
+
+#SOCIAL
+Name comfort
+Level Seraphim
+Cnoarg Do you feel uncomfortable?~
+Cfound You comfort $M.~
+Ofound $n comforts $N.~
+Vfound $n comforts you.~
+Nfound Comfort who?~
+Cself You make a vain attempt to comfort yourself.~
+Oself $n has no one to comfort $m but $mself~
+End
+
+#SOCIAL
+Name confused
+Level Seraphim
+Cnoarg Your confusion is showing.~
+Onoarg $n blinks slowly...~
+Cfound You blink slowly, trying to decipher $S comment.~
+Ofound $n blinks slowly.  Maybe $N left a word out of $S sentence...~
+Vfound $n blinks slowly.  Maybe you left a word out of your sentence?~
+Nfound No wonder you're confused.~
+End
+
+#SOCIAL
+Name conspire
+Level Seraphim
+Cnoarg You wink conspiratorily, waiting for the countersign. ~
+Onoarg $n winks conspiratorily, waiting for the countersign. ~
+Cfound You induct $m into your private conspiracy with a wink.~
+Ofound $n winks conspiratorily at $N.  You wonder what this can mean. ~
+Vfound $n inducts you into $s private conspiracy with a wink.~
+Nfound Even you conspire against yourself. ~
+Cself $n is paranoid enough to distrust even $mself. ~
+Oself # ~
+End
+
+#SOCIAL
+Name contemplate
+Level Seraphim
+Cnoarg You bite your lip contemplatively. ~
+Onoarg $n bites $s lip contemplatively. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name cough
+Level Seraphim
+Cnoarg Yuck, try to cover your mouth next time!~
+Onoarg $n coughs loudly.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name cover
+Level Seraphim
+Cnoarg You cover your ears to protect them from the noise.~
+Onoarg $n covers $s ears to protect them from all the noise.~
+Cfound You glare at $N and cover your ears.~
+Ofound $n glares at $N and covers $s ears.~
+Vfound $n covers $s ears because of you... you are TOO LOUD!~
+Nfound They aren't here right now.~
+Cself No... I don't think so.~
+End
+
+#SOCIAL
+Name cower
+Level Seraphim
+Cnoarg You cower in a corner.~
+Onoarg $n cowers in a corner and whimpers softly.~
+Cfound You cower away from $N and $S harsh words.~
+Ofound $n cowers in a corner, terrified that $N will come after $m.~
+Vfound You scared poor $n!  Now $S is cowering in a corner, afraid for $s life.~
+Nfound That person is AWOL at the moment.~
+Cself You are afraid of your own shadow!~
+Oself $n cowers in the corner afraid of $s own shadow~
+End
+
+#SOCIAL
+Name cramp
+Level Seraphim
+Cnoarg You gasp and clutch your abdomen, wheezing with the pain. ~
+Onoarg $n gasps and clutches $m abdomen in agony. ~
+Cfound You hammerlock $M, screaming, "AAAAARRRRRGH!! I HAVE A CRAMP!!!" ~
+Ofound $n hammerlocks $N, screaming, "AAAAARRRRRGH!! I HAVE A CRAMP!!!". ~
+Vfound $n hammerlocks you, screaming "AAAAARRRRRGH!! I HAVE A CRAMP!!!"~
+Nfound Suffering as you are, you didn't see that person slip out. ~
+End
+
+#SOCIAL
+Name cringe
+Level Seraphim
+Cnoarg You cringe in terror.~
+Onoarg $n cringes in terror!~
+Cfound You cringe away from $M.~
+Ofound $n cringes away from $N in mortal terror.~
+Vfound $n cringes away from you.~
+Nfound I don't see anyone by that name here.. what are you afraid of?~
+Cself I beg your pardon?~
+End
+
+#SOCIAL
+Name criticize
+Level Seraphim
+Cnoarg Yes, but who?~
+Cfound You criticize $M with all the warmth of a snake.~
+Ofound With a nasty grin, $n rips apart $Ns efforts.~
+Vfound $n informs you that your attempts need some MAJOR adjustments.~
+Nfound Where oh where has my victim gone, oh where oh where...~
+Cself You criticize yourself profusely.~
+Oself $n tears $mself apart, cursing $s own stupidity.~
+End
+
+#SOCIAL
+Name cry
+Level Seraphim
+Cnoarg Waaaaah..~
+Onoarg $n bursts into tears.~
+Cfound You cry on $S shoulder.~
+Ofound $n cries on $N's shoulder.~
+Vfound $n cries on your shoulder.~
+Nfound Who's that?~
+Cself You cry to yourself.~
+Oself $n sobs quietly to $mself.~
+End
+
+#SOCIAL
+Name cuddle
+Level Seraphim
+Cnoarg Who do you feel like cuddling today?~
+Cfound You cuddle $M.~
+Ofound $n cuddles $N.~
+Vfound $n cuddles you.~
+Nfound They aren't here.~
+Cself You must feel very cuddly indeed ... :)~
+Oself $n cuddles up to $s shadow.  What a sorry sight.~
+End
+
+#SOCIAL
+Name curse
+Level Seraphim
+Cnoarg You swear loudly for a long time.~
+Onoarg $n swears : #@*"*&^*#%@*&! !!!!!~
+Cfound You swear at $M.~
+Ofound $n swears at $N.~
+Vfound $n swears at you!  Where are the manners?~
+Nfound You can't find the victim of your frustrations.~
+Cself You swear at your own mistakes.~
+Oself $n starts swearing at $mself.  Why don't you help?~
+End
+
+#SOCIAL
+Name curtsey
+Level Seraphim
+Cnoarg You curtsey to your audience.~
+Onoarg $n curtseys gracefully.~
+Cfound You curtsey to $M.~
+Ofound $n curtseys gracefully to $N.~
+Vfound $n curtseys gracefully for you.~
+Nfound You curtsey to no one in particular.~
+Cself You curtsey to your audience (yourself).~
+Oself $n curtseys to $mself, since no one is paying attention to $m.~
+End
+
+#SOCIAL
+Name dance
+Level Seraphim
+Cnoarg Feels silly, doesn't it?~
+Onoarg $n dances wildly before you!~
+Cfound You lead $M to the dancefloor.~
+Ofound $n sends $N across the dancefloor.~
+Vfound $n sends you across the dancefloor.~
+Nfound Eh, WHO?~
+Cself You skip and dance around by yourself.~
+Oself $n skips a light Fandango.~
+End
+
+#SOCIAL
+Name daydream
+Level Seraphim
+Cnoarg You dream of better times.~
+Onoarg $n looks absent-minded, his eyes staring into space.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name die
+Level Archangel
+Cnoarg You wish everyone would just die~
+Onoarg $n mutters about wanting everyone to just die.~
+Cfound You tell $N to get in a coffin and die.~
+Vfound $n tells you, 'Get in a coffin and die.'~
+Nfound They've already died.~
+Cself You die an agonizing death.~
+Oself $n dies an agonizing death.~
+End
+
+#SOCIAL
+Name discodance
+Level Seraphim
+Cnoarg Groovy!~
+Onoarg $n discos wildly!~
+Cfound You grab $N and disco wildly!  Groovy!~
+Ofound $n grabs $N and does $m best Travolta!~
+Vfound $n grabs you and does $m best Travolta!~
+Nfound It's okay, you can disco solo too.~
+End
+
+#SOCIAL
+Name doh
+Level Seraphim
+Cnoarg You slap yourself in the forehead and say "DOH!"~
+Onoarg $n slaps $mself in the forehead and says "DOH!"~
+Cfound You look at $N and say, "Well, DOH!"~
+Ofound $n looks at $N and says, "Well, DOH!"~
+Vfound $n looks at you and says, "Well, DOH!"~
+Nfound Maybe they're an idiot, but they're not here!~
+Cself You slap yourself in the forehead and say "DOH!"~
+Oself $n slaps $mself in the forehead and says "DOH!"~
+End
+
+#SOCIAL
+Name drool
+Level Seraphim
+Cnoarg You drool down the front of your shirt.~
+Onoarg $n drools all over $mself -- making a TERRIBLE mess!~
+Cfound You drool messily on $N.~
+Ofound $n drools upon $N.~
+Vfound $n looks at you lustily and drools.~
+Nfound Oh fine, make a pool of slobber -- they aren't even here!~
+Cself You drool down the front of your shirt.~
+Oself $n drools all over $mself -- making a TERRIBLE mess!~
+End
+
+#SOCIAL
+Name duck
+Level Seraphim
+Cnoarg DUCK!!!!~
+Onoarg $n ducks defensively.~
+Cfound You duck defensively, anticipating the oncoming swipe from $N.~
+Ofound $n ducks, anticipating $N's reaction.~
+Vfound $n ducks, please oh please don't hit $m!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name embrace
+Level Seraphim
+Cnoarg Who would you like to embrace?  ~
+Cfound You wrap your arms around $N in a warm and loving embrace.~
+Ofound $n wraps $s arms around $N in a warm and loving embrace.~
+Vfound $n takes you in $s arms in a warm and loving embrace.~
+Nfound Your heart breaks as you realize you are alone.~
+Cself You try to console yourself with a loving embrace.~
+Oself $n tries to console $mself by wrapping $s arms around $mself.~
+End
+
+#SOCIAL
+Name evil
+Level Seraphim
+Cnoarg You grin diabolically.~
+Onoarg $n sends $s alignment to `R-1000`X with the evilness of $s grin.~
+Cfound You grin so evilly $N's alignment drops to `R-1000`X!~
+Ofound $n grins so evilly that $N's alignment drops to `R-1000`X!~
+Vfound $n grins so evilly your alignment drops to `R-1000`X!~
+Nfound Who?  What?  Where?~
+Cself Alright, that just doesn't work, bucko.~
+Oself $n tries to send their alignment to -1000 by grinning.  Weirdo.~
+End
+
+#SOCIAL
+Name explode
+Level Seraphim
+Cnoarg You feel the blood boiling in your veins!~
+Onoarg $n turns a deep red, fighting to contain $s temper...~
+Cfound You feel your rage explode deep in the pit of your stomach...~
+Ofound $n burns holes through $N with his explosive anger!~
+Vfound $n is ANGRY with you... I'd run if I were you!!!~
+Nfound Temper Temper... they left.~
+Cself Your soul burns brightly then fades to nothing.~
+Oself $n implodes!!!  Only a grease spot remains where $e once stood.~
+End
+
+#SOCIAL
+Name eyebrow
+Level Seraphim
+Cnoarg You raise an eyebrow at the notion.~
+Onoarg $n raises an eyebrow.~
+Cfound You raise your eyebrow at $N.~
+Ofound $n raises a questioning eyebrow at $N.~
+Vfound $n raises an eyebrow at you.~
+Nfound Forget it.  They aren't here.~
+End
+
+#SOCIAL
+Name faint
+Level Seraphim
+Cnoarg You faint.~
+Onoarg $n faints.~
+Cfound You faint into $S arms.~
+Ofound $n faints into $N's open arms.~
+Vfound $n just fainted into YOUR arms.~
+Nfound You fall on the floor and look stupid--really suave.~
+End
+
+#SOCIAL
+Name fart
+Level Seraphim
+Cnoarg Where are your manners ?~
+Onoarg $n lets off a real rip-roarer ... a greenish cloud envelops $n!~
+Cfound You fart at $M.  Boy, you are sick.~
+Ofound $n farts in the direction of $N.  Better flee before $e turns to you!~
+Vfound $n farts in your direction.  You gasp for air.~
+Nfound You can't hold it that long!~
+Cself You fart at yourself.  You deserve it.~
+Oself $n farts at $mself.  Better $m than you.~
+End
+
+#SOCIAL
+Name fatality
+Level Seraphim
+Cfound You intone, '$N wins.  Fatality.' ~
+Ofound $n intones, '$N wins.  Fatality.' ~
+Vfound $n intones, '$N wins.  Fatality.' ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name flare
+Level Seraphim
+Cnoarg You flare your nostrils disdainfully.~
+Onoarg $n flares $s nostrils disdainfully.~
+Cfound You flare your nostrils disdainfully at $N... HOW RUDE!~
+Ofound $n flares $s nostrils disdainfully at $N and turns up $s snobbish nose.~
+Vfound $n flares $s nostrils disdainfully at you... what'd you DO???~
+Nfound Flare if you wish, but that person isn't here to see it.~
+Cself *Sniff*  But you should LOVE yourself!~
+End
+
+#SOCIAL
+Name flash
+Level Seraphim
+Cnoarg You grin and strut as you open your coat and show what you've got!~
+Onoarg $n rips $s clothes off and parades naked around the room!~
+Cfound Swiftly you jerk open your jacket, trying to get $M to notice you.~
+Ofound Cover your eyes, $n is exposing $mself to $n!  EWWWW!~
+Vfound You gasp!  $n has just revealed $s "equipment" to you!~
+Nfound Exhibitionist, that person isn't here!~
+Cself That's sick.~
+Oself PERVERT PRESENT!  $n is trying to flash $mself~
+End
+
+#SOCIAL
+Name flex
+Level Seraphim
+Cnoarg You flex your muscles proudly!~
+Onoarg $n flexes $s muscles...what a stud!?!~
+Cfound You show off to $N, flexing your muscles proudly.~
+Ofound $n flexes $s muscles, in a vain attempt to impress $N.~
+Vfound $n flexes $s muscles in a vain attempt to show off to you.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name flinch
+Level Seraphim
+Cnoarg EEEK... You flinch in obvious pain.~
+Onoarg $n flinches in obvious pain... you wonder what $e did THIS time.~
+Cfound Don't you wish you could just crawl under a rock and die?~
+Ofound $n sneaks a glance at $N and flinches.~
+Vfound $n flinches in response to your cold rebuke.~
+Nfound Relax, $E is gone.~
+Cself You can't belive what you've done...~
+Oself $n twitches violently, shocked at $s own behavior.~
+End
+
+#SOCIAL
+Name flip
+Level Seraphim
+Cnoarg You flip head over heels.~
+Onoarg $n flips head over heels.~
+Cfound You flip $M over your shoulder.~
+Ofound $n flips $N over $s shoulder.~
+Vfound $n flips you over $s shoulder.  Hmmmm.~
+Nfound You can't find the person.~
+Cself You tumble all over the room.~
+Oself $n does some nice tumbling and gymnastics.~
+End
+
+#SOCIAL
+Name flirt
+Level Seraphim
+Cnoarg You flirt outrageously.~
+Onoarg $n is an outrageous flirt.~
+Cfound You flirt with $N trying to get $S attention.~
+Ofound $n flirts with $N, hmmm wonder what $e wants? *wink*~
+Vfound $n flirts with you.~
+Nfound Sorry no one here to flirt with. :(~
+Cself You flirt with yourself -- what ARE you trying to gain!?!?!?~
+Oself $n flirts with $mself, wonder what $e is trying to accomplish?~
+End
+
+#SOCIAL
+Name flutter
+Level Seraphim
+Cnoarg You flutter your eyelashes seductively.~
+Onoarg $n flutters $s eyelashes seductively.~
+Cfound You flutter your eyelashes at $N, trying to be seductive.~
+Ofound $n flirts with $N, flutters $s eyelashes at $M.~
+Vfound $n flutters $s eyelashes at you coyly.~
+Nfound EH? Can't see them here.~
+End
+
+#SOCIAL
+Name fondle
+Level Seraphim
+Cnoarg Who needs to be fondled ?~
+Cfound You fondly fondle $M.~
+Ofound $n fondly fondles $N.~
+Vfound $n fondly fondles you.~
+Nfound You fondly try to fondle someone not in the room, but who cares.~
+Cself You fondly fondle yourself, feels funny doesn't it?~
+Oself $n fondly fondles $mself - this is going too far!!~
+End
+
+#SOCIAL
+Name french
+Level Seraphim
+Cnoarg Kiss whom?~
+Cfound You give $N a long and passionate kiss, it seems to last forever...~
+Ofound $n kisses $N passionately.~
+Vfound $n gives you a long and passionate kiss, it seems to last forever...~
+Nfound Your heart is filled with despair as that person is not here.~
+Cself You gather yourself in your arms and try to kiss yourself.~
+Oself $n makes an attempt at kissing $mself.~
+End
+
+#SOCIAL
+Name frown
+Level Seraphim
+Cnoarg You frown disapprovingly.~
+Onoarg $n frowns.~
+Cfound You frown at what $E did.~
+Ofound $n frowns at what $N did.~
+Vfound $n frowns at what you did.~
+Nfound You don't see any reason to frown.~
+Cself You frown at yourself.  Poor baby.~
+Oself $n frowns at $mself.  What a sad puppy....~
+End
+
+#SOCIAL
+Name fslay
+Level Seraphim
+Cnoarg Slay whom?~
+Cfound `RYou slay $M in cold blood!~
+Ofound `R$n slays $N in cold blood!~
+Vfound `R$n slays you in cold blood!~
+Nfound Too late, they've left!~
+Cself `RYou attempt to slay yourself.~
+Oself `R$n tries to slay $mself in cold blood!~
+End
+
+#SOCIAL
+Name fume
+Level Seraphim
+Cnoarg Take it easy now! count to ten, very slowly.~
+Onoarg $n grits $s teeth and fumes with rage.~
+Cfound You stare at $M, fuming.~
+Ofound $n stares at $N, fuming with rage.~
+Vfound $n stares at you, fuming with rage!~
+Nfound Fume away... they ain't here.~
+Cself That's right - hate yourself!~
+Oself $n clenches $s fists and stomps his feet, fuming with anger.~
+End
+
+#SOCIAL
+Name gack
+Level Seraphim
+Cnoarg Gaaack!~
+Onoarg $n gacks with dismay!~
+Cfound Appalled, you gack at $N.~
+Ofound $n gacks expressively, shooting $N a dismayed look.~
+Vfound $n gacks, and looks your way, dismayed.~
+Nfound That person isn't here.~
+Cself *GACK!*~
+Oself Appalled, $n gacks at $mself!~
+End
+
+#SOCIAL
+Name gasp
+Level Seraphim
+Cnoarg You gasp in astonishment.~
+Onoarg $n gasps in astonishment.~
+Cfound You gasp as you realize what $E did.~
+Ofound $n gasps as $e realizes what $N did.~
+Vfound $n gasps as $e realizes what you did.~
+Nfound You need to panic.~
+Cself You look at yourself and gasp!~
+Oself $n takes one look at $mself and gasps in astonisment!~
+End
+
+#SOCIAL
+Name giggle
+Level Seraphim
+Cnoarg You giggle.~
+Onoarg $n giggles.~
+Cfound You giggle in $S presence.~
+Ofound $n giggles at $N's actions.~
+Vfound $n giggles at you.  Hope it's not contagious!~
+Nfound You giggle by yourself, since you can't find a partner to giggle with.~
+Cself You giggle at yourself, which makes you giggle at yourself, which makes you ...~
+Oself $n giggles at $mself.  $e must be nervous or something.~
+End
+
+#SOCIAL
+Name glare
+Level Seraphim
+Cnoarg You glare at nothing in particular.~
+Onoarg $n glares around $m.~
+Cfound You glare icily at $M.~
+Ofound $n glares at $N.~
+Vfound $n glares icily at you, you feel cold to your bones.~
+Nfound You try to glare at somebody who is not present.~
+Cself You glare icily at your feet, they are suddenly very cold.~
+Oself $n glares at $s feet, what is bothering $m?~
+End
+
+#SOCIAL
+Name goose
+Level Seraphim
+Cnoarg Who would you like to goose?~
+Cfound You tenderly goose $N on the tush.~
+Ofound $n reaches around $N's backside and gooses $M tenderly.~
+Vfound $n gooses you tenderly!~
+Nfound You should go hunting for another victim, they left.~
+Cself You pinch yourself on the rear, you must be desperate.~
+Oself $n pinches $mself on the rear.~
+End
+
+#SOCIAL
+Name greet
+Level Seraphim
+Cnoarg You say hello to everyone in the room.~
+Onoarg $n says hello to everyone in the room.~
+Cfound You tell $N how glad you are to see $M.~
+Ofound $n enthusiastically greets $N.~
+Vfound $n enthusiastically greets you.~
+Nfound Too late, my friend.. they've left!~
+Cself You greet yourself enthusiastically.~
+Oself $n greets $mself enthusiastically, $e feels no one else will.~
+End
+
+#SOCIAL
+Name grimace
+Level Seraphim
+Cnoarg You grimace painfully at the thought.~
+Onoarg $n grimaces painfully at the thought.~
+Cfound You grimace at $N.~
+Ofound $n grimaces at $n.~
+Vfound $n grimaces at you.  What could be wrong?~
+Nfound You grimace at no one in particular.~
+Cself You grimace painfully at your thoughts.~
+Oself $n grimaces painfully to $mself.~
+End
+
+#SOCIAL
+Name grin
+Level Seraphim
+Cnoarg You grin evilly.~
+Onoarg $n grins evilly.~
+Cfound You grin evilly at $M.~
+Ofound $n grins evilly at $N.~
+Vfound $n grins evilly at you.  Hmmm.  Better keep your distance.~
+Nfound You must be delirious.~
+Cself You grin at youself.  You must be getting very bad thoughts.~
+Oself $n grins at $mself.  You must wonder what's in $s mind.~
+End
+
+#SOCIAL
+Name grinz
+Level Seraphim
+Cnoarg Feeling silly, you spread your mouth in a slightly maniacal grin.~
+Onoarg $n looks a bit maniacal, grinning like that.~
+Cfound You grin like a maniac at $N.~
+Ofound $n looks at $N and grins like a maniac.~
+Vfound Maybe you should be scared, $n is grinning like a maniac at you.~
+Nfound They aren't here.~
+Cself You start talking to yourself about how funny you are.~
+Oself What a loony! $n is trying to grin at themselves.~
+End
+
+#SOCIAL
+Name groan
+Level Seraphim
+Cnoarg You groan loudly.~
+Onoarg $n groans loudly.~
+Cfound You groan at the sight of $M.~
+Ofound $n groans at the sight of $N.~
+Vfound $n groans at the sight of you.~
+Nfound You see no reason to groan.~
+Cself You groan as you realize what you have done.~
+Oself $n groans as $e realizes what $e has done.~
+End
+
+#SOCIAL
+Name grope
+Level Seraphim
+Cnoarg Whom do you wish to grope ??~
+Cfound Well, what sort of noise do you expect here?~
+Ofound $n gropes $N.~
+Vfound $n gropes you.~
+Nfound Try someone who's here.~
+Cself You grope yourself - YUCK.~
+Oself $n gropes $mself - YUCK.~
+End
+
+#SOCIAL
+Name grovel
+Level Seraphim
+Cnoarg You grovel in the dirt.~
+Onoarg $n grovels in the dirt.~
+Cfound You grovel before $M~
+Ofound $n grovels in the dirt before $N.~
+Vfound $n grovels in the dirt before you.~
+Nfound Who?~
+Cself That seems a little silly to me.~
+End
+
+#SOCIAL
+Name growl
+Level Seraphim
+Cnoarg Grrrrrrrrrr...~
+Onoarg $n growls.~
+Cfound Grrrrrrrrrr....take that, $N!!!~
+Ofound $n growls at $N.  Better leave the room before the fighting starts.~
+Vfound $n growls at you.  Hey, two can play it that way!~
+Nfound No one can see you growl that far.~
+Cself You growl at yourself.  Boy, do you feel bitter!~
+Oself $n growls at $mself.  This could get interesting...~
+End
+
+#SOCIAL
+Name grumble
+Level Seraphim
+Cnoarg You grumble distractedly to yourself~
+Onoarg $n grumbles and growls. You wonder what's wrong...~
+Cfound You grumble at $N, disgusted with their presence.~
+Ofound $n seems to be a grumpy bear... $e is grumbling at poor $N.~
+Vfound $n is grumbling at you... what'd you do?~
+Nfound That person is presently AWOL.~
+Cself Why bother?~
+End
+
+#SOCIAL
+Name hah
+Level Seraphim
+Cnoarg You laugh mercilessly.~
+Onoarg $n laughs mercilessly!~
+Cfound You laugh mercilessly at $N.~
+Ofound $n laughs mercilessly at $N.~
+Vfound $n laughs mercilessly at you. Uh oh.~
+Nfound You can't find anyone to laugh mercilessly at.~
+Cself You laugh mercilessly to yourself. ~
+Oself $n laughs mercilessly to $mself. ~
+End
+
+#SOCIAL
+Name hand
+Level Seraphim
+Cnoarg Kiss whose hand?~
+Cfound You kiss $S hand.~
+Ofound $n kisses $N's hand.  How continental!~
+Vfound $n kisses your hand.  How continental!~
+Nfound You can't find a lady in THIS group.~
+Cself You kiss your own hand.~
+Oself $n kisses $s own hand.~
+End
+
+#SOCIAL
+Name head
+Level Seraphim
+Cnoarg You toss your head haughtily.~
+Onoarg $n tosses $s head haughtily.~
+Cfound You toss your head haughtily at $N.~
+Ofound $n tosses her head haughtily at $N... what an ATTITUDE!~
+Vfound $n tossed $s head haughtily at you.~
+Nfound That person is AWOL.~
+Cself Why would you do that?~
+End
+
+#SOCIAL
+Name hiccup
+Level Seraphim
+Cnoarg *HIC*~
+Onoarg $n hiccups.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name high5
+Level Archangel
+Cnoarg High-five whom?~
+Cfound $n high fives $N!~
+Ofound $n high fives $N!~
+Vfound $n high fives $N!~
+Nfound Can't see them here.~
+End
+
+#SOCIAL
+Name highfive
+Level Seraphim
+Cnoarg You jump in the air and give a BIG high five to...umm...absolutely nothing.~
+Onoarg $n wildly high fives the air, looking very foolish -- very foolish indeed.~
+Cfound You jump in the air and give a BIG high five to $N!~
+Ofound $n enthusiastically high-five's $N!~
+Vfound $n gives you a BIG high five!  Way to go!!~
+Nfound Sorry, they have already left.~
+Cself You try to give yourself a high five.  What ARE you thinking?~
+Oself $n tries to high five $mself, but ends up looking foolish instead.~
+End
+
+#SOCIAL
+Name hmm
+Level Seraphim
+Cnoarg You Hmmmm out loud.~
+Onoarg $n thinks, 'Hmmmm.'~
+Cfound You gaze thoughtfully at $M and say 'Hmmm.'~
+Ofound $n gazes thoughtfully at $N and says 'Hmmm.'~
+Vfound $n gazes thoughtfully at you and says 'Hmmm.'~
+Nfound Hmm, indeed.  They're not here.~
+Cself You Hmmmm out loud.~
+Oself $n thinks, 'Hmmmm.'~
+End
+
+#SOCIAL
+Name holdon
+Level Seraphim
+Cnoarg You pause for a moment, hesitant.~
+Onoarg $n pauses for a moment, somewhat hesitant.~
+Cfound You hold $M closely, hugging $M.~
+Ofound $n holds $N closely, hugging $M.~
+Vfound $n holds you closely, hugging you.~
+Nfound Hold on until they get back.~
+Cself You have to hold yourself up you're so weary. Go to Sleep!~
+Oself $n has to hold $mself up $e's so tired, $e should go to bed and get some sleep.~
+End
+
+#SOCIAL
+Name hop
+Level Seraphim
+Cnoarg You hop around like a little kid.~
+Onoarg $n hops around like a little kid.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name howl
+Level Seraphim
+Cnoarg You howl at the moon.~
+Onoarg $n howls at the moon.~
+Cfound You howl soulfully at $N.~
+Ofound $n howls at $N.~
+Vfound $n howls soulfully at you.~
+Nfound Who? What? Where?~
+End
+
+#SOCIAL
+Name hug
+Level Seraphim
+Cnoarg Hug who?~
+Cfound You hug $M.~
+Ofound $n hugs $N.~
+Vfound $n hugs you.~
+Nfound Sorry, friend, I can't see that person here.~
+Cself You hug yourself.~
+Oself $n hugs $mself in a vain attempt to get friendship.~
+End
+
+#SOCIAL
+Name hush
+Level Seraphim
+Cnoarg SHHHHHHHHHHHHHHHHHHHHHH~
+Onoarg $n requests everyone quiet down.  Shhhhhhhhhhh...~
+Cfound You nicely ask $N to be more quiet.~
+Ofound $n nicely asks $N to be more quiet.~
+Vfound $n kindly requests that you please quiet down.~
+Nfound Who needs to be silenced?~
+Cself You realize you are loud and obnoxious and try to silence yourself.~
+Oself $n covers $s mouth in an attempt to silence $mself.~
+End
+
+#SOCIAL
+Name innocent
+Level Seraphim
+Cnoarg You innocently whistle a tune.~
+Onoarg $n looks around and whistles innocently.~
+Cfound You look at $N and bat your eyelashes -- the picture of innocence!~
+Ofound $n bats $s eyelashes innocently at $N.~
+Vfound $n looks at you and innocently bats $s eyelashes.~
+Nfound Don't even TRY -- they've already left.~
+End
+
+#SOCIAL
+Name insane
+Level Seraphim
+Cnoarg You feel your sanity slipping away...~
+Onoarg Before your eyes, $n's sanity is slipping away...~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name judge
+Level Seraphim
+Cnoarg Yes, but who?~
+Cfound You judge $m on a scale of 1 to 10.~
+Ofound On a scale from 1 to 10, $n thinks $N is a complete ZERO!!!~
+Vfound $n judges your actions on a scale of 1 to 10 and comes up with ZERO!!!~
+Nfound They aren't here right now.~
+Cself You don't REALLY want to do that.~
+End
+
+#SOCIAL
+Name kiss
+Level Seraphim
+Cnoarg Isn't there someone you want to kiss?~
+Cfound You kiss $M.~
+Ofound $n kisses $N.~
+Vfound $n kisses you.~
+Nfound Never around when required.~
+Cself All the lonely people :(~
+End
+
+#SOCIAL
+Name knee
+Level Seraphim
+Cnoarg You raise one knee, preparing to do justice...~
+Onoarg $n cocks one knee threateningly.~
+Cfound You knee $M hard in the groin.~
+Ofound $N doubles over in pain as $n knees $M in the groin!~
+Vfound $n suddenly knees you in the groin!  You fall to your knees in agony.~
+Nfound Whom do you wish to render impotent?~
+Cself What ARE you thinking !?!??!?!?!?!~
+End
+
+#SOCIAL
+Name kneel
+Level Seraphim
+Cnoarg You kneel down and bow your head.~
+Onoarg $n kneels down and bows $s head.~
+Cfound You kneel before $M with the deepest respect.~
+Ofound $n kneels before $N and bows $s head in respect.~
+Vfound $n kneels before you and bows $s head with respect.~
+Nfound Kneel before whom?~
+Cself You kneel down and bow your head, hoping the gods will hear your prayers.~
+Oself $n kneels down and bows $s head.~
+End
+
+#SOCIAL
+Name laces
+Level Seraphim
+Cnoarg Whose laces?~
+Cfound With the greatest of stealth, you tie $S shoelaces together.~
+Ofound $n sneaks up to $N and ties $S shoelaces together.~
+Vfound You try to take a step, and you hit the world facedown!  Someone must have tied your shoelaces together!~
+Nfound Whose laces?~
+Cself You tie your own shoelaces together, try to walk, and promptly fall.~
+Oself $n cleverly ties $s own shoelaces together, tries to walk, and sprawls flat on the floor.~
+End
+
+#SOCIAL
+Name lag
+Level Seraphim
+Cnoarg Yes, yes.~
+Onoarg $n is   m o v i n g      v  e    ry  sl  o w   l   y ...~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name laugh
+Level Seraphim
+Cnoarg You fall down laughing.~
+Onoarg $n falls down laughing.~
+Cfound You laugh at $N mercilessly.~
+Ofound $n laughs at $N mercilessly.~
+Vfound $n laughs at you mercilessly.  Hmmmmph.~
+Nfound You can't find the butt of your joke.~
+Cself You laugh at yourself.  I would, too.~
+Oself $n laughs at $mself.  Let's all join in!!!~
+End
+
+#SOCIAL
+Name leer
+Level Seraphim
+Cnoarg You peer around the room, leering like the pervert you are!~
+Onoarg $n peers about, leering like a filthy pervert!~
+Cfound You leer at $N like the pervert you are.~
+Ofound $n eyes $N up and down, leering like a filthy pervert! ~
+Vfound $n eyes you up and down, leering like a filthy pervert!~
+Nfound You'll have to settle for memories -- that person isn't here.~
+Cself Desperation has reached new heights, hasn't it?~
+Oself $n leers at $mself shamelessly.~
+End
+
+#SOCIAL
+Name lick
+Level Seraphim
+Cnoarg You lick your lips and smile. ~
+Onoarg $n licks $s lips and smiles. ~
+Cfound You lick $N's jawline delicately. ~
+Ofound $n licks $N's jawline delicately. ~
+Vfound $n licks your jawline delicately. ~
+Nfound Lick away, nobody's here with that name. ~
+Cself You lick your own eyebrows. ~
+Oself $n licks $s own eyebrows.~
+End
+
+#SOCIAL
+Name life
+Level Seraphim
+Cnoarg You try to get a life, and fail.~
+Onoarg $n tries to get a life, and fails.~
+Cfound $N needs to get a life!~
+Ofound $N needs to get a life!~
+Vfound You need to get a life!~
+Nfound Who needs a life?~
+Cself But you have none to give!~
+Oself $n attempts to give $mself a life, but has none to spare.~
+End
+
+#SOCIAL
+Name lightbulb
+Level Seraphim
+Cnoarg *Ding!*  Inspiration!~
+Onoarg A light bulb appears above $n's head!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name listen
+Level Seraphim
+Cnoarg You listen intently.~
+Onoarg $n listens intently.~
+Cfound You listen intently to what $N is saying.~
+Ofound $n listens intently to $N.~
+Vfound $n listens intently to what you are saying.~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name liver
+Level Seraphim
+Cnoarg You look angrily for someone to disembowel. ~
+Onoarg $n looks around angrily for someone to disembowel.~
+Cfound You rip out $S liver and eat it. ~
+Ofound $n rips out $N's liver and eats it. ~
+Vfound $n rips out your liver and eats it. ~
+Nfound The object of your wrath is absent. ~
+End
+
+#SOCIAL
+Name love
+Level Seraphim
+Cnoarg You love the whole world.~
+Onoarg $n loves everybody in the world.~
+Cfound You tell your true feelings to $N.~
+Ofound $n whispers softly to $N.~
+Vfound $n whispers to you sweet words of love.~
+Nfound Alas, your love is not present...~
+Cself Well, we already know you love yourself (lucky someone does !)~
+Oself $n loves $mself, can you believe it ?~
+End
+
+#SOCIAL
+Name lust
+Level Seraphim
+Cnoarg Your hormones begin to rage.~
+Onoarg $n has that look of lust in $s eyes --- Get away QUICK!~
+Cfound You have lust after $N.~
+Ofound $n looks lustily at $N.~
+Vfound $n lusts after your delectable body.~
+Nfound Whom are you trying to lust after?~
+Cself Oh, please! You aren't THAT great...~
+Oself $n lusts after $mself, lonely eh?~
+End
+
+#SOCIAL
+Name massage
+Level Seraphim
+Cnoarg Massage what?  Thin air?~
+Cfound You gently massage $N's shoulders.~
+Ofound $n massages $N's shoulders.~
+Vfound $n gently massages your shoulders - Ahhhhhhhhhh...~
+Nfound You can only massage someone in the same room as you.~
+Cself You practice yoga as you try to massage yourself.~
+Oself $n gives a show on yoga-positions, trying to massage $mself.~
+End
+
+#SOCIAL
+Name meditate
+Level Seraphim
+Cnoarg You assume a very comfortable position and begin to meditate.~
+Onoarg $n rests and begins to meditate... $e chants softly to $mself.~
+End
+
+#SOCIAL
+Name mischievous
+Level Seraphim
+Cnoarg You give a mischievous smile at the trouble you have in mind. ~
+Onoarg $n grins mischievously at a nasty idea. ~
+Cfound You grin mischievously at $M, thinking an evil thought. ~
+Ofound $n grins mischievously at $N.  $m must be thinking something evil.~
+Vfound $n grins mischievously at you.  You inch toward the door. ~
+Nfound You must be delirious. ~
+Cself You grin mischievously to yourself. ~
+Oself $n grins mischievously to $mself.~
+End
+
+#SOCIAL
+Name moan
+Level Seraphim
+Cnoarg You start to moan.~
+Onoarg $n starts moaning.~
+Cfound You moan for the loss of $M.~
+Ofound $n moans for the loss of $N.~
+Vfound $n moans at the sight of you.  Hmmmm.~
+Nfound You see no cause to moan.~
+Cself You moan at yourself.~
+Oself $n makes $mself moan.~
+End
+
+#SOCIAL
+Name moo
+Level Seraphim
+Cnoarg You chew your cud and moo plaintively.  Muh-OOOOO!~
+Onoarg $n turns cowlike eyes on you, chews $s cud, and moos plaintively.~
+Cfound You focus all your bovine Zen on $N, and speak your thoughts.  Muh-OOOOO!~
+Ofound Slowly, $n looks at $N, chews $s cud, and muh-OOOOs!~
+Vfound $n moos at you.  What could that possibly mean?~
+Nfound You'd better find someone else to moo at.~
+Cself You settle down into the center of your bovine Zen; the foolish world thinks you're just mooing.~
+Oself $n is mooing at $mself again...  You look for an exit...~
+End
+
+#SOCIAL
+Name moon
+Level Seraphim
+Cnoarg You drop your drawers and moon everyone in the room!~
+Onoarg $n drops $s pants and gives you the vertical smile!~
+Cfound You bend over and moon $N.~
+Ofound $n drops $s pants and rudely moons $N!~
+Vfound $n bends over and gives you the vertical smile!~
+Nfound You stand, with your pants around your ankles, looking VERY silly!~
+Cself You try to moon yourself, but you can't see your A** that well.~
+Oself $n nearly goes into convulsions while trying to moon $mself.~
+End
+
+#SOCIAL
+Name mosh
+Level Seraphim
+Cnoarg You mosh insanely around the room!~
+Onoarg $n moshes insanely around the room!~
+Cfound You mosh sadistically against $N ... you WILL be punished.~
+Ofound $n bounces off of $N in a vain attempt to mosh... what a LOSER.~
+Vfound $n slams into you, moshing painfully against you.  That REALLY hurts!~
+Nfound Hmmm...  your victim found a new dance partner.~
+Cself Masochist!~
+Oself $n throws $mself on the floor, grinding $mself into a bloody pulp~
+End
+
+#SOCIAL
+Name mull
+Level Seraphim
+Cnoarg You mull over the idea at hand, asking for patience. ~
+Onoarg $n mulls over the idea at hand.  Please be patient. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name mumble
+Level Seraphim
+Cnoarg You mumble under your breath.~
+Onoarg $n mumbles under $s breath, $e must be annoyed about something.~
+Cfound You mumble under your breath at $N.~
+Ofound $n mumbles evil things at $n under $s breath.~
+Vfound $n mumbles evil things at you under $s breath.~
+Nfound They aren't here.~
+Cself You mumble distractedly to yourself.~
+Oself $n mumbles distractedly at $mself.~
+End
+
+#SOCIAL
+Name mutter
+Level Seraphim
+Cnoarg You mutter quietly to yourself.~
+Onoarg $n mutters something quietly to $mself.~
+Cfound You mutter something to $N.~
+Ofound $n looks at $N and mutters something nasty under $s breath.                 ~
+Vfound $n looks at you and mutters something nasty under $s breath.~
+Nfound There's nothing left for you to say, they've left!~
+Cself You mutter quietly to yourself.~
+Oself $n mutters something quietly to $mself.~
+End
+
+#SOCIAL
+Name nibble
+Level Seraphim
+Cnoarg Nibble on who ?~
+Cfound You nibble on $N's ear.~
+Ofound $n nibbles on $N's ear.~
+Vfound $n nibbles on your ear.~
+Nfound Sorry, not present.~
+Cself You nibble on your OWN ear ???????????????????~
+Oself $n nibbles on $s OWN ear (I wonder how it is done !!).~
+End
+
+#SOCIAL
+Name nod
+Level Seraphim
+Cnoarg You nod.~
+Onoarg $n nods.~
+Cfound You nod at $N.~
+Ofound $n nods at $N.~
+Vfound $n nods at you in agreement.~
+Nfound Nod your head off -- they aren't here.~
+Cself You attempt to nod at yourself and get dizzy instead.~
+Oself $n nods quietly to $mself.  What a wacko.~
+End
+
+#SOCIAL
+Name noogie
+Level Seraphim
+Cnoarg You can't noogie the AIR!  It has no head.~
+Cfound You grab $N, get $M in a head lock and NOOGIE $M!~
+Ofound $n grabs $N in a head lock and NOOGIES $M... ARGH!!!~
+Vfound Oh NO, $n grabs you, throws you in a head lock and NOOGIES you!~
+Nfound That person has gone off to other lands...~
+Cself You rub your head and create a static charge...~
+Oself $n rubs $s OWN head and creates a static charge... *ZAP*~
+End
+
+#SOCIAL
+Name nudge
+Level Seraphim
+Cnoarg Nudge whom?~
+Cfound You nudge $M.~
+Ofound $n nudges $N.~
+Vfound $n nudges you.~
+Nfound Who?~
+Cself You nudge yourself, for some strange reason.~
+Oself $n nudges $mself, to keep $mself awake.~
+End
+
+#SOCIAL
+Name null
+Level Seraphim
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name nuzzle
+Level Seraphim
+Cnoarg Nuzzle who??~
+Cfound You nuzzle $S neck softly.~
+Ofound $n softly nuzzles $N's neck.~
+Vfound $n softly nuzzles your neck.~
+Nfound No.. they aren't here..~
+Cself I'm sorry, friend, but that's impossible.~
+Oself $n tries vainly to nuzzle $mself.~
+End
+
+#SOCIAL
+Name ogg
+Level Seraphim
+Cnoarg Ogg who?~
+Cfound Engage!~
+Ofound $n oggs $N's head with photon torpedos!  $N reels.~
+Vfound $n oggs your head with photon torpedos!  You are reeling.~
+Nfound You can't find your target.~
+Cself If you do that, the universe will explode.~
+Oself $n almost oggs $mself, but wisely reconsiders.~
+End
+
+#SOCIAL
+Name pant
+Level Seraphim
+Cnoarg You pant lustily.~
+Onoarg $n pants lustily.~
+Cfound You pant lustily at $M.~
+Ofound $n looks at $N and pants lustily.~
+Vfound $n looks at you and pants lustily...~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name passout
+Level Seraphim
+Cnoarg You belch and pass out.~
+Onoarg $n is OBVIOUSLY intoxicated... $e burps loudly and passes out!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name pat
+Level Seraphim
+Cnoarg Pat who?~
+Cfound You pat $N on $S head.~
+Ofound $n pats $N on $S head.~
+Vfound $n pats you on your head.~
+Nfound Who, where, what?~
+Cself You pat yourself on your head, very reassuring.~
+Oself $n pats $mself on the head.~
+End
+
+#SOCIAL
+Name peck
+Level Seraphim
+Cnoarg Wouldn't you like to do that to a person, or do you prefer air?~
+Cfound Risking a slap to the face, you give $N a peck on the cheek.~
+Ofound $n smiles and gives $N a chaste peck on the cheek.~
+Vfound $n pecks you on the cheek, how sweet!~
+Nfound I guess you scared them away...~
+Cself You must REALLY like yourself.~
+Oself $n tries in vain to wrap $s lips around $s cheeks.~
+End
+
+#SOCIAL
+Name peer
+Level Seraphim
+Cnoarg You peer around yourself intently.~
+Onoarg $n peers around $mself intently.~
+Cfound You peer intently at $N.~
+Ofound $n peers intently at $N.~
+Vfound $n peers at you intently.~
+Nfound They aren't here.~
+Cself You get a little cross-eyed with your attempts to stare yourself down.~
+Oself $n peers at $mself, crossing $s eyes in the process.~
+End
+
+#SOCIAL
+Name pie
+Level Seraphim
+Cnoarg You pick up a pie and toss it around for a bit.~
+Onoarg $n picks up a pie and tosses it around for a bit.~
+Cfound You toss a pie at $N and hit $M right in the FACE!~
+Ofound $n tosses a pie at $N and hits $m right in the FACE!~
+Vfound $n tossed a pie in your face... and now you are all covered in GOO!~
+Nfound That person isn't here...~
+Cself You bury your face in the pie... yummmmm!!! :)~
+Oself $n buries $s face in the pie, licking the pan clean.~
+End
+
+#SOCIAL
+Name pinch
+Level Seraphim
+Cnoarg You say, 'A pinch of this, and a dab of that.' ~
+Onoarg $n says, 'A pinch of this and a dab of that.' ~
+Cfound You squeeze $S bottom and grin. ~
+Ofound $n pinches $N's bottom and grins. ~
+Vfound $n pinches your bottom and grins. ~
+Nfound You'd like to, wouldn't you? ~
+Cself You pinch yourself to see if you are dreaming! ~
+Oself $n pinches $mself to see if $e is dreaming! ~
+End
+
+#SOCIAL
+Name ping
+Level Seraphim
+Cnoarg Ping who?~
+Cfound You ping $N.  $N is unreachable.~
+Ofound $n pings $N.  $N is unreachable.~
+Vfound $n pings you.  Is your server dead or alive?~
+Nfound PING: No route to host.~
+Cself PING: No route to host.~
+Oself $n pings $mself, $e must be having technical difficulties.~
+End
+
+#SOCIAL
+Name pissed
+Level Seraphim
+Cnoarg You are PISSED!~
+Onoarg $n is PISSED so watch out!~
+Cfound You turn a stoney gaze toward $N... you are SOOO pissed at $N!~
+Ofound $n glares at $n.... $n is SOOO PISSED at $m!~
+Vfound $n is pissed at you now... What do you think $e'll DO?~
+Nfound That person is not here...~
+Cself You are PISSED at yourself!~
+Oself $n is so pissed at $mself.  How could $e be so stupid???~
+End
+
+#SOCIAL
+Name plead
+Level Seraphim
+Cnoarg You beg and plead to anyone who will listen.~
+Onoarg $n pleads $s case to anyone who will listen... You ALMOST feel sorry for $m.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name point
+Level Seraphim
+Cnoarg You point in every direction.~
+Onoarg $n points excitedly!~
+Cfound You point at $N.~
+Ofound $n points excitedly at $N!~
+Vfound $n points at you.  How rude!~
+Nfound You point at no one in particular.~
+Cself You point at yourself, obviously very confused.~
+Oself $n points at $mself, obviously very confused.~
+End
+
+#SOCIAL
+Name poke
+Level Seraphim
+Cnoarg Poke who??~
+Cfound You poke $M in the ribs.~
+Ofound $n pokes $N in the ribs.~
+Vfound $n pokes you in the ribs.~
+Nfound You can't poke someone who's not here!.~
+Cself You poke yourself in the ribs, feeling very silly.~
+Oself $n pokes $mself in the ribs, looking very sheepish.~
+End
+
+#SOCIAL
+Name polite
+Level Seraphim
+Cnoarg You give a polite little chuckle. ~
+Onoarg $n gives a polite little chuckle. ~
+Cfound You indicate your underappreciation of $S joke. ~
+Ofound $n gives a polite little chuckle to $N's joke. ~
+Vfound $n gives a politle but unappreciative chuckle to your joke. ~
+Nfound You can't find a friend to chuckle with. ~
+Cself You chuckle at your own joke, since no one else would. ~
+Oself $n chuckles at $s own joke, since none of you would. ~
+End
+
+#SOCIAL
+Name ponder
+Level Seraphim
+Cnoarg You ponder the question.~
+Onoarg $n thinks deeply.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name pounce
+Level Seraphim
+Cnoarg You crouch low to the ground and look for something to pounce on.~
+Onoarg $n crouches low to the ground and prepares to pounce on someone!~
+Cfound You pounce on $N, pinning $M to the floor!~
+Ofound $n pounces on $N, pinning $M to the floor!~
+Vfound $n pounces on you, pinning you to the floor!~
+Nfound Sorry, friend, I can't see that person here.~
+Cself You leap boldly at your own shadow.~
+Oself Feeling brave, $n leaps boldly at $s own shadow.~
+End
+
+#SOCIAL
+Name pound
+Level Seraphim
+Cnoarg You make vague pounding motions with your fist at the thought. ~
+Onoarg $n makes vague pounding motions with $m fist at the thought. ~
+Cfound You pound $M into a bloody mass. ~
+Ofound $n pounds $N into a bloody mass. ~
+Vfound $n pounds you into a bloody mass. ~
+Nfound Sorry, friend, I can't see that person here. ~
+End
+
+#SOCIAL
+Name pout
+Level Seraphim
+Cnoarg Ah, don't take it so hard.~
+Onoarg $n pouts.~
+Cfound You pull a pouting guilt trip on $N.  Make $M pay!~
+Ofound $n pouts at $N.~
+Vfound $n tries to pout and make you feel bad.~
+Nfound They're not here~
+Cself Things cannot possibly be *that* bad, drama whore.~
+Oself $n is really in need of help- $e is pouting at $mself.~
+End
+
+#SOCIAL
+Name powertrip
+Level Seraphim
+Cnoarg You scream 'The PPppppPOOOOoooWWWwwwErrRRR!' and writhe. ~
+Onoarg $n writhes, screaming 'The PPppppPOOOOoooWWWwwwErrRRR!' ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name pray
+Level Seraphim
+Cnoarg You feel righteous, and maybe a little foolish.~
+Onoarg $n begs and grovels to the powers that be.~
+Cfound You crawl in the dust before $M.~
+Ofound $n falls down and grovels in the dirt before $N.~
+Vfound $n kisses the dirt at your feet.~
+Nfound No such person around; your prayers vanish into the endless voids.~
+Cself Talk about narcissism...~
+Oself $n performs some strange yoga-exercises and mumbles a prayer to $mself.~
+End
+
+#SOCIAL
+Name prod
+Level Seraphim
+Cnoarg You prod yourself.~
+Onoarg $m prods the air around $m.~
+Cfound You prod $M for signs of life.~
+Ofound $n prods $N for signs of life.~
+Vfound $n prods you for signs of life.~
+Nfound They aren't here.~
+Cself You prod yourself.~
+Oself $n prods $mself for signs of life.~
+End
+
+#SOCIAL
+Name propose
+Level Seraphim
+Cnoarg You propose to everyone in the room.~
+Onoarg $n proposes to everyone in the room.  Very odd.~
+Cfound You kneel and romantically propose to $N.~
+Ofound $n gets on one knee and proposes to $N.~
+Vfound $n gets down on one knee and romantically proposes to you.~
+Nfound You must be lonely.  They aren't here.~
+Cself You are SO full of yourself!~
+Oself $n proposes to $mself -- how narcissistic!~
+End
+
+#SOCIAL
+Name puff
+Level Seraphim
+Cnoarg You mimic Puff at her most annoying.~
+Onoarg $n says, "Did you know that I'm written in C?"~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name puke
+Level Seraphim
+Cnoarg You puke...chunks everywhere!!! YUK!~
+Onoarg $n pukes.~
+Cfound You puke on $M.~
+Ofound $n pukes on $N.~
+Vfound $n spews vomit and pukes all over your clothing!~
+Nfound Once again?~
+Cself You puke on yourself.~
+Oself $n pukes on $s clothes.~
+End
+
+#SOCIAL
+Name punch
+Level Seraphim
+Cnoarg Punch whom?~
+Cfound You punch $M playfully.~
+Ofound $n punches $N playfully.~
+Vfound $n punches you playfully.  OUCH!~
+Nfound You can't find your boxing partner.~
+Cself You punch yourself.  You deserve it.~
+Oself $n punches $mself.  Why don't you join in?~
+End
+
+#SOCIAL
+Name purr
+Level Seraphim
+Cnoarg MMMMMMEEEEEEEEEOOOOOOOOOOOOOWWWWWWWWWWW!!!!!!!!!!!~
+Onoarg $n purrs contentedly.~
+Cfound You rub up against $N and purr contentedly.~
+Ofound $n rubs against $N and purrs contentedly.~
+Vfound $n rubs up against you and purrs contentedly.~
+Nfound You silly cat!  They aren't here.~
+Cself You purr quietly to yourself.~
+Oself $n purrs contentedly to $mself.~
+End
+
+#SOCIAL
+Name raise
+Level Seraphim
+Cnoarg You raise your hand.~
+Onoarg $n raises $s hand.~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name ramble
+Level Seraphim
+Cnoarg You ramble on and on.~
+Onoarg $n rambles on about a boring exploit.~
+Cfound You ramble on to $N about your past adventures.~
+Ofound $n blithers on and on to $N about something.~
+Vfound $n tells you a rather boring tale, you feign interest.~
+Nfound ??EH??~
+End
+
+#SOCIAL
+Name raspberry
+Level Seraphim
+Cnoarg You stick your tongue out at ... well, no one.~
+Onoarg $n sticks $s tongue out, catching a few flies in the process.~
+Cfound You give $N the raspberry... and spit all over yourself.~
+Ofound $n gives $N the raspberry... PHBT!  What a mess... Spit EVERYWHERE!~
+Vfound You are splattered with saliva as $n gives you the raspberry... HOW RUDE!~
+Nfound Hang your tongue out if you like, $e isn't here.~
+Cself You try to stick your tongue out at yourself... somehow, it isn't the same.~
+End
+
+#SOCIAL
+Name rofl
+Level Seraphim
+Cnoarg You roll on the floor, laughing hysterically.~
+Onoarg $n falls to the ground and rolls around laughing hysterically.~
+Cfound You fall to the floor laughing at $N's remark.~
+Ofound $n rolls on the floor laughing at $N's antics!~
+Vfound $n rolls on the floor laughing at your antics!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name roll
+Level Seraphim
+Cnoarg You roll your eyes in disgust.~
+Onoarg $n rolls $s eyes, disgusted.~
+Cfound You look at $N and roll your eyes in disgust.~
+Ofound $n rolls $s eyes in disgust at $N.~
+Vfound $n rolls $s eyes at you.~
+Nfound You should be disgusted with yourself. You look ridiculous. ~
+Cself At whom do you wish to roll your eyes?~
+End
+
+#SOCIAL
+Name romeo
+Level Seraphim
+Cnoarg You light up a Romeo y Julietta cigar and puff contentedly.~
+Onoarg $n lights up a Romeo y Julietta cigar and puffs contentedly.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name rose
+Level Seraphim
+Cnoarg Who would you like to give it to?~
+Cfound You give $M a pretty rose.~
+Ofound $n hands $N a beautiful rose.~
+Vfound $n hands you a beautiful ---'---,--{@~
+Nfound They seem to have left.~
+Cself You give yourself a rose and feel a little sad...~
+Oself $n gives $mself a rose, dont you feel sorry for $m?~
+End
+
+#SOCIAL
+Name rub
+Level Seraphim
+Cnoarg You rub your hands together in greedy anticipation.~
+Onoarg $n rubs $s hands together in greedy anticipation.~
+Cfound You give $N a nice, long, kinky rubdown.~
+Ofound $n gives $N a nice long rubdown.~
+Vfound $n gives you a rubdown, running $s hands over your tense shoulders...Mmmm...~
+Nfound Shame to waste those talented hands, but they've already left.~
+Cself You rub yourself...lingering a little too long in some places.~
+Oself $n rubs $mself...what a creep!~
+End
+
+#SOCIAL
+Name rue
+Level Seraphim
+Cnoarg You rue the day!~
+Onoarg $n rues the day!~
+Cfound You rue the day $N was ever born!~
+Ofound $n rues the day $N was ever born.~
+Vfound $n rues the day you were born! ~
+Nfound Pity, they aren't here.~
+Cself Why are you rueing yourself?~
+Oself $n rues the day $e rued the day!~
+End
+
+#SOCIAL
+Name ruffle
+Level Seraphim
+Cnoarg You've got to ruffle SOMEONE.~
+Cfound You ruffle $N's hair playfully.~
+Ofound $n ruffles $N's hair playfully.~
+Vfound $n ruffles your hair playfully.~
+Nfound Might be a bit difficult.~
+Cself You ruffle your hair, wondering how far you can go before the rest think you're crazy.~
+Oself $n ruffles $s hair - weirdo!~
+End
+
+#SOCIAL
+Name run
+Level Seraphim
+Cnoarg You run away in terror and horror!~
+Onoarg $n runs away in utter terror!~
+Cfound You run away from $N in complete terror!~
+Ofound $n runs away from $N in utter terror and horror!~
+Vfound $n runs from you, fearing for $s life!~
+Nfound No reason to be afraid, they aren't here.~
+Cself Are you THAT ugly?~
+Oself $n looks in the mirror, sees $s face, and runs away terrified!~
+End
+
+#SOCIAL
+Name sage
+Level Seraphim
+Cnoarg You nod sagely. ~
+Onoarg $n nods sagely. ~
+Cfound You nod sagely at what $N has said.~
+Ofound $n nods sagely at $N's words.~
+Vfound $n nods sagely at what you have said.~
+Nfound They're not here~
+Cself Don't you think its a little arrogant to do that?~
+Oself $n must think they are very wise, nodding at what $e said.~
+End
+
+#SOCIAL
+Name scratch
+Level Seraphim
+Cnoarg You scratch yourself contentedly.~
+Onoarg $n reaches down and scratches $mself...  Now $e looks VERY happy.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name scream
+Level Seraphim
+Cnoarg ARRRRRRRRRRGH!!!!!~
+Onoarg $n screams loudly!~
+Cfound ARRRRRRRRRRGH!!!!!  Yes, it MUST have been $S fault!!!~
+Ofound $n screams loudly at $N.  Better leave before $n blames you, too!!!~
+Vfound $n screams at you!  That's not nice!  *sniff*~
+Nfound Your lungs can't reach that far!~
+Cself You scream at yourself.  Yes, that's ONE way of relieving tension!~
+Oself $n screams loudly at $mself!  Is there a full moon up?~
+End
+
+#SOCIAL
+Name scuff
+Level Seraphim
+Cnoarg You scuff your foot sheepishly.~
+Onoarg $n scuffs $s foot in the dirt, looking very sheepish.~
+Cfound You scuff your foot, avoiding $N's gaze.~
+Ofound $n scuffs $s foot and shyly avoids $N's gaze.~
+Vfound $n scuffs $s foot and shyly avoids your gaze.~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name serenade
+Level Seraphim
+Cnoarg You raise your voice in a loud serenade to your invisible love.~
+Onoarg $n raises $s voice to serenade the world.~
+Cfound You raise your voice in a loving serenade to $N.~
+Ofound $n raises $s voice in a loving serenade to $N.~
+Vfound $n serenades you, you are swept away by $s voice.~
+Nfound The one that you wish to serenade has left you to sing to yourself.~
+Cself You sing a loud serenade to yourself.  What type of person are you?!~
+Oself $n serenades $mself.  What an ego!~
+End
+
+#SOCIAL
+Name shake
+Level Seraphim
+Cnoarg You shake your head.~
+Onoarg $n shakes $s head.~
+Cfound You shake $S hand.~
+Ofound $n shakes $N's hand.~
+Vfound $n shakes your hand.~
+Nfound Sorry good buddy, but that person doesn't seem to be here.~
+Cself You are shaken by yourself.~
+Oself $n shakes and quivers like a bowl full of jelly.~
+End
+
+#SOCIAL
+Name shiver
+Level Seraphim
+Cnoarg Brrrrrrrrr.~
+Onoarg $n shivers uncomfortably.~
+Cfound You shiver at the thought of fighting $M.~
+Ofound $n shivers at the thought of fighting $N.~
+Vfound $n shivers at the suicidal thought of fighting you.~
+Nfound You don't see any reason to shiver.~
+Cself You shiver to yourself?~
+Oself $n scares $mself to shivers.~
+End
+
+#SOCIAL
+Name shrug
+Level Seraphim
+Cnoarg You shrug.~
+Onoarg $n shrugs helplessly.~
+Cfound You shrug in response to $S question.~
+Ofound $n shrugs in response to $N's question.~
+Vfound $n shrugs in response to your question.~
+Nfound You shrug to no one in particular.~
+Cself You shrug to yourself.~
+Oself $n shrugs to $mself.  What a strange person.~
+End
+
+#SOCIAL
+Name shudder
+Level Seraphim
+Cnoarg You shudder at the horror and repress tears. ~
+Onoarg $n shudders at the horror and represses tears. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name sigh
+Level Seraphim
+Cnoarg You sigh.~
+Onoarg $n sighs.~
+Cfound You sigh as you think of $M.~
+Ofound $n sighs at the sight of $N.~
+Vfound $n sighs as $e thinks of you.  Touching, huh?~
+Nfound You really sigh, since you don't see your friend.~
+Cself You sigh at yourself.  You MUST be lonely.~
+Oself $n sighs at $mself.  What a sorry sight.~
+End
+
+#SOCIAL
+Name silly
+Level Seraphim
+Cnoarg You do the silly walk all around the room. ~
+Onoarg $n does the silly walk all around the room.  $e *is* silly. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name sing
+Level Seraphim
+Cnoarg You raise your clear (?) voice towards the sky.~
+Onoarg HEY CLERICS! I COULD USE A HEAL!  $n has begun to sing.~
+Cfound You sing a ballad to $M.~
+Ofound $n sings a ballad to $N.~
+Vfound $n sings a ballad to you!  How sweet!~
+Nfound You see no one to sing to.~
+Cself You sing a little ditty to yourself.~
+Oself $n sings a little ditty to $mself.~
+End
+
+#SOCIAL
+Name slap
+Level Seraphim
+Cnoarg What is the sound of one hand slapping?~
+Cfound *thwock!* You slap $N ringingly.~
+Ofound *thwock!* $n slaps $N!~
+Vfound $n slaps you stingingly.~
+Nfound How about slapping someone in the same room as you ??~
+Cself You slap yourself, silly you.~
+Oself $n slaps $mself, really strange ...~
+End
+
+#SOCIAL
+Name slobber
+Level Seraphim
+Cnoarg You slobber down your front.~
+Onoarg $n slobbers all over $mself.~
+Cfound You slobber on $N.~
+Ofound $n slobbers on $N  **Yuck**~
+Vfound $n slobbers disgustingly on you.~
+Nfound Slobber on WHOM?~
+End
+
+#SOCIAL
+Name smile
+Level Seraphim
+Cnoarg You smile happily.~
+Onoarg $n smiles happily.~
+Cfound You smile at $M.~
+Ofound $n beams a smile at $N.~
+Vfound $n smiles at you.~
+Nfound There's no one by that name around.~
+Cself You smile at yourself.~
+Oself $n smiles at $mself.~
+End
+
+#SOCIAL
+Name smirk
+Level Seraphim
+Cnoarg You smirk.~
+Onoarg $n smirks.~
+Cfound You smirk at $S saying.~
+Ofound $n smirks at $N's saying.~
+Vfound $n smirks at your saying.~
+Nfound You want to smirk to whom?~
+Cself You smirk at yourself.  Okay.....~
+Oself $n smirks at $s own 'wisdom'.~
+End
+
+#SOCIAL
+Name smooch
+Level Seraphim
+Cnoarg Looking for someone to smooch?~
+Cfound You give $M a nice, wet smooch.~
+Ofound $n and $N are smooching in the corner.~
+Vfound $n gives you a nice wet smooch.~
+Nfound Your lips aren't long enough.~
+Cself You smooch yourself.~
+Oself $n smooches $mself.  Yuck.~
+End
+
+#SOCIAL
+Name snap
+Level Seraphim
+Cnoarg Eureka!  You snap your fingers. ~
+Onoarg $n snaps $s fingers. ~
+Cfound You snap back at $M. ~
+Ofound $n snaps back at $N. ~
+Vfound $n snaps back at you! ~
+Nfound You must be very agitated. ~
+Cself You snap yourself to attention. ~
+Oself $n snaps $mself to attention. ~
+End
+
+#SOCIAL
+Name snarl
+Level Seraphim
+Cnoarg You grizzle your teeth and look mean.~
+Onoarg $n snarls angrily.~
+Cfound You snarl at $M.~
+Ofound $n snarls at $N.~
+Vfound $n snarls at you, for some reason.~
+Nfound No need to snarl!~
+Cself You snarl at yourself.~
+Oself $n snarls at $mself.~
+End
+
+#SOCIAL
+Name sneeze
+Level Seraphim
+Cnoarg Gesundheit !~
+Onoarg $n sneezes.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name snicker
+Level Seraphim
+Cnoarg You snicker softly.~
+Onoarg $n snickers softly.~
+Cfound You snicker with $M about your shared secret.~
+Ofound $n snickers with $N about their shared secret.~
+Vfound $n snickers with you about your shared secret.~
+Nfound Huh?~
+Cself You snicker at your own evil thoughts.~
+Oself $n snickers at $s own evil thoughts.~
+End
+
+#SOCIAL
+Name sniff
+Level Seraphim
+Cnoarg You sniff sadly. *SNIFF*~
+Onoarg $n sniffs sadly.~
+Cfound You sniff sadly at the way $E is treating you.~
+Ofound $n sniffs sadly at the way $N is treating $m.~
+Vfound $n sniffs sadly at the way you are treating $m.~
+Nfound You see no reason to sniff.~
+Cself You sniff sadly at your lost opportunities.~
+Oself $n sniffs sadly at $mself.  Something MUST be bothering $m.~
+End
+
+#SOCIAL
+Name snore
+Level Seraphim
+Cnoarg Zzzzzzzzzzzzzzzzz.~
+Onoarg $n snores loudly.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name snort
+Level Seraphim
+Cnoarg You snort derisively. ~
+Onoarg $n snorts derisively. ~
+Cfound You snort derisively at $N. ~
+Ofound $n snorts derisively at $N. ~
+Vfound $n snorts at you. ~
+Nfound Snort at whom? ~
+Cself You snort derisively at yourself. ~
+Oself $n snorts derisively at $sself.~
+End
+
+#SOCIAL
+Name snowball
+Level Seraphim
+Cnoarg Who do you want to throw a snowball at?~
+Cfound You throw a snowball in $N's face.~
+Ofound $n conjures a snowball from the thin air and throws it at $N.~
+Vfound $n conjures a snowball from the thin air and throws it at you.~
+Nfound You stand with the snowball in your hand because your victim is not here.~
+Cself You conjure a snowball from the thin air and throw it at yourself.~
+Oself $n conjures a snowball out of the thin air and throws it at $mself.~
+End
+
+#SOCIAL
+Name snuggle
+Level Seraphim
+Cnoarg Who?~
+Cfound You snuggle $M.~
+Ofound $n snuggles up to $N.~
+Vfound $n snuggles up to you.~
+Nfound They aren't here.~
+Cself You snuggle up, getting ready to sleep.~
+Oself $n snuggles up, getting ready to sleep.~
+End
+
+#SOCIAL
+Name sob
+Level Seraphim
+Cnoarg You sob quietly to yourself.~
+Onoarg $n sobs in misery.~
+Cfound You sob quietly to yourself because $N has hurt your feelings so badly.~
+Ofound $n sobs quietly to $mself because $N was a jerk!~
+Vfound You feel like a cad because you've made $n sob.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name solemn
+Level Seraphim
+Cnoarg You nod your head solemnly.~
+Onoarg $n nods solemnly.~
+Cfound You nod solemnly at what $N has said.~
+Ofound $n nods solemnly at $N's words.~
+Vfound $n nods solemnly at what you have said.~
+Nfound They're not here.~
+Cself Why so glum? (And agreeable?)~
+Oself $n nods so solemnly, it must be something $e said.~
+End
+
+#SOCIAL
+Name spam
+Level Seraphim
+Cnoarg You mutter, 'spam' quietly to yourself again and again.~
+Onoarg $n rests in a corner and mutters 'spam' quietly to $mself.~
+Cfound You SPAM $N mercilessly!~
+Ofound $n spams $N!~
+Vfound You've been SPAMMED by $n!~
+Nfound Spam away -- they've left.~
+End
+
+#SOCIAL
+Name spank
+Level Seraphim
+Cnoarg Spank whom?~
+Cfound You spank $M playfully.~
+Ofound $n spanks $N playfully.~
+Vfound $n spanks you playfully.  OUCH!~
+Nfound Your hand can't find your victim!~
+Cself You spank yourself....HMMMMMMM...~
+Oself $n spanks $mself....HMMMMMMM...~
+End
+
+#SOCIAL
+Name spit
+Level Seraphim
+Cnoarg You spit in utter disgust.~
+Onoarg $n spits in utter disgust!~
+Cfound You spit on $N...you're gross!~
+Ofound $n spits on $N.~
+Vfound $n spits on you -- how gross!~
+Nfound Your victim isn't here.~
+Cself You spit on yourself, pretty nasty eh?~
+Oself $n spits on $mself...what a sicko!~
+End
+
+#SOCIAL
+Name squeal
+Level Seraphim
+Cnoarg You squeal with delight!~
+Onoarg $n lets out a sudden squeal of delight!~
+Cfound You look at $N and squeal with delight!~
+Ofound $n squeals with delight at $N.~
+Vfound $n looks at you and squeals with delight!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name squeeze
+Level Seraphim
+Cnoarg Where, what, how, WHO ???~
+Cfound You squeeze $M fondly.~
+Ofound $n squeezes $N fondly.~
+Vfound $n squeezes you fondly.~
+Nfound Where, what, how, WHO ???~
+Cself You squeeze yourself - try to relax a little!~
+Oself $n squeezes $mself.~
+End
+
+#SOCIAL
+Name squirm
+Level Seraphim
+Cnoarg You squirm uncontrollably in your consternation.~
+Onoarg $n squirms uncontrollably, suddenly looking very uncomfortable.~
+Cfound You look at $N and squirm with delight.              ~
+Ofound $n looks at $N and squirms with delight.~
+Vfound $n looks at you and squirms with delight.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name stagger
+Level Seraphim
+Cnoarg You stagger blindly around the room.~
+Onoarg $n staggers blindly around the room.~
+Cfound You stagger toward $N as the room begins to spin.~
+Ofound $n staggers into $N.~
+Vfound $n staggers blindly into you.~
+Nfound Stagger into whom!?!?~
+End
+
+#SOCIAL
+Name stare
+Level Seraphim
+Cnoarg You stare at the sky.~
+Onoarg $n stares at the sky.~
+Cfound You stare dreamily at $N, completely lost in $S eyes..~
+Ofound $n stares dreamily at $N.~
+Vfound $n stares dreamily at you, completely lost in your eyes.~
+Nfound You stare and stare but can't see that person anywhere...~
+Cself You stare dreamily at yourself - enough narcissism for now.~
+Oself $n stares dreamily at $mself - NARCISSIST!~
+End
+
+#SOCIAL
+Name starve
+Level Seraphim
+Cnoarg You show your prominent ribs and hope that someone will take pity.~
+Onoarg $n is withering before your eyes!  Starvation!~
+Cfound You throw yourself upon $S mercy, begging for food.~
+Ofound $n begs $N for food.  One would think that magic would have cured hunger by now...~
+Vfound $n is starving before your eyes!  Could you spare some food, please?~
+Nfound Sorry, but that person isn't around-- looks like you'll starve.~
+End
+
+#SOCIAL
+Name stretch
+Level Seraphim
+Cnoarg You lean back and streeeeeettch your arms and legs.~
+Onoarg $n stretches luxuriously.  Kinda makes you want to doesn't it?~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name strip
+Level Seraphim
+Cnoarg You do a slow strip tease for the people...~
+Onoarg $n begins a slow, erotic strip-tease act...~
+Cfound You start to undress $N ... one piece of clothing at a time...~
+Ofound $n runs $s hands over $Ns body, slowly stripping away the clothing...~
+Vfound $n has started to strip you... woah BABY!~
+Nfound Your toy doesn't seem to be here...~
+Cself You can't DO that in public!~
+End
+
+#SOCIAL
+Name stroke
+Level Seraphim
+Cnoarg You stroke the air vaguely. ~
+Onoarg $n makes vague stroking motions. ~
+Cfound You gently stroke $S inner thigh.  $N inhales sharply. ~
+Ofound $N exhales sharply and suddenly. ~
+Vfound $n gently strokes your inner thigh.  You inhale sharply. ~
+Nfound Maybe you should practice on yourself first. ~
+Cself You are about to do something you'd rather not be caught doing. ~
+Oself # ~
+End
+
+#SOCIAL
+Name strut
+Level Seraphim
+Cnoarg Strut your stuff.~
+Onoarg $n struts proudly.~
+Cfound You strut to get $S attention.~
+Ofound $n struts, hoping to get $N's attention.~
+Vfound $n struts, hoping to get your attention.~
+Nfound You don't see an audience.~
+Cself You strut to yourself, lost in your own world.~
+Oself $n struts to $mself, lost in $s own world.~
+End
+
+#SOCIAL
+Name sulk
+Level Seraphim
+Cnoarg You sulk.~
+Onoarg $n sulks in the corner.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name support
+Level Seraphim
+Cnoarg You fully support the plan. ~
+Onoarg $n fully supports the plan. ~
+Cfound You hug $M supportively and smile. ~
+Ofound $n hugs $N supportively and smiles. ~
+Vfound $n hugs you supportively and smiles. ~
+Nfound Sorry, friend, I can't see that person here. ~
+Cself You hug yourself sadly. ~
+Oself $n hugs $mself sadly.  Perhaps you could help? ~
+End
+
+#SOCIAL
+Name sweep
+Level Seraphim
+Cnoarg You look at your empty arms and sigh. ~
+Onoarg $n looks at $s empty arms and sighs. ~
+Cfound You sweep $M into your arms and kiss $M long and deeply. ~
+Ofound $n sweeps $N into $s arms and kisses $M long and deeply. ~
+Vfound $n sweeps you into $s arms and kisses you long and deeply. ~
+Nfound The object of your kiss is absent. ~
+End
+
+#SOCIAL
+Name swoon
+Level Seraphim
+Cnoarg You swoon.~
+Onoarg $n swoons in absolute ecstasy.~
+Cfound You look at $N and swoon in ecstasy.~
+Ofound $n looks at $N and swoons in ecstasy.~
+Vfound $n looks at you and swoons in ecstasy.~
+Nfound Who?~
+End
+
+#SOCIAL
+Name tackle
+Level Seraphim
+Cnoarg You're going to tackle everyone in the room?!~
+Cfound You tackle $N playfully.~
+Ofound $n playfully tackles $N.~
+Vfound $n brings you down in a playful tackle!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name tag
+Level Seraphim
+Cnoarg Tag whom?~
+Onoarg $n casts about for someone to tag.~
+Cfound >From nowhere, you pounce on $N and TAG $M remorselessly!  BWAHAHA!!!~
+Ofound $n dives from the shadows and TAGS $N.  $N IS IT!~
+Vfound $n pounces on you and >>> TAGS <<< you!  You're IT!~
+Nfound Who were you going to tag, then?~
+Cself Unable to catch anyone else, you do the intelligent thing and tag yourself. You're still IT!~
+Oself Unable to catch anyone else, $n tags $mself.  Are you impressed?~
+End
+
+#SOCIAL
+Name tank
+Level Seraphim
+Cnoarg You boldly offer to tank for your everyone else.  Are you sure you know what you're getting into?~
+Onoarg $n offers to tank!~
+Cfound You offer to tank for $N.~
+Ofound $n offers to tank for $N.~
+Vfound $n offers to tank for you!~
+Nfound Tank for whom?~
+Cself No one will tank for you, eh?!? WELL, YOU'LL SHOW THEM!  (right?)~
+Oself In dazzling chivalry, $n offers to tank-- for $mself!~
+End
+
+#SOCIAL
+Name tap
+Level Seraphim
+Cnoarg You tap your foot impatiently.~
+Onoarg $n taps $s foot impatiently.~
+Cfound You tap your foot impatiently.  Will $E ever be ready?~
+Ofound $n taps $s foot impatiently as $e waits for $N.~
+Vfound $n taps $s foot impatiently as $e waits for you.~
+Nfound You'll have to be patient until they come back.~
+Cself You tap yourself on the head.  Ouch!~
+Oself $n taps $mself on the head.~
+End
+
+#SOCIAL
+Name tease
+Level Seraphim
+Cnoarg What a tease.   SHEESH.~
+Onoarg $n looks around for someone to tease.~
+Cfound You tease $N in a playful way.~
+Ofound $n sticks $s tongue out at $N.~
+Vfound $n sticks $s tongue out at you, what a DORK!!~
+Nfound Tease whom?~
+Cself You tease yourself. NYAH NYAH NYAH.~
+Oself $n teases $mself.~
+End
+
+#SOCIAL
+Name tender
+Level Seraphim
+Cnoarg You will enjoy it more if you choose someone to kiss.~
+Cfound You give $M a soft, tender kiss.~
+Ofound $n gives $N a soft, tender kiss.~
+Vfound $n gives you a soft, tender kiss.~
+Nfound Better try someone else, they're not here.~
+Cself You'd better not, people may start to talk!~
+End
+
+#SOCIAL
+Name thank
+Level Seraphim
+Cnoarg Thank you too.~
+Cfound You thank $N heartily.~
+Ofound $n thanks $N heartily.~
+Vfound $n thanks you heartily.~
+Nfound No one answers to that name here.~
+Cself You thank yourself since nobody else wants to !~
+Oself $n thanks $mself since you won't.~
+End
+
+#SOCIAL
+Name think
+Level Seraphim
+Cnoarg You think about times past and friends forgotten.~
+Onoarg $n thinks deeply and is lost in thought.~
+Cfound You think about times past and friends forgotten.~
+Ofound $n thinks deeply and is lost in thought.~
+Vfound $n thinks deeply and is lost in thought.  Maybe $e is thinking of you?~
+Nfound Think hard, they're not here.~
+Cself You think about times past and friends forgotten.~
+Oself $n thinks deeply and is lost in thought.~
+End
+
+#SOCIAL
+Name threaten
+Level Seraphim
+Cnoarg You threaten everyone with your overwhelming presence.~
+Onoarg You feel threatened in the presence of the great $n.~
+Cfound You stand tall as you threaten $N.~
+Ofound $n threatens $N forcefully.~
+Vfound $n threatens you with bodily harm.~
+Nfound Whom do you wish to intimidate?~
+End
+
+#SOCIAL
+Name tickle
+Level Seraphim
+Cnoarg Whom do you want to tickle?~
+Cfound You tickle $N.~
+Ofound $n tickles $N.~
+Vfound $n tickles you - ho ho ho.~
+Nfound Who is that??~
+Cself You tickle yourself, how funny!~
+Oself $n tickles $mself.~
+End
+
+#SOCIAL
+Name tie
+Level Seraphim
+Cnoarg You toy with a pair of handcuffs suggestively. ~
+Onoarg $n toys suggestively with a pair of handcuffs. ~
+Cfound You grab $N and tie $M to the bedposts. ~
+Ofound $n grabs $N and ties $S to a four poster bed. ~
+Vfound $n grabs you and ties you securely to a four poster bed. ~
+Nfound Sorry, friend, I can't see that person here. ~
+End
+
+#SOCIAL
+Name tiff
+Level Archangel
+Cnoarg You bounce around the room and scream at the top of your lungs: 'KeWL BeANz!'~
+Onoarg $n dances around the room and screams at the top of $s lungs, 'KEWL BEANZ!'~
+Nfound They aren't here.~
+End
+
+#SOCIAL
+Name tight
+Level Seraphim
+Cfound You hold $M tightly in your arms. ~
+Ofound $n holds $N tightly in $m arms. ~
+Vfound $n holds you in $m arms. ~
+Nfound Sorry, friend, I can't see that person here. ~
+End
+
+#SOCIAL
+Name tip
+Level Seraphim
+Cnoarg You tip your hat gallantly.~
+Onoarg $n gallantly tips $s hat.~
+Cfound You tip your hat to $N.~
+Ofound $n gallantly tips $s hat to $N.~
+Vfound $n gallantly tips $s hat to you.~
+Nfound But there is no one here to impress?!?!~
+End
+
+#SOCIAL
+Name toast
+Level Seraphim
+Cnoarg You raise a glass of champagne in a toast. ~
+Onoarg $n raises $s glass of champagne in a toast. ~
+Cfound You raise your glass of champagne to $S. ~
+Ofound $n silently toasts $N. ~
+Vfound $n silently toasts you. ~
+Nfound Your object of praise is absent. ~
+Cself You grin evilly and toast yourself. ~
+Oself $n grins evilly and toasts $mself. ~
+End
+
+#SOCIAL
+Name tongue
+Level Seraphim
+Cnoarg You stick out your tongue.~
+Onoarg $n sticks out $s tongue.~
+Cfound You stick your tongue out at $M.~
+Ofound $n sticks $s tongue out at $N.~
+Vfound $n sticks $s tongue out at you.~
+Nfound Your tongue's not that long -- they've left!~
+Cself You stick out your tongue and touch your nose.~
+Oself $n sticks out $s tongue and touches $s nose.~
+End
+
+#SOCIAL
+Name tweak
+Level Seraphim
+Cnoarg Tweak who?~
+Cfound You gently tweak $S cheek.  Isn't $E so CUTE?~
+Ofound $n tweaked $N's cheek... don't they look so adorable together?~
+Vfound $n lovingly tweaks your cheek.  It reminds you of Grandma... sniff...~
+Nfound *Sniff*  That cheek seems to be missing.~
+Cself You can't DO that.~
+End
+
+#SOCIAL
+Name twiddle
+Level Seraphim
+Cnoarg You patiently twiddle your thumbs.~
+Onoarg $n patiently twiddles $s thumbs.~
+Cfound You twiddle $S ears.~
+Ofound $n twiddles $N's ears.~
+Vfound $n twiddles your ears.~
+Nfound You don't see the person here.~
+Cself You twiddle your ears like Dumbo.~
+Oself $n twiddles $s own ears like Dumbo.~
+End
+
+#SOCIAL
+Name twirl
+Level Seraphim
+Cnoarg You twirl a strand of your hair around your finger while lost in thought.~
+Onoarg $n twirls $s hair while lost in thought.~
+Nfound They aren't here.~
+Cself You twirl your hair around your finger while lost in thought.~
+End
+
+#SOCIAL
+Name twitch
+Level Seraphim
+Cnoarg You twitch nervously.~
+Onoarg $n twitches nervously.~
+Cfound You twitch involuntarily at $N's presence.~
+Ofound $N must really be getting to $n...~
+Vfound $n notices you and twitches.~
+Nfound Nervous? They aren't even here.~
+End
+
+#SOCIAL
+Name type
+Level Seraphim
+Cnoarg You can't type for crap tonight!  You give up in frustration!~
+Onoarg $n throws $s hands up in disgust at $s lousy typing skills!~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name undress
+Level Seraphim
+Cnoarg You start to undress in the shadows, waiting for someone to notice.~
+Onoarg $n begins to undress... $e is VERY sexy... *Pant* ~
+Cfound You undress $M with your eyes... Kinky.~
+Ofound You feel the temperature of the room rise as $n lusts on $N...~
+Vfound Feeling exposed, you sense $n undressing you with $s eyes...~
+Nfound They are not here...~
+Cself A mirror would work better...~
+End
+
+#SOCIAL
+Name view
+Level Seraphim
+Cnoarg You sit back and watch the world go by.~
+Onoarg $n kicks back and enjoys the view.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name voodoo
+Level Seraphim
+Cnoarg Bad juju like this has to be directed at a person.~
+Onoarg $n looks hostile for a moment.~
+Cfound You stare daggers at $N, jabbing pins into $S effigy.~
+Ofound $n glares balefully at $N while stabbing a pin into a voodoo doll.~
+Vfound Your heart lurches in your chest, and fiery pain stabs through your skull!~
+Nfound Your hatred finds no such target.~
+Cself You stab a pin into your own voodoo doll!  Agony!~
+Oself $n jabs a pin into $s own voodoo doll, and twitches in agony!~
+End
+
+#SOCIAL
+Name wait
+Level Seraphim
+Cnoarg You wait patiently. ~
+Onoarg $n waits patiently. ~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name wave
+Level Seraphim
+Cnoarg You wave.~
+Onoarg $n waves happily.~
+Cfound You wave goodbye to $N.~
+Ofound $n waves goodbye to $N.~
+Vfound $n waves goodbye to you.  Have a good journey.~
+Nfound They didn't wait for you to wave goodbye.~
+Cself Are you going on adventures as well??~
+Oself $n waves goodbye to $mself.~
+End
+
+#SOCIAL
+Name whap
+Level Seraphim
+Cnoarg Whap who?~
+Cfound You whap $N upside the head!~
+Ofound With a resounding WHAP!, $n reprimands $N.~
+Vfound HEY!  $n whaps you upside the head!~
+Nfound Whiff...~
+Cself Ow! You give yourself a resounding whap upside the head.~
+Oself Biff!  $n whaps $mself upside the head!~
+End
+
+#SOCIAL
+Name whine
+Level Seraphim
+Cnoarg You whine to anyone who will listen to you.~
+Onoarg $n whines pathetically to anyone who will listen.~
+Cfound You whine to $M, hoping desperately that at least $E will give a damn.~
+Ofound $n whines pathetically to $N.~
+Vfound $n whines pathetically to you.  What a loser!~
+Nfound They really don't care.~
+Cself You whine to yourself, probably the only one who will listen.~
+Oself $n whines to $mself.  At least $e isn't bitching to YOU.~
+End
+
+#SOCIAL
+Name whip
+Level Seraphim
+Cnoarg You crack your bullwhip menacingly. ~
+Onoarg $n cracks a bullwhip menacingly. ~
+Cfound You flick your whip across $M bare back. ~
+Ofound $n flicks $s whip across $N's bare back. ~
+Vfound $n flicks a whip across your back... the pain.. the pleasure.. ~
+Nfound Sorry, friend, I can't see that person here. ~
+Cself You whip yourself into a frenzy. ~
+Oself $n whips $mself into a frenzy.~
+End
+
+#SOCIAL
+Name whistle
+Level Seraphim
+Cnoarg You whistle appreciatively.~
+Onoarg $n whistles appreciatively.~
+Cfound You whistle at the sight of $M.~
+Ofound $n whistles at the sight of $N.~
+Vfound $n whistles at the sight of you.~
+Nfound You don't see nothing special to whistle at.~
+Cself You whistle a little tune to yourself.~
+Oself $n whistles a little tune to $mself.~
+End
+
+#SOCIAL
+Name wiggle
+Level Seraphim
+Cnoarg Your wiggle your bottom.~
+Onoarg $n wiggles $s bottom.~
+Cfound You wiggle your bottom toward $M.~
+Ofound $n wiggles $s bottom toward $N.~
+Vfound $n wiggles $s bottom toward you.~
+Nfound You must be alone.~
+Cself You wiggle about like a fish.~
+Oself $n wiggles about like a fish.~
+End
+
+#SOCIAL
+Name wince
+Level Seraphim
+Cnoarg You wince in agony.~
+Onoarg $n winces in agony.~
+Cfound You look at $N and wince at $S remark.~
+Ofound $n winces at $N's remark.~
+Vfound $n winces at your remark.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name wink
+Level Seraphim
+Cnoarg Have you got something in your eye?~
+Onoarg $n winks suggestively.~
+Cfound You wink suggestively at $N.~
+Ofound $n winks at $N.~
+Vfound $n winks suggestively at you.~
+Nfound No one with that name is present.~
+Cself You wink at yourself ?? - what are you up to?~
+Oself $n winks at $mself - something strange is going on...~
+End
+
+#SOCIAL
+Name wonder
+Level Seraphim
+Cnoarg You wonder about how things could have been.~
+Onoarg $n gets a blank stare on $s face.  What could $e be wondering about?~
+Cfound You look at $N and wonder what will happen.~
+Ofound $n looks at $N and wonders....~
+Vfound $n looks at you quizzically.~
+Nfound You wonder what would have happened had they been here.~
+Cself You wonder about yourself and your purpose here.~
+Oself A blank stare crosses $n's face.  What could $e be wondering about?~
+End
+
+#SOCIAL
+Name worry
+Level Seraphim
+Cnoarg You worry about what's going to happen.~
+Onoarg A troubled look suddenly crosses $n's face.  Wonder what's wrong?~
+Cfound You look at $N worriedly.~
+Ofound $n looks at $N with a troubled gaze.~
+Vfound $n looks at you worriedly.~
+Nfound Well they obviously aren't worried -- they left!~
+Cself You worry about what's going to happen.~
+Oself A troubled look suddenly crosses $n's face.  Wonder what's wrong?~
+End
+
+#SOCIAL
+Name worship
+Level Seraphim
+Cnoarg You prostrate yourself and worship the gods!~
+Onoarg $n prostrates $mself and worships the gods!~
+Cfound You fall on your knees and worship $N.~
+Ofound $n falls on $s knees and worships $N.~
+Vfound $n falls to the ground and worships you.~
+Nfound You can't worship someone who isn't here.~
+Cself You worship yourself.~
+Oself $n worships $mself.~
+End
+
+#SOCIAL
+Name wrestle
+Level Seraphim
+Cfound You wrestle $M to the floor and pin $M there. ~
+Ofound $n wrestles $N to the floor, pinning $M there. ~
+Vfound $n wrestles you to the floor and pins you. ~
+Nfound Sorry, friend, I can't see that person here. ~
+Cself You wrestle with your conscience. ~
+Oself $n wrestles with $m conscience. ~
+End
+
+#SOCIAL
+Name wrist
+Level Seraphim
+Cnoarg You hold out out a wrist for a slap. ~
+Onoarg $n holds out a wrist for a slap. ~
+Cfound You slap $N's wrist sharply.~
+Ofound $n slaps $N's wrist sharply. ~
+Vfound $n slaps your wrist sharply. ~
+Nfound Sorry, friend, I can't see that person here. ~
+Cself You slap your own wrist. ~
+Oself $n slaps $m own wrist. ~
+End
+
+#SOCIAL
+Name yae
+Level Seraphim
+Cnoarg You sigh, burdened with Yet Another Eeediot.~
+Onoarg $n sighs, burdened with Yet Another Eeediot.~
+Cfound There's Yet Another Eeediot in the room, and you're looking right at $M.~
+Ofound $n clearly believes that $N is an Eeediot! ~
+Vfound $n glares at you, obviously not impressed with your intelligence.~
+Nfound There are plenty of Eeediots, but that one doesn't seem to be present.~
+Cself You bonk yourself for the Eeediot you are!~
+Oself $n bonks $mself, HARD, and curses $mself for the Eeediot $e is!~
+End
+
+#SOCIAL
+Name yawn
+Level Seraphim
+Cnoarg You must be tired.~
+Onoarg $n yawns.~
+Nfound They're not here~
+End
+
+#SOCIAL
+Name yeehaw
+Level Seraphim
+Cnoarg You mount your pony (?) and scream `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Onoarg $n bounces up and down screaming `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Cfound You jump in the air with $N, screaming `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Ofound $n grabs $N and starts screaming `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Vfound $n grabs you, jumping up & down while screaming `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Nfound They're not here~
+Cself You grabs yourself and scream `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+Oself $n grabs themselves and screams `R*`YYEEEEEEEEHAAAAAW`R*`X!~
+End
+
+#SOCIAL
+Name yodel
+Level Seraphim
+Cnoarg You think of Julie Andrews and start to yodel.~
+Onoarg $n begins to yodel:  HEY!! CLERICS!! I COULD USE A HEAL!!!~
+Cfound $N covers $S ears as you begin to yodel.~
+Ofound $n yodels to $N.~
+Vfound $n yodels to you...you cringe and turn away.~
+Nfound That person just escaped!~
+Cself Well, it's up to you if you want to damage your hearing.~
+Oself $n yodels to $mself.  What a sado-masochist.~
+End
+
+#SOCIAL
+Name yowl
+Level Seraphim
+Cnoarg You yowl in frustration. ~
+Onoarg $n yowls in frustration! ~
+Cfound You yowl in frustration at $N.~
+Ofound $n yowls in frustration at $N.~
+Vfound You must really be pissing off $n- they are yowling at you.~
+Nfound They're not here~
+Cself You yowl in frustration at your own stupidity?~
+Oself $n yowls in frustration at their own stupidity.~
+End
+
+#SOCIAL
+Name zerbert
+Level Seraphim
+Cnoarg Gotta zerbert SOMEBODY.~
+Onoarg $n tries to zerbert the air- what a freak.~
+Cfound You lift $N's shirt and blow loudly into $S navel!~
+Ofound $n lifts $N's shirt and blows loudly into $S navel!~
+Vfound Yeek!  $n lifts your shirt and blows loudly into your navel!~
+Nfound You missed.~
+Cself Careful, people are staring...~
+Oself $n looks around furtively, and then bends over and blows loudly into $s own navel!~
+End
+
+#SOCIAL
+Name zzz
+Level Seraphim
+Cnoarg Are you really that bored?~
+Onoarg $n must be very bored, $e has fallen asleep.~
+Cfound $N is boring, you are correct.~
+Ofound $N's rantings have put $n to sleep.~
+Vfound You are so boring you have put $n to sleep.~
+Nfound They aren't here.~
+Cself You bore yourself right to sleep.~
+Oself $n has put $mself to sleep, $e is so very boring.~
+End
+
+#END

@@ -1,0 +1,104 @@
+/******************************************************************************
+*       *****   **    **           **             ***** ***        *******    *         
+*    ******  ***** *****        *****          ******  * **      *       ***  *         
+*   **   *  *  ***** *****     *  ***         **   *  *  **     *         **  *         
+*  *    *  *   * **  * **         ***        *    *  *   **     **        *   *         
+*      *  *    *     *           *  **           *  *    *       ***          *         
+*     ** **    *     *           *  **          ** **   *       ** ***        *         
+*     ** **    *     *          *    **         ** **  *         *** ***      *         
+*     ** **    *     *          *    **         ** ****            *** ***    *         
+*     ** **    *     *         *      **        ** **  ***           *** ***  *         
+*     ** **    *     **        *********        ** **    **            ** *** *         
+*     *  **    *     **       *        **       *  **    **             ** ** *         
+*        *     *      **      *        **          *     **              * *  *         
+*    ****      *      **     *****      **     ****      ***   ***        *   *         
+*   *  *****           **   *   ****    ** *  *  ****    **   *  *********    *         
+*  *     **                *     **      **  *    **     *   *     *****      *         
+*  *                       *                 *               *                *         
+*    **                      **                **              **             *         
+*                                                                             *
+*  MULTI                    ADVENTURER         ROLEPLAYING     SYSTEM         *
+*  MARS 0.1b is copyright 2015-2024 Ro Black mars@wr3tch.org                  *
+******************************************************************************/
+/******************************************************************************
+ *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,           *
+ *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.      *
+ *                                                                            *
+ *  Merc Diku Mud improvments copyright (C) 1992, 1993 by Michael             *
+ *  Chastain, Michael Quan, and Mitchell Tse.                                 *
+ *                                                                            *
+ *  In order to use any part of this Merc Diku Mud, you must comply with      *
+ *  both the original Diku license in 'license.doc' as well the Merc          *
+ *  license in 'license.txt'.  In particular, you may not remove either of    *
+ *  these copyright notices.                                                  *
+ *                                                                            *
+ *  Much time and thought has gone into this software and you are             *
+ *  benefitting.  We hope that you share your changes too.  What goes         *
+ *  around, comes around.                                                     *
+ *****************************************************************************/
+
+/******************************************************************************
+*	ROM 2.4 is copyright 1993-1998 Russ Taylor			                      *
+*	ROM has been brought to you by the ROM consortium		                  *
+*	    Russ Taylor (rtaylor@hypercube.org)				                      *
+*	    Gabrielle Taylor (gtaylor@hypercube.org)			                  *
+*	    Brian Moore (zump@rom.org)					                          *
+*	By using this code, you have agreed to follow the terms of the	          *
+*	ROM license, in the file Rom24/doc/rom.license			                  *
+******************************************************************************/
+/* dwatch egate artifice fdmud code copyright 2002-2008 Bob Kircher	  */
+
+Changelog for MARS
+==================
+Added Spells: Acid Arrow, Acid Geyser, Astral Walk,
+Banshee Blast, Black Mantle, Caustic Eruption, 
+Celestial Lightning, Corrosive Burst, Daze, Damnation,
+Detect Life, Detect Aura,Disruption, Dragonscales, 
+Electrocute, Full Heal, Hellfire, Hurricane, Ion Blast, 
+Natural Armor, Project Force, Rushing Fist, 
+Strike True, Spellmantle, Telekinetic Force, Truesight
+
+Acid Arrow - Acid Direct Damage
+Acid Geyser - Acid Direct Damage [Will change to AoE]
+Astral Walk - Gate for Druids
+Banshee Blast - Sonic Direct Damage
+Black Mantle - Evil Sanctuary
+Caustic Eruption - Acid Direct Damage
+Celestial Lighting - Holy Lightning Direct Damage
+Corrosive Burst - Acid Direct Damage
+Daze - Negative Direct Damage [Will add lag daze effect]
+Damnation - Negative Direct Damage
+Detect Life - Detects Invisible and Hidden [Changing not to work on undead/spirits]
+Detect Aura - Detects good, evil and magical auras
+Disruption - Energy Direct Damage
+Dragonscales - Armor spell [Adding small damage from scales erupting from skin]
+Electrocute - Lightning Direct Damage
+Full Heal - Heals 100% HP [Going to add cooldown system so it's once per 24 ticks]
+Hellfire - Fire Direct Damage
+Hurricane - "Other" AoE doing less damage the larger the targets are
+Ion Blast - Energy Direct Damage
+Natural Armor - Armor Spell
+Project Force - AoE sonic that reflects back on caster if less than 2 valid targets
+Rushing Fist - Bashing Direct Damage
+Strike True - Hitroll buff
+Spellmantle - Spell Saves buff
+Telekinetic Force - Energy Direct Damage
+Truesight - Detect Magic, Hidden, Invis, Good, and Evil
+
+Replaced "Huh?!" with a table of various quirky replies when typing a command that does
+not exist.
+
+Added 'Tail' equipment slot for races with tails
+
+Changed 'consider', it now accounts for the target's current hitpoints and their damroll
+
+Added 'plist' command
+
+Added 'assassinate' skill for thieves
+
+Players are now restored on level up
+
+Revamped classes and groups
+
+Added my 'autotick' snippet, finally with working autotick command to turn the tick messages
+on or off. can use autotick or 'config +autotick/-autotick'
