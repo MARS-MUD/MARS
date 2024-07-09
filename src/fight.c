@@ -87,7 +87,6 @@ void	disarm		args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 bool    check_phase     args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 bool    check_counter   args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt ) );
 bool    dragonkin       args( ( CHAR_DATA *ch, char *spell_name));
-
 /*
  * Control the fights going on.
  * Called periodically by update_handler.
@@ -664,6 +663,7 @@ one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, bool secondary )
     int sn,skill;
     int dam_type;
     bool result;
+    int chance;
 
     sn = -1;
 
@@ -824,6 +824,7 @@ one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, bool secondary )
 
 	    if (get_eq_char(ch,WEAR_SHIELD) == NULL)  /* no shield = more */
 		dam = dam * 11/10;
+
 
 	    /* sharpness! */
 	    if (IS_WEAPON_STAT(wield,WEAPON_SHARP))
@@ -989,7 +990,17 @@ one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, bool secondary )
             if ( !IS_NPC(victim) && ( victim->alignment > 0 )  )
                 victim->alignment -= 1;
 	}
+    /*Vorpal Weapon! */
+if (ch->fighting == victim && IS_WEAPON_STAT(wield,WEAPON_VORPAL))
+{
+            dam = 350;
+            act("$p inflicts massive vorpal damage upon $n.",victim,wield,NULL,TO_ROOM);
+            act("$p inflicts massive vorpal damage upon you.",victim,wield,NULL,TO_CHAR);
+            damage(ch,victim,dam,dt,DAM_NEGATIVE,TRUE);
+}
+    
     }
+      
     tail_chain( );
     return;
 }
@@ -1020,7 +1031,7 @@ damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt, int dam_type,
 		 PERS( victim, ch ), dam, dam_type );
 	wiznet( buf, ch, NULL, WIZ_DAMAGE, 0, 0 );
 //	bug( "Damage: %d: more than 1200 points!", dam );
-	dam = 1200;
+	dam = 12000;
 	if (!IS_IMMORTAL(ch))
 	{
 	    OBJ_DATA *obj;
