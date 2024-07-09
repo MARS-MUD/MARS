@@ -1,0 +1,8 @@
+Tue Jul  9 10:17:19 2024 :: Booting MARS
+Tue Jul  9 10:17:19 2024 :: MARS is ready to rock on port 3033.
+Tue Jul  9 10:17:44 2024 :: Sock.sinaddr:  127.0.0.1
+Tue Jul  9 10:17:51 2024 :: Loading Admin.
+Tue Jul  9 10:17:53 2024 :: Admin@localhost has connected.
+Tue Jul  9 10:17:55 2024 :: Log Admin: shutdown
+Tue Jul  9 10:17:55 2024 :: Closing link to Admin.
+Tue Jul  9 10:17:56 2024 :: Normal termination of game.

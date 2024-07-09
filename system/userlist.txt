@@ -11,6 +11,18 @@ Plyd 1227
 End
 
 #USER
+Name Admin
+Host 'localhost'
+Id 1720526900
+Last 1720542751
+LogC 8
+Lvl 30
+Race 'Elf'
+Class 'Mag'
+Plyd 14449
+End
+
+#USER
 Name Ahm
 Host 'localhost'
 Id 1634448961
