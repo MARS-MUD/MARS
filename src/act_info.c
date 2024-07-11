@@ -1874,7 +1874,54 @@ do_show( CHAR_DATA *ch, char *argument )
     }
 }
 
+void do_display(CHAR_DATA *ch, char *argument)
+{
+    char arg[MSL];
+    char buf[MSL];
+    int i, x;
 
+      const char *def_prompts[][2] = {
+    { "Stock Rom",  "`c<%hhp %mm %vmv>`X " },
+    { "Colorized Stock MARS", "`R%h`rhp `P%m`pm `G%v`gmv`c>`X "},
+    { "Standard", "`R%h`rhp `P%m`pm `G%v`gmv `Yexp: %X`X> "},
+    { "Full Featured", "`R%h`w(`R%H`w)`Whitp `P%m`w(`P%M`w)`Wmana `G%v`w(`G%V`w)`Wmove`X>`X "},
+    { "Non Magic Featured", "`R%h`w(`R%H`w)`Whitp `G%v`w(`G%V`w)`Wmove`X> "},
+    { "Immortal Basic", "[%R - %r] [%e]%c [%z] "},
+    { "\n", "\n"}
+    };
+
+    argument = one_argument(argument, arg);
+
+    if (!arg || !*arg) {
+        send_to_char("The following pre-set prompts are availible...\n\r", ch);
+    for (i = 0; *def_prompts[i][0] != '\n'; i++) {
+            sprintf(buf,"  %d. %-25s  %s\r\n", i,def_prompts[i][0],def_prompts[i][1]);
+        send_to_char(buf,ch);
+    }
+        send_to_char(   "Usage: display <number>\r\n"
+            "To create your own prompt, use \"prompt <str>\".\r\n", ch);
+    } else if (!isdigit(*arg))
+        send_to_char(   "Usage: display <number>\r\n"
+            "Type \"display\" without arguments for a list of preset prompts.\r\n",ch);
+    else {
+    i = atoi(arg);
+    if (i < 0) {
+        send_to_char("The number cannot be negative.\r\n", ch);
+    } else {
+       for (x = 0; *def_prompts[x][0] != '\n'; x++);
+
+        if (i >= x) {
+            sprintf(buf,"The range for the prompt number is 0-%d.\r\n", x);
+        send_to_char(buf,ch);
+        } else {
+        if (ch->prompt) free_string( ch->prompt );
+        ch->prompt = str_dup(def_prompts[i][1]);
+            sprintf(buf, "Set your prompt to the %s preset prompt.\r\n",def_prompts[i][0]);
+        send_to_char(buf,ch);
+            }
+        }
+    }
+}
 void
 do_prompt( CHAR_DATA *ch, char *argument )
 {
@@ -5149,7 +5196,37 @@ do_inventory( CHAR_DATA *ch, char *argument )
     return;
 }
 
+void do_equipment2(CHAR_DATA * ch, char *argument) {
+    OBJ_DATA *obj;
+    int iWear;
+    bool found;
+    send_to_char ("`WYou are using:`X\n\r", ch);
+    found = FALSE;
+    for (iWear = 0; iWear < MAX_WEAR; iWear++) {
+        if ((obj = get_eq_char (ch, iWear)) == NULL) {
+                send_to_char("`w", ch);
+                send_to_char(where_name[iWear], ch);
+                send_to_char("     ---\r\n", ch);
+                continue;
+        }
+        send_to_char("`C", ch);
+        send_to_char (where_name[iWear], ch);
+        send_to_char("`W", ch);
+        if (can_see_obj (ch, obj)) {
+            send_to_char("`W", ch);
+            send_to_char (format_obj_to_char (obj, ch, TRUE), ch);
+            send_to_char ("`X\n\r", ch);
+        }
+        else    {
+            send_to_char ("`Wsomething.\n\r", ch);
+        }
+        found = TRUE;
+    }
 
+    send_to_char("`X", ch);
+
+    return;
+}
 void
 do_equipment (CHAR_DATA *ch, char *argument )
 {
