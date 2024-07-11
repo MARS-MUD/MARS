@@ -58,9 +58,16 @@ would type "nohup ./startup <port number> &" replacing <port number> with the po
 you prefer to use. (do not type the <> symbols.)
 Telnet or use your MUD client of choice to connect to your host on the chosen port (3033 by default)
 and type "yes' or "no" for color, depending on whether or not your client supports it. Then create a
-new character with the name "Admin". Once you are finished the character creation, type "relevel" to 
+new character. Once you are finished the character creation, type "relevel ChangeMe" to 
 be immediately advanced to maximum level and have your security and trust set accordingly. Afterwards
-I would recommend using the "cmdedit" command to disable the relevel command.
+you can use the command "wizify" with your character name and max security (to make sure that your
+security is set to the highest level) e.g. 'wizify mycharname 9'. This command will set your stats
+to the maximum, then 'set skill mycharname all 100' to give yourself all skills/spells at 100%.
+I would recommend using the "cmdedit" command to disable the relevel command, or editing do_relevl
+in act_wiz.c to change the password to something stronger than 'ChangeMe' because until you either
+disable to command or disable it, anyone who logs in will be able to use the relevel command to 
+advance themselves to maximum level if they've read this README file. I would also consider setting
+newlock on once your staff have all created characters until you are ready to open to the public.
 
 You may notice that you are only level 30, where most ROM based MUDs are 60-200 levels. The reason
 for this is due to the nature of MARS; like in D&D, MARS has an increasing amount of experience
