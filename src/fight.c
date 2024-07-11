@@ -990,13 +990,29 @@ one_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt, bool secondary )
             if ( !IS_NPC(victim) && ( victim->alignment > 0 )  )
                 victim->alignment -= 1;
 	}
-    /*Vorpal Weapon! */
+    /*
+    * Vorpal Weapon! 2% chance that a weapon with the vorpal flag will do a massive amount
+    * of damage to the target. 'Massive' being relative, as the most HP a mobile should have
+    * based on the way MARS is built is far less than 1200hp, so that SHOULD be an insta-kill.
+    *
+    * Might add a 'check_vorpal' function later instead that cuts the enemy in half and is an
+    * actual instant kill regardless of HP but this seems like a reasonable solution for the time being.
+    * in its current state, when a successful hit happens, it initiates a check with a random
+    * number from 1-100, and if that number is greater than or equal to 99, so 99 or 100, then
+    * the Vorpal flag is applied, which is currently set to 1200 damage.
+    */
+
 if (ch->fighting == victim && IS_WEAPON_STAT(wield,WEAPON_VORPAL))
 {
-            dam = 350;
+            chance = 99;
+            if (number_percent( ) >= chance)
+            {
+            dam = 1200;
             act("$p inflicts massive vorpal damage upon $n.",victim,wield,NULL,TO_ROOM);
             act("$p inflicts massive vorpal damage upon you.",victim,wield,NULL,TO_CHAR);
             damage(ch,victim,dam,dt,DAM_NEGATIVE,TRUE);
+            return;
+            }
 }
     
     }

