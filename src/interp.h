@@ -614,3 +614,4 @@ DECLARE_DO_FUN(do_played_age);
 DECLARE_DO_FUN(do_mortskill);
 DECLARE_DO_FUN(do_mortspell);
 DECLARE_DO_FUN(do_purify);
+DECLARE_DO_FUN(do_display);

@@ -228,6 +228,7 @@ struct	cmd_type	cmd_table	[] =
     { "title",		do_title,	POS_DEAD,	 0,  LOG_NORMAL, 0 },
     { "unalias",	do_unalias,	POS_DEAD,	 0,  LOG_NORMAL, 0 },
     { "wimpy",		do_wimpy,	POS_DEAD,	 0,  LOG_NORMAL, 0 },
+    { "display",    do_display, POS_DEAD,    0,  LOG_NORMAL, 1 },
 
     /*
      * Communication commands.
